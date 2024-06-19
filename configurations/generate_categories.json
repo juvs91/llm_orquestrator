@@ -1,0 +1,57 @@
+[
+  {
+        "max_iterations": 1,
+        "name": "START",
+        "type": "READ_FILE_NODE",
+        "options": {
+            "next_node": "llm_generate_categories",
+            "output_context": "tickets",
+            "context_var_path": null,
+            "fixed_path": "/Volumes/case-sensitive-volume/LLM_TOOLS/llm_tools/jira_tickets/data/output_yamls.txt"
+        }
+    },
+  {
+        "max_iterations": 3,
+        "name": "llm_generate_categories",
+        "type": "LLM_NODE",
+        "options": {
+            "llm_node_type": "GEMINI",
+            "next_node": "validate_yaml_node",
+            "output_context": "categories_raw",
+            "context_vars_prompt": ["tickets"],
+            "options": {
+                "system_prompt_template_name": "SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "GENERATE_CATEGORIES_PROMPT_TEMPLATE",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                }
+            }
+        }
+    },
+  {
+        "max_iterations": 3,
+        "name": "validate_yaml_node",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "END",
+          "next_node_on_invalid": "llm_generate_categories",
+          "context_var_to_validate": "categories_raw",
+          "context_var_save_as_object": null
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "END",
+        "type": "SAVE_FILE_NODE",
+        "options": {
+          "next_node": "NO NODE",
+          "context_var_content_to_save": "categories_raw",
+          "context_var_path_to_save": null,
+          "fixed_path_to_save": "categories_raw.yaml"
+        }
+    }
+]
