@@ -1,0 +1,102 @@
+vista: stg_vtacatorganizacionwt
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatOrganizacionWt
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: email
+    descripcion: Correo electrónico de la organización
+    tipo: STRING
+  - nombre: nivel
+    descripcion: Nivel de la organización
+    tipo: INT64
+  - nombre: clazona
+    descripcion: Clave de la zona a la que pertenece la organización
+    tipo: INT64
+  - nombre: idorden
+    descripcion: ID de orden de la organización
+    tipo: INT64
+  - nombre: clagrupo
+    descripcion: Clave del grupo al que pertenece la organización
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de ingreso de la organización
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: Activo)
+    tipo: INT64
+  - nombre: clagerencia
+    descripcion: Clave de la gerencia a la que pertenece la organización
+    tipo: INT64
+  - nombre: clatipozona
+    descripcion: Clave del tipo de zona a la que pertenece la organización
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la última transacción capturada por CDC
+    tipo: STRING
+  - nombre: cladireccion
+    descripcion: Clave de la dirección a la que pertenece la organización
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: nombretitular
+    descripcion: Nombre del titular de la organización
+    tipo: STRING
+  - nombre: claflujocuenta
+    descripcion: Clave del flujo de cuenta de la organización
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: claorganizacion
+    descripcion: Clave de la organización
+    tipo: INT64
+  - nombre: clasubdireccion
+    descripcion: Clave de la subdirección a la que pertenece la organización
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: nomorganizacion
+    descripcion: Nombre de la organización
+    tipo: STRING
+  - nombre: telefonocelular
+    descripcion: Número de teléfono celular de la organización
+    tipo: STRING
+  - nombre: clausuariotitular
+    descripcion: Clave del usuario titular de la organización
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC
+    tipo: STRING
+  - nombre: clagerenciaregional
+    descripcion: Clave de la gerencia regional a la que pertenece la organización
+    tipo: INT64
+  - nombre: claniveltopelistaprecio
+    descripcion: Clave del nivel tope de la lista de precios
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: claniveltopelistadescuento
+    descripcion: Clave del nivel tope de la lista de descuentos
+    tipo: INT64
+  - nombre: escuentaautorizacionrequerida
+    descripcion: Indicador de si la cuenta requiere autorización (1: Requiere autorización, 0: No requiere autorización)
+    tipo: INT64

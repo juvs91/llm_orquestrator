@@ -1,0 +1,108 @@
+vista: stg_eaacatindicadorespecifico
+descripcion: Vista generada por DBT a partir de la tabla EAASch_EAACatIndicadorEspecifico
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: eslocal
+    descripcion: Bandera que indica si es local
+    tipo: INT64
+  - nombre: secuencia
+    descripcion: Número de secuencia
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Bandera que indica si está dado de baja lógica
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: tiporegistro
+    descripcion: Tipo de registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: tipoindicador
+    descripcion: Tipo de indicador
+    tipo: INT64
+  - nombre: tipotendencia
+    descripcion: Tipo de tendencia
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claunidadmedida
+    descripcion: Clave de la unidad de medida
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: tipocapturametas
+    descripcion: Tipo de captura de metas
+    tipo: INT64
+  - nombre: tipoperiodometas
+    descripcion: Tipo de periodo de metas
+    tipo: INT64
+  - nombre: secuenciaoctagono
+    descripcion: Secuencia del octágono
+    tipo: INT64
+  - nombre: esevaluacionfinmes
+    descripcion: Bandera que indica si la evaluación es a fin de mes
+    tipo: INT64
+  - nombre: esmatrizresultados
+    descripcion: Bandera que indica si es matriz de resultados
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claindicadorgeneral
+    descripcion: Clave del indicador general
+    tipo: INT64
+  - nombre: esevaluacioneaaarea
+    descripcion: Bandera que indica si la evaluación es por área
+    tipo: INT64
+  - nombre: clatiposentidomejora
+    descripcion: Clave del tipo de sentido de mejora
+    tipo: INT64
+  - nombre: tipocapturaresultados
+    descripcion: Tipo de captura de resultados
+    tipo: INT64
+  - nombre: tipoperiodoresultados
+    descripcion: Tipo de periodo de resultados
+    tipo: INT64
+  - nombre: claindicadorespecifico
+    descripcion: Clave del indicador específico
+    tipo: INT64
+  - nombre: nomindicadorespecifico
+    descripcion: Nombre del indicador específico
+    tipo: STRING
+  - nombre: clacriteriocalificacion
+    descripcion: Clave del criterio de calificación
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claveindicadorespecifico
+    descripcion: Clave del indicador específico
+    tipo: STRING
+  - nombre: escapturametasautomatica
+    descripcion: Bandera que indica si la captura de metas es automática
+    tipo: INT64

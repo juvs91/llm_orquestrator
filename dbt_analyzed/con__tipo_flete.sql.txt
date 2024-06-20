@@ -1,0 +1,9 @@
+vista: MST_TIPO_FLETE_VW
+descripcion: Vista materializada que presenta los diferentes tipos de flete y sus códigos. 
+campos:
+  - nombre: CLA_TIPO_FLETE
+    descripcion: Clave única que identifica el tipo de flete.
+    tipo: TEXT
+  - nombre: NOM_TIPO_FLETE
+    descripcion: Nombre descriptivo del tipo de flete.
+    tipo: TEXT

@@ -1,0 +1,12 @@
+vista: RAW_STR_P_PLD_PLDCATCLASIFICACIONINVENTARIO
+descripcion: Esta vista contiene la clasificacion del inventario
+campos:
+  - nombre: CLA_CLASIFICACION_INVENTARIO
+    descripcion: Clave de la clasificación del inventario
+    tipo: INT
+  - nombre: NOM_CLASIFICACION_INVENTARIO
+    descripcion: Nombre de la clasificación del inventario
+    tipo: VARCHAR
+  - nombre: BAJA_LOGICA
+    descripcion: Indica si la clasificación del inventario esta dada de baja
+    tipo: BOOLEAN 

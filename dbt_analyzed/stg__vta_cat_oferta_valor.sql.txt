@@ -1,0 +1,48 @@
+vista: VtaCatOfertaValor
+descripcion: Vista de la tabla VtaCatOfertaValor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: BajaLogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INTEGER
+  - nombre: NombrePcMod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INTEGER
+  - nombre: ClaOfertaValor
+    descripcion: Clave única de la oferta de valor
+    tipo: INTEGER
+  - nombre: FechaUltimaMod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: NomOfertaValor
+    descripcion: Nombre de la oferta de valor
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INTEGER
+  - nombre: FechaBajaLogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

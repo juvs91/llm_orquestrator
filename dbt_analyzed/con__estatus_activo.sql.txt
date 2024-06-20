@@ -1,0 +1,9 @@
+vista: MST_ESTATUS_ACTIVO_VW
+descripcion: Vista que presenta los estatus activos.
+campos:
+  - nombre: CLA_ESTATUS_ACTIVO
+    descripcion: Clave del estatus activo.
+    tipo: INT
+  - nombre: NOM_ESTATUS_ACTIVO
+    descripcion: Nombre del estatus activo.
+    tipo: VARCHAR

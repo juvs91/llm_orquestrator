@@ -1,0 +1,186 @@
+vista: stg_tescatcupdatospago
+descripcion: Vista generada a partir de la tabla dbo_TesCatCUPDatosPago
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clabe
+    descripcion: Clave Bancaria Estandarizada (CLABE)
+    tipo: STRING
+  - nombre: esach
+    descripcion: Indicador de ACH (Automatised Clearing House)
+    tipo: INT64
+  - nombre: achaba
+    descripcion: Número de cuenta ACH ABA
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de Cuenta de Proveedor
+    tipo: INT64
+  - nombre: eswire
+    descripcion: Indicador de transferencia bancaria WIRE
+    tipo: INT64
+  - nombre: esswift
+    descripcion: Indicador de SWIFT (Society for Worldwide Interbank Financial Telecommunication)
+    tipo: INT64
+  - nombre: clabanco
+    descripcion: Clave de Banco
+    tipo: INT64
+  - nombre: claswift
+    descripcion: Clave SWIFT
+    tipo: INT64
+  - nombre: clamoneda
+    descripcion: Clave de Moneda
+    tipo: INT64
+  - nombre: fechaalta
+    descripcion: Fecha de alta
+    tipo: DATETIME
+  - nombre: nombrecup
+    descripcion: Nombre de la Cuenta de Proveedor
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica
+    tipo: INT64
+  - nombre: claestatus
+    descripcion: Clave de Estatus
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave de País
+    tipo: INT64
+  - nombre: escuentaffc
+    descripcion: Indicador de Cuenta FFC (Fondo de Fomento a la Competitividad)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: numsucursal
+    descripcion: Número de sucursal
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios de Airbyte
+    tipo: STRING
+  - nombre: claestadocon
+    descripcion: Clave de Estado
+    tipo: INT64
+  - nombre: numcuentaffc
+    descripcion: Número de cuenta FFC
+    tipo: STRING
+  - nombre: subcuentaffc
+    descripcion: Subcuenta FFC
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave de Usuario que modificó el registro
+    tipo: INT64
+  - nombre: nombretitular
+    descripcion: Nombre del titular de la cuenta
+    tipo: STRING
+  - nombre: claempresaalta
+    descripcion: Clave de Empresa que dio de alta el registro
+    tipo: INT64
+  - nombre: claroutingcode
+    descripcion: Código de Routing
+    tipo: STRING
+  - nombre: clausuarioalta
+    descripcion: Clave de Usuario que dio de alta el registro
+    tipo: INT64
+  - nombre: cuentabancaria
+    descripcion: Número de cuenta bancaria
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de última modificación
+    tipo: DATETIME
+  - nombre: nombrebancoffc
+    descripcion: Nombre del banco FFC
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de Airbyte
+    tipo: INT64
+  - nombre: clacupdatospago
+    descripcion: Clave de Datos de Pago de la Cuenta de Proveedor
+    tipo: INT64
+  - nombre: clamunicipiocon
+    descripcion: Clave de Municipio
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clatipocuentacup
+    descripcion: Clave de Tipo de Cuenta de Proveedor
+    tipo: INT64
+  - nombre: clatipodoctopago
+    descripcion: Clave de Tipo de Documento de Pago
+    tipo: INT64
+  - nombre: fechacancelacion
+    descripcion: Fecha de cancelación
+    tipo: DATETIME
+  - nombre: clacupdatospago_l
+    descripcion: Clave de Datos de Pago de la Cuenta de Proveedor (legado)
+    tipo: INT64
+  - nombre: clausuariocancela
+    descripcion: Clave de Usuario que canceló el registro
+    tipo: INT64
+  - nombre: cuentabancariaach
+    descripcion: Número de cuenta bancaria ACH
+    tipo: STRING
+  - nombre: cuentahabienteffc
+    descripcion: Nombre del cuentahabiente FFC
+    tipo: STRING
+  - nombre: escuentaenviada_l
+    descripcion: Indicador de Cuenta Enviada (legado)
+    tipo: INT64
+  - nombre: motivocancelacion
+    descripcion: Motivo de cancelación
+    tipo: STRING
+  - nombre: cartaresponsivaext
+    descripcion: URL de la carta responsiva externa
+    tipo: STRING
+  - nombre: documentofiscalext
+    descripcion: URL del documento fiscal externo
+    tipo: STRING
+  - nombre: esachdiferentewire
+    descripcion: Indicador de ACH diferente a WIRE
+    tipo: INT64
+  - nombre: esrechazoenviado_l
+    descripcion: Indicador de Rechazo Enviado (legado)
+    tipo: INT64
+  - nombre: nombretitularbanco
+    descripcion: Nombre del titular de la cuenta bancaria
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte
+    tipo: STRING
+  - nombre: cladepartamentoalta
+    descripcion: Clave de Departamento que dio de alta el registro
+    tipo: INT64
+  - nombre: extarchivodatospago
+    descripcion: URL del archivo de datos de pago externo
+    tipo: STRING
+  - nombre: clabancointermediario
+    descripcion: Clave de Banco Intermediario
+    tipo: INT64
+  - nombre: clacupdatospagoorigen
+    descripcion: Clave de Origen de Datos de Pago de la Cuenta de Proveedor
+    tipo: INT64
+  - nombre: comprobantebanxicoext
+    descripcion: URL del comprobante de Banxico externo
+    tipo: STRING
+  - nombre: fechaultimaautorizacion
+    descripcion: Fecha de la última autorización
+    tipo: DATETIME
+  - nombre: fechaultimamoddatospago
+    descripcion: Fecha de la última modificación de datos de pago
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de Airbyte
+    tipo: STRING
+  - nombre: esbancointermediariodefault
+    descripcion: Indicador de Banco Intermediario por defecto
+    tipo: INT64

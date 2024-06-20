@@ -1,0 +1,9 @@
+vista: MST_TIPO_DESTINO_VW
+descripcion: Vista materializada que presenta los tipos de destino junto con sus códigos.
+campos:
+  - nombre: CLA_TIPO_DESTINO
+    descripcion: Clave del tipo de destino.
+    tipo: INT
+  - nombre: NOM_TIPO_DESTINO
+    descripcion: Nombre descriptivo del tipo de destino.
+    tipo: VARCHAR(255) 

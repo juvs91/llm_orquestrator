@@ -1,0 +1,57 @@
+vista: stg_pldrelenfoque
+descripcion: Vista generada por DBT a partir de la tabla PLDSch_PldRelEnfoque
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: claenfoque
+    descripcion: Clave de enfoque
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: claenfoquedet
+    descripcion: Clave de detalle de enfoque
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave de usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

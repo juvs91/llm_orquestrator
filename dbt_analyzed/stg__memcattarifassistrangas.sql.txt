@@ -1,0 +1,54 @@
+vista: stg_memcattarifassistrangas
+descripcion: Vista generada por DBT a partir de la tabla MemSch_MemCatTarifasSISTRANGAS
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: valor
+    descripcion: Valor de la tarifa
+    tipo: FLOAT64
+  - nombre: fechafin
+    descripcion: Fecha de finalización de la tarifa
+    tipo: DATETIME
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: fechainicio
+    descripcion: Fecha de inicio de la tarifa
+    tipo: DATETIME
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clatransporte
+    descripcion: Clave foránea a la tabla de transportes
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: clatarifassistrangas
+    descripcion: Clave primaria de la tabla de tarifas de SISTRANGAS
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

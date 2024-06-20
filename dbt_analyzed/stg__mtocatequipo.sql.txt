@@ -1,0 +1,172 @@
+vista: stg_mtocatequipo
+descripcion: Vista generada por DBT para la tabla MtoSch_MtoCatEquipo
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: conats
+    descripcion: Clave foránea a la tabla ConAts
+    tipo: INT64
+  - nombre: conatt
+    descripcion: Clave foránea a la tabla ConAtt
+    tipo: INT64
+  - nombre: claarea
+    descripcion: Clave foránea a la tabla ClaArea
+    tipo: INT64
+  - nombre: noserie
+    descripcion: Número de serie del equipo
+    tipo: STRING
+  - nombre: noaplica
+    descripcion: Indica si el equipo no aplica para algún criterio (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: vidautil
+    descripcion: Vida útil del equipo en años
+    tipo: FLOAT64
+  - nombre: claequipo
+    descripcion: Clave primaria de la tabla ClaEquipo
+    tipo: INT64
+  - nombre: escritico
+    descripcion: Indica si el equipo es crítico (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: nomequipo
+    descripcion: Nombre del equipo
+    tipo: STRING
+  - nombre: secuencia
+    descripcion: Número de secuencia del equipo
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el equipo está dado de baja lógica (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: clamaquina
+    descripcion: Clave foránea a la tabla ClaMaquina
+    tipo: STRING
+  - nombre: clasubarea
+    descripcion: Clave foránea a la tabla ClaSubArea
+    tipo: INT64
+  - nombre: esensamble
+    descripcion: Indica si el equipo es un ensamble (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: clagenerico
+    descripcion: Clave foránea a la tabla ClaGenerico
+    tipo: INT64
+  - nombre: fechacompra
+    descripcion: Fecha de compra del equipo
+    tipo: DATETIME
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o PC que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: cambiorutasn
+    descripcion: Indica si se cambió la ruta del equipo (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla ClaUbicacion
+    tipo: INT64
+  - nombre: nomapeopalsn
+    descripcion: Indica si el equipo no aplica para el personal (valor booleano)
+    tipo: BOOL
+  - nombre: claequipotipo
+    descripcion: Clave foránea a la tabla ClaEquipoTipo
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla ClaUsuarioMod
+    tipo: INT64
+  - nombre: observaciones
+    descripcion: Observaciones sobre el equipo
+    tipo: STRING
+  - nombre: clagrupoequipo
+    descripcion: Clave foránea a la tabla ClaGrupoEquipo
+    tipo: INT64
+  - nombre: consumoporhora
+    descripcion: Consumo del equipo por hora
+    tipo: INT64
+  - nombre: datosproveedor
+    descripcion: Datos del proveedor del equipo
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: ordenhorometro
+    descripcion: Orden del horómetro del equipo
+    tipo: INT64
+  - nombre: valorreemplazo
+    descripcion: Valor de reemplazo del equipo
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: cladepartamento
+    descripcion: Clave foránea a la tabla ClaDepartamento
+    tipo: INT64
+  - nombre: clatipogarantia
+    descripcion: Clave foránea a la tabla ClaTipoGarantia
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del equipo
+    tipo: DATETIME
+  - nombre: claestatusequipo
+    descripcion: Clave foránea a la tabla ClaEstatusEquipo
+    tipo: INT64
+  - nombre: codigofabricante
+    descripcion: Código del fabricante del equipo
+    tipo: STRING
+  - nombre: controlcalidadsn
+    descripcion: Indica si el equipo está sujeto a control de calidad (valor booleano)
+    tipo: BOOL
+  - nombre: fechafingarantia
+    descripcion: Fecha de fin de la garantía del equipo
+    tipo: DATETIME
+  - nombre: fechainstalacion
+    descripcion: Fecha de instalación del equipo
+    tipo: DATETIME
+  - nombre: claunidadmedidapi
+    descripcion: Clave foránea a la tabla ClaUnidadMedidaPI
+    tipo: INT64
+  - nombre: potenciainstalada
+    descripcion: Potencia instalada del equipo
+    tipo: INT64
+  - nombre: claequipopertenece
+    descripcion: Clave foránea a la tabla ClaEquipoPertenece
+    tipo: INT64
+  - nombre: localizacionfisica
+    descripcion: Localización física del equipo
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó por última vez el registro
+    tipo: STRING
+  - nombre: codigomantenimiento
+    descripcion: Código de mantenimiento del equipo
+    tipo: STRING
+  - nombre: esllevamotorizacion
+    descripcion: Indica si el equipo lleva motorización (valor booleano representado como entero)
+    tipo: INT64
+  - nombre: fechainiciogarantia
+    descripcion: Fecha de inicio de la garantía del equipo
+    tipo: DATETIME
+  - nombre: clanominaresponsable
+    descripcion: Clave foránea a la tabla ClaNominaResponsable
+    tipo: INT64
+  - nombre: claempresaresponsable
+    descripcion: Clave foránea a la tabla ClaEmpresaResponsable
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claalimentacionelectrica
+    descripcion: Clave foránea a la tabla ClaAlimentacionElectrica
+    tipo: INT64
+  - nombre: clatrabajadorresponsable
+    descripcion: Clave foránea a la tabla ClaTrabajadorResponsable
+    tipo: INT64
+

@@ -1,0 +1,66 @@
+vista: stg_eaacatcategoria
+descripcion: Vista generada por DBT para la tabla EAASch_EAACatCategoria
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales extraídos por Airbyte
+    tipo: JSON
+  - nombre: icon
+    descripcion: Icono asociado a la categoría
+    tipo: STRING
+  - nombre: color
+    descripcion: Color asociado a la categoría
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la categoría está dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó la categoría
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen
+    tipo: STRING
+  - nombre: clacategoria
+    descripcion: Clave única de la categoría
+    tipo: INT64
+  - nombre: cladimension
+    descripcion: Clave foránea a la tabla de dimensiones
+    tipo: INT64
+  - nombre: nomcategoria
+    descripcion: Nombre completo de la categoría
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó la categoría
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para la replicación incremental de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en la que se dio de baja lógica la categoría
+    tipo: DATETIME
+  - nombre: clatipocategoria
+    descripcion: Clave foránea al tipo de categoría
+    tipo: INT64
+  - nombre: nomcategoriacorto
+    descripcion: Nombre corto de la categoría
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: clacategoriaequivalente
+    descripcion: Clave foránea a una categoría equivalente
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos capturado por Airbyte
+    tipo: STRING

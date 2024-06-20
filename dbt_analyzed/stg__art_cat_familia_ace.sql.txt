@@ -1,0 +1,84 @@
+vista: stg_artcatfamiliaace
+descripcion: Vista generada por DBT a partir de la tabla dbo_ArtCatFamiliaAce en la fuente src_prod_kraken_abt.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte para cada registro.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo extrajo Airbyte los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: espt
+    descripcion: Valor entero que indica si la familia de artículos está activa (1) o no (0).
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha y hora en que se creó el registro.
+    tipo: DATETIME
+  - nombre: nomcorto
+    descripcion: Nombre corto de la familia de artículos.
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la familia de artículos está dada de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave única que identifica a la familia de artículos.
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro (LSN) del cambio de datos capturados (CDC).
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que creó el registro.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez.
+    tipo: INT64
+  - nombre: escertificado
+    descripcion: Indica si la familia de artículos requiere certificado (1) o no (0).
+    tipo: INT64
+  - nombre: clagrupocosteo
+    descripcion: Clave del grupo de costeo al que pertenece la familia de artículos.
+    tipo: INT64
+  - nombre: escapturagrado
+    descripcion: Indica si la familia de artículos captura el grado (1) o no (0).
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para rastrear los cambios incrementales.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja lógica la familia de artículos.
+    tipo: DATETIME
+  - nombre: escapturacalibre
+    descripcion: Indica si la familia de artículos captura el calibre (1) o no (0).
+    tipo: INT64
+  - nombre: escapturadefecto
+    descripcion: Indica si la familia de artículos captura el defecto (1) o no (0).
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario al que pertenece la familia de artículos.
+    tipo: INT64
+  - nombre: esproducidoacerias
+    descripcion: Indica si la familia de artículos es producida por acerías (1) o no (0).
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro (si se eliminó).
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez.
+    tipo: STRING
+  - nombre: claveautomatizacion
+    descripcion: Clave de automatización asociada a la familia de artículos.
+    tipo: INT64
+  - nombre: escapturapresentacion
+    descripcion: Indica si la familia de artículos captura la presentación (1) o no (0).
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

@@ -1,0 +1,30 @@
+vista: stg_atiartcatubicacionpresente
+descripcion: Vista generada por DBT a partir de la tabla ATISch_AtiArtCatUbicacionPresente
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios (LSN)
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Posición del cursor en el flujo de cambios
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando el registro fue eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando el registro fue actualizado
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio
+    tipo: STRING

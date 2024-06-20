@@ -1,0 +1,72 @@
+vista: stg_artcatcaracteristica
+descripcion: Vista generada por DBT para la tabla dbo_ArtCatCaracteristica
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: separador
+    descripcion: Carácter separador utilizado en la tabla original
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos capturado
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: observaciones
+    descripcion: Campo de texto para observaciones adicionales
+    tipo: STRING
+  - nombre: esporubicacion
+    descripcion: Indica si la característica es por ubicación (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clacaracteristica
+    descripcion: Clave primaria de la característica
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave foránea al tipo de inventario
+    tipo: INT64
+  - nombre: nomcaracteristica
+    descripcion: Nombre de la característica
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó el registro por última vez
+    tipo: STRING
+  - nombre: clatipocaracteristica
+    descripcion: Clave foránea al tipo de característica
+    tipo: INT64
+  - nombre: clagrupocaracteristica
+    descripcion: Clave foránea al grupo de características
+    tipo: INT64
+  - nombre: nomcaracteristicaingles
+    descripcion: Nombre de la característica en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: nomcaracteristicaotroidioma
+    descripcion: Nombre de la característica en otro idioma
+    tipo: STRING

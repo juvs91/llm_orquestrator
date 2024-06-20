@@ -1,0 +1,108 @@
+vista: stg_pldcatpoliticainventariocablesenc
+descripcion: Vista generada por DBT para la tabla PLDSch_PldCatPoliticaInventarioCablesEnc
+campos:
+  - nombre: pk_pldcatpoliticainventariocablesenc
+    descripcion: Surrogate key generada por DBT
+    tipo: INT64
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: cantidad
+    descripcion: Cantidad
+    tipo: FLOAT64
+  - nombre: claunidad
+    descripcion: Clave foránea a la tabla de unidades
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de familias de productos
+    tipo: INT64
+  - nombre: claproducto
+    descripcion: Clave foránea a la tabla de productos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de origen de la tabla de origen
+    tipo: STRING
+  - nombre: claseleccion
+    descripcion: Clave foránea a la tabla de selecciones
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave foránea a la tabla de usuarios que insertaron el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: numerounidades
+    descripcion: Número de unidades
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor utilizado por Airbyte para la replicación incremental de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: comentariosfinal
+    descripcion: Comentarios finales
+    tipo: STRING
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de tipos de inventario
+    tipo: INT64
+  - nombre: clausuarioinicial
+    descripcion: Clave foránea a la tabla de usuarios que crearon el registro
+    tipo: INT64
+  - nombre: fechaaltapolitica
+    descripcion: Fecha de alta de la política
+    tipo: DATETIME
+  - nombre: fechafintemporada
+    descripcion: Fecha de fin de temporada
+    tipo: DATETIME
+  - nombre: cantidadtotalfinal
+    descripcion: Cantidad total final
+    tipo: FLOAT64
+  - nombre: claestatuspolitica
+    descripcion: Clave foránea a la tabla de estatus de políticas
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó por última vez el registro para su eliminación
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez el registro
+    tipo: STRING
+  - nombre: numerounidadesfinal
+    descripcion: Número de unidades final
+    tipo: INT64
+  - nombre: clarazoncambioinvfinal
+    descripcion: Clave foránea a la tabla de razones de cambio de inventario final
+    tipo: INT64
+  - nombre: fechafintemporadafinal
+    descripcion: Fecha de fin de temporada final
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: idpoliticainventariocables
+    descripcion: Clave primaria de la tabla de políticas de inventario de cables
+    tipo: INT64
+  - nombre: claclasificacioninventariofinal
+    descripcion: Clave foránea a la tabla de clasificación de inventario final
+    tipo: INT64
+  - nombre: claclasificacioninventarioinicial
+    descripcion: Clave foránea a la tabla de clasificación de inventario inicial
+    tipo: INT64

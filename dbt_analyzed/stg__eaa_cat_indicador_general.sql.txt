@@ -1,0 +1,60 @@
+vista: stg_eaacatindicadorgeneral
+descripcion: Vista generada por DBT para la tabla EAACatIndicadorGeneral.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales extraídos por Airbyte.
+    tipo: JSON
+  - nombre: color
+    descripcion: Color asociado al indicador.
+    tipo: STRING
+  - nombre: secuencia
+    descripcion: Número de secuencia del indicador.
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la base de datos de origen.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja lógica el registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez.
+    tipo: STRING
+  - nombre: claindicadorgeneral
+    descripcion: Clave primaria de la tabla EAACatIndicadorGeneral.
+    tipo: INT64
+  - nombre: nomindicadorgeneral
+    descripcion: Nombre del indicador general.
+    tipo: STRING
+  - nombre: claveindicadorgeneral
+    descripcion: Clave única para el indicador general.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

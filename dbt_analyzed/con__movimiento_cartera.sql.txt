@@ -1,0 +1,36 @@
+vista: MST_MOVIMIENTO_CARTERA_VW
+descripcion: Vista que contiene la información de los movimientos de cartera.
+campos:
+  - nombre: CLA_MOV_CARTERA
+    descripcion: Clave del movimiento de cartera.
+    tipo: INT
+  - nombre: NOM_MOV_CARTERA
+    descripcion: Nombre del movimiento de cartera.
+    tipo: STRING
+  - nombre: CLA_GPO_MOV_CARTERA
+    descripcion: Clave del grupo del movimiento de cartera.
+    tipo: INT
+  - nombre: NOM_GPO_MOV_CARTERA
+    descripcion: Nombre del grupo del movimiento de cartera.
+    tipo: STRING
+  - nombre: CLA_TIPO_MOV
+    descripcion: Clave del tipo de movimiento.
+    tipo: INT
+  - nombre: NOM_TIPO_MOV
+    descripcion: Nombre del tipo de movimiento.
+    tipo: STRING
+  - nombre: APLICA_INGRESOS_SN
+    descripcion: Indica si el movimiento aplica a ingresos (SI/NO).
+    tipo: STRING
+  - nombre: APLICA_CARTERA_SN
+    descripcion: Indica si el movimiento aplica a cartera (SI/NO).
+    tipo: STRING
+  - nombre: APLICA_COSTO_INTEGRAL_SN
+    descripcion: Indica si el movimiento aplica a costo integral (SI/NO).
+    tipo: STRING
+  - nombre: APLICA_OTROS_INGRESOS_SN
+    descripcion: Indica si el movimiento aplica a otros ingresos (SI/NO).
+    tipo: STRING
+  - nombre: FILIAL_EMBARQUE_SN
+    descripcion: Indica si el movimiento es de filial de embarque (SI/NO).
+    tipo: STRING

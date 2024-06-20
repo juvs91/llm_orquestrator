@@ -1,0 +1,156 @@
+vista: stg_vtacatconsignado
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatConsignado
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: calle
+    descripcion: Calle del consignado
+    tipo: STRING
+  - nombre: taxid
+    descripcion: Tax ID del consignado
+    tipo: STRING
+  - nombre: cucsfid
+    descripcion: ID de CUCSF del consignado
+    tipo: STRING
+  - nombre: eslocal
+    descripcion: Indica si el consignado es local (1) o no (0)
+    tipo: INT64
+  - nombre: espuela
+    descripcion: Espuela del consignado
+    tipo: STRING
+  - nombre: contacto
+    descripcion: Nombre del contacto del consignado
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta del consignado
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el consignado está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: cuentacsid
+    descripcion: ID de cuenta CS del consignado
+    tipo: STRING
+  - nombre: cuentasfid
+    descripcion: ID de cuenta SF del consignado
+    tipo: STRING
+  - nombre: entrecalles
+    descripcion: Calles entre las que se encuentra el consignado
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre de la PC donde se modificó el registro
+    tipo: STRING
+  - nombre: numexterior
+    descripcion: Número exterior del consignado
+    tipo: STRING
+  - nombre: numinterior
+    descripcion: Número interior del consignado
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la tabla de origen
+    tipo: STRING
+  - nombre: esautofleteo
+    descripcion: Indica si el consignado utiliza autofleteo (1) o no (0)
+    tipo: INT64
+  - nombre: notaembarque
+    descripcion: Nota de embarque del consignado
+    tipo: STRING
+  - nombre: claconsignado
+    descripcion: Clave del consignado
+    tipo: INT64
+  - nombre: clamotivobaja
+    descripcion: Clave del motivo de baja del consignado
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: esnocargariva
+    descripcion: Indica si no se debe cargar IVA al consignado (1) o sí (0)
+    tipo: INT64
+  - nombre: claciudadunico
+    descripcion: Clave única de la ciudad del consignado
+    tipo: INT64
+  - nombre: claferroviaria
+    descripcion: Clave de la ferroviaria del consignado
+    tipo: INT64
+  - nombre: comentariobaja
+    descripcion: Comentario de la baja del consignado
+    tipo: STRING
+  - nombre: consignadosfid
+    descripcion: ID de SF del consignado
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de CDC de Airbyte
+    tipo: INT64
+  - nombre: claciudadlegacy
+    descripcion: Clave legacy de la ciudad del consignado
+    tipo: INT64
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente del consignado
+    tipo: INT64
+  - nombre: clacodigopostal
+    descripcion: Clave del código postal del consignado
+    tipo: INT64
+  - nombre: clacoloniaunico
+    descripcion: Clave única de la colonia del consignado
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del consignado
+    tipo: DATETIME
+  - nombre: ladanotificante
+    descripcion: Lado del notificante
+    tipo: STRING
+  - nombre: clamedioembarque
+    descripcion: Clave del medio de embarque del consignado
+    tipo: INT64
+  - nombre: essiemprevigente
+    descripcion: Indica si el consignado siempre está vigente (1) o no (0)
+    tipo: INT64
+  - nombre: nombreconsignado
+    descripcion: Nombre del consignado
+    tipo: STRING
+  - nombre: mc_consignado_id
+    descripcion: ID de MC del consignado
+    tipo: STRING
+  - nombre: correonotificante
+    descripcion: Correo electrónico del notificante
+    tipo: STRING
+  - nombre: nombrenotificante
+    descripcion: Nombre del notificante
+    tipo: STRING
+  - nombre: esdomicilioenlegal
+    descripcion: Indica si el domicilio es el legal (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la fuente
+    tipo: STRING
+  - nombre: codigopostalimprime
+    descripcion: Código postal para imprimir
+    tipo: STRING
+  - nombre: telefononotificante
+    descripcion: Teléfono del notificante
+    tipo: STRING
+  - nombre: claestatusconsignado
+    descripcion: Clave del estatus del consignado
+    tipo: INT64
+  - nombre: esgeneracargoimpuesto
+    descripcion: Indica si se debe generar cargo de impuesto (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: claveinternacionalnotificante
+    descripcion: Clave internacional del notificante
+    tipo: STRING

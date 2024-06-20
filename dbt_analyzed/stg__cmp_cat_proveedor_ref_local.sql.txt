@@ -1,0 +1,123 @@
+vista: stg_cmpcatproveedorreflocal
+descripcion: Vista generada por DBT para la tabla dbo_CmpCatProveedorRefLocal
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando se extrajo el registro
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: calle
+    descripcion: Calle del proveedor
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la ocupación
+    tipo: INT64
+  - nombre: claiva
+    descripcion: Clave del IVA
+    tipo: INT64
+  - nombre: nombre
+    descripcion: Nombre del proveedor
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: esactivo
+    descripcion: Indica si el proveedor está activo (1) o no (0)
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: plazopago
+    descripcion: Plazo de pago en días
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el proveedor está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clacolonia
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: claestatus
+    descripcion: Clave del estatus
+    tipo: INT64
+  - nombre: claincoterm
+    descripcion: Clave del incoterm
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de origen
+    tipo: STRING
+  - nombre: claformapago
+    descripcion: Clave de la forma de pago
+    tipo: INT64
+  - nombre: clamunicipio
+    descripcion: Clave del municipio
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: Clave del proveedor
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal
+    tipo: STRING
+  - nombre: espagocheque
+    descripcion: Indica si el pago es con cheque (1) o no (0)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: espenalizable
+    descripcion: Indica si el proveedor es penalizable (1) o no (0)
+    tipo: INT64
+  - nombre: justificacion
+    descripcion: Justificación
+    tipo: STRING
+  - nombre: clacalidadprov
+    descripcion: Clave de la calidad del proveedor
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: numeroexterior
+    descripcion: Número exterior
+    tipo: STRING
+  - nombre: numerointerior
+    descripcion: Número interior
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clacondicionpago
+    descripcion: Clave de la condición de pago
+    tipo: INT64
+  - nombre: clatipoproveedor
+    descripcion: Clave del tipo de proveedor
+    tipo: INT64
+  - nombre: clatipocalendario
+    descripcion: Clave del tipo de calendario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando se marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de la última actualización del registro
+    tipo: STRING
+  - nombre: motivodesactivacion
+    descripcion: Motivo de la desactivación
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: esgenerapedidosimportacion
+    descripcion: Indica si se generan pedidos de importación (1) o no (0)
+    tipo: INT64

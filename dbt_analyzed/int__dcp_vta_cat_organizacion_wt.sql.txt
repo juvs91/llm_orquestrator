@@ -1,0 +1,102 @@
+vista: de_duplicacion_vtacatorganizacionwt
+descripcion: Vista limpia y deduplicada de la tabla vta_cat_organizacion_wt
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: string
+  - nombre: _airbyte_extracted_at
+    descripcion: Timestamp de cuando Airbyte extrajo los datos
+    tipo: timestamp
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: string
+  - nombre: email
+    descripcion: Correo electrónico de la organización
+    tipo: string
+  - nombre: nivel
+    descripcion: Nivel de la organización
+    tipo: string
+  - nombre: clazona
+    descripcion: Clave de la zona a la que pertenece la organización
+    tipo: string
+  - nombre: idorden
+    descripcion: ID de orden de la organización
+    tipo: int
+  - nombre: clagrupo
+    descripcion: Clave del grupo al que pertenece la organización
+    tipo: string
+  - nombre: fechains
+    descripcion: Fecha de creación de la organización
+    tipo: timestamp
+  - nombre: bajalogica
+    descripcion: Indica si la organización está dada de baja lógica (1: Sí, 0: No)
+    tipo: int
+  - nombre: clagerencia
+    descripcion: Clave de la gerencia a la que pertenece la organización
+    tipo: string
+  - nombre: clatipozona
+    descripcion: Clave del tipo de zona a la que pertenece la organización
+    tipo: string
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó la organización por última vez
+    tipo: string
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: long
+  - nombre: cladireccion
+    descripcion: Clave de la dirección de la organización
+    tipo: string
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la organización por última vez
+    tipo: string
+  - nombre: nombretitular
+    descripcion: Nombre del titular de la organización
+    tipo: string
+  - nombre: claflujocuenta
+    descripcion: Clave del flujo de cuenta de la organización
+    tipo: string
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación de la organización
+    tipo: timestamp
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: string
+  - nombre: claorganizacion
+    descripcion: Clave única de la organización
+    tipo: string
+  - nombre: clasubdireccion
+    descripcion: Clave de la subdirección de la organización
+    tipo: string
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica de la organización
+    tipo: timestamp
+  - nombre: nomorganizacion
+    descripcion: Nombre de la organización
+    tipo: string
+  - nombre: telefonocelular
+    descripcion: Número de teléfono celular de la organización
+    tipo: string
+  - nombre: clausuariotitular
+    descripcion: Clave del usuario titular de la organización
+    tipo: string
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Timestamp de cuando Airbyte detectó la eliminación del registro
+    tipo: timestamp
+  - nombre: _ab_cdc_updated_at
+    descripcion: Timestamp de cuando Airbyte detectó la última actualización del registro
+    tipo: timestamp
+  - nombre: clagerenciaregional
+    descripcion: Clave de la gerencia regional a la que pertenece la organización
+    tipo: string
+  - nombre: claniveltopelistaprecio
+    descripcion: Clave del nivel tope de lista de precios de la organización
+    tipo: string
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: long
+  - nombre: claniveltopelistadescuento
+    descripcion: Clave del nivel tope de lista de descuentos de la organización
+    tipo: string
+  - nombre: escuentaautorizacionrequerida
+    descripcion: Indica si la cuenta requiere autorización (1: Sí, 0: No)
+    tipo: int

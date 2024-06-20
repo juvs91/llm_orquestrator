@@ -1,0 +1,78 @@
+vista: stg_calcatindicador
+descripcion: Vista generada a partir de la tabla CalSch_CalCatIndicador
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: formula
+    descripcion: Fórmula del indicador
+    tipo: STRING
+  - nombre: esglobal
+    descripcion: Indica si el indicador es global (1) o no (0)
+    tipo: INT64
+  - nombre: espublico
+    descripcion: Indica si el indicador es público (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el indicador está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el indicador
+    tipo: STRING
+  - nombre: vistaorigen
+    descripcion: Vista de origen del indicador
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claindicador
+    descripcion: Clave del indicador
+    tipo: INT64
+  - nombre: nomindicador
+    descripcion: Nombre del indicador
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el indicador
+    tipo: INT64
+  - nombre: indicadordesc
+    descripcion: Descripción del indicador
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del indicador
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del indicador
+    tipo: DATETIME
+  - nombre: clagrupoindicador
+    descripcion: Clave del grupo al que pertenece el indicador
+    tipo: INT64
+  - nombre: claunidadindicador
+    descripcion: Clave de la unidad del indicador
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: clatipocalculoindicador
+    descripcion: Clave del tipo de cálculo del indicador
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clagrupoindicadorreporte
+    descripcion: Clave del grupo al que pertenece el indicador en el reporte
+    tipo: INT64
+  - nombre: clatipoprogramarecalculo
+    descripcion: Clave del tipo de programación del recálculo del indicador
+    tipo: INT64

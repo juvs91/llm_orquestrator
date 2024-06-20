@@ -1,0 +1,23 @@
+vista: stg_catmarca
+descripcion: Esta vista selecciona todos los campos de la tabla VtaSch_VtaCatMarca en el esquema src_prod_kraken_abt.
+campos:
+  - nombre: CveCatMarca
+    descripcion: Clave de la categoría de marca.
+    tipo: INTEGER
+  - nombre: NomCatMarca
+    descripcion: Nombre de la categoría de marca.
+    tipo: VARCHAR
+  - nombre: UsuarioCreacion
+    descripcion: Usuario que creó el registro.
+    tipo: VARCHAR
+  - nombre: FechaCreacion
+    descripcion: Fecha de creación del registro.
+    tipo: TIMESTAMP
+  - nombre: UsuarioModificacion
+    descripcion: Usuario que modificó el registro por última vez.
+    tipo: VARCHAR
+  - nombre: FechaModificacion
+    descripcion: Fecha de la última modificación del registro.
+    tipo: TIMESTAMP
+
+**Nota:** Los tipos de datos son inferidos y pueden variar dependiendo de la configuración de tu base de datos. 

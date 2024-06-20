@@ -1,0 +1,75 @@
+vista: stg_artcatclasifgeneral
+descripcion: Vista intermediate de la tabla dbo.ArtCatClasifGeneral
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte recuperó los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: aplicamarca
+    descripcion: Indica si se aplica marca (1) o no (0)
+    tipo: INT64
+  - nombre: esmaquinado
+    descripcion: Indica si es maquinado (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio
+    tipo: STRING
+  - nombre: aplicafactor
+    descripcion: Indica si se aplica factor (1) o no (0)
+    tipo: INT64
+  - nombre: aplicauniprod
+    descripcion: Indica si se aplica unidad de producción (1) o no (0)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por el CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: claclasifgeneral
+    descripcion: Clave de la clasificación general
+    tipo: INT64
+  - nombre: clatiposolicitud
+    descripcion: Clave del tipo de solicitud
+    tipo: INT64
+  - nombre: nomclasifgeneral
+    descripcion: Nombre de la clasificación general en mayúsculas
+    tipo: STRING
+  - nombre: aplicapesoteorico
+    descripcion: Indica si se aplica peso teórico (1) o no (0)
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: nomclasifgeneralingles
+    descripcion: Nombre de la clasificación general en inglés en mayúsculas
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: nomclasifgeneralotroidioma
+    descripcion: Nombre de la clasificación general en otro idioma en mayúsculas
+    tipo: STRING

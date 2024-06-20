@@ -1,0 +1,102 @@
+vista: de_duplicacion_vtatraestatuscarteracliente2
+descripcion: Vista que procesa y agrega información de la tabla stg__vta_tra_estatus_cartera_cliente2, calculando el campo 'nomestatuscarteracuc' basado en la columna 'estatusfinal'.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de la fuente de datos.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo se extrajo el registro de la fuente.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales asociados con el registro.
+    tipo: JSON
+  - nombre: clamoneda
+    descripcion: Clave de la moneda.
+    tipo: INTEGER
+  - nombre: sobregiro
+    descripcion: Indicador de sobregiro (1: Sí, 0: No).
+    tipo: INTEGER
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambio de datos de Airbyte.
+    tipo: NUMERIC
+  - nombre: estatusfinal
+    descripcion: Estatus final de la cartera del cliente (1: Verde, 2: Amarillo, 3: Rojo).
+    tipo: INTEGER
+  - nombre: estatuspaso1
+    descripcion: Estatus del paso 1.
+    tipo: INTEGER
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INTEGER
+  - nombre: limitecredito
+    descripcion: Límite de crédito del cliente.
+    tipo: NUMERIC
+  - nombre: porcsobregiro
+    descripcion: Porcentaje de sobregiro.
+    tipo: NUMERIC
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación.
+    tipo: DATE
+  - nombre: importecartera
+    descripcion: Importe total de la cartera.
+    tipo: NUMERIC
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: TEXT
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente.
+    tipo: INTEGER
+  - nombre: estatussobregiro
+    descripcion: Estatus del sobregiro.
+    tipo: INTEGER
+  - nombre: porcfactvencidas
+    descripcion: Porcentaje de facturas vencidas.
+    tipo: NUMERIC
+  - nombre: claofertaservicio
+    descripcion: Clave de la oferta de servicio.
+    tipo: INTEGER
+  - nombre: creditodisponible
+    descripcion: Crédito disponible del cliente.
+    tipo: NUMERIC
+  - nombre: estatusdiasatraso
+    descripcion: Estatus de días de atraso.
+    tipo: INTEGER
+  - nombre: tiene45diasatraso
+    descripcion: Indicador de si tiene 45 días de atraso (1: Sí, 0: No).
+    tipo: INTEGER
+  - nombre: estatusfinalmesant
+    descripcion: Estatus final del mes anterior.
+    tipo: INTEGER
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro de la fuente (si se eliminó).
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en la fuente.
+    tipo: TIMESTAMP
+  - nombre: estatusfactvencidas
+    descripcion: Estatus de las facturas vencidas.
+    tipo: INTEGER
+  - nombre: estatusrecuperacion
+    descripcion: Estatus de recuperación.
+    tipo: INTEGER
+  - nombre: importefactvencidas
+    descripcion: Importe de las facturas vencidas.
+    tipo: NUMERIC
+  - nombre: tienecontadosatpend
+    descripcion: Indicador de si tiene contados atrasados pendientes (1: Sí, 0: No).
+    tipo: INTEGER
+  - nombre: porcdiasatrasomesant
+    descripcion: Porcentaje de días de atraso del mes anterior.
+    tipo: NUMERIC
+  - nombre: porcrecuperacionmesant
+    descripcion: Porcentaje de recuperación del mes anterior.
+    tipo: NUMERIC
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: NUMERIC
+  - nombre: nomestatuscarteracuc
+    descripcion: Nombre del estatus de la cartera del cliente calculado a partir de 'estatusfinal' ('VERDE', 'AMARILLO', 'ROJO', 'OTROS').
+    tipo: TEXT

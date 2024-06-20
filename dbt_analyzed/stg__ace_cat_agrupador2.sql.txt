@@ -1,0 +1,42 @@
+vista: stg_acecatagrupador2
+descripcion: Vista generada por DBT a partir de la tabla AceSch_AceCatAgrupador2
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden de la categoría de agrupador
+    tipo: INT64
+  - nombre: fechaultmod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: claagrupador
+    descripcion: Clave de agrupador
+    tipo: INT64
+  - nombre: claagrupador2
+    descripcion: Clave de agrupador 2
+    tipo: INT64
+  - nombre: descagrupador2
+    descripcion: Descripción de la categoría de agrupador 2
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

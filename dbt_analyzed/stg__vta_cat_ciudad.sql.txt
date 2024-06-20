@@ -1,0 +1,72 @@
+vista: stg_vtacatciudad
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatCiudad
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: claciudad
+    descripcion: Clave de la ciudad
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: nomciudad
+    descripcion: Nombre de la ciudad en mayúsculas
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: fronterasn
+    descripcion: Indicador de ciudad fronteriza (1: sí, 0: no)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: porcentajeiva
+    descripcion: Porcentaje del IVA aplicable a la ciudad
+    tipo: FLOAT64
+  - nombre: claciudadunico
+    descripcion: Clave única de la ciudad
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claciudadlegacy
+    descripcion: Clave de la ciudad en el sistema legacy
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

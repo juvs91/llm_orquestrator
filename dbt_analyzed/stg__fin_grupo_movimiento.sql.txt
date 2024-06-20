@@ -1,0 +1,9 @@
+vista: stg_fin_grupo_movimiento
+descripcion: Vista que estandariza los campos de la tabla fin_grupo_movimiento
+campos:
+  - nombre: cla_grupo_movimiento
+    descripcion: Clave del grupo de movimiento
+    tipo: INT64
+  - nombre: nom_grupo_movimiento
+    descripcion: Nombre del grupo de movimiento en mayúsculas
+    tipo: STRING

@@ -1,0 +1,69 @@
+vista: stg_opecatseccion
+descripcion: Vista generada por DBT a partir de la tabla dbo_OpeCatSeccion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si la sección está dada de baja (1) o no (0)
+    tipo: INT64
+  - nombre: claalmacen
+    descripcion: Clave del almacén al que pertenece la sección
+    tipo: INT64
+  - nombre: claseccion
+    descripcion: Clave única de la sección
+    tipo: INT64
+  - nombre: nomseccion
+    descripcion: Nombre de la sección
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó la sección
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: LSN de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación a la que pertenece la sección
+    tipo: INT64
+  - nombre: clasubalmacen
+    descripcion: Clave del sub almacén al que pertenece la sección
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la sección
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación de la sección
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja la sección
+    tipo: DATETIME
+  - nombre: clasubsubalmacen
+    descripcion: Clave del sub-sub almacén al que pertenece la sección
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario al que pertenece la sección
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: ultimonivelafectable
+    descripcion: Indica el último nivel afectable de la sección
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING
+  - nombre: permiteexistencianegativa
+    descripcion: Indica si la sección permite existencia negativa (1) o no (0)
+    tipo: INT64

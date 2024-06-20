@@ -1,0 +1,72 @@
+vista: stg_tescatmoneda
+descripcion: Vista generada por DBT para la tabla dbo_TesCatMoneda
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden de la moneda
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clamoneda
+    descripcion: Clave de la moneda
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: Activo)
+    tipo: INT64
+  - nombre: nommonedaen
+    descripcion: Nombre de la moneda en inglés
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: nombremoneda
+    descripcion: Nombre de la moneda en mayúsculas
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: nombreimprimir
+    descripcion: Nombre de la moneda para imprimir
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clamonedaventas
+    descripcion: Clave de la moneda utilizada en ventas
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: nombrecortomoneda
+    descripcion: Nombre corto de la moneda
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: nombrecortoblomberg
+    descripcion: Nombre corto de la moneda en Bloomberg
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

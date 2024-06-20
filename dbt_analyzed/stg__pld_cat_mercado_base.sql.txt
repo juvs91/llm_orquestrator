@@ -1,0 +1,54 @@
+vista: stg_pldcatmercadobase
+descripcion: Vista generada por DBT a partir de la tabla PLDSch_PldCatMercadoBase
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para el seguimiento de cambios de datos
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: ID del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: clamercadobase
+    descripcion: Clave única para el mercado base
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: nommercadobase
+    descripcion: Nombre del mercado base
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor utilizado por Airbyte para el seguimiento de cambios de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja lógica el registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en el origen, según lo capturado por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en el origen, según lo capturado por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento utilizado para el seguimiento de cambios de datos
+    tipo: STRING

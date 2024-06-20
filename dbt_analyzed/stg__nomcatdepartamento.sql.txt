@@ -1,0 +1,63 @@
+vista: stg_nomcatdepartamento
+descripcion: Vista generada por DBT para la tabla dbo_NomCatDepartamento
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: estatus
+    descripcion: Estatus del departamento
+    tipo: INT64
+  - nombre: clanomina
+    descripcion: Clave de la nómina
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: Activo)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: cladepartamento
+    descripcion: Clave del departamento
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: nomdepartamento
+    descripcion: Nombre del departamento
+    tipo: STRING
+  - nombre: departamentodesc
+    descripcion: Descripción del departamento
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

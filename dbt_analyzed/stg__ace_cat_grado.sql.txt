@@ -1,0 +1,66 @@
+vista: stg_acecatgrado
+descripcion: Vista generada por DBT a partir de la tabla dbo_AceCatGrado
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clagrado
+    descripcion: Clave del grado
+    tipo: INT64
+  - nombre: nomgrado
+    descripcion: Nombre del grado
+    tipo: STRING
+  - nombre: esdeacero
+    descripcion: Indica si es de acero (1) o no (0)
+    tipo: INT64
+  - nombre: esvarilla
+    descripcion: Indica si es varilla (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: nomcortogrado
+    descripcion: Nombre corto del grado
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clagrupousotipico
+    descripcion: Clave del grupo de uso típico
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: claveautomatizacion
+    descripcion: Clave de automatización
+    tipo: INT64
+  - nombre: clagruporecetachatarra
+    descripcion: Clave del grupo de receta de chatarra
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

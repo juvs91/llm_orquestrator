@@ -1,0 +1,81 @@
+vista: stg_mswcatplantilla
+descripcion: Vista generada por DBT a partir de la tabla MSWSch_MswCatPlantilla
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: prefijo
+    descripcion: Prefijo de la plantilla
+    tipo: STRING
+  - nombre: claunspc1
+    descripcion: Clave foránea a la tabla de unidades de negocio 1
+    tipo: INT64
+  - nombre: claunspc2
+    descripcion: Clave foránea a la tabla de unidades de negocio 2
+    tipo: INT64
+  - nombre: claunspc3
+    descripcion: Clave foránea a la tabla de unidades de negocio 3
+    tipo: INT64
+  - nombre: claunspc4
+    descripcion: Clave foránea a la tabla de unidades de negocio 4
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la plantilla está dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claplantilla
+    descripcion: Clave primaria de la tabla de plantillas
+    tipo: INT64
+  - nombre: nomplantilla
+    descripcion: Nombre de la plantilla
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: prefijoingles
+    descripcion: Prefijo de la plantilla en inglés
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: esdisponibleuso
+    descripcion: Indica si la plantilla está disponible para su uso (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de tipos de inventario
+    tipo: INT64
+  - nombre: prefijootroidioma
+    descripcion: Prefijo de la plantilla en otro idioma
+    tipo: STRING
+  - nombre: nomplantillaingles
+    descripcion: Nombre de la plantilla en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: nomplantillaotroidioma
+    descripcion: Nombre de la plantilla en otro idioma
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

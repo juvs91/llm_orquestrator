@@ -1,0 +1,51 @@
+vista: stg_vtacatnivelcanal
+descripcion: Vista generada a partir de la tabla VtaSch_VtaCatNivelCanal
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de la transacción de origen
+    tipo: STRING
+  - nombre: clanivelcanal
+    descripcion: Clave única del nivel de canal
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: nomnivelcanal
+    descripcion: Nombre del nivel de canal
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Posición del cursor de cambio de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: nomnivelcanaling
+    descripcion: Nombre del nivel de canal en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING

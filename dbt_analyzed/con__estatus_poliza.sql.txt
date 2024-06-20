@@ -1,0 +1,9 @@
+vista: MST_ESTATUS_POLIZA_VW
+descripcion: Vista materializada que presenta el código y nombre de los estados de las pólizas.
+campos:
+  - nombre: CLA_ESTATUS_POLIZA
+    descripcion: Clave del estado de la póliza
+    tipo: INT
+  - nombre: NOM_ESTATUS_POLIZA
+    descripcion: Nombre del estado de la póliza
+    tipo: VARCHAR

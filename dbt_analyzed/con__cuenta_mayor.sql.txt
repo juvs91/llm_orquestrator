@@ -1,0 +1,14 @@
+```yaml
+vista: MST_CUENTA_MAYOR_VW
+descripcion: Vista materializada que contiene la clasificación, nombre y número de las cuentas mayores.
+campos:
+  - nombre: CLA_CUENTA_MAYOR
+    descripcion: Código de clasificación de la cuenta mayor.
+    tipo: string
+  - nombre: NOM_CUENTA_MAYOR
+    descripcion: Nombre de la cuenta mayor.
+    tipo: string
+  - nombre: NUM_CUENTA_MAYOR
+    descripcion: Número de la cuenta mayor.
+    tipo: int
+```

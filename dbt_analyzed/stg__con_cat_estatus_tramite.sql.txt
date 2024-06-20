@@ -1,0 +1,69 @@
+vista: stg_concatestatustramite
+descripcion: Vista generada por DBT a partir de la tabla dbo_ConCatEstatusTramite
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: espagado
+    descripcion: Indica si el trámite está pagado (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el trámite tiene baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: escancelado
+    descripcion: Indica si el trámite está cancelado (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el estado del trámite
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen
+    tipo: STRING
+  - nombre: escancelable
+    descripcion: Indica si el trámite es cancelable (true) o no (false)
+    tipo: BOOL
+  - nombre: claestatustes
+    descripcion: Clave del estatus del trámite
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el estado del trámite
+    tipo: INT64
+  - nombre: esentesoreria
+    descripcion: Indica si el trámite está en tesorería (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del estado del trámite
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: escontabilizado
+    descripcion: Indica si el trámite está contabilizado (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del trámite
+    tipo: DATETIME
+  - nombre: claestatustramite
+    descripcion: Clave del estatus del trámite
+    tipo: INT64
+  - nombre: nomestatusexterno
+    descripcion: Nombre externo del estatus del trámite
+    tipo: STRING
+  - nombre: nomestatustramite
+    descripcion: Nombre del estatus del trámite
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la base de datos de origen (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la base de datos de origen
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio en la base de datos de origen
+    tipo: STRING

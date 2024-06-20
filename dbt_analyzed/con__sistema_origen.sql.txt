@@ -1,0 +1,10 @@
+vista: MST_SISTEMA_ORIGEN_VW
+descripcion: Vista materializada que presenta la clasificacion y nombre de los sistemas origen. 
+campos:
+  - nombre: CLA_SISTEMA_ORIGEN
+    descripcion: Clave del sistema origen
+    tipo: VARCHAR
+  - nombre: NOM_SISTEMA_ORIGEN
+    descripcion: Nombre completo del sistema origen
+    tipo: VARCHAR
+ 

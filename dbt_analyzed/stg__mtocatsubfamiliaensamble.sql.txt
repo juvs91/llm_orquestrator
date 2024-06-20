@@ -1,0 +1,120 @@
+vista: stg_mtocatsubfamiliaensamble
+descripcion: Vista generada por DBT para la tabla MtoSch_MtoCatSubFamiliaEnsamble
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: claequipo
+    descripcion: Clave foránea a la tabla MtoCatEquipo
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (true/false)
+    tipo: BOOL
+  - nombre: esgenerica
+    descripcion: Indica si la subfamilia de ensamble es genérica (true/false)
+    tipo: BOOL
+  - nombre: hrsdesvest
+    descripcion: Horas de desviación estándar
+    tipo: FLOAT64
+  - nombre: cantidadmax
+    descripcion: Cantidad máxima
+    tipo: INT64
+  - nombre: cantidadmin
+    descripcion: Cantidad mínima
+    tipo: INT64
+  - nombre: hrsestandar
+    descripcion: Horas estándar
+    tipo: FLOAT64
+  - nombre: hrspromedio
+    descripcion: Horas promedio
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos origen
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla CatUbicacion
+    tipo: INT64
+  - nombre: puntoreorden
+    descripcion: Punto de reorden
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla CatUsuario que modificó el registro
+    tipo: INT64
+  - nombre: claresponsable
+    descripcion: Clave foránea a la tabla CatEmpleado responsable
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: cantidadrecurso
+    descripcion: Cantidad de recursos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: cladeptocontable
+    descripcion: Clave foránea a la tabla CatDeptoContable
+    tipo: INT64
+  - nombre: consumoanualprom
+    descripcion: Consumo anual promedio
+    tipo: FLOAT64
+  - nombre: controlcalidadsn
+    descripcion: Indica si requiere control de calidad (true/false)
+    tipo: BOOL
+  - nombre: consumosimultaneo
+    descripcion: Consumo simultáneo
+    tipo: INT64
+  - nombre: claestaciontrabajo
+    descripcion: Clave foránea a la tabla MtoCatEstacionTrabajo
+    tipo: INT64
+  - nombre: clafamiliaensamble
+    descripcion: Clave foránea a la tabla MtoCatFamiliaEnsamble
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la fuente
+    tipo: STRING
+  - nombre: clasubdeptocontable
+    descripcion: Clave foránea a la tabla CatSubDeptoContable
+    tipo: INT64
+  - nombre: claubicacionalmacen
+    descripcion: Clave foránea a la tabla CatUbicacion del almacén
+    tipo: INT64
+  - nombre: consumoanualdesvest
+    descripcion: Consumo anual de desviación estándar
+    tipo: FLOAT64
+  - nombre: clanominaresponsable
+    descripcion: Clave foránea a la tabla NomCatNomina del responsable
+    tipo: INT64
+  - nombre: descripcionlocalidad
+    descripcion: Descripción de la localidad
+    tipo: STRING
+  - nombre: clasubfamiliaensamble
+    descripcion: Clave primaria de la tabla MtoCatSubFamiliaEnsamble
+    tipo: INT64
+  - nombre: nomsubfamiliaensamble
+    descripcion: Nombre de la subfamilia de ensamble
+    tipo: STRING
+  - nombre: clavesubfamiliaensamble
+    descripcion: Clave única de la subfamilia de ensamble
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clatipoinventarioensamble
+    descripcion: Clave foránea a la tabla MtoCatTipoInventarioEnsamble
+    tipo: INT64

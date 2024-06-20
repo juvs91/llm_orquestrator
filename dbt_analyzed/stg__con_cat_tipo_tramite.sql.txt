@@ -1,0 +1,96 @@
+vista: stg_concattipotramite
+descripcion: Vista generada por DBT para la tabla dbo.ConCatTipoTramite
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: espago
+    descripcion: Indica si el tipo de trámite requiere pago (true/false)
+    tipo: BOOL
+  - nombre: esmanual
+    descripcion: Indica si el tipo de trámite es manual (true/false)
+    tipo: BOOL
+  - nombre: esbloqueo
+    descripcion: Indica si el tipo de trámite implica un bloqueo (true/false)
+    tipo: BOOL
+  - nombre: esenlinea
+    descripcion: Indica si el tipo de trámite se realiza en línea (true/false)
+    tipo: BOOL
+  - nombre: bajalogica
+    descripcion: Indica si el tipo de trámite está dado de baja lógica (1/0)
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios adicionales sobre el tipo de trámite
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó por última vez el tipo de trámite
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clatipopoliza
+    descripcion: Clave foránea a la tabla de tipos de póliza
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el tipo de trámite
+    tipo: INT64
+  - nombre: clatipotramite
+    descripcion: Clave primaria del tipo de trámite
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del tipo de trámite
+    tipo: DATETIME
+  - nombre: idautorizacion
+    descripcion: ID de autorización asociado al tipo de trámite
+    tipo: INT64
+  - nombre: nomtipotramite
+    descripcion: Nombre del tipo de trámite
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clacontabilidad
+    descripcion: Clave foránea a la tabla de contabilidad
+    tipo: INT64
+  - nombre: desctipotramite
+    descripcion: Descripción del tipo de trámite
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del tipo de trámite
+    tipo: DATETIME
+  - nombre: vigenciaenlinea
+    descripcion: Fecha y hora de vigencia en línea del tipo de trámite
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte detectó la eliminación del registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte detectó la actualización del registro
+    tipo: STRING
+  - nombre: autorizacancelacion
+    descripcion: ID de autorización de cancelación asociado al tipo de trámite
+    tipo: INT64
+  - nombre: claestatustipotramite
+    descripcion: Clave foránea a la tabla de estatus de tipos de trámite
+    tipo: INT64
+  - nombre: claclasificacionpoliza
+    descripcion: Clave foránea a la tabla de clasificación de pólizas
+    tipo: INT64
+  - nombre: claflujotramitedirecto
+    descripcion: Clave foránea a la tabla de flujo de trámite directo
+    tipo: INT64
+  - nombre: esreqcomprobantefiscal
+    descripcion: Indica si el tipo de trámite requiere comprobante fiscal (true/false)
+    tipo: BOOL
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: esrespetafechaelaboracion
+    descripcion: Indica si el tipo de trámite respeta la fecha de elaboración (1/0)
+    tipo: INT64

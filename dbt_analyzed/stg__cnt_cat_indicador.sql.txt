@@ -1,0 +1,84 @@
+vista: stg_cntcatindicador
+descripcion: Vista generada por DBT a partir de la tabla CntSch_CNTCatIndicador
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden del indicador
+    tipo: FLOAT64
+  - nombre: clarubro
+    descripcion: Clave foránea al rubro del indicador
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: esresultado
+    descripcion: Indica si el indicador es un resultado (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de origen
+    tipo: STRING
+  - nombre: claindicador
+    descripcion: Clave primaria del indicador
+    tipo: INT64
+  - nombre: esporcentaje
+    descripcion: Indica si el indicador se expresa en porcentaje (1) o no (0)
+    tipo: INT64
+  - nombre: nomindicador
+    descripcion: Nombre del indicador
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro
+    tipo: INT64
+  - nombre: clatipocalculo
+    descripcion: Clave foránea al tipo de cálculo del indicador
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: nomindicadoren
+    descripcion: Nombre del indicador en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: escoloreadosuma
+    descripcion: Indica si el indicador se colorea en la suma (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: claindicadorpadre
+    descripcion: Clave foránea al indicador padre (si aplica)
+    tipo: INT64
+  - nombre: clagrupoindicador
+    descripcion: Clave foránea al grupo del indicador
+    tipo: INT64
+  - nombre: esusoeliminaciones
+    descripcion: Indica si el indicador se utiliza en eliminaciones (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en la fuente
+    tipo: STRING
+  - nombre: essoloflujoefectivo
+    descripcion: Indica si el indicador solo se utiliza en el flujo de efectivo (1) o no (0)
+    tipo: INT64
+  - nombre: clausuarioresponsable
+    descripcion: Clave foránea al usuario responsable del indicador
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

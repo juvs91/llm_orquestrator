@@ -1,0 +1,66 @@
+vista: stg_pplcatareaproduccion
+descripcion: Vista generada por DBT para la tabla PplSch_PPLCatAreaProduccion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando se extrajo el registro
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: tipo
+    descripcion: Tipo de área de producción
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: semanasefic
+    descripcion: Número de semanas eficientes
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos origen
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: estatuscorrida
+    descripcion: Estatus de la corrida
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de Airbyte CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: claareaproduccion
+    descripcion: Clave del área de producción
+    tipo: INT64
+  - nombre: nomareaproduccion
+    descripcion: Nombre del área de producción
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de cuando se eliminó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de cuando se actualizó el registro
+    tipo: STRING
+  - nombre: claveareaproduccion
+    descripcion: Clave del área de producción
+    tipo: INT64
+  - nombre: fechainicializacion
+    descripcion: Fecha de inicialización
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

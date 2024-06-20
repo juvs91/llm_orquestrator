@@ -1,0 +1,66 @@
+vista: stg_flecattipoboleta
+descripcion: Vista generada por DBT para la tabla FLECatTipoBoleta.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Timestamp de cuando Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON generados por Airbyte.
+    tipo: JSON
+  - nombre: loginsp
+    descripcion: ID de inicio de sesión del usuario.
+    tipo: INT64
+  - nombre: nombresp
+    descripcion: Nombre del usuario.
+    tipo: STRING
+  - nombre: systemid
+    descripcion: ID del sistema.
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la base de datos de origen.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación.
+    tipo: INT64
+  - nombre: clatipoboleta
+    descripcion: Clave del tipo de boleta.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: nomtipoboleta
+    descripcion: Nombre del tipo de boleta.
+    tipo: STRING
+  - nombre: esconFigurarsp
+    descripcion: Indica si el tipo de boleta se puede configurar (1) o no (0).
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica.
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Timestamp de cuando el registro fue eliminado según Airbyte CDC.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Timestamp de cuando el registro fue actualizado según Airbyte CDC.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC según Airbyte.
+    tipo: STRING
+  - nombre: escondiscrepanciadefault
+    descripcion: Indica si el tipo de boleta tiene discrepancia por defecto (1) o no (0).
+    tipo: INT64

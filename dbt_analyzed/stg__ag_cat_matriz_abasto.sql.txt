@@ -1,0 +1,84 @@
+vista: stg_agcatmatrizabasto
+descripcion: Vista generada por DBT para la tabla AGSch_AgCatMatrizAbasto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción
+    tipo: DATETIME
+  - nombre: tonelaje
+    descripcion: Cantidad de tonelaje
+    tipo: INT64
+  - nombre: claciudad
+    descripcion: Clave de la ciudad
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave de la familia
+    tipo: INT64
+  - nombre: claarticulo
+    descripcion: Clave del artículo
+    tipo: INT64
+  - nombre: esbloqueado
+    descripcion: Indicador de bloqueo (0: desbloqueado, 1: bloqueado)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: preferencia
+    descripcion: Valor de preferencia
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: clasubfamilia
+    descripcion: Clave de la subfamilia
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: operadorlogico
+    descripcion: Operador lógico utilizado
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clagrupoestadistico1
+    descripcion: Clave del grupo estadístico 1
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

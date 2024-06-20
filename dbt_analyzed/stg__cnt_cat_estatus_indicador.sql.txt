@@ -1,0 +1,51 @@
+vista: stg_cntcatestatusindicador
+descripcion: Vista de tabla que contiene el catálogo de estatus de los indicadores.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte para cada registro.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo el registro.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte.
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja lógica el registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte actualizó por última vez el registro.
+    tipo: STRING
+  - nombre: claestatusindicador
+    descripcion: Clave única del estatus del indicador.
+    tipo: INT64
+  - nombre: nomestatusindicador
+    descripcion: Nombre del estatus del indicador en español.
+    tipo: STRING
+  - nombre: nomestatusindicadoren
+    descripcion: Nombre del estatus del indicador en inglés.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: STRING

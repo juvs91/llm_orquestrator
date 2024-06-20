@@ -1,0 +1,51 @@
+vista: sel_vtacattipocliente
+descripcion: Vista limpia y sin duplicados de la tabla stg__vta_cat_tipo_cliente. Se selecciona el registro más reciente por clatipocliente.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (Sí/No)
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: NUMERIC
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: TEXT
+  - nombre: clatipocliente
+    descripcion: Clave del tipo de cliente
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: TIMESTAMP
+  - nombre: nomtipocliente
+    descripcion: Nombre del tipo de cliente
+    tipo: TEXT
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: TIMESTAMP
+  - nombre: nomtipoclienteing
+    descripcion: Nombre del tipo de cliente en inglés
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: NUMERIC

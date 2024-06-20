@@ -1,0 +1,9 @@
+vista: MARCA
+descripcion: Esta vista obtiene la clave y el nombre de las marcas desde la tabla de catálogo de marcas.
+campos:
+  - nombre: CLA_MARCA
+    descripcion: Clave de la marca
+    tipo: INT
+  - nombre: NOM_MARCA
+    descripcion: Nombre de la marca
+    tipo: VARCHAR

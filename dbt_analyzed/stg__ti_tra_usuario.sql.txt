@@ -1,0 +1,138 @@
+vista: stg_ti_tra_usuario
+descripcion: Vista generada por DBT para la tabla dbo.TiTraUsuario
+campos:
+  - nombre: pk_titrausuario
+    descripcion: Surrogate key generada por DBT para la tabla TiTraUsuario
+    tipo: STRING
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin transformar de la fuente de datos
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando se extrajo el registro de la fuente
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del usuario
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico del usuario
+    tipo: STRING
+  - nombre: clacrc
+    descripcion: Clave foránea a la tabla de Centros de Responsabilidad (CRC)
+    tipo: INT64
+  - nombre: perfil
+    descripcion: Clave foránea a la tabla de Perfiles de usuario
+    tipo: INT64
+  - nombre: puesto
+    descripcion: Puesto del usuario
+    tipo: STRING
+  - nombre: dominio
+    descripcion: Dominio de la cuenta del usuario
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de ingreso del usuario
+    tipo: DATETIME
+  - nombre: bloqueado
+    descripcion: Indica si el usuario está bloqueado (1) o no (0)
+    tipo: INT64
+  - nombre: clapuesto
+    descripcion: Clave foránea a la tabla de Puestos
+    tipo: INT64
+  - nombre: idusuario
+    descripcion: Clave primaria de la tabla TiTraUsuario
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el usuario tiene baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: bajanomina
+    descripcion: Indica si el usuario tiene baja de nómina (1) o no (0)
+    tipo: INT64
+  - nombre: claempleado
+    descripcion: Clave foránea a la tabla de Empleados
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la fuente de datos
+    tipo: STRING
+  - nombre: emailalterno
+    descripcion: Correo electrónico alternativo del usuario
+    tipo: STRING
+  - nombre: nombreperfil
+    descripcion: Nombre del perfil del usuario
+    tipo: STRING
+  - nombre: telefonocasa
+    descripcion: Teléfono de casa del usuario
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: Clave foránea al usuario que creó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: loginusername
+    descripcion: Nombre de usuario para iniciar sesión
+    tipo: STRING
+  - nombre: nombreusuario
+    descripcion: Nombre de usuario en mayúsculas
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: idempleadojefe
+    descripcion: Clave foránea al empleado jefe del usuario
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del usuario en mayúsculas
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del usuario en mayúsculas
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del usuario
+    tipo: DATETIME
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del usuario
+    tipo: DATETIME
+  - nombre: telefonocelular
+    descripcion: Teléfono celular del usuario
+    tipo: STRING
+  - nombre: telefonooficina
+    descripcion: Teléfono de oficina del usuario
+    tipo: STRING
+  - nombre: claidiomadefault
+    descripcion: Clave foránea al idioma predeterminado del usuario
+    tipo: INT64
+  - nombre: dispositivomovil
+    descripcion: Dispositivo móvil del usuario
+    tipo: STRING
+  - nombre: nombremodificable
+    descripcion: Indica si el nombre del usuario es modificable (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando se eliminó el registro en la fuente (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando se actualizó el registro en la fuente
+    tipo: STRING
+  - nombre: claubicaciondefault
+    descripcion: Clave foránea a la ubicación predeterminada del usuario
+    tipo: INT64
+  - nombre: autenticacionactived
+    descripcion: Indica si la autenticación está activa (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: fechaultintentoprincipal
+    descripcion: Fecha del último intento de inicio de sesión principal
+    tipo: DATETIME
+  - nombre: intentosfallidosprincipal
+    descripcion: Número de intentos fallidos de inicio de sesión principal
+    tipo: INT64

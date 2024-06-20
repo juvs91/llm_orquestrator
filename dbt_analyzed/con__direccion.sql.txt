@@ -1,0 +1,12 @@
+vista: MST_DIRECCION_VW
+descripcion: Vista materializada que presenta información consolidada de direcciones.
+campos:
+  - nombre: CLA_DIRECCION
+    descripcion: Clave única que identifica una dirección.
+    tipo: INT
+  - nombre: NOM_DIRECCION
+    descripcion: Nombre completo de la dirección.
+    tipo: VARCHAR
+  - nombre: NUM_DIRECCION
+    descripcion: Número de la dirección.
+    tipo: VARCHAR 

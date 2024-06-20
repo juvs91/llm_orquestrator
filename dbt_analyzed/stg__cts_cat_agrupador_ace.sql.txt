@@ -1,0 +1,54 @@
+vista: stg_ctscatagrupadorace
+descripcion: Vista generada por DBT a partir de la tabla CTSSch_CTSCatAgrupadorAce
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: espt
+    descripcion: Clave foránea a la tabla de Tipos de Producto
+    tipo: INT64
+  - nombre: orden
+    descripcion: Orden de aparición del agrupador
+    tipo: INT64
+  - nombre: essegunda
+    descripcion: Indica si el agrupador es de segunda mano (1) o no (0)
+    tipo: INT64
+  - nombre: gpocosteo
+    descripcion: Grupo de costeo asociado al agrupador
+    tipo: STRING
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de Familias de Productos
+    tipo: INT64
+  - nombre: fechaultmod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de origen
+    tipo: STRING
+  - nombre: claagrupador
+    descripcion: Clave primaria de la tabla de Agrupadores
+    tipo: INT64
+  - nombre: descagrupador
+    descripcion: Descripción del agrupador
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Posición del cursor de cambio de datos
+    tipo: INT64
+  - nombre: clatipoagrupador
+    descripcion: Clave foránea a la tabla de Tipos de Agrupadores
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

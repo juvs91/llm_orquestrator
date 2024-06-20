@@ -1,0 +1,75 @@
+vista: de_duplicacion_artcatfamilia
+descripcion: Vista que realiza la de-duplicación de la tabla art_cat_familia y agrega campos calculados.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte para cada fila cruda.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte que contienen información adicional sobre la extracción.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si la familia de artículos está dada de baja lógica (1) o no (0).
+    tipo: INTEGER
+  - nombre: clafamilia
+    descripcion: Clave numérica única que identifica a la familia de artículos.
+    tipo: INTEGER
+  - nombre: esagrupado
+    descripcion: Indica si la familia de artículos se utiliza para agrupar otras familias (1) o no (0).
+    tipo: INTEGER
+  - nombre: nomfamilia
+    descripcion: Nombre de la familia de artículos.
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó por última vez el registro.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado por la captura de datos modificados de Airbyte.
+    tipo: INTEGER
+  - nombre: clavefamilia
+    descripcion: Clave única que identifica a la familia de artículos.
+    tipo: TEXT
+  - nombre: clausuariomod
+    descripcion: Clave numérica del usuario que modificó por última vez el registro.
+    tipo: INTEGER
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por la captura de datos modificados de Airbyte.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja lógica la familia de artículos.
+    tipo: DATE
+  - nombre: nomfamiliaingles
+    descripcion: Nombre de la familia de artículos en inglés.
+    tipo: TEXT
+  - nombre: clatipoinventario
+    descripcion: Clave numérica que identifica el tipo de inventario al que pertenece la familia de artículos.
+    tipo: INTEGER
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente, según lo capturado por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente, según lo capturado por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: nomfamiliaotroidioma
+    descripcion: Nombre de la familia de artículos en otro idioma.
+    tipo: TEXT
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de captura de datos modificados de Airbyte.
+    tipo: INTEGER
+  - nombre: clavefamiliaalfanumerica
+    descripcion: Clave alfanumérica única que identifica a la familia de artículos.
+    tipo: TEXT
+  - nombre: clafamiliaasociada
+    descripcion: Clave numérica asociada a la familia de artículos, calculada como 200000 + clafamilia.
+    tipo: INTEGER
+  - nombre: nomfamiliaasociada
+    descripcion: Nombre de la familia de artículos asociado, calculado como '(' || (clafamilia_string) || ') ' || NOMFAMILIA.
+    tipo: TEXT
+  - nombre: idfamiliaasociada
+    descripcion: ID de la familia de artículos asociada, calculado como 200000 + clafamilia.
+    tipo: INTEGER

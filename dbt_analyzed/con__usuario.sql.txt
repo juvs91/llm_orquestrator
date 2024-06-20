@@ -1,0 +1,15 @@
+vista: cte_con_usuario_vw
+descripcion: Vista que presenta información de usuarios con columnas renombradas.
+campos:
+  - nombre: CLA_USUARIO
+    descripcion: Clave única que identifica al usuario.
+    tipo: int
+  - nombre: EMAIL
+    descripcion: Correo electrónico del usuario.
+    tipo: string
+  - nombre: DOMINIO
+    descripcion: Dominio del correo electrónico del usuario.
+    tipo: string
+  - nombre: NOM_USUARIO
+    descripcion: Nombre completo del usuario.
+    tipo: string 

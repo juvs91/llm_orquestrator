@@ -1,0 +1,90 @@
+vista: stg_concatcrc
+descripcion: Vista generada por DBT a partir de la tabla dbo.ConCatCRC
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clacrc
+    descripcion: Clave de la concatenación de CRC
+    tipo: INT64
+  - nombre: numcrc
+    descripcion: Número de CRC
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de inserción
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: clatipocrc
+    descripcion: Clave del tipo de CRC
+    tipo: INT64
+  - nombre: comentario
+    descripcion: Comentario
+    tipo: STRING
+  - nombre: clacrcpadre
+    descripcion: Clave del CRC padre
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: nomcrcidioma1
+    descripcion: Nombre del CRC en idioma 1 (en mayúsculas)
+    tipo: STRING
+  - nombre: nomcrcidioma2
+    descripcion: Nombre del CRC en idioma 2
+    tipo: STRING
+  - nombre: nomcrcidioma3
+    descripcion: Nombre del CRC en idioma 3
+    tipo: STRING
+  - nombre: nomcrcidioma4
+    descripcion: Nombre del CRC en idioma 4
+    tipo: STRING
+  - nombre: nomcrcidioma5
+    descripcion: Nombre del CRC en idioma 5
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: clausuariocaptura
+    descripcion: Clave del usuario que capturó el registro
+    tipo: INT64
+  - nombre: esrequieregpoasig
+    descripcion: Indicador si requiere grupo asignado (0: no, 1: sí)
+    tipo: INT64
+  - nombre: clausuarioautoriza
+    descripcion: Clave del usuario que autorizó el registro
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: clatipodireccioncrc
+    descripcion: Clave del tipo de dirección del CRC
+    tipo: INT64
+  - nombre: claestatuscatalogoopc
+    descripcion: Clave del estatus del catálogo OPC
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

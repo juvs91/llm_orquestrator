@@ -1,0 +1,37 @@
+vista: MST_TIPO_GASTO_VW
+descripcion: Vista que contiene la información de los tipos de gasto, su relación con los bloques y sub bloques, así como su estatus de autorización.
+campos:
+  - nombre: CLA_TIPO_GASTO
+    descripcion: Clave del tipo de gasto.
+    tipo: INT
+  - nombre: NOM_TIPO_GASTO
+    descripcion: Nombre del tipo de gasto en español.
+    tipo: VARCHAR
+  - nombre: NOM_TIPO_GASTO_EN
+    descripcion: Nombre del tipo de gasto en inglés.
+    tipo: VARCHAR
+  - nombre: NUM_DETALLE
+    descripcion: Número de detalle del tipo de gasto.
+    tipo: INT
+  - nombre: ES_AUTORIZADO
+    descripcion: Indica si el tipo de gasto está autorizado (1) o no (0).
+    tipo: INT
+  - nombre: CLA_BLOQUE
+    descripcion: Clave del bloque al que pertenece el tipo de gasto.
+    tipo: VARCHAR
+  - nombre: NOM_BLOQUE
+    descripcion: Nombre del bloque en español.
+    tipo: VARCHAR
+  - nombre: NOM_BLOQUE_EN
+    descripcion: Nombre del bloque en inglés.
+    tipo: VARCHAR
+  - nombre: CLA_SUBBLOQUE
+    descripcion: Clave del sub bloque al que pertenece el tipo de gasto.
+    tipo: VARCHAR
+  - nombre: NOM_SUBBLOQUE
+    descripcion: Nombre del sub bloque en español.
+    tipo: VARCHAR
+  - nombre: NOM_SUBBLOQUE_EN
+    descripcion: Nombre del sub bloque en inglés.
+    tipo: VARCHAR
+

@@ -1,0 +1,39 @@
+vista: MST_CATEGORIA_VW
+descripcion: Vista que contiene información de las categorías.
+campos:
+  - nombre: CLA_CATEGORIA
+    descripcion: Clave de la categoría.
+    tipo: INT
+  - nombre: NOM_CATEGORIA_IDIOMA1
+    descripcion: Nombre de la categoría en idioma 1.
+    tipo: VARCHAR
+  - nombre: NOM_CATEGORIA_IDIOMA2
+    descripcion: Nombre de la categoría en idioma 2.
+    tipo: VARCHAR
+  - nombre: NOM_CATEGORIA_IDIOMA3
+    descripcion: Nombre de la categoría en idioma 3.
+    tipo: VARCHAR
+  - nombre: NOM_CATEGORIA_IDIOMA4
+    descripcion: Nombre de la categoría en idioma 4.
+    tipo: VARCHAR
+  - nombre: NOM_CATEGORIA_IDIOMA5
+    descripcion: Nombre de la categoría en idioma 5.
+    tipo: VARCHAR
+  - nombre: CLA_CATEGORIA1
+    descripcion: Clave de la categoría padre nivel 1.
+    tipo: INT
+  - nombre: CLA_CATEGORIA2
+    descripcion: Clave de la categoría padre nivel 2.
+    tipo: INT
+  - nombre: CLA_CATEGORIA3
+    descripcion: Clave de la categoría padre nivel 3.
+    tipo: INT
+  - nombre: CLA_NIVEL_ACTUAL
+    descripcion: Nivel actual de la categoría.
+    tipo: INT
+  - nombre: ES_AFECTABLE
+    descripcion: Indica si la categoría es afectable.
+    tipo: VARCHAR
+  - nombre: CLA_AGRUPADOR_FINANCIERO
+    descripcion: Clave del agrupador financiero.
+    tipo: INT

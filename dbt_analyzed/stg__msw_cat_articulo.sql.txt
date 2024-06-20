@@ -1,0 +1,228 @@
+vista: stg_mswcatarticulo
+descripcion: Vista generada por DBT a partir de la tabla MSWSch_MswCatArticulo
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: caja
+    descripcion: Identificador de la caja del artículo
+    tipo: STRING
+  - nombre: claclase
+    descripcion: Clave foránea a la tabla de clases de artículos
+    tipo: INT64
+  - nombre: clamarca
+    descripcion: Clave foránea a la tabla de marcas de artículos
+    tipo: INT64
+  - nombre: etiqueta
+    descripcion: Etiqueta del artículo
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de creación del registro
+    tipo: DATETIME
+  - nombre: refdesc1
+    descripcion: Referencia descriptiva 1 del artículo
+    tipo: STRING
+  - nombre: refdesc2
+    descripcion: Referencia descriptiva 2 del artículo
+    tipo: STRING
+  - nombre: clamodelo
+    descripcion: Clave foránea a la tabla de modelos de artículos
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de familias de artículos
+    tipo: INT64
+  - nombre: referencia
+    descripcion: Referencia del artículo
+    tipo: STRING
+  - nombre: claarticulo
+    descripcion: Clave primaria de la tabla de artículos
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios sobre el artículo
+    tipo: STRING
+  - nombre: nomarticulo
+    descripcion: Nombre del artículo
+    tipo: STRING
+  - nombre: nombrecorto
+    descripcion: Nombre corto del artículo
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del artículo para PC Mod
+    tipo: STRING
+  - nombre: validohasta
+    descripcion: Fecha de validez del artículo
+    tipo: DATETIME
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clacategoria
+    descripcion: Clave foránea a la tabla de categorías de artículos
+    tipo: INT64
+  - nombre: claplantilla
+    descripcion: Clave foránea a la tabla de plantillas de artículos
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: Clave foránea a la tabla de proveedores
+    tipo: INT64
+  - nombre: claunidadinv
+    descripcion: Clave foránea a la tabla de unidades de inventario
+    tipo: INT64
+  - nombre: esexcentoiva
+    descripcion: Indicador de exención de IVA (1: exento, 0: no exento)
+    tipo: INT64
+  - nombre: clagrupoventa
+    descripcion: Clave foránea a la tabla de grupos de venta
+    tipo: INT64
+  - nombre: clasubfamilia
+    descripcion: Clave foránea a la tabla de subfamilias de artículos
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave foránea a la tabla de usuarios que creó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificó el registro
+    tipo: INT64
+  - nombre: clavearticulo
+    descripcion: Clave del artículo
+    tipo: STRING
+  - nombre: claarticulodea
+    descripcion: Clave foránea a la tabla de artículos DEA
+    tipo: INT64
+  - nombre: clagpoimpuesto
+    descripcion: Clave foránea a la tabla de grupos de impuestos
+    tipo: INT64
+  - nombre: clagrupoprecio
+    descripcion: Clave foránea a la tabla de grupos de precios
+    tipo: INT64
+  - nombre: claunidadventa
+    descripcion: Clave foránea a la tabla de unidades de venta
+    tipo: INT64
+  - nombre: codigobarrasec
+    descripcion: Código de barras secundario
+    tipo: FLOAT64
+  - nombre: espagaimpuesto
+    descripcion: Indicador de pago de impuestos (1: paga impuestos, 0: no paga impuestos)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: pesoteoricokgs
+    descripcion: Peso teórico en kilogramos
+    tipo: FLOAT64
+  - nombre: pesoteoricolbs
+    descripcion: Peso teórico en libras
+    tipo: FLOAT64
+  - nombre: preciounitario
+    descripcion: Precio unitario del artículo
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: cladepartamento
+    descripcion: Clave foránea a la tabla de departamentos
+    tipo: INT64
+  - nombre: clatipoarticulo
+    descripcion: Clave foránea a la tabla de tipos de artículos
+    tipo: INT64
+  - nombre: claunidadcompra
+    descripcion: Clave foránea a la tabla de unidades de compra
+    tipo: INT64
+  - nombre: codigobarraprin
+    descripcion: Código de barras principal
+    tipo: STRING
+  - nombre: factorunidadinv
+    descripcion: Factor de conversión de la unidad de inventario
+    tipo: FLOAT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: claclasifgeneral
+    descripcion: Clave foránea a la tabla de clasificaciones generales
+    tipo: INT64
+  - nombre: clalistamaterial
+    descripcion: Clave foránea a la tabla de listas de materiales
+    tipo: STRING
+  - nombre: idcrossreference
+    descripcion: ID de referencia cruzada
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de tipos de inventario
+    tipo: INT64
+  - nombre: claunidadreportes
+    descripcion: Clave foránea a la tabla de unidades de reportes
+    tipo: INT64
+  - nombre: factorunidadventa
+    descripcion: Factor de conversión de la unidad de venta
+    tipo: FLOAT64
+  - nombre: nomarticuloingles
+    descripcion: Nombre del artículo en inglés
+    tipo: STRING
+  - nombre: claunidadpreciovta
+    descripcion: Clave foránea a la tabla de unidades de precio de venta
+    tipo: INT64
+  - nombre: factorunidadcompra
+    descripcion: Factor de conversión de la unidad de compra
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clavecrossreference
+    descripcion: Clave de referencia cruzada
+    tipo: STRING
+  - nombre: clagrupoestadistico1
+    descripcion: Clave foránea a la tabla de grupos estadísticos 1
+    tipo: INT64
+  - nombre: clagrupoestadistico2
+    descripcion: Clave foránea a la tabla de grupos estadísticos 2
+    tipo: INT64
+  - nombre: clagrupoestadistico3
+    descripcion: Clave foránea a la tabla de grupos estadísticos 3
+    tipo: INT64
+  - nombre: clagrupoestadistico4
+    descripcion: Clave foránea a la tabla de grupos estadísticos 4
+    tipo: INT64
+  - nombre: clagrupoestadistico5
+    descripcion: Clave foránea a la tabla de grupos estadísticos 5
+    tipo: INT64
+  - nombre: clagrupoestadistico6
+    descripcion: Clave foránea a la tabla de grupos estadísticos 6
+    tipo: INT64
+  - nombre: clatipolistamaterial
+    descripcion: Clave foránea a la tabla de tipos de listas de materiales
+    tipo: INT64
+  - nombre: codigomanufacturador
+    descripcion: Código del fabricante
+    tipo: STRING
+  - nombre: factorunidadreportes
+    descripcion: Factor de conversión de la unidad de reportes
+    tipo: FLOAT64
+  - nombre: claunidadpreultcompra
+    descripcion: Clave foránea a la tabla de unidades de la última compra
+    tipo: INT64
+  - nombre: claunidadpreciocompra
+    descripcion: Clave foránea a la tabla de unidades de precio de compra
+    tipo: INT64
+  - nombre: factorunidadpreciovta
+    descripcion: Factor de conversión de la unidad de precio de venta
+    tipo: FLOAT64
+  - nombre: nomarticulootroidioma
+    descripcion: Nombre del artículo en otro idioma
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: factorunidadpreciocompra
+    descripcion: Factor de conversión de la unidad de precio de compra
+    tipo: FLOAT64

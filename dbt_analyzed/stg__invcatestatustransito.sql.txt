@@ -1,0 +1,54 @@
+vista: stg_invcatestatustransito
+descripcion: Vista generada por DBT para la tabla InvCatEstatusTransito.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro.
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para el seguimiento de cambios de datos.
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: ID del usuario que insertó el registro.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro por última vez.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor utilizado internamente por Airbyte para el seguimiento de cambios de datos.
+    tipo: INT64
+  - nombre: estatustransito
+    descripcion: ID del estatus de tránsito.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en la que se dio de baja lógica el registro.
+    tipo: DATETIME
+  - nombre: nomestatustransito
+    descripcion: Nombre del estatus de tránsito.
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

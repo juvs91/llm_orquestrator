@@ -1,0 +1,66 @@
+vista: stg_artcatsubfamilia
+descripcion: Vista generada por DBT para la tabla dbo_ArtCatSubfamilia
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si la subfamilia está dada de baja (1) o no (0)
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de familias de artículos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clasubfamilia
+    descripcion: Clave primaria de la tabla de subfamilias de artículos
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: nomsubfamilia
+    descripcion: Nombre de la subfamilia de artículos en español
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clavesubfamilia
+    descripcion: Clave única de la subfamilia de artículos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja la subfamilia de artículos
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de tipos de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: nomsubfamiliaingles
+    descripcion: Nombre de la subfamilia de artículos en inglés
+    tipo: STRING
+  - nombre: nomsubfamiliaotroidioma
+    descripcion: Nombre de la subfamilia de artículos en otro idioma
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clavesubfamiliaalfanumerica
+    descripcion: Clave alfanumérica de la subfamilia de artículos
+    tipo: STRING

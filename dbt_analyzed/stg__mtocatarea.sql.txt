@@ -1,0 +1,78 @@
+vista: stg_mtocatarea
+descripcion: Vista con datos de áreas de mantenimiento.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte en formato JSON.
+    tipo: JSON
+  - nombre: orden
+    descripcion: Número de orden.
+    tipo: INT64
+  - nombre: claarea
+    descripcion: Clave del área.
+    tipo: INT64
+  - nombre: nomarea
+    descripcion: Nombre del área.
+    tipo: STRING
+  - nombre: setpoint
+    descripcion: Valor de punto de ajuste.
+    tipo: INT64
+  - nombre: clanomina
+    descripcion: Clave de la nómina.
+    tipo: INT64
+  - nombre: clavearea
+    descripcion: Clave del área.
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: No, 1: Sí).
+    tipo: INT64
+  - nombre: esensamble
+    descripcion: Indicador de ensamble (0: No, 1: Sí).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: claresponsable
+    descripcion: Clave del responsable.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: INT64
+  - nombre: cladepartamento
+    descripcion: Clave del departamento.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica.
+    tipo: DATETIME
+  - nombre: mailresponsable
+    descripcion: Correo electrónico del responsable.
+    tipo: STRING
+  - nombre: activosestimados
+    descripcion: Número de activos estimados.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en el origen.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en el origen.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: STRING

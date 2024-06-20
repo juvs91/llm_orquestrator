@@ -1,0 +1,48 @@
+vista: de_duplicacion_cntcatagrupadorempresa
+descripcion: Vista que muestra información sobre la agrupación de empresas, incluyendo detalles como el nombre del grupo, la fecha de última modificación y el estado lógico.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está activo (0) o inactivo (1).
+    tipo: BOOLEAN
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro por última vez.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte.
+    tipo: NUMERIC
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro por última vez.
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha en que el registro se marcó como inactivo.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte marcó el registro como eliminado.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte actualizó el registro por última vez.
+    tipo: TIMESTAMP
+  - nombre: claagrupadorempresa
+    descripcion: Clave única del agrupador de empresas.
+    tipo: TEXT
+  - nombre: nomagrupadorempresa
+    descripcion: Nombre del agrupador de empresas.
+    tipo: TEXT
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: NUMERIC

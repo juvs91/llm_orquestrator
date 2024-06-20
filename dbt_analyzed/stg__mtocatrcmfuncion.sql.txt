@@ -1,0 +1,75 @@
+vista: stg_mtocatrcmfuncion
+descripcion: Vista generada por DBT a partir de la tabla MtoSch_MtoCatRcmFuncion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: claequipo
+    descripcion: Clave foránea a la tabla de equipos
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clasistema
+    descripcion: Clave foránea a la tabla de sistemas
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para la captura de datos modificados (CDC)
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clarcmfuncion
+    descripcion: Clave primaria de la tabla de funciones de recomendación
+    tipo: INT64
+  - nombre: clasubsistema
+    descripcion: Clave foránea a la tabla de subsistemas
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: nomrcmfuncion
+    descripcion: Nombre de la función de recomendación
+    tipo: STRING
+  - nombre: clatipofuncion
+    descripcion: Clave foránea a la tabla de tipos de funciones
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado para la captura de datos modificados (CDC)
+    tipo: INT64
+  - nombre: clavercmfuncion
+    descripcion: Clave única para la versión de la función de recomendación
+    tipo: INT64
+  - nombre: escopiagenerico
+    descripcion: Bandera que indica si la función tiene un alcance genérico (1) o no (0)
+    tipo: INT64
+  - nombre: esgenericopadre
+    descripcion: Bandera que indica si la función es un padre genérico (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: clarcmfuncionpadre
+    descripcion: Clave foránea a la función de recomendación padre
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

@@ -1,0 +1,96 @@
+vista: stg_tescatbanco
+descripcion: Vista generada a partir de la tabla dbo_TesCatBanco
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: clacup
+    descripcion: Clave única de la CUP (Unidad Administrativa)
+    tipo: INT64
+  - nombre: clabanco
+    descripcion: Clave única del banco
+    tipo: INT64
+  - nombre: nombanco
+    descripcion: Nombre del banco
+    tipo: STRING
+  - nombre: esusospei
+    descripcion: Indica si el banco utiliza el sistema SPEI (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clabanco_l
+    descripcion: Clave única del banco (redundante)
+    tipo: INT64
+  - nombre: claestatus
+    descripcion: Clave del estatus del banco
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave del país de constitución del banco
+    tipo: INT64
+  - nombre: clavebanco
+    descripcion: Clave del banco (puede ser un código externo)
+    tipo: STRING
+  - nombre: clacontacto
+    descripcion: Clave del contacto principal del banco
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez
+    tipo: STRING
+  - nombre: razonsocial
+    descripcion: Razón social del banco
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos
+    tipo: STRING
+  - nombre: bajalogicasol
+    descripcion: Indica si la solicitud de registro está dada de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: idsolicitudbanco
+    descripcion: ID de la solicitud relacionada con el banco
+    tipo: INT64
+  - nombre: esrealizapagoscup
+    descripcion: Indica si el banco realiza pagos a la CUP (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esrelacionnegocio
+    descripcion: Indica si existe una relación de negocios con el banco (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: claestatusautoriza
+    descripcion: Clave del estatus de autorización del banco
+    tipo: INT64
+  - nombre: clagrupofinanciero
+    descripcion: Clave del grupo financiero al que pertenece el banco
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro (si corresponde)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez
+    tipo: STRING
+  - nombre: clagrupofinancierosol
+    descripcion: Clave del grupo financiero al que pertenece la solicitud del banco
+    tipo: INT64
+  - nombre: esrealizapagostesoreria
+    descripcion: Indica si el banco realiza pagos a la Tesorería (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING

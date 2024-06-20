@@ -1,0 +1,40 @@
+vista: MST_CONSIGNADO_VW
+descripcion: Vista que contiene información de los consignados.
+campos:
+  - nombre: CLA_CONSIGNADO
+    descripcion: Clave única del consignado.
+    tipo: INT
+  - nombre: NOM_CONSIGNADO
+    descripcion: Nombre completo del consignado.
+    tipo: STRING
+  - nombre: CLA_CIUDAD_CONSIGNADO
+    descripcion: Clave única de la ciudad del consignado.
+    tipo: INT
+  - nombre: NOM_CIUDAD_CONSIGNADO
+    descripcion: Nombre de la ciudad del consignado.
+    tipo: STRING
+  - nombre: CLA_ESTADO_CONSIGNADO
+    descripcion: Clave única del estado del consignado.
+    tipo: INT
+  - nombre: NOM_ESTADO_CONSIGNADO
+    descripcion: Nombre del estado del consignado.
+    tipo: STRING
+  - nombre: CLA_PAIS_CONSIGNADO
+    descripcion: Clave única del país del consignado.
+    tipo: INT
+  - nombre: NOM_PAIS_CONSIGNADO
+    descripcion: Nombre del país del consignado.
+    tipo: STRING
+  - nombre: LATITUD
+    descripcion: Coordenada de latitud del consignado.
+    tipo: FLOAT
+  - nombre: LONGITUD
+    descripcion: Coordenada de longitud del consignado.
+    tipo: FLOAT
+  - nombre: FECHA_ALTA
+    descripcion: Fecha de alta del consignado.
+    tipo: DATE
+  - nombre: FECHA_BAJA_LOGICA
+    descripcion: Fecha de baja lógica del consignado.
+    tipo: DATE
+

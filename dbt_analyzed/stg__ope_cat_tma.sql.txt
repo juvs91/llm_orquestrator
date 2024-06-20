@@ -1,0 +1,111 @@
+vista: stg_opecattma
+descripcion: Vista generada por DBT a partir de la tabla dbo_OpeCatTMA
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clatma
+    descripcion: Clave de la tabla OpeCatTMA
+    tipo: INT64
+  - nombre: nomtma
+    descripcion: Nombre de la tabla OpeCatTMA
+    tipo: STRING
+  - nombre: clavetma
+    descripcion: Clave de la tabla OpeCatTMA
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica
+    tipo: INT64
+  - nombre: clagrupotma
+    descripcion: Clave del grupo de la tabla OpeCatTMA
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clagrupotma2
+    descripcion: Clave del segundo grupo de la tabla OpeCatTMA
+    tipo: INT64
+  - nombre: clatmasalida
+    descripcion: Clave de la tabla OpeCatTMA de salida
+    tipo: INT64
+  - nombre: clatmaentrada
+    descripcion: Clave de la tabla OpeCatTMA de entrada
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: entradaosalida
+    descripcion: Indica si es una entrada o salida
+    tipo: INT64
+  - nombre: escuentapuente
+    descripcion: Indica si es una cuenta puente
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatmacontraparte
+    descripcion: Clave de la tabla OpeCatTMA de la contraparte
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario
+    tipo: INT64
+  - nombre: significadotexto1
+    descripcion: Significado del texto 1
+    tipo: STRING
+  - nombre: significadotexto2
+    descripcion: Significado del texto 2
+    tipo: STRING
+  - nombre: afectacuentapuente
+    descripcion: Indica si afecta a la cuenta puente
+    tipo: INT64
+  - nombre: significadoentero1
+    descripcion: Significado del entero 1
+    tipo: STRING
+  - nombre: significadoentero2
+    descripcion: Significado del entero 2
+    tipo: STRING
+  - nombre: significadoentero3
+    descripcion: Significado del entero 3
+    tipo: STRING
+  - nombre: significadoentero4
+    descripcion: Significado del entero 4
+    tipo: STRING
+  - nombre: significadoentero5
+    descripcion: Significado del entero 5
+    tipo: STRING
+  - nombre: significadoentero6
+    descripcion: Significado del entero 6
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: esmercanciaentransito
+    descripcion: Indica si es mercancía en tránsito
+    tipo: INT64
+  - nombre: requierearticuloactivo
+    descripcion: Indica si requiere artículo activo
+    tipo: INT64
+  - nombre: claarticulocuentapuente
+    descripcion: Clave del artículo de la cuenta puente
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

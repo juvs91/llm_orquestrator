@@ -1,0 +1,271 @@
+vista: de_duplicacion_vtacatclienteunico
+descripcion: Vista limpia y sin duplicados de la tabla vta_cat_cliente_unico
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del cliente
+    tipo: TEXT
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes (RFC) del cliente
+    tipo: TEXT
+  - nombre: curp
+    descripcion: Clave Única de Registro de Población (CURP) del cliente
+    tipo: TEXT
+  - nombre: lada
+    descripcion: Código de área telefónica
+    tipo: TEXT
+  - nombre: calle
+    descripcion: Nombre de la calle de la dirección del cliente
+    tipo: TEXT
+  - nombre: movil
+    descripcion: Número de teléfono móvil del cliente
+    tipo: TEXT
+  - nombre: radio
+    descripcion: Frecuencia de radio del cliente (si aplica)
+    tipo: TEXT
+  - nombre: correo
+    descripcion: Dirección de correo electrónico del cliente
+    tipo: TEXT
+  - nombre: cucsfid
+    descripcion: ID de CUCSF (desconocido)
+    tipo: TEXT
+  - nombre: ladafax
+    descripcion: Código de área para el número de fax
+    tipo: TEXT
+  - nombre: telefono
+    descripcion: Número de teléfono fijo del cliente
+    tipo: TEXT
+  - nombre: fechaalta
+    descripcion: Fecha en que se dio de alta el cliente
+    tipo: DATE
+  - nombre: idusuario
+    descripcion: ID del usuario que dio de alta al cliente
+    tipo: NUMBER
+  - nombre: ladamovil
+    descripcion: Código de área para el número de teléfono móvil
+    tipo: TEXT
+  - nombre: paginaweb
+    descripcion: Dirección del sitio web del cliente
+    tipo: TEXT
+  - nombre: tradename
+    descripcion: Nombre comercial del cliente
+    tipo: TEXT
+  - nombre: bajalogica
+    descripcion: Indica si el cliente está dado de baja lógica (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: listaavisos
+    descripcion: Lista de avisos (desconocido)
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre de la computadora que modificó el registro por última vez
+    tipo: TEXT
+  - nombre: numexterior
+    descripcion: Número exterior de la dirección del cliente
+    tipo: TEXT
+  - nombre: numinterior
+    descripcion: Número interior de la dirección del cliente
+    tipo: TEXT
+  - nombre: requiererep
+    descripcion: Indica si el cliente requiere representante (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: NUMBER
+  - nombre: clausocfdinc
+    descripcion: Cláusula CFD Inc (desconocido)
+    tipo: TEXT
+  - nombre: notaembarque
+    descripcion: Nota de embarque (desconocido)
+    tipo: TEXT
+  - nombre: clagiromaster
+    descripcion: Clave de giro master (desconocido)
+    tipo: TEXT
+  - nombre: clamotivobaja
+    descripcion: Clave de motivo de baja (desconocido)
+    tipo: TEXT
+  - nombre: clanivelcanal
+    descripcion: Clave de nivel de canal (desconocido)
+    tipo: TEXT
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó el registro por última vez
+    tipo: TEXT
+  - nombre: observaciones
+    descripcion: Observaciones generales sobre el cliente
+    tipo: TEXT
+  - nombre: claciudadunico
+    descripcion: Clave de ciudad única (desconocido)
+    tipo: TEXT
+  - nombre: clatipopersona
+    descripcion: Clave de tipo de persona (física o moral)
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATE
+  - nombre: regimencapital
+    descripcion: Régimen capital (desconocido)
+    tipo: TEXT
+  - nombre: rentaubicacion
+    descripcion: Renta ubicación (desconocido)
+    tipo: TEXT
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: TEXT
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del cliente
+    tipo: TEXT
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del cliente
+    tipo: TEXT
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente
+    tipo: TEXT
+  - nombre: clacodigopostal
+    descripcion: Clave de código postal (desconocido)
+    tipo: TEXT
+  - nombre: clacoloniaunico
+    descripcion: Clave de colonia única (desconocido)
+    tipo: TEXT
+  - nombre: claestatuslegal
+    descripcion: Clave de estatus legal (desconocido)
+    tipo: TEXT
+  - nombre: clapriorizacion
+    descripcion: Clave de priorización (desconocido)
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica del cliente
+    tipo: DATE
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del cliente
+    tipo: DATE
+  - nombre: rfcsolicitadosn
+    descripcion: Indica si el RFC fue solicitado al SAT (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: clatipooperacion
+    descripcion: Clave de tipo de operación (desconocido)
+    tipo: TEXT
+  - nombre: clatipoproveedor
+    descripcion: Clave de tipo de proveedor (desconocido)
+    tipo: TEXT
+  - nombre: docfiscallistasn
+    descripcion: Indica si el cliente está en la lista de documentos fiscales del SAT (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: faxenvioembarque
+    descripcion: Número de fax para enviar información de embarque
+    tipo: TEXT
+  - nombre: cantidadempleados
+    descripcion: Cantidad de empleados del cliente
+    tipo: NUMBER
+  - nombre: claestatuscliente
+    descripcion: Clave de estatus del cliente (desconocido)
+    tipo: TEXT
+  - nombre: correoorderacknow
+    descripcion: Correo electrónico para enviar acuse de recibo de pedido
+    tipo: TEXT
+  - nombre: correoshipacknow
+    descripcion: Correo electrónico para enviar acuse de recibo de envío
+    tipo: TEXT
+  - nombre: fechasolicitudrfc
+    descripcion: Fecha en que se solicitó el RFC al SAT
+    tipo: DATE
+  - nombre: nombrerazonsocial
+    descripcion: Nombre o razón social del cliente
+    tipo: TEXT
+  - nombre: autorizaventalegal
+    descripcion: Nombre del autorizado para ventas legales
+    tipo: TEXT
+  - nombre: clametodopagosatnc
+    descripcion: Clave de método de pago SAT para notas de crédito (desconocido)
+    tipo: TEXT
+  - nombre: claveinternacional
+    descripcion: Clave internacional telefónica
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en que Airbyte eliminó el registro (si aplica)
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro por Airbyte
+    tipo: TIMESTAMP
+  - nombre: mc_clienteunico_id
+    descripcion: ID único del cliente en la tabla maestra (mc_clienteunico)
+    tipo: NUMBER
+  - nombre: clanivelofertanueva
+    descripcion: Clave de nivel de oferta nueva (desconocido)
+    tipo: TEXT
+  - nombre: claregimenfiscalsat
+    descripcion: Clave de régimen fiscal SAT (desconocido)
+    tipo: TEXT
+  - nombre: codigopostalimprime
+    descripcion: Código postal para imprimir en documentos
+    tipo: TEXT
+  - nombre: correoenvioembarque
+    descripcion: Correo electrónico para enviar información de embarque
+    tipo: TEXT
+  - nombre: correoenviofacturas
+    descripcion: Correo electrónico para enviar facturas
+    tipo: TEXT
+  - nombre: clametodopagosatfact
+    descripcion: Clave de método de pago SAT para facturas (desconocido)
+    tipo: TEXT
+  - nombre: correoenviointadeudo
+    descripcion: Correo electrónico para enviar información de deuda
+    tipo: TEXT
+  - nombre: enviarfacturascorreo
+    descripcion: Indica si se deben enviar facturas por correo electrónico (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: escobraseguromensual
+    descripcion: Indica si se cobra seguro mensual (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: esdiscrepanciafiscal
+    descripcion: Indica si hay discrepancia fiscal (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: fechainiciooperacion
+    descripcion: Fecha de inicio de operaciones del cliente
+    tipo: DATE
+  - nombre: claveinternacionalfax
+    descripcion: Clave internacional para el número de fax
+    tipo: TEXT
+  - nombre: enviarintadeudoporcuc
+    descripcion: Indica si se debe enviar información de deuda por CUCSF (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: clametodopagoppdpuesat
+    descripcion: Clave de método de pago PPD/PUE SAT (desconocido)
+    tipo: TEXT
+  - nombre: claveinternacionalmovil
+    descripcion: Clave internacional para el número de teléfono móvil
+    tipo: TEXT
+  - nombre: coberturapolizasegtrans
+    descripcion: Cobertura de la póliza de seguro de transporte
+    tipo: TEXT
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: NUMBER
+  - nombre: claagrupadorclienteunico
+    descripcion: Clave de agrupador de cliente único (desconocido)
+    tipo: TEXT
+  - nombre: clametodopagoppdpuesatnc
+    descripcion: Clave de método de pago PPD/PUE SAT para notas de crédito (desconocido)
+    tipo: TEXT
+  - nombre: enviarnotifcapturapedido
+    descripcion: Indica si se debe enviar notificación de captura de pedido (1: Sí, 0: No)
+    tipo: BOOLEAN
+  - nombre: fechavencepolizasegtrans
+    descripcion: Fecha de vencimiento de la póliza de seguro de transporte
+    tipo: DATE
+  - nombre: nomclienteunico
+    descripcion: Nombre completo del cliente único, concatenando apellido paterno, apellido materno y nombre/razón social.
+    tipo: TEXT
+  - nombre: esfilialdeacero
+    descripcion: Indica si el cliente es una filial de acero (1: Sí, 0: No) - Valor predeterminado como NULL en esta vista.
+    tipo: BOOLEAN
+  - nombre: clatipoportafolio
+    descripcion: Clave del tipo de portafolio del cliente (desconocido)
+    tipo: TEXT
+

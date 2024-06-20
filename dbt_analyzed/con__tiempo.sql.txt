@@ -1,0 +1,54 @@
+vista: date_series
+descripcion: Vista que genera una serie de fechas desde el 2020 hasta el 2040 con información adicional como día, mes, año, trimestre, semestre, días hábiles, etc.
+campos:
+  - nombre: DATE
+    descripcion: Fecha en formato DATE
+    tipo: DATE
+  - nombre: YEAR
+    descripcion: Año de la fecha
+    tipo: INT64
+  - nombre: MONTH
+    descripcion: Mes de la fecha
+    tipo: INT64
+  - nombre: DAY
+    descripcion: Día de la fecha
+    tipo: INT64
+  - nombre: DAY_OF_WEEK
+    descripcion: Día de la semana en formato texto
+    tipo: STRING
+  - nombre: YEAR_MONTH
+    descripcion: Año y mes en formato YYYY-MM
+    tipo: STRING
+  - nombre: MONTH_YEAR
+    descripcion: Mes y año en formato MMMM.YYYY
+    tipo: STRING
+  - nombre: YEAR_MONTH_DAY
+    descripcion: Fecha en formato YYYYMMDD
+    tipo: STRING
+  - nombre: US_FORMAT
+    descripcion: Fecha en formato MM/DD/YYYY
+    tipo: STRING
+  - nombre: QUARTER
+    descripcion: Trimestre del año al que pertenece la fecha
+    tipo: STRING
+  - nombre: SEMESTER
+    descripcion: Semestre del año al que pertenece la fecha
+    tipo: STRING
+  - nombre: YEAR_WEEK
+    descripcion: Año y semana del año a la que pertenece la fecha
+    tipo: STRING
+  - nombre: IS_TODAY
+    descripcion: Indica si la fecha es el día actual
+    tipo: BOOL
+  - nombre: DAY_MONTH
+    descripcion: Indica el día del mes
+    tipo: INT64
+  - nombre: DIAS_HABILES_MES
+    descripcion: Indica la cantidad de días hábiles del mes al que pertenece la fecha, considerando fines de semana y días festivos.
+    tipo: FLOAT64
+  - nombre: DIAS_HABILES_TRANSCURRIDOS_MES
+    descripcion: Indica la cantidad de días hábiles transcurridos desde el inicio del mes hasta la fecha, considerando fines de semana y días festivos.
+    tipo: FLOAT64
+  - nombre: DIAS_HABILES_RESTANTES_MES
+    descripcion: Indica la cantidad de días hábiles restantes desde la fecha hasta el final del mes, considerando fines de semana y días festivos.
+    tipo: FLOAT64 

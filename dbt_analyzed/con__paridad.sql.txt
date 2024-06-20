@@ -1,0 +1,19 @@
+vista: MST_PARIDAD_VW
+descripcion: Vista materializada que presenta la información de paridad de monedas.
+campos:
+  - nombre: FECHA_PARIDAD
+    descripcion: Fecha de la paridad.
+    tipo: DATE
+  - nombre: CLA_MONEDA
+    descripcion: Clave de la moneda.
+    tipo: STRING
+  - nombre: PARIDAD_MONEDA_PESO
+    descripcion: Paridad de la moneda con respecto al peso.
+    tipo: FLOAT64
+  - nombre: PARIDAD_MONEDA_DOLAR
+    descripcion: Paridad de la moneda con respecto al dolar.
+    tipo: FLOAT64
+  - nombre: PARIDAD_DOLAR_MON
+    descripcion: Paridad del dolar con respecto a la moneda.
+    tipo: FLOAT64
+

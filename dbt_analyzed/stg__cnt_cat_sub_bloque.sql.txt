@@ -1,0 +1,54 @@
+vista: stg_cntcatsubbloque
+descripcion: Vista generada por DBT a partir de la tabla CntSch_CntCatSubBloque
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clabloque
+    descripcion: Clave del bloque
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de Postgres
+    tipo: STRING
+  - nombre: clasubbloque
+    descripcion: Clave del sub bloque
+    tipo: INT64
+  - nombre: nomsubbloque
+    descripcion: Nombre del sub bloque en mayúsculas
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: nomsubbloqueidioma2
+    descripcion: Nombre del sub bloque en idioma 2 en mayúsculas
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

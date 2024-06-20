@@ -1,0 +1,9 @@
+vista: MST_TIPO_ACTIVO_VW
+descripcion: Vista materializada que presenta la información de los tipos de activos.
+campos:
+  - nombre: CLA_TIPO_ACTIVO
+    descripcion: Clave del tipo de activo.
+    tipo: INT
+  - nombre: NOM_TIPO_ACTIVO
+    descripcion: Nombre del tipo de activo.
+    tipo: VARCHAR 

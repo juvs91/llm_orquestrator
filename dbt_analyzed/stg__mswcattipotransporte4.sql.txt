@@ -1,0 +1,60 @@
+vista: stg_mswcattipotransporte4
+descripcion: Vista generada a partir de la tabla FESCH_MSWCatTipoTransporte4
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: cubicaje
+    descripcion: Valor de cubicaje
+    tipo: FLOAT64
+  - nombre: capacidad
+    descripcion: Valor de capacidad
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0 o 1)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: capacidadlibra
+    descripcion: Valor de capacidad en libras
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipotransporte
+    descripcion: Clave del tipo de transporte
+    tipo: INT64
+  - nombre: nomtipotransporte
+    descripcion: Nombre del tipo de transporte
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte actualizó por última vez el registro
+    tipo: STRING
+  - nombre: nomtipotransporteingles
+    descripcion: Nombre del tipo de transporte en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

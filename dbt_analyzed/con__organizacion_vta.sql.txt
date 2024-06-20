@@ -1,0 +1,48 @@
+vista: MST_ORGANIZACION_VTA_VW
+descripcion: Vista que contiene información de la organización de ventas.
+campos:
+  - nombre: CLA_ORGANIZACION
+    descripcion: Clave de la organización.
+    tipo: INT
+  - nombre: NIVEL
+    descripcion: Nivel de la organización.
+    tipo: INT
+  - nombre: NOM_ORGANIZACION
+    descripcion: Nombre de la organización.
+    tipo: VARCHAR
+  - nombre: CLA_GRUPO
+    descripcion: Clave del grupo al que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_GRUPO
+    descripcion: Nombre del grupo al que pertenece la organización.
+    tipo: VARCHAR
+  - nombre: CLA_DIRECCION
+    descripcion: Clave de la dirección a la que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_DIRECCION
+    descripcion: Nombre de la dirección a la que pertenece la organización.
+    tipo: VARCHAR
+  - nombre: CLA_SUBDIRECCION
+    descripcion: Clave de la subdirección a la que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_SUBDIRECCION
+    descripcion: Nombre de la subdirección a la que pertenece la organización.
+    tipo: VARCHAR
+  - nombre: CLA_GERENCIA_REGIONAL
+    descripcion: Clave de la gerencia regional a la que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_GERENCIA_REGIONAL
+    descripcion: Nombre de la gerencia regional a la que pertenece la organización.
+    tipo: VARCHAR
+  - nombre: CLA_GERENCIA
+    descripcion: Clave de la gerencia a la que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_GERENCIA
+    descripcion: Nombre de la gerencia a la que pertenece la organización.
+    tipo: VARCHAR
+  - nombre: CLA_ZONA
+    descripcion: Clave de la zona a la que pertenece la organización.
+    tipo: INT
+  - nombre: NOM_ZONA
+    descripcion: Nombre de la zona a la que pertenece la organización.
+    tipo: VARCHAR

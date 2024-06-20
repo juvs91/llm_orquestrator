@@ -1,0 +1,42 @@
+vista: mst_ubicacion_vw
+descripcion: Vista maestra de ubicaciones, combina información de clientes, tipos de ubicación y unidades de negocio.
+campos:
+  - nombre: cla_ubicacion
+    descripcion: Clave única de la ubicación.
+    tipo: int
+  - nombre: nom_ubicacion
+    descripcion: Nombre de la ubicación.
+    tipo: string
+  - nombre: cla_tipo_ubicacion
+    descripcion: Clave del tipo de ubicación.
+    tipo: int
+  - nombre: baja_logica
+    descripcion: Indica si la ubicación está dada de baja (1) o no (0).
+    tipo: int
+  - nombre: nom_tipo_ubicacion
+    descripcion: Nombre del tipo de ubicación.
+    tipo: string
+  - nombre: cla_ciudad
+    descripcion: Clave de la ciudad donde se encuentra la ubicación.
+    tipo: int
+  - nombre: nom_ciudad
+    descripcion: Nombre de la ciudad donde se encuentra la ubicación.
+    tipo: string
+  - nombre: cla_estado
+    descripcion: Clave del estado donde se encuentra la ubicación.
+    tipo: int
+  - nombre: nom_estado
+    descripcion: Nombre del estado donde se encuentra la ubicación.
+    tipo: string
+  - nombre: cla_pais
+    descripcion: Clave del país donde se encuentra la ubicación.
+    tipo: int
+  - nombre: nom_pais
+    descripcion: Nombre del país donde se encuentra la ubicación.
+    tipo: string
+  - nombre: cla_unidad_negocio
+    descripcion: Clave de la unidad de negocio a la que pertenece la ubicación.
+    tipo: int
+  - nombre: nom_unidad_negocio
+    descripcion: Nombre de la unidad de negocio a la que pertenece la ubicación.
+    tipo: string 

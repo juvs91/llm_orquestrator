@@ -1,0 +1,309 @@
+vista: stg_mswcatclientecuenta
+descripcion: Vista generada por DBT para la tabla FESCH_MSWCatClienteCuenta
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: noext
+    descripcion: Número exterior de la dirección
+    tipo: STRING
+  - nombre: noint
+    descripcion: Número interior de la dirección
+    tipo: STRING
+  - nombre: notas
+    descripcion: Notas generales del cliente
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: clazona
+    descripcion: Clave de la zona
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: claregion
+    descripcion: Clave de la región
+    tipo: INT64
+  - nombre: telefono1
+    descripcion: Teléfono principal del cliente
+    tipo: STRING
+  - nombre: telefono2
+    descripcion: Teléfono secundario del cliente
+    tipo: STRING
+  - nombre: telefono3
+    descripcion: Tercer teléfono del cliente
+    tipo: STRING
+  - nombre: tradename
+    descripcion: Nombre comercial del cliente
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente
+    tipo: INT64
+  - nombre: clacolonia
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: clacondado
+    descripcion: Clave del condado
+    tipo: INT64
+  - nombre: clausocfdi
+    descripcion: Clave del uso de CFDI
+    tipo: STRING
+  - nombre: cuentapago
+    descripcion: Número de cuenta de pago
+    tipo: STRING
+  - nombre: direccion1
+    descripcion: Línea 1 de la dirección
+    tipo: STRING
+  - nombre: direccion2
+    descripcion: Línea 2 de la dirección
+    tipo: STRING
+  - nombre: cladivision
+    descripcion: Clave de la división
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios adicionales del cliente
+    tipo: STRING
+  - nombre: duns_number
+    descripcion: Número D-U-N-S del cliente
+    tipo: STRING
+  - nombre: diasdeventa
+    descripcion: Días de venta permitidos al cliente
+    tipo: INT64
+  - nombre: espormigrar
+    descripcion: Indicador de migración (1: pendiente, 0: migrado)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: refbancaria
+    descripcion: Referencia bancaria del cliente
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claagentecsr
+    descripcion: Clave del agente CSR
+    tipo: INT64
+  - nombre: claprospecto
+    descripcion: Clave del prospecto
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal de la dirección
+    tipo: STRING
+  - nombre: direccionweb
+    descripcion: Dirección del sitio web del cliente
+    tipo: STRING
+  - nombre: escladeacero
+    descripcion: Indicador de cliente de acero (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esrequiereoc
+    descripcion: Indicador de requerimiento de orden de compra (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fechacaptura
+    descripcion: Fecha de captura del registro
+    tipo: DATETIME
+  - nombre: importelabor
+    descripcion: Importe de mano de obra
+    tipo: FLOAT64
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: desctelefono1
+    descripcion: Descripción del teléfono 1
+    tipo: STRING
+  - nombre: desctelefono2
+    descripcion: Descripción del teléfono 2
+    tipo: STRING
+  - nombre: desctelefono3
+    descripcion: Descripción del teléfono 3
+    tipo: STRING
+  - nombre: limitecredito
+    descripcion: Límite de crédito del cliente
+    tipo: FLOAT64
+  - nombre: tipoedocuenta
+    descripcion: Tipo de estado de cuenta
+    tipo: STRING
+  - nombre: claagenteventa
+    descripcion: Clave del agente de ventas
+    tipo: INT64
+  - nombre: claciudadunico
+    descripcion: Clave única de la ciudad
+    tipo: INT64
+  - nombre: claestadounico
+    descripcion: Clave única del estado
+    tipo: INT64
+  - nombre: clatipocartera
+    descripcion: Clave del tipo de cartera
+    tipo: INT64
+  - nombre: clatipocliente
+    descripcion: Clave del tipo de cliente
+    tipo: INT64
+  - nombre: clatipomercado
+    descripcion: Clave del tipo de mercado
+    tipo: INT64
+  - nombre: claviaembarque
+    descripcion: Clave de la vía de embarque
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: subcladivision
+    descripcion: Clave de la subdivisión
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claclientegrupo
+    descripcion: Clave del grupo del cliente
+    tipo: INT64
+  - nombre: claempresamarca
+    descripcion: Clave de la marca de la empresa
+    tipo: INT64
+  - nombre: clatipocobranza
+    descripcion: Clave del tipo de cobranza
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: fechasigllamada
+    descripcion: Fecha de la siguiente llamada
+    tipo: DATETIME
+  - nombre: claagentegerente
+    descripcion: Clave del agente gerente
+    tipo: INT64
+  - nombre: claclientecuenta
+    descripcion: Clave de la cuenta del cliente
+    tipo: INT64
+  - nombre: clametodopagosat
+    descripcion: Clave del método de pago SAT
+    tipo: INT64
+  - nombre: esgeneracomision
+    descripcion: Indicador de generación de comisión (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esimprimefactura
+    descripcion: Indicador de impresión de factura (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fecultrevcredito
+    descripcion: Fecha de la última revisión de crédito
+    tipo: DATETIME
+  - nombre: nomclientecuenta
+    descripcion: Nombre de la cuenta del cliente
+    tipo: STRING
+  - nombre: clacondicionventa
+    descripcion: Clave de la condición de venta
+    tipo: INT64
+  - nombre: claestatuscliente
+    descripcion: Clave del estatus del cliente
+    tipo: INT64
+  - nombre: claestatuscredito
+    descripcion: Clave del estatus del crédito
+    tipo: INT64
+  - nombre: clausuariocartera
+    descripcion: Clave del usuario de cartera
+    tipo: INT64
+  - nombre: claveclientecuenta
+    descripcion: Clave de la cuenta del cliente
+    tipo: STRING
+  - nombre: discrepanciafiscal
+    descripcion: Indicador de discrepancia fiscal (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esexencioncompleta
+    descripcion: Indicador de exención completa (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esinteresmoratorio
+    descripcion: Indicador de interés moratorio (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esllamadapendiente
+    descripcion: Indicador de llamada pendiente (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fechaminsigllamada
+    descripcion: Fecha mínima para la siguiente llamada
+    tipo: DATETIME
+  - nombre: fechaultimallamada
+    descripcion: Fecha de la última llamada
+    tipo: DATETIME
+  - nombre: tipbusquedaalterna
+    descripcion: Tipo de búsqueda alternativa
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clacategoriacliente
+    descripcion: Clave de la categoría del cliente
+    tipo: INT64
+  - nombre: claciclofacturacion
+    descripcion: Clave del ciclo de facturación
+    tipo: INT64
+  - nombre: codigolocalimpuesto
+    descripcion: Código local de impuesto
+    tipo: STRING
+  - nombre: esrecibeprestamoherr
+    descripcion: Indicador de recepción de préstamo de herramienta (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fechaautorizacartera
+    descripcion: Fecha de autorización de cartera
+    tipo: DATETIME
+  - nombre: claveexencionimpuesto
+    descripcion: Clave de exención de impuesto
+    tipo: STRING
+  - nombre: comentarioviaembarque
+    descripcion: Comentario de la vía de embarque
+    tipo: STRING
+  - nombre: esaplicacargoespecial
+    descripcion: Indicador de aplicación de cargo especial (1: sí, 0: no)
+    tipo: INT64
+  - nombre: instruccionesembarque
+    descripcion: Instrucciones de embarque
+    tipo: STRING
+  - nombre: contactoprincipalventa
+    descripcion: Contacto principal de ventas
+    tipo: STRING
+  - nombre: esembarcablecliente3ro
+    descripcion: Indicador de embarque a cliente tercero (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esfacturablecliente3ro
+    descripcion: Indicador de facturación a cliente tercero (1: sí, 0: no)
+    tipo: INT64
+  - nombre: essoloembarquecompleto
+    descripcion: Indicador de solo embarque completo (1: sí, 0: no)
+    tipo: INT64
+  - nombre: claclasificacioncliente
+    descripcion: Clave de la clasificación del cliente
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: porcentajefondoretencion
+    descripcion: Porcentaje de fondo de retención
+    tipo: INT64
+  - nombre: claagenterepgranel_nousar
+    descripcion: Clave del agente representante de granel (no usar)
+    tipo: INT64
+  - nombre: contactoconfirmacionenvio
+    descripcion: Contacto para confirmación de envío
+    tipo: STRING
+  - nombre: claagenterepempacado_nousar
+    descripcion: Clave del agente representante de empacado (no usar)
+    tipo: INT64
+  - nombre: contactoprincipalventaemail
+    descripcion: Correo electrónico del contacto principal de ventas
+    tipo: STRING
+  - nombre: claagenterepherramienta_nousar
+    descripcion: Clave del agente representante de herramienta (no usar)
+    tipo: INT64

@@ -1,0 +1,60 @@
+vista: stg_eaacatdimension
+descripcion: Vista generada a partir de la tabla EAASch_EAACatDimension
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: icon
+    descripcion: Icono de la dimensión
+    tipo: STRING
+  - nombre: color
+    descripcion: Color de la dimensión
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la dimensión está dada de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó la dimensión
+    tipo: STRING
+  - nombre: ponderacion
+    descripcion: Ponderación de la dimensión
+    tipo: FLOAT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de la operación CDC
+    tipo: STRING
+  - nombre: cladimension
+    descripcion: Clave única de la dimensión
+    tipo: INT64
+  - nombre: nomdimension
+    descripcion: Nombre de la dimensión
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la dimensión
+    tipo: INT64
+  - nombre: dimensiondesc
+    descripcion: Descripción de la dimensión
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

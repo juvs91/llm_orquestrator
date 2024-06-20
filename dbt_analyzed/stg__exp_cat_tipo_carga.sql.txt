@@ -1,0 +1,63 @@
+vista: stg_expcattipocarga
+descripcion: Vista generada por DBT para la tabla dbo_ExpCatTipoCarga
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: nombre
+    descripcion: Nombre del tipo de carga
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el tipo de carga está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: descripcion
+    descripcion: Descripción del tipo de carga
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos
+    tipo: STRING
+  - nombre: clatipocarga
+    descripcion: Clave del tipo de carga
+    tipo: INT64
+  - nombre: escontenedor
+    descripcion: Indica si el tipo de carga es un contenedor (1) o no (0)
+    tipo: INT64
+  - nombre: nombreingles
+    descripcion: Nombre del tipo de carga en inglés
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: considerarpeso
+    descripcion: Indica si se debe considerar el peso para este tipo de carga (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: considerardimension
+    descripcion: Indica si se deben considerar las dimensiones para este tipo de carga (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

@@ -1,0 +1,72 @@
+vista: stg_pldcatbarcodet
+descripcion: Vista generada por DBT para la tabla PLDSch_PldCatBarcoDet
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: idbarco
+    descripcion: ID del barco
+    tipo: INT64
+  - nombre: renglon
+    descripcion: Número de renglón
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: No, 1: Sí)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente
+    tipo: INT64
+  - nombre: folproducto
+    descripcion: Folio del producto
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC modificado
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: renpedidocte
+    descripcion: Renglón del pedido del cliente
+    tipo: INT64
+  - nombre: cantporsurtir
+    descripcion: Cantidad por surtir
+    tipo: FLOAT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clapedidocliente
+    descripcion: Clave del pedido del cliente
+    tipo: INT64
+  - nombre: clapedidotraspaso
+    descripcion: Clave del pedido de traspaso
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: claubicaciontraspaso
+    descripcion: Clave de la ubicación de traspaso
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

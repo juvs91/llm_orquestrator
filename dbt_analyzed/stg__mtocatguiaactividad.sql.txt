@@ -1,0 +1,132 @@
+vista: stg_mtocatguiaactividad
+descripcion: Vista generada por DBT a partir de la tabla MtoSch_MtoCatGuiaActividad
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales extraídos por Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden de la actividad en la guía
+    tipo: INT64
+  - nombre: valpf
+    descripcion: Valor PF (desconocido)
+    tipo: FLOAT64
+  - nombre: nvalor
+    descripcion: Valor numérico (desconocido)
+    tipo: INT64
+  - nombre: claguia
+    descripcion: Clave foránea a la tabla de guías
+    tipo: INT64
+  - nombre: claturno
+    descripcion: Clave foránea a la tabla de turnos
+    tipo: INT64
+  - nombre: claequipo
+    descripcion: Clave foránea a la tabla de equipos
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la actividad está dada de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esderiesgo
+    descripcion: Indica si la actividad es de riesgo (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: predecesor
+    descripcion: ID de la actividad predecesora
+    tipo: INT64
+  - nombre: clatipoplan
+    descripcion: Clave foránea a la tabla de tipos de plan
+    tipo: INT64
+  - nombre: esseguridad
+    descripcion: Indica si la actividad es de seguridad (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó la actividad
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: cladisciplina
+    descripcion: Clave foránea a la tabla de disciplinas
+    tipo: INT64
+  - nombre: clafrecuencia
+    descripcion: Clave foránea a la tabla de frecuencias
+    tipo: INT64
+  - nombre: clarcmfuncion
+    descripcion: Clave foránea a la tabla de funciones RCM
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron la actividad
+    tipo: INT64
+  - nombre: fechaultimaot
+    descripcion: Fecha de la última orden de trabajo relacionada con la actividad
+    tipo: DATETIME
+  - nombre: nombrearchivo
+    descripcion: Nombre del archivo adjunto a la actividad
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación de la actividad
+    tipo: DATETIME
+  - nombre: tiempoestimado
+    descripcion: Tiempo estimado para completar la actividad
+    tipo: FLOAT64
+  - nombre: valoroperacion
+    descripcion: Valor de la operación (desconocido)
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clarcmmodofalla
+    descripcion: Clave foránea a la tabla de modos de falla RCM
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica de la actividad
+    tipo: DATETIME
+  - nombre: clafuncionpuesto
+    descripcion: Clave foránea a la tabla de funciones de puesto
+    tipo: INT64
+  - nombre: claguiaactividad
+    descripcion: Clave primaria de la tabla de actividades de la guía
+    tipo: INT64
+  - nombre: extensionarchivo
+    descripcion: Extensión del archivo adjunto a la actividad
+    tipo: STRING
+  - nombre: nomguiaactividad
+    descripcion: Nombre de la actividad de la guía
+    tipo: STRING
+  - nombre: clarcmfuncionfalla
+    descripcion: Clave foránea a la tabla de funciones de falla RCM
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: claestatusactividad
+    descripcion: Clave foránea a la tabla de estados de la actividad
+    tipo: INT64
+  - nombre: requiereparomaquina
+    descripcion: Indica si la actividad requiere parar la máquina (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clanominaresponsable
+    descripcion: Clave foránea a la tabla de nominas responsables
+    tipo: INT64
+  - nombre: clatipomantenimiento
+    descripcion: Clave foránea a la tabla de tipos de mantenimiento
+    tipo: INT64
+  - nombre: clafrecuenciaoriginal
+    descripcion: Clave foránea a la tabla de frecuencias originales
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: clatrabajadorresponsable
+    descripcion: Clave foránea a la tabla de trabajadores responsables
+    tipo: INT64

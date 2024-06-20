@@ -1,0 +1,14 @@
+vista: MST_EMPRESA_VW
+descripcion: Vista que combina la información de empresas con su información fiscal.
+campos:
+  - nombre: CLA_EMPRESA
+    descripcion: Clave única de la empresa.
+    tipo: INT
+  - nombre: NOM_EMPRESA
+    descripcion: Nombre corto de la empresa.
+    tipo: VARCHAR
+  - nombre: CLA_RFC
+    descripcion: Clave del Registro Federal de Contribuyentes (RFC) de la empresa.
+    tipo: VARCHAR
+ 
+ 

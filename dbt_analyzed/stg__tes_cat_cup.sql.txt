@@ -1,0 +1,111 @@
+vista: stg_tescatcup
+descripcion: Vista generada por DBT a partir de la tabla dbo_TesCatCUP
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes
+    tipo: STRING
+  - nombre: curp
+    descripcion: Clave Única de Registro de Población
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle
+    tipo: STRING
+  - nombre: noext
+    descripcion: Número exterior
+    tipo: STRING
+  - nombre: noint
+    descripcion: Número interior
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la ocupación
+    tipo: INT64
+  - nombre: nombre
+    descripcion: Nombre completo
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: estatus
+    descripcion: Estatus
+    tipo: INT64
+  - nombre: diaspago
+    descripcion: Días de pago
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono
+    tipo: STRING
+  - nombre: apmaterno
+    descripcion: Apellido materno
+    tipo: STRING
+  - nombre: appaterno
+    descripcion: Apellido paterno
+    tipo: STRING
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: fechaalta
+    descripcion: Fecha de alta
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Baja lógica
+    tipo: INT64
+  - nombre: clacolonia
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: cuentamail
+    descripcion: Correo electrónico
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre de la computadora donde se modificó
+    tipo: STRING
+  - nombre: tipopersona
+    descripcion: Tipo de persona
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos de origen
+    tipo: STRING
+  - nombre: codigopostal
+    descripcion: Código postal
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó
+    tipo: INT64
+  - nombre: fechadonativo
+    descripcion: Fecha del donativo
+    tipo: DATETIME
+  - nombre: autorizacheque
+    descripcion: Autorización de cheque
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: vigenciacheque
+    descripcion: Vigencia del cheque
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de Airbyte CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: clamunicipiodelegacion
+    descripcion: Clave del municipio o delegación
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING

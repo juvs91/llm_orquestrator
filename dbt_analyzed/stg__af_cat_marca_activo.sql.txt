@@ -1,0 +1,51 @@
+vista: stg_afcatmarcaactivo
+descripcion: Vista generada por DBT a partir de la tabla AFSch_AfCatMarcaActivo
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de la transacción de origen
+    tipo: STRING
+  - nombre: clatipoactivo
+    descripcion: Clave foránea a la tabla de tipos de activo
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: clamarcaactivo
+    descripcion: Clave primaria de la tabla de marcas de activo
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: nommarcaactivo
+    descripcion: Nombre de la marca de activo
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de Airbyte para cuando se eliminó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de Airbyte para cuando se actualizó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING

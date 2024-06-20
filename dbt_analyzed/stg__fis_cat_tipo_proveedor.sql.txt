@@ -1,0 +1,54 @@
+vista: stg_fiscattipoproveedor
+descripcion: Vista generada por DBT para la tabla dbo_FisCatTipoProveedor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: requierecurp_sn
+    descripcion: Indica si se requiere CURP (1) o no (0)
+    tipo: INT64
+  - nombre: clatipoproveedor
+    descripcion: Clave del tipo de proveedor
+    tipo: INT64
+  - nombre: nomtipoproveedor
+    descripcion: Nombre del tipo de proveedor
+    tipo: STRING
+  - nombre: nomtipoproveedoren
+    descripcion: Nombre del tipo de proveedor en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

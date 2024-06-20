@@ -1,0 +1,102 @@
+vista: stg_vtacatgrupoestadistico
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatGrupoEstadistico
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: nivel01
+    descripcion: Nivel 1 de la jerarquía de productos
+    tipo: INT64
+  - nombre: nivel02
+    descripcion: Nivel 2 de la jerarquía de productos
+    tipo: INT64
+  - nombre: nivel03
+    descripcion: Nivel 3 de la jerarquía de productos
+    tipo: INT64
+  - nombre: nivel04
+    descripcion: Nivel 4 de la jerarquía de productos
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: nivel01_mc
+    descripcion: Nivel 1 de la jerarquía de productos (MC)
+    tipo: INT64
+  - nombre: nivel02_mc
+    descripcion: Nivel 2 de la jerarquía de productos (MC)
+    tipo: INT64
+  - nombre: nivelactual
+    descripcion: Nivel actual en la jerarquía de productos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: fechacaptura
+    descripcion: Fecha de captura del registro
+    tipo: DATETIME
+  - nombre: ordenalterno
+    descripcion: Orden alternativo de visualización
+    tipo: INT64
+  - nombre: clamargenventa
+    descripcion: Clave de margen de venta
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clatipoproducto
+    descripcion: Clave de tipo de producto
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clamargencomision
+    descripcion: Clave de margen de comisión
+    tipo: INT64
+  - nombre: clanegocioingetek
+    descripcion: Clave de negocio Ingetek
+    tipo: INT64
+  - nombre: claverticalmarket
+    descripcion: Clave de mercado vertical
+    tipo: INT64
+  - nombre: claproductgrouping
+    descripcion: Clave de agrupación de productos
+    tipo: INT64
+  - nombre: clatipoestadistico
+    descripcion: Clave de tipo estadístico
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: clagrupoestadistico
+    descripcion: Clave de grupo estadístico
+    tipo: INT64
+  - nombre: claproductgroupingusa
+    descripcion: Clave de agrupación de productos (USA)
+    tipo: INT64
+  - nombre: nombregrupoestadistico
+    descripcion: Nombre del grupo estadístico
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: nombregrupoestadisticocorto
+    descripcion: Nombre corto del grupo estadístico
+    tipo: STRING
+  - nombre: nombregrupoestadisticoingles
+    descripcion: Nombre del grupo estadístico en inglés
+    tipo: STRING

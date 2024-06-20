@@ -1,0 +1,69 @@
+vista: stg_opecattipomaterial
+descripcion: Vista generada por DBT a partir de la tabla OpeSch_OpeCatTipoMaterial
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: pesokgs
+    descripcion: Peso en kilogramos
+    tipo: INT64
+  - nombre: bloqueado
+    descripcion: Indica si el tipo de material está bloqueado (1) o no (0)
+    tipo: INT64
+  - nombre: claunidad
+    descripcion: Clave foránea a la tabla de unidades
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el tipo de material se ha dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: claarticulo
+    descripcion: Clave foránea a la tabla de artículos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado por la captura de datos modificados de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: costounitario
+    descripcion: Costo unitario del tipo de material
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por la captura de datos modificados de Airbyte
+    tipo: INT64
+  - nombre: clatipomaterial
+    descripcion: Clave primaria del tipo de material
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: nomtipomaterial
+    descripcion: Nombre del tipo de material
+    tipo: STRING
+  - nombre: clagrupomaterial
+    descripcion: Clave foránea a la tabla de grupos de materiales
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó por última vez un registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez el registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

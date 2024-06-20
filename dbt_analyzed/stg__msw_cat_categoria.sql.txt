@@ -1,0 +1,87 @@
+vista: stg_mswcatcategoria
+descripcion: Vista generada a partir de la tabla FESCH_MSWCatCategoria
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: claniv1
+    descripcion: Nivel 1 de la categoría
+    tipo: INT64
+  - nombre: claniv2
+    descripcion: Nivel 2 de la categoría
+    tipo: INT64
+  - nombre: claniv3
+    descripcion: Nivel 3 de la categoría
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la categoría está dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: esinvplanta
+    descripcion: Indica si la categoría es de inventario de planta (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó la categoría por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de los CDC de Airbyte
+    tipo: STRING
+  - nombre: aplicaventas
+    descripcion: Indica si la categoría aplica para ventas (1) o no (0)
+    tipo: INT64
+  - nombre: clacategoria
+    descripcion: Clave numérica de la categoría
+    tipo: INT64
+  - nombre: expvtacompra
+    descripcion: Indica si la categoría se exporta a ventas y compras (1) o no (0)
+    tipo: INT64
+  - nombre: nomcategoria
+    descripcion: Nombre de la categoría
+    tipo: STRING
+  - nombre: aplicacompras
+    descripcion: Indica si la categoría aplica para compras (1) o no (0)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la categoría por última vez
+    tipo: INT64
+  - nombre: clavecategoria
+    descripcion: Clave alfanumérica de la categoría
+    tipo: STRING
+  - nombre: esinventariado
+    descripcion: Indica si la categoría es inventariada (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación de la categoría
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de los CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica de la categoría
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario al que pertenece la categoría
+    tipo: INT64
+  - nombre: nomcategoriaingles
+    descripcion: Nombre de la categoría en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de los CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de los CDC de Airbyte
+    tipo: STRING
+  - nombre: clavecuentainventario
+    descripcion: Clave de la cuenta de inventario asociada a la categoría
+    tipo: STRING
+  - nombre: nomcategoriaotroidioma
+    descripcion: Nombre de la categoría en otro idioma
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de los CDC de Airbyte
+    tipo: STRING

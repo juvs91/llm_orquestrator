@@ -1,0 +1,69 @@
+vista: stg_ofiscattasaimpuesto
+descripcion: Vista generada por DBT para la tabla OFISCatTasaImpuesto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: porcentaje
+    descripcion: Porcentaje de la tasa de impuesto
+    tipo: FLOAT64
+  - nombre: claimpuesto
+    descripcion: Clave foránea a la tabla de impuestos
+    tipo: INT64
+  - nombre: fechainicio
+    descripcion: Fecha de inicio de vigencia de la tasa de impuesto
+    tipo: DATETIME
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: fechavigente
+    descripcion: Fecha de vigencia de la tasa de impuesto
+    tipo: DATETIME
+  - nombre: nomdocumento
+    descripcion: Nombre del documento que respalda la tasa de impuesto
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: claveimpuesto
+    descripcion: Clave primaria de la tabla de tasas de impuesto
+    tipo: INT64
+  - nombre: fechacreacion
+    descripcion: Fecha de creación del registro
+    tipo: DATETIME
+  - nombre: tipodocumento
+    descripcion: Tipo de documento que respalda la tasa de impuesto
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clatipoimpuesto
+    descripcion: Clave foránea a la tabla de tipos de impuesto
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

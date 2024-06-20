@@ -1,0 +1,99 @@
+vista: stg_vtatraestatuscarteracliente2
+descripcion: Vista generada por DBT a partir de la tabla VtaSch_VtaTraEstatusCarteraCliente2
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clamoneda
+    descripcion: Clave de la moneda
+    tipo: INT64
+  - nombre: sobregiro
+    descripcion: Monto del sobregiro
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: estatusfinal
+    descripcion: Estatus final, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: estatuspaso1
+    descripcion: Estatus del paso 1, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: limitecredito
+    descripcion: Límite de crédito
+    tipo: FLOAT64
+  - nombre: porcsobregiro
+    descripcion: Porcentaje de sobregiro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: importecartera
+    descripcion: Importe de la cartera
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente
+    tipo: INT64
+  - nombre: estatussobregiro
+    descripcion: Estatus del sobregiro, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: porcfactvencidas
+    descripcion: Porcentaje de facturas vencidas
+    tipo: INT64
+  - nombre: claofertaservicio
+    descripcion: Clave de la oferta de servicio
+    tipo: INT64
+  - nombre: creditodisponible
+    descripcion: Crédito disponible
+    tipo: FLOAT64
+  - nombre: estatusdiasatraso
+    descripcion: Estatus de días de atraso, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: tiene45diasatraso
+    descripcion: Indica si tiene 45 días de atraso
+    tipo: INT64
+  - nombre: estatusfinalmesant
+    descripcion: Estatus final del mes anterior, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte
+    tipo: STRING
+  - nombre: estatusfactvencidas
+    descripcion: Estatus de facturas vencidas, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: estatusrecuperacion
+    descripcion: Estatus de recuperación, -1 si es nulo en origen
+    tipo: INT64
+  - nombre: importefactvencidas
+    descripcion: Importe de facturas vencidas
+    tipo: FLOAT64
+  - nombre: tienecontadosatpend
+    descripcion: Indica si tiene contados atrasados pendientes
+    tipo: INT64
+  - nombre: porcdiasatrasomesant
+    descripcion: Porcentaje de días de atraso del mes anterior
+    tipo: INT64
+  - nombre: porcrecuperacionmesant
+    descripcion: Porcentaje de recuperación del mes anterior
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

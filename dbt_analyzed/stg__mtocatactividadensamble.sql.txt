@@ -1,0 +1,66 @@
+vista: stg_mtocatactividadensamble
+descripcion: Vista generada por DBT para la tabla MtoSch_MtoCatActividadEnsamble.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: version
+    descripcion: Número de versión.
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (true/false).
+    tipo: BOOL
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de Postgres para CDC.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones.
+    tipo: INT64
+  - nombre: cladisciplina
+    descripcion: Clave foránea a la tabla de disciplinas.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte para CDC.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica.
+    tipo: DATETIME
+  - nombre: clafamiliaensamble
+    descripcion: Clave foránea a la tabla de familias de ensambles.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente, según lo capturado por CDC.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en la fuente, según lo capturado por CDC.
+    tipo: STRING
+  - nombre: claactividadensamble
+    descripcion: Clave primaria de la tabla de actividades de ensamble.
+    tipo: INT64
+  - nombre: nomactividadensamble
+    descripcion: Nombre de la actividad de ensamble.
+    tipo: STRING
+  - nombre: clasubfamiliaensamble
+    descripcion: Clave foránea a la tabla de subfamilias de ensambles.
+    tipo: INT64
+  - nombre: claveactividadensamble
+    descripcion: Clave única para la actividad de ensamble.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

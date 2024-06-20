@@ -1,0 +1,60 @@
+vista: stg_flecatrutadet
+descripcion: Vista generada por DBT a partir de la tabla FleSch_FleCatRutaDet
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: origen
+    descripcion: ID del origen de la ruta
+    tipo: INT64
+  - nombre: claruta
+    descripcion: ID de la ruta
+    tipo: INT64
+  - nombre: destino
+    descripcion: ID del destino de la ruta
+    tipo: INT64
+  - nombre: secuencia
+    descripcion: Secuencia de la ruta
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la ruta está dada de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clatiporuta
+    descripcion: ID del tipo de ruta
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: ID de la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

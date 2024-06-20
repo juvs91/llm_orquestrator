@@ -1,0 +1,244 @@
+vista: MST_CLIENTE_VW
+descripcion: Vista maestr de cliente
+campos:
+  - nombre: CLA_CLIENTE
+    descripcion: Clave del Cliente-Cuenta
+    tipo: INT64
+  - nombre: NOM_CLIENTE
+    descripcion: Nombre del cliente como esta dado de alta en el sistema
+    tipo: STRING
+  - nombre: CLA_CLIENTE_UNICO
+    descripcion: Clave unica por cliente que identifica a todos sus clientes-cuenta
+    tipo: INT64
+  - nombre: NOM_CLIENTE_UNICO
+    descripcion: Nombre Unico de Cliente
+    tipo: STRING
+  - nombre: CLA_AGRUPADOR_CLIENTE_UNICO
+    descripcion: Clave del agrupador del Cliente Unico
+    tipo: INT64
+  - nombre: NOM_AGRUPADOR_CLIENTE_UNICO
+    descripcion: Nombre del agrupador del cliente unico al que pertenece el cliente
+    tipo: STRING
+  - nombre: CLA_ZONA
+    descripcion: Clave de la zona a la que pertenece el cliente-cuenta
+    tipo: INT64
+  - nombre: NOM_ZONA
+    descripcion: Nombre de la Zona a la que pertenece el cliente-cuenta
+    tipo: STRING
+  - nombre: CLA_GERENCIA
+    descripcion: Clave de la gerencia a la que pertenece el cliente
+    tipo: INT64
+  - nombre: NOM_GERENCIA
+    descripcion: Nombre de la Gerencia a la que pertenece el cliente
+    tipo: STRING
+  - nombre: CLA_GERENCIA_REGIONAL
+    descripcion: Clave de la gerencia regional a la que pertenece el cliente
+    tipo: INT64
+  - nombre: NOM_GERENCIA_REGIONAL
+    descripcion: Nombre de la gerencia regional a la que pertenece el cliente
+    tipo: STRING
+  - nombre: CLA_SUBDIRECCION
+    descripcion: Clave Subdirección
+    tipo: INT64
+  - nombre: NOM_SUBDIRECCION
+    descripcion: Nombre Subdirección
+    tipo: STRING
+  - nombre: CLA_DIRECCION
+    descripcion: Clave de la Direccion
+    tipo: INT64
+  - nombre: NOM_DIRECCION
+    descripcion: Nombre de la Direccion
+    tipo: STRING
+  - nombre: CLA_GRUPO
+    descripcion: Clave del Grupo
+    tipo: INT64
+  - nombre: NOM_GRUPO
+    descripcion: Nombre del Grupo
+    tipo: STRING
+  - nombre: CLA_CIUDAD
+    descripcion: Clave de la ciudad
+    tipo: INT64
+  - nombre: NOM_CIUDAD
+    descripcion: Nombre de la Ciudad
+    tipo: STRING
+  - nombre: CLA_ESTADO
+    descripcion: Clave del Estado
+    tipo: INT64
+  - nombre: NOM_ESTADO
+    descripcion: Nombre del estado
+    tipo: STRING
+  - nombre: CLA_PAIS
+    descripcion: Clave del pais
+    tipo: INT64
+  - nombre: NOM_PAIS
+    descripcion: Nombre del pais
+    tipo: STRING
+  - nombre: RFC
+    descripcion: Registro Federal de Contribuyentes
+    tipo: STRING
+  - nombre: ES_FILIAL_DEACERO
+    descripcion: Indica si el cliente es filial de acero 1 - Si 0 - No
+    tipo: INT64
+  - nombre: FECHA_ALTA_CUENTA
+    descripcion: Fecha de alta del Cliente Cuenta
+    tipo: DATE
+  - nombre: FECHA_BAJA_CUENTA
+    descripcion: Fecha de baja del Cliente Cuenta
+    tipo: DATE
+  - nombre: FECHA_ALTA_CUC
+    descripcion: Fecha de alta del Cliente Unico
+    tipo: DATE
+  - nombre: FECHA_BAJA_CUC
+    descripcion: Fecha de baja del cliente unico
+    tipo: DATE
+  - nombre: CLA_NIVEL_CANAL
+    descripcion: Clave del Canal
+    tipo: INT64
+  - nombre: NOM_CANAL
+    descripcion: Nombre del canal
+    tipo: STRING
+  - nombre: CLA_MARCA
+    descripcion: Clave Marca
+    tipo: INT64
+  - nombre: NOM_MARCA
+    descripcion: Nombre Marca
+    tipo: STRING
+  - nombre: CLA_GIRO_INDUSTRIA
+    descripcion: Clave del giro industrial al que pertenece el cliente
+    tipo: INT64
+  - nombre: NOM_GIRO_INDUSTRIA
+    descripcion: Nombre del giro industrial al que pertenece el cliente
+    tipo: STRING
+  - nombre: NOM_GIRO_INDUSTRIA_EN
+    descripcion: Nombre en ingles del giro industrial al que pertenece el cliente
+    tipo: STRING
+  - nombre: CLA_GIRO_COMERCIAL
+    descripcion: Clave del giro comercial al que pertenece el cliente
+    tipo: INT64
+  - nombre: NOM_GIRO_COMERCIAL
+    descripcion: Nombre del giro comercial al que pertenece el cliente
+    tipo: STRING
+  - nombre: NOM_GIRO_COMERCIAL_EN
+    descripcion: Nombre en ingles del giro comercial al que pertenece el cliente
+    tipo: STRING
+  - nombre: CLA_CATEGORIA_CLIENTE
+    descripcion: Clave de la categoria del cliente
+    tipo: INT64
+  - nombre: NOM_CATEGORIA_CLIENTE
+    descripcion: Nombre de la categoria del cliente
+    tipo: STRING
+  - nombre: NOM_CATEGORIA_CLIENTE_EN
+    descripcion: Nombre en ingles de la categoria del cliente
+    tipo: STRING
+  - nombre: CLA_TIPO_CLIENTE
+    descripcion: Clave del tipo de cliente
+    tipo: INT64
+  - nombre: NOM_TIPO_CLIENTE
+    descripcion: Nombre del tipo de cliente
+    tipo: STRING
+  - nombre: NOM_TIPO_CLIENTE_EN
+    descripcion: Nombre en ingles del tipo de cliente
+    tipo: STRING
+  - nombre: CLA_TIPO_OPERACION
+    descripcion: Clave Tipo Operación
+    tipo: INT64
+  - nombre: NOM_TIPO_OPERACION
+    descripcion: Nombre Tipo Operación
+    tipo: STRING
+  - nombre: NOM_TIPO_OPERACION_EN
+    descripcion: Nombre en ingles del tipo de operacion
+    tipo: STRING
+  - nombre: CLA_TIPO_PROVEEDOR
+    descripcion: Clave tipo de proveedor
+    tipo: INT64
+  - nombre: NOM_TIPO_PROVEEDOR
+    descripcion: Nombre del tipo de proveedor
+    tipo: STRING
+  - nombre: NOM_TIPO_PROVEEDOR_EN
+    descripcion: Nombre en ingles del tipo de proveedor
+    tipo: STRING
+  - nombre: CLA_TIPO_PERSONA
+    descripcion: Clave Tipo Persona
+    tipo: INT64
+  - nombre: NOM_TIPO_PERSONA
+    descripcion: Nombre Tipo Persona
+    tipo: STRING
+  - nombre: NOM_TIPO_PERSONA_EN
+    descripcion: Clave Tipo Persona
+    tipo: STRING
+  - nombre: CLA_AGENTE
+    descripcion: Clave del agente de ventas
+    tipo: INT64
+  - nombre: NOM_AGENTE
+    descripcion: Nombre del agente de ventas
+    tipo: STRING
+  - nombre: TASA_IVA
+    descripcion: Tasa de IVA
+    tipo: FLOAT64
+  - nombre: CLA_CIUDAD_CUC
+    descripcion: Clave ciudad cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_CIUDAD_CUC
+    descripcion: Nombre de la ciudad del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_ESTADO_CUC
+    descripcion: Clave estado cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_ESTADO_CUC
+    descripcion: Nombre del estado del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_PAIS_CUC
+    descripcion: Clave pais cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_PAIS_CUC
+    descripcion: Nombre del pais del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_PRIORIZACION
+    descripcion: Clave Priorización
+    tipo: INT64
+  - nombre: NOM_PRIORIZACION
+    descripcion: Nombre Priorizacion
+    tipo: STRING
+  - nombre: CLA_NIVEL_CANAL_CUC
+    descripcion: Clave del nivel del canal del cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_NIVEL_CANAL_CUC
+    descripcion: Nombre del nivel de canal del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_GIRO_MASTER_CUC
+    descripcion: Clave del giro master del cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_GIRO_MASTER_CUC
+    descripcion: Nombre del giro master del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_ESTATUS_CARTERA_CUC
+    descripcion: Clave del estatus de cartera del cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_ESTATUS_CARTERA_CUC
+    descripcion: Nombre del estatus de cartera del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_NIVEL_OFERTA_NUEVA_CUC
+    descripcion: Clave del nivel de oferta nueva del cliente unico comercial
+    tipo: INT64
+  - nombre: NOM_NIVEL_OFERTA_NUEVA_CUC
+    descripcion: Nombre del nivel de oferta nueva del cliente unico comercial
+    tipo: STRING
+  - nombre: CLA_ESTATUS_CLIENTE
+    descripcion: Clave del estatus del cliente
+    tipo: INT64
+  - nombre: NOM_ESTATUS_CLIENTE
+    descripcion: Nombre del estatus del cliente
+    tipo: STRING
+  - nombre: CLAMODELOATENCION
+    descripcion: Clave Modelo de atención
+    tipo: INT64
+  - nombre: NOMBREMODELOATENCION
+    descripcion: Nombre del Modelo de Atención
+    tipo: STRING
+  - nombre: CLATIPOPORTAFOLIO
+    descripcion: Clave tipo portafolio
+    tipo: INT64
+  - nombre: NOMTIPOPORTAFOLIO
+    descripcion: Nombre tipo portafolio
+    tipo: STRING
+

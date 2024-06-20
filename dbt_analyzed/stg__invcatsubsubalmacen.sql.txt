@@ -1,0 +1,66 @@
+vista: stg_invcatsubsubalmacen
+descripcion: Vista generada por DBT para la tabla dbo_InvCatSubSubAlmacen
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: claalmacen
+    descripcion: Clave foránea al almacén
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la ubicación
+    tipo: INT64
+  - nombre: clasubalmacen
+    descripcion: Clave foránea al subalmacén
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: clasubsubalmacen
+    descripcion: Clave primaria del sub-subalmacén
+    tipo: INT64
+  - nombre: nomsubsubalmacen
+    descripcion: Nombre del sub-subalmacén
+    tipo: STRING
+  - nombre: clatipoinventario
+    descripcion: Clave foránea al tipo de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: ultimonivelafectable
+    descripcion: Indica si es el último nivel afectable (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: permiteexistencianegativa
+    descripcion: Indica si se permite existencia negativa (1) o no (0)
+    tipo: INT64

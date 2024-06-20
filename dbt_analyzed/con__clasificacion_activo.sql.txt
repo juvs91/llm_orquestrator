@@ -1,0 +1,9 @@
+vista: MST_CLASIFICACION_VW
+descripcion: Vista materializada de la clasificación.
+campos:
+  - nombre: CLA_CLASIFICACION
+    descripcion: Clave de la clasificación
+    tipo: INT
+  - nombre: NOM_CLASIFICACION
+    descripcion: Nombre de la clasificación
+    tipo: VARCHAR

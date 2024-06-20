@@ -1,0 +1,81 @@
+vista: stg_vtacatpais
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatPais
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clapais
+    descripcion: Clave de país
+    tipo: INT64
+  - nombre: nompais
+    descripcion: Nombre del país
+    tipo: STRING
+  - nombre: prefijo
+    descripcion: Prefijo telefónico del país
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clamoneda
+    descripcion: Clave de la moneda del país
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: nompaisesp
+    descripcion: Nombre del país en español
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: nomcortopais
+    descripcion: Nombre corto del país
+    tipo: STRING
+  - nombre: clapaislegacy
+    descripcion: Clave de país en el sistema legacy
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: claidiomalegacy
+    descripcion: Clave del idioma en el sistema legacy
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: nompaiscortosat
+    descripcion: Nombre corto del país para el SAT
+    tipo: STRING
+  - nombre: tipoestadistica
+    descripcion: Tipo de estadística del país
+    tipo: INT64
+  - nombre: clamedioembarque
+    descripcion: Clave del medio de embarque del país
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

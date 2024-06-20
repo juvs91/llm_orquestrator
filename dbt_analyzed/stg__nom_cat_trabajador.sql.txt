@@ -1,0 +1,168 @@
+vista: stg_nomcattrabajador
+descripcion: Vista generada a partir de la tabla dbo_NomCatTrabajador
+campos:
+  - nombre: pk_nomcattrabajador
+    descripcion: Surrogate key generada para la tabla NomCatTrabajador
+    tipo: STRING
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: cup
+    descripcion: Clave Única de Población
+    tipo: STRING
+  - nombre: nss
+    descripcion: Número de Seguridad Social
+    tipo: STRING
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes
+    tipo: STRING
+  - nombre: sexo
+    descripcion: Sexo del trabajador
+    tipo: STRING
+  - nombre: cp_sat
+    descripcion: Código postal del trabajador según el SAT
+    tipo: STRING
+  - nombre: clacrc
+    descripcion: Clave del CRC
+    tipo: INT64
+  - nombre: claarea
+    descripcion: Clave del área
+    tipo: INT64
+  - nombre: clajefe
+    descripcion: Clave del jefe
+    tipo: INT64
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: clabanco
+    descripcion: Clave del banco
+    tipo: INT64
+  - nombre: esactivo
+    descripcion: Indica si el trabajador está activo (1) o no (0)
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de ingreso del trabajador
+    tipo: DATETIME
+  - nombre: telefono
+    descripcion: Teléfono del trabajador
+    tipo: STRING
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: clanomina
+    descripcion: Clave de la nómina
+    tipo: INT64
+  - nombre: clapuesto
+    descripcion: Clave del puesto
+    tipo: INT64
+  - nombre: codpostal
+    descripcion: Código postal del trabajador
+    tipo: STRING
+  - nombre: direccion
+    descripcion: Dirección del trabajador
+    tipo: STRING
+  - nombre: estadoisn
+    descripcion: Estado del ISN
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el trabajador tiene baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clacolonia
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: claentidad
+    descripcion: Clave de la entidad
+    tipo: STRING
+  - nombre: clajefeeun
+    descripcion: Clave del jefe en EUN
+    tipo: INT64
+  - nombre: claliqimss
+    descripcion: Clave de liquidación del IMSS
+    tipo: INT64
+  - nombre: clacriterio
+    descripcion: Clave del criterio
+    tipo: INT64
+  - nombre: gruposeguro
+    descripcion: Grupo de seguro
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de Airbyte
+    tipo: STRING
+  - nombre: clamunicipio
+    descripcion: Clave del municipio
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: fechaingreso
+    descripcion: Fecha de ingreso del trabajador
+    tipo: DATETIME
+  - nombre: numerocuenta
+    descripcion: Número de cuenta bancaria del trabajador
+    tipo: STRING
+  - nombre: clatrabajador
+    descripcion: Clave del trabajador
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: salariodiario
+    descripcion: Salario diario del trabajador
+    tipo: FLOAT64
+  - nombre: claestadocivil
+    descripcion: Clave del estado civil
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de Airbyte
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del trabajador
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del trabajador
+    tipo: STRING
+  - nombre: cladepartamento
+    descripcion: Clave del departamento
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del trabajador
+    tipo: DATETIME
+  - nombre: clatrabajadoreun
+    descripcion: Clave del trabajador en EUN
+    tipo: INT64
+  - nombre: nombretrabajador
+    descripcion: Nombre del trabajador
+    tipo: STRING
+  - nombre: clagrupoasignacion
+    descripcion: Clave del grupo de asignación
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte
+    tipo: STRING

@@ -1,0 +1,9 @@
+vista: MST_FORMA_PAGO_VW
+descripcion: Esta vista contiene el catálogo de las formas de pago.
+campos:
+  - nombre: CLA_FORMA_PAGO
+    descripcion: Clave de la forma de pago.
+    tipo: INT
+  - nombre: NOM_FORMA_PAGO
+    descripcion: Nombre de la forma de pago.
+    tipo: VARCHAR

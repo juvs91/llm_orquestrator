@@ -1,0 +1,9 @@
+vista: fin_grupo_movimiento
+descripcion: Esta vista contiene la información de los grupos de movimiento financieros.
+campos:
+  - nombre: cla_grupo_movimiento
+    descripcion: Clave única del grupo de movimiento.
+    tipo: INT
+  - nombre: nom_grupo_movimiento
+    descripcion: Nombre descriptivo del grupo de movimiento.
+    tipo: VARCHAR(255) 

@@ -1,0 +1,51 @@
+vista: stg_fiscativa
+descripcion: Vista generada a partir de la tabla dbo.FisCatIva
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: claiva
+    descripcion: Clave de la categoría de IVA
+    tipo: INT64
+  - nombre: nomiva
+    descripcion: Nombre de la categoría de IVA
+    tipo: STRING
+  - nombre: pctiva
+    descripcion: Porcentaje de IVA aplicado
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la categoría de IVA está dada de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para la captura de datos modificados (CDC)
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó por última vez la categoría de IVA
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado para la captura de datos modificados (CDC)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de cuando se marcó como eliminado por CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización por CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

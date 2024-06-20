@@ -1,0 +1,108 @@
+vista: stg_vtacatagentewt
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatAgenteWt
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: nss
+    descripcion: Número de Seguro Social del agente
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico del agente
+    tipo: STRING
+  - nombre: orden
+    descripcion: Número de orden o secuencia del agente
+    tipo: INT64
+  - nombre: clacup
+    descripcion: Clave de la CUP (Unidad de Producción)
+    tipo: INT64
+  - nombre: clazona
+    descripcion: Clave de la zona a la que pertenece el agente
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de ingreso del agente
+    tipo: DATETIME
+  - nombre: claagente
+    descripcion: Clave única del agente
+    tipo: INT64
+  - nombre: idusuario
+    descripcion: ID de usuario del agente en el sistema
+    tipo: INT64
+  - nombre: nomagente
+    descripcion: Nombre completo del agente en mayúsculas
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: motivobaja
+    descripcion: Descripción del motivo de la baja
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios de Airbyte
+    tipo: STRING
+  - nombre: clacuentacup
+    descripcion: Clave de la cuenta CUP
+    tipo: INT64
+  - nombre: salesforceid
+    descripcion: ID de Salesforce (si aplica)
+    tipo: INT64
+  - nombre: telefonocasa
+    descripcion: Número de teléfono fijo del agente
+    tipo: STRING
+  - nombre: clatipoagente
+    descripcion: Clave del tipo de agente
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: escomisionista
+    descripcion: Indicador si el agente es comisionista (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de Airbyte CDC
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del agente en mayúsculas
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del agente en mayúsculas
+    tipo: STRING
+  - nombre: claagentelegacy
+    descripcion: Clave del agente en un sistema legacy
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: idusuarioportal
+    descripcion: ID de usuario del agente en el portal
+    tipo: INT64
+  - nombre: telefonocelular
+    descripcion: Número de teléfono celular del agente
+    tipo: STRING
+  - nombre: clatipoagentecuota
+    descripcion: Clave del tipo de agente para cuotas
+    tipo: INT64
+  - nombre: espagoporproveedor
+    descripcion: Indicador si el pago es por proveedor (1: sí, 0: no)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte CDC detectó la eliminación
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte CDC detectó la actualización
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento Airbyte CDC
+    tipo: STRING

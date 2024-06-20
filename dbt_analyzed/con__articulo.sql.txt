@@ -1,0 +1,187 @@
+vista: articulo
+descripcion: Vista generada a partir de la tabla stg__art_cat_articulo.
+campos:
+  - nombre: airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: TEXT
+  - nombre: airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: pk_catArticulo
+    descripcion: Clave primaria de la tabla Catálogo de Artículos
+    tipo: INTEGER
+  - nombre: ClaTipoInventario
+    descripcion: Clave foránea al tipo de inventario al que pertenece el artículo
+    tipo: INTEGER
+  - nombre: ClaArticulo
+    descripcion: Clave del artículo, probablemente obsoleta
+    tipo: TEXT
+  - nombre: ClaveArticulo
+    descripcion: Clave del artículo
+    tipo: TEXT
+  - nombre: CodigoArticulo
+    descripcion: Código del artículo
+    tipo: TEXT
+  - nombre: NomArticulo
+    descripcion: Nombre del artículo
+    tipo: TEXT
+  - nombre: NomArticuloIngles
+    descripcion: Nombre del artículo en inglés
+    tipo: TEXT
+  - nombre: NomArticuloOtroIdioma
+    descripcion: Nombre del artículo en otro idioma
+    tipo: TEXT
+  - nombre: ClaClasifGeneral
+    descripcion: Clave de la clasificación general del artículo
+    tipo: TEXT
+  - nombre: ClaFamilia
+    descripcion: Clave de la familia a la que pertenece el artículo
+    tipo: TEXT
+  - nombre: ClaSubfamilia
+    descripcion: Clave de la subfamilia a la que pertenece el artículo
+    tipo: TEXT
+  - nombre: ClaPlantilla
+    descripcion: Clave de la plantilla del artículo
+    tipo: TEXT
+  - nombre: ClaMarca
+    descripcion: Clave de la marca del artículo
+    tipo: TEXT
+  - nombre: ClaTipoArticulo
+    descripcion: Clave del tipo de artículo
+    tipo: TEXT
+  - nombre: ClaGpoProcesoProd
+    descripcion: Clave del grupo de proceso de producción
+    tipo: TEXT
+  - nombre: ClaGpoCosteo
+    descripcion: Clave del grupo de costeo
+    tipo: TEXT
+  - nombre: ClaGpoEstadistico
+    descripcion: Clave del grupo estadístico
+    tipo: TEXT
+  - nombre: ClaUNSPC1
+    descripcion: Clave UNSPC nivel 1
+    tipo: TEXT
+  - nombre: ClaUNSPC2
+    descripcion: Clave UNSPC nivel 2
+    tipo: TEXT
+  - nombre: ClaUNSPC3
+    descripcion: Clave UNSPC nivel 3
+    tipo: TEXT
+  - nombre: ClaUNSPC4
+    descripcion: Clave UNSPC nivel 4
+    tipo: TEXT
+  - nombre: ClaUnidadBase
+    descripcion: Clave de la unidad base del artículo
+    tipo: TEXT
+  - nombre: ClaUnidadProd
+    descripcion: Clave de la unidad de producción del artículo
+    tipo: TEXT
+  - nombre: FactorConversion
+    descripcion: Factor de conversión entre unidades
+    tipo: REAL
+  - nombre: FactorCubicaje
+    descripcion: Factor de cubicaje del artículo
+    tipo: REAL
+  - nombre: PesoTeoricoKgs
+    descripcion: Peso teórico del artículo en kilogramos
+    tipo: REAL
+  - nombre: Comentarios
+    descripcion: Comentarios sobre el artículo
+    tipo: TEXT
+  - nombre: FechaIns
+    descripcion: Fecha de inserción del registro
+    tipo: TIMESTAMP
+  - nombre: ClaUsuarioIns
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INTEGER
+  - nombre: ClaEstatusVobo
+    descripcion: Clave del estatus de visto bueno
+    tipo: INTEGER
+  - nombre: BajaLogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INTEGER
+  - nombre: FechaBajaLogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: TIMESTAMP
+  - nombre: FechaUltimaMod
+    descripcion: Fecha de la última modificación del registro
+    tipo: TIMESTAMP
+  - nombre: NombrePcMod
+    descripcion: Nombre de la computadora desde la que se modificó el registro
+    tipo: TEXT
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INTEGER
+  - nombre: ClaPrefijoClave
+    descripcion: Clave del prefijo de la clave del artículo
+    tipo: TEXT
+  - nombre: ClaClaveCruda
+    descripcion: Clave cruda del artículo
+    tipo: TEXT
+  - nombre: ClaArticuloInsumo
+    descripcion: Clave del artículo insumo
+    tipo: TEXT
+  - nombre: Referencia
+    descripcion: Referencia del artículo
+    tipo: TEXT
+  - nombre: ClaEmpaqueInd
+    descripcion: Clave del empaque individual
+    tipo: TEXT
+  - nombre: ClaEmpaqueAgrup
+    descripcion: Clave del empaque agrupado
+    tipo: TEXT
+  - nombre: ClaUbicacionIns
+    descripcion: Clave de la ubicación del insumo
+    tipo: TEXT
+  - nombre: ClaGpoEmpaque
+    descripcion: Clave del grupo de empaque
+    tipo: TEXT
+  - nombre: EsObsoleto
+    descripcion: Indica si el artículo es obsoleto (1) o no (0)
+    tipo: INTEGER
+  - nombre: EsExcentoIVA
+    descripcion: Indica si el artículo está excento de IVA (1) o no (0)
+    tipo: INTEGER
+  - nombre: VolumenAlto
+    descripcion: Altura del volumen del artículo
+    tipo: REAL
+  - nombre: VolumenAncho
+    descripcion: Ancho del volumen del artículo
+    tipo: REAL
+  - nombre: VolumenLargo
+    descripcion: Largo del volumen del artículo
+    tipo: REAL
+  - nombre: ClaUnidadVolumen
+    descripcion: Clave de la unidad de volumen del artículo
+    tipo: TEXT
+  - nombre: ClaComplejidad
+    descripcion: Clave de la complejidad del artículo
+    tipo: TEXT
+  - nombre: EsHomologado
+    descripcion: Indica si el artículo está homologado (1) o no (0)
+    tipo: INTEGER
+  - nombre: PesoTeoricoKgsMin
+    descripcion: Peso teórico mínimo del artículo en kilogramos
+    tipo: REAL
+  - nombre: PesoTeoricoKgsMax
+    descripcion: Peso teórico máximo del artículo en kilogramos
+    tipo: REAL
+  - nombre: ClaEmpresaCodigoBar
+    descripcion: Clave de la empresa del código de barras
+    tipo: INTEGER
+  - nombre: ClaProteccionEmpaque
+    descripcion: Clave de la protección del empaque
+    tipo: TEXT
+  - nombre: EsDisponibleCopia
+    descripcion: Indica si el artículo está disponible para copia (1) o no (0)
+    tipo: INTEGER
+  - nombre: EsDisponibleUso
+    descripcion: Indica si el artículo está disponible para uso (1) o no (0)
+    tipo: INTEGER
+  - nombre: EsCambioHistorial
+    descripcion: Indica si el artículo tiene cambios históricos (1) o no (0)
+    tipo: INTEGER
+

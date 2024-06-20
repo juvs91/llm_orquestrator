@@ -1,0 +1,22 @@
+vista: MST_CIUDAD_VW
+descripcion: Vista que contiene la información completa de las ciudades, incluyendo país y estado.
+campos:
+  - nombre: cla_pais
+    descripcion: Clave del país
+    tipo: INT
+  - nombre: nom_pais
+    descripcion: Nombre del país
+    tipo: VARCHAR
+  - nombre: cla_estado
+    descripcion: Clave del estado
+    tipo: INT
+  - nombre: nom_estado
+    descripcion: Nombre del estado
+    tipo: VARCHAR
+  - nombre: cla_ciudad_unico
+    descripcion: Clave única de la ciudad
+    tipo: INT
+  - nombre: nom_ciudad
+    descripcion: Nombre de la ciudad
+    tipo: VARCHAR
+

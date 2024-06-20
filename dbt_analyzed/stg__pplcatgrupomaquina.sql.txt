@@ -1,0 +1,102 @@
+vista: stg_pplcatgrupomaquina
+descripcion: Vista generada por DBT a partir de la tabla PplSch_PPLCatGrupoMaquina
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: porcmto
+    descripcion: Porcentaje
+    tipo: FLOAT64
+  - nombre: porcmts
+    descripcion: Porcentaje
+    tipo: FLOAT64
+  - nombre: subgrupo
+    descripcion: ID del subgrupo
+    tipo: INT64
+  - nombre: porcpref1
+    descripcion: Porcentaje de preferencia 1
+    tipo: FLOAT64
+  - nombre: porcpref2
+    descripcion: Porcentaje de preferencia 2
+    tipo: FLOAT64
+  - nombre: porcpref3
+    descripcion: Porcentaje de preferencia 3
+    tipo: FLOAT64
+  - nombre: porcpref4
+    descripcion: Porcentaje de preferencia 4
+    tipo: FLOAT64
+  - nombre: porcpref5
+    descripcion: Porcentaje de preferencia 5
+    tipo: FLOAT64
+  - nombre: porcpref6
+    descripcion: Porcentaje de preferencia 6
+    tipo: FLOAT64
+  - nombre: porcpref7
+    descripcion: Porcentaje de preferencia 7
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0 o 1)
+    tipo: INT64
+  - nombre: nummaquina
+    descripcion: Número de máquina
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: anchobancada
+    descripcion: Ancho de la bancada
+    tipo: FLOAT64
+  - nombre: claubicacion
+    descripcion: ID de la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: porcsubgrupo1
+    descripcion: Porcentaje del subgrupo 1
+    tipo: FLOAT64
+  - nombre: factorrelativo
+    descripcion: Factor relativo
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: loteminimoprod
+    descripcion: Lote mínimo de producción
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clagrupomaquina
+    descripcion: ID del grupo de máquinas
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: nomgrupomaquina
+    descripcion: Nombre del grupo de máquinas
+    tipo: STRING
+  - nombre: claareaproduccion
+    descripcion: ID del área de producción
+    tipo: INT64
+  - nombre: clavegrupomaquina
+    descripcion: Clave del grupo de máquinas
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

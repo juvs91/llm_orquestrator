@@ -1,0 +1,141 @@
+vista: sel_ti_tra_usuario
+descripcion: Vista limpia y deduplicada de la tabla ti_tra_usuario, que contiene información de los usuarios del sistema.
+campos:
+  - nombre: pk_titrausuario
+    descripcion: Clave primaria de la tabla ti_tra_usuario
+    tipo: integer
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte para la sincronización de datos
+    tipo: string
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: timestamp
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: string
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del usuario
+    tipo: string
+  - nombre: email
+    descripcion: Correo electrónico del usuario
+    tipo: string
+  - nombre: clacrc
+    descripcion: Clave del Centro de Responsabilidad al que pertenece el usuario
+    tipo: string
+  - nombre: perfil
+    descripcion: Perfil de acceso del usuario
+    tipo: string
+  - nombre: puesto
+    descripcion: Puesto del usuario
+    tipo: string
+  - nombre: dominio
+    descripcion: Dominio de red del usuario
+    tipo: string
+  - nombre: fechains
+    descripcion: Fecha de ingreso del usuario al sistema
+    tipo: date
+  - nombre: bloqueado
+    descripcion: Indica si el usuario está bloqueado (1) o no (0)
+    tipo: integer
+  - nombre: clapuesto
+    descripcion: Clave del puesto del usuario
+    tipo: string
+  - nombre: idusuario
+    descripcion: ID único del usuario
+    tipo: integer
+  - nombre: bajalogica
+    descripcion: Indica si el usuario tiene baja lógica (1) o no (0)
+    tipo: integer
+  - nombre: bajanomina
+    descripcion: Indica si el usuario tiene baja en nómina (1) o no (0)
+    tipo: integer
+  - nombre: claempleado
+    descripcion: Clave del empleado asociado al usuario
+    tipo: string
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el usuario por última vez
+    tipo: string
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: integer
+  - nombre: emailalterno
+    descripcion: Correo electrónico alternativo del usuario
+    tipo: string
+  - nombre: nombreperfil
+    descripcion: Nombre del perfil de acceso del usuario
+    tipo: string
+  - nombre: telefonocasa
+    descripcion: Teléfono de casa del usuario
+    tipo: string
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que creó el registro
+    tipo: string
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: string
+  - nombre: loginusername
+    descripcion: Nombre de usuario para iniciar sesión
+    tipo: string
+  - nombre: nombreusuario
+    descripcion: Nombre de usuario
+    tipo: string
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: timestamp
+  - nombre: idempleadojefe
+    descripcion: ID del empleado que es jefe del usuario
+    tipo: integer
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: string
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del usuario
+    tipo: string
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del usuario
+    tipo: string
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del usuario
+    tipo: date
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del usuario
+    tipo: date
+  - nombre: telefonocelular
+    descripcion: Teléfono celular del usuario
+    tipo: string
+  - nombre: telefonooficina
+    descripcion: Teléfono de oficina del usuario
+    tipo: string
+  - nombre: claidiomadefault
+    descripcion: Clave del idioma predeterminado del usuario
+    tipo: string
+  - nombre: dispositivomovil
+    descripcion: Dispositivo móvil del usuario
+    tipo: string
+  - nombre: nombremodificable
+    descripcion: Indica si el nombre de usuario es modificable (1) o no (0)
+    tipo: integer
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: timestamp
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro por Airbyte
+    tipo: timestamp
+  - nombre: claubicaciondefault
+    descripcion: Clave de la ubicación predeterminada del usuario
+    tipo: string
+  - nombre: autenticacionactived
+    descripcion: Indica si la autenticación está activa (1) o no (0)
+    tipo: integer
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: integer
+  - nombre: fechaultintentoprincipal
+    descripcion: Fecha del último intento de inicio de sesión principal
+    tipo: timestamp
+  - nombre: intentosfallidosprincipal
+    descripcion: Número de intentos fallidos de inicio de sesión principal
+    tipo: integer
+  - nombre: nomusuario
+    descripcion: Nombre completo del usuario, concatenando nombre de usuario, apellido paterno y apellido materno
+    tipo: string

@@ -1,0 +1,204 @@
+vista: stg_ampcatproveedor
+descripcion: Vista generada a partir de la tabla AMPSch_AmpCatProveedor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: clacup
+    descripcion: Clave única de la unidad de compra
+    tipo: INT64
+  - nombre: clazona
+    descripcion: Clave única de la zona
+    tipo: INT64
+  - nombre: claplaza
+    descripcion: Clave única de la plaza
+    tipo: INT64
+  - nombre: claveife
+    descripcion: Clave única del Registro Federal de Contribuyentes (RFC)
+    tipo: STRING
+  - nombre: esotroid
+    descripcion: Bandera que indica si es otro ID (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clamoneda
+    descripcion: Clave única de la moneda
+    tipo: INT64
+  - nombre: claregion
+    descripcion: Clave única de la región
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección del proveedor
+    tipo: STRING
+  - nombre: enviargob
+    descripcion: Bandera que indica si se envía al gobierno (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esrolloff
+    descripcion: Bandera que indica si es rolloff (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: poblacion
+    descripcion: Población del proveedor
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Bandera que indica si está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: diasdepago
+    descripcion: Días de pago del proveedor
+    tipo: INT64
+  - nombre: cladivision
+    descripcion: Clave única de la división
+    tipo: INT64
+  - nombre: enviarleads
+    descripcion: Bandera que indica si se envían leads (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esvalidosat
+    descripcion: Bandera que indica si es válido para el SAT (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clacomprador
+    descripcion: Clave única del comprador
+    tipo: INT64
+  - nombre: claprospecto
+    descripcion: Clave única del prospecto
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: Clave única del proveedor
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave única de la ubicación
+    tipo: INT64
+  - nombre: esgrupoimmex
+    descripcion: Bandera que indica si es un grupo IMMEX (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: espagocheque
+    descripcion: Bandera que indica si el pago es con cheque (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: motivootroid
+    descripcion: Motivo de otro ID
+    tipo: STRING
+  - nombre: nomproveedor
+    descripcion: Nombre del proveedor
+    tipo: STRING
+  - nombre: clanaturaleza
+    descripcion: Clave única de la naturaleza
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave única del usuario que modificó el registro
+    tipo: INT64
+  - nombre: esenviaboleta
+    descripcion: Bandera que indica si se envía boleta (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechaimmexalta
+    descripcion: Fecha de alta en IMMEX
+    tipo: DATETIME
+  - nombre: fechaimmexbaja
+    descripcion: Fecha de baja en IMMEX
+    tipo: DATETIME
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del proveedor
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del proveedor
+    tipo: STRING
+  - nombre: claorigencompra
+    descripcion: Clave única del origen de compra
+    tipo: INT64
+  - nombre: clasegmentacion
+    descripcion: Clave única de la segmentación
+    tipo: INT64
+  - nombre: diasdepagonuevo
+    descripcion: Nuevos días de pago del proveedor
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clatipoproveedor
+    descripcion: Clave única del tipo de proveedor
+    tipo: INT64
+  - nombre: motivoeliminacion
+    descripcion: Motivo de eliminación
+    tipo: STRING
+  - nombre: claclasifproveedor
+    descripcion: Clave única de la clasificación del proveedor
+    tipo: INT64
+  - nombre: clazonafacturacion
+    descripcion: Clave única de la zona de facturación
+    tipo: INT64
+  - nombre: escuentaindustrial
+    descripcion: Bandera que indica si es cuenta industrial (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esmaterialindexado
+    descripcion: Bandera que indica si el material está indexado (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: frecuenciadevisita
+    descripcion: Frecuencia de visita
+    tipo: INT64
+  - nombre: idflujoautzonafact
+    descripcion: ID del flujo de autorización de la zona de facturación
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte eliminó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte actualizó el registro
+    tipo: STRING
+  - nombre: claesquemaproveedor
+    descripcion: Clave única del esquema del proveedor
+    tipo: INT64
+  - nombre: fechaautrechzonafact
+    descripcion: Fecha de autorización o rechazo de la zona de facturación
+    tipo: DATETIME
+  - nombre: claestatusautzonafact
+    descripcion: Clave única del estado de autorización de la zona de facturación
+    tipo: INT64
+  - nombre: esserviciorecoleccion
+    descripcion: Bandera que indica si es un servicio de recolección (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: motivorechazozonafact
+    descripcion: Motivo de rechazo de la zona de facturación
+    tipo: STRING
+  - nombre: clacupproveedorentrega
+    descripcion: Clave única de la unidad de compra del proveedor de entrega
+    tipo: INT64
+  - nombre: claestatusnuevoesquema
+    descripcion: Clave única del estado del nuevo esquema
+    tipo: INT64
+  - nombre: clatipoclasifproveedor
+    descripcion: Clave única del tipo de clasificación del proveedor
+    tipo: INT64
+  - nombre: clatipoidentifproveedor
+    descripcion: Clave única del tipo de identificación del proveedor
+    tipo: INT64
+  - nombre: esdireccionfiscalpropia
+    descripcion: Bandera que indica si la dirección fiscal es propia (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clazonafacturacionporaut
+    descripcion: Clave única de la zona de facturación por autorización
+    tipo: INT64
+  - nombre: esvalidoproveedorfactura
+    descripcion: Bandera que indica si el proveedor es válido para facturar (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: claconfiabilidadproveedor
+    descripcion: Clave única de la confiabilidad del proveedor
+    tipo: INT64
+  - nombre: esgeneraconstanciamensual
+    descripcion: Bandera que indica si se genera constancia mensual (1: Sí, 0: No)
+    tipo: INT64

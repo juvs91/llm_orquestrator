@@ -1,0 +1,9 @@
+vista: MST_CLASIFICACION_PROYECTO_VW
+descripcion: Vista de clasificación de proyectos.
+campos:
+  - nombre: CLA_CLASIFICACION_PROYECTO
+    descripcion: Clave de la clasificación del proyecto.
+    tipo: INT
+  - nombre: NOM_CLASIFICACION_PROYECTO
+    descripcion: Nombre de la clasificación del proyecto.
+    tipo: VARCHAR

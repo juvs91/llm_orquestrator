@@ -1,0 +1,69 @@
+vista: stg_nomcatdiasfestivos
+descripcion: Vista generada por DBT a partir de la tabla dbo_NomCatDiasFestivos
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: dia
+    descripcion: Día del mes
+    tipo: INT64
+  - nombre: mes
+    descripcion: Mes del año
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clanomina
+    descripcion: Clave de la nómina
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: cladiafestivo
+    descripcion: Clave del día festivo
+    tipo: DATETIME
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: descripciondia
+    descripcion: Descripción del día festivo
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

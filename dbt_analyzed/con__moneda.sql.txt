@@ -1,0 +1,9 @@
+vista: MST_MONEDA_VW
+descripcion: Vista materializada que presenta la clave y el nombre de las monedas
+campos:
+  - nombre: CLA_MONEDA
+    descripcion: Clave de la moneda
+    tipo: INT
+  - nombre: NOM_MONEDA
+    descripcion: Nombre de la moneda
+    tipo: VARCHAR

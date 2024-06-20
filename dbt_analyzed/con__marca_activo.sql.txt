@@ -1,0 +1,9 @@
+vista: MST_MARCA_ACTIVO_VW
+descripcion: Vista que presenta las marcas activas.
+campos:
+  - nombre: CLA_MARCA_ACTIVO
+    descripcion: Clave de la marca activa.
+    tipo: INT
+  - nombre: NOM_MARCA_ACTIVO
+    descripcion: Nombre de la marca activa.
+    tipo: VARCHAR

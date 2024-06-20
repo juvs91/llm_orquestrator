@@ -1,0 +1,75 @@
+vista: MST_AGRUPADOR_FINANCIERO_VW
+descripcion: Vista que contiene la información de los agrupadores financieros.
+campos:
+  - nombre: CLA_AGRUPADOR_FINANCIERO
+    descripcion: Clave del agrupador financiero.
+    tipo: INT
+  - nombre: NOM_AGRUPADOR_FINANCIERO_IDIOMA1
+    descripcion: Nombre del agrupador financiero en idioma 1.
+    tipo: VARCHAR
+  - nombre: NOM_AGRUPADOR_FINANCIERO_IDIOMA2
+    descripcion: Nombre del agrupador financiero en idioma 2.
+    tipo: VARCHAR
+  - nombre: NOM_AGRUPADOR_FINANCIERO_IDIOMA3
+    descripcion: Nombre del agrupador financiero en idioma 3.
+    tipo: VARCHAR
+  - nombre: NOM_AGRUPADOR_FINANCIERO_IDIOMA4
+    descripcion: Nombre del agrupador financiero en idioma 4.
+    tipo: VARCHAR
+  - nombre: NOM_AGRUPADOR_FINANCIERO_IDIOMA5
+    descripcion: Nombre del agrupador financiero en idioma 5.
+    tipo: VARCHAR
+  - nombre: ORDEN
+    descripcion: Orden de aparición del agrupador financiero.
+    tipo: INT
+  - nombre: ES_RESULTADO_INTEGRAL
+    descripcion: Indica si el agrupador financiero es de tipo resultado integral (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_UTILIDAD_NETA
+    descripcion: Indica si el agrupador financiero es de tipo utilidad neta (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_UTILIDAD_ANTES_IMPUESTOS
+    descripcion: Indica si el agrupador financiero es de tipo utilidad antes de impuestos (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_RESULTADO_FINANCIAMIENTO
+    descripcion: Indica si el agrupador financiero es de tipo resultado financiamiento (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_OTROS_GASTOS
+    descripcion: Indica si el agrupador financiero es de tipo otros gastos (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_UTILIDAD_OPERACION
+    descripcion: Indica si el agrupador financiero es de tipo utilidad operación (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_TOTAL_GASTO_OPERACION
+    descripcion: Indica si el agrupador financiero es de tipo total gasto operación (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_UTILIDAD_BRUTA
+    descripcion: Indica si el agrupador financiero es de tipo utilidad bruta (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_ACTIVO_CIRCULANTE
+    descripcion: Indica si el agrupador financiero es de tipo activo circulante (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_ACTIVO_NO_CIRCULANTE
+    descripcion: Indica si el agrupador financiero es de tipo activo no circulante (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_ACTIVO_TOTAL
+    descripcion: Indica si el agrupador financiero es de tipo activo total (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_PASIVO_CORTO_PLAZO
+    descripcion: Indica si el agrupador financiero es de tipo pasivo corto plazo (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_PASIVO_LARGO_PLAZO
+    descripcion: Indica si el agrupador financiero es de tipo pasivo largo plazo (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_PASIVO_TOTAL
+    descripcion: Indica si el agrupador financiero es de tipo pasivo total (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_CAPITAL
+    descripcion: Indica si el agrupador financiero es de tipo capital (1: Sí, 0: No).
+    tipo: INT
+  - nombre: ES_PASIVO_MAS_CAPITAL
+    descripcion: Indica si el agrupador financiero es de tipo pasivo más capital (1: Sí, 0: No).
+    tipo: INT
+  - nombre: FORMULA_IMPORTE
+    descripcion: Fórmula para calcular el importe del agrupador financiero.
+    tipo: VARCHAR

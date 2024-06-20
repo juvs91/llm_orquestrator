@@ -1,0 +1,78 @@
+vista: stg_mtocatguiaactividadpaso
+descripcion: Vista generada por DBT para la tabla MtoSch_MtoCatGuiaActividadPaso.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: paso
+    descripcion: Número de paso en la guía de actividad.
+    tipo: STRING
+  - nombre: orden
+    descripcion: Orden de ejecución del paso dentro de la guía de actividad.
+    tipo: INT64
+  - nombre: claguia
+    descripcion: Clave foránea a la tabla de guías.
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el paso está dado de baja (1) o no (0).
+    tipo: INT64
+  - nombre: predecesor
+    descripcion: Paso predecesor al actual en la guía de actividad.
+    tipo: INT64
+  - nombre: descripcion
+    descripcion: Descripción del paso de la guía de actividad.
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro.
+    tipo: INT64
+  - nombre: nombrearchivo
+    descripcion: Nombre del archivo asociado al paso de la guía de actividad.
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: tiempoestimado
+    descripcion: Tiempo estimado en minutos para completar el paso de la guía de actividad.
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para la replicación de datos de cambio.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja el registro.
+    tipo: DATETIME
+  - nombre: claguiaactividad
+    descripcion: Clave foránea a la tabla de actividades de la guía.
+    tipo: INT64
+  - nombre: espuntocontrolsn
+    descripcion: Indica si el paso es un punto de control (true) o no (false).
+    tipo: BOOL
+  - nombre: extensionarchivo
+    descripcion: Extensión del archivo asociado al paso de la guía de actividad.
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la base de datos de origen.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en la base de datos de origen.
+    tipo: STRING
+  - nombre: claguiaactividadpaso
+    descripcion: Clave primaria de la tabla MtoCatGuiaActividadPaso.
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos.
+    tipo: STRING

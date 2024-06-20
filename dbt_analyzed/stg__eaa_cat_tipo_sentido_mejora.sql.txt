@@ -1,0 +1,54 @@
+vista: stg_eaacattiposentidomejora
+descripcion: Vista generada por DBT a partir de la tabla EAASch_EAACatTipoSentidoMejora
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: color
+    descripcion: Color asociado al tipo de sentido de mejora
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado por la captura de datos modificados de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por la captura de datos modificados de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente, capturada por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente, capturada por Airbyte CDC
+    tipo: STRING
+  - nombre: clatiposentidomejora
+    descripcion: Clave primaria de la tabla EAACatTipoSentidoMejora
+    tipo: INT64
+  - nombre: nomtiposentidomejora
+    descripcion: Nombre del tipo de sentido de mejora
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC generado por Airbyte
+    tipo: STRING

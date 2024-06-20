@@ -1,0 +1,51 @@
+vista: stg_ampcatsimpclasifchatarra
+descripcion: Vista generada por DBT a partir de la tabla AMPSch_ampCatSimpClasifChatarra
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: claarticulo
+    descripcion: Clave foránea a la tabla de artículos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para rastrear los cambios de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja el registro
+    tipo: DATETIME
+  - nombre: claclasifchatarra
+    descripcion: Clave foránea a la tabla de clasificación de chatarra
+    tipo: INT64
+  - nombre: cladisponibilidad
+    descripcion: Clave foránea a la tabla de disponibilidad
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro, si corresponde
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro, si corresponde
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING

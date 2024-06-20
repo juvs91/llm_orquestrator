@@ -1,0 +1,69 @@
+vista: stg_concatsistemaorigen
+descripcion: Vista generada por DBT para la tabla dbo_ConCatSistemaOrigen
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del sistema de origen
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: clasistemaorigen
+    descripcion: ID del sistema de origen
+    tipo: INT64
+  - nombre: nomsistemaorigen
+    descripcion: Nombre del sistema de origen
+    tipo: STRING
+  - nombre: noesreplicalegacy
+    descripcion: Indica si el registro no se replica en el sistema legacy (1) o sí (0)
+    tipo: INT64
+  - nombre: nomsistemaorigen2
+    descripcion: Nombre alternativo del sistema de origen 2
+    tipo: STRING
+  - nombre: nomsistemaorigen3
+    descripcion: Nombre alternativo del sistema de origen 3
+    tipo: STRING
+  - nombre: nomsistemaorigen4
+    descripcion: Nombre alternativo del sistema de origen 4
+    tipo: STRING
+  - nombre: nomsistemaorigen5
+    descripcion: Nombre alternativo del sistema de origen 5
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en el sistema de origen
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en el sistema de origen
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: esporconfirmarresponsable
+    descripcion: Indica si el responsable está por confirmar (1) o no (0)
+    tipo: INT64
+  - nombre: clatrabajadoreunresponsable
+    descripcion: ID del trabajador responsable
+    tipo: INT64 

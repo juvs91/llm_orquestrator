@@ -1,0 +1,75 @@
+vista: stg_concattipogasto
+descripcion: Vista generada por DBT para la tabla dbo_ConCatTipoGasto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clatipogasto
+    descripcion: Clave del tipo de gasto
+    tipo: INT64
+  - nombre: esautorizado
+    descripcion: Indica si el tipo de gasto está autorizado (1) o no (0)
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: nombretipogasto
+    descripcion: Nombre del tipo de gasto
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó por última vez el registro
+    tipo: STRING
+  - nombre: nombretipogastoidioma2
+    descripcion: Nombre del tipo de gasto en el idioma 2
+    tipo: STRING
+  - nombre: nombretipogastoidioma3
+    descripcion: Nombre del tipo de gasto en el idioma 3
+    tipo: STRING
+  - nombre: nombretipogastoidioma4
+    descripcion: Nombre del tipo de gasto en el idioma 4
+    tipo: STRING
+  - nombre: nombretipogastoidioma5
+    descripcion: Nombre del tipo de gasto en el idioma 5
+    tipo: STRING
+  - nombre: nombretipogastoidioma6
+    descripcion: Nombre del tipo de gasto en el idioma 6
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

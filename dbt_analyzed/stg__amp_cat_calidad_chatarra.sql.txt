@@ -1,0 +1,72 @@
+vista: stg_ampcatcalidadchatarra
+descripcion: Vista generada por DBT para la tabla AMPSch_AmpCatCalidadChatarra
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: esartimmex
+    descripcion: Bandera que indica si el artículo es de importación o exportación (1) o no (0)
+    tipo: INT64
+  - nombre: descripcion
+    descripcion: Descripción de la calidad de la chatarra
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de Log de cambios de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de Airbyte CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: claarticuloaceria
+    descripcion: Clave del artículo en el módulo de Acería
+    tipo: INT64
+  - nombre: claarticulopatios
+    descripcion: Clave del artículo en el módulo de Patios
+    tipo: INT64
+  - nombre: claclasifarticulo
+    descripcion: Clave de la clasificación del artículo
+    tipo: INT64
+  - nombre: clacalidadchatarra
+    descripcion: Clave de la calidad de la chatarra
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en Airbyte CDC
+    tipo: STRING
+  - nombre: clavearticuloaceria
+    descripcion: Clave del artículo en el módulo de Acería (formato texto)
+    tipo: STRING
+  - nombre: clavearticulopatios
+    descripcion: Clave del artículo en el módulo de Patios (formato texto)
+    tipo: STRING
+  - nombre: porcdescuentosuelta
+    descripcion: Porcentaje de descuento aplicado a la chatarra suelta
+    tipo: FLOAT64
+  - nombre: porccontaminacionsuelta
+    descripcion: Porcentaje de contaminación de la chatarra suelta
+    tipo: FLOAT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento Airbyte CDC
+    tipo: STRING

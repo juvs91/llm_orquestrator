@@ -1,0 +1,57 @@
+vista: stg_ctscatmaquina
+descripcion: Vista generada por DBT a partir de la tabla CtsCatMaquina
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clacrc
+    descripcion: Clave foránea a la tabla CtsCatCrc
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la máquina está dada de baja (true) o no (false)
+    tipo: BOOL
+  - nombre: clamaquina
+    descripcion: Clave primaria de la tabla CtsCatMaquina
+    tipo: INT64
+  - nombre: nommaquina
+    descripcion: Nombre de la máquina
+    tipo: STRING
+  - nombre: referencia
+    descripcion: Referencia de la máquina
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la última transacción capturada por el CDC
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla CtsCatUbicacion
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla CtsCatUsuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte para el CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado por el CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez por el CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

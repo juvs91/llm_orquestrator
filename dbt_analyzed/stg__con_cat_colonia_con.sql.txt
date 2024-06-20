@@ -1,0 +1,66 @@
+vista: stg_concatcoloniacon
+descripcion: Vista generada por DBT para la tabla dbo_ConCatColoniaCon
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave foránea al catálogo de países
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: claestadocon
+    descripcion: Clave foránea al catálogo de estados
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal de la colonia
+    tipo: STRING
+  - nombre: clacoloniacon
+    descripcion: Clave primaria de la colonia
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave foránea al catálogo de usuarios que insertaron el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al catálogo de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clamunicipiocon
+    descripcion: Clave foránea al catálogo de municipios
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: nombrecoloniacon
+    descripcion: Nombre de la colonia
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

@@ -1,0 +1,72 @@
+vista: stg_mancatmaquina
+descripcion: Vista generada por DBT a partir de la tabla dbo_ManCatMaquina
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: claarea
+    descripcion: Clave del área
+    tipo: INT64
+  - nombre: claplanta
+    descripcion: Clave de la planta
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: clamaquina
+    descripcion: Clave de la máquina
+    tipo: STRING
+  - nombre: nommaquina
+    descripcion: Nombre de la máquina
+    tipo: STRING
+  - nombre: numlininst
+    descripcion: Número de líneas instaladas
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios adicionales
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo (PC) que realizó la última modificación
+    tipo: STRING
+  - nombre: porcmaxefic
+    descripcion: Porcentaje máximo de eficiencia
+    tipo: FLOAT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clagpomaquina
+    descripcion: Clave del grupo al que pertenece la máquina
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: generaentautsn
+    descripcion: Indicador de generación automática de SN (0: no, 1: sí)
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatiporeporteprod
+    descripcion: Clave del tipo de reporte de producción
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

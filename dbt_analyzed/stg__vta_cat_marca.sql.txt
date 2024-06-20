@@ -1,0 +1,66 @@
+vista: stg__vta_cat_marca
+descripcion: Vista generada por DBT para la tabla VtaSch_VtaCatMarca
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: path
+    descripcion: Ruta del archivo o directorio
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: prefijo
+    descripcion: Prefijo
+    tipo: STRING
+  - nombre: clamarca
+    descripcion: Clave de la marca
+    tipo: INT64
+  - nombre: logotipo
+    descripcion: Nombre del archivo del logotipo
+    tipo: STRING
+  - nombre: nommarca
+    descripcion: Nombre de la marca en mayúsculas
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: nommarcafiscal
+    descripcion: Nombre fiscal de la marca
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la fuente, según lo capturado por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la fuente, según lo capturado por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

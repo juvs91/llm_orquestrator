@@ -1,0 +1,63 @@
+vista: stg_vtacatclasificacioncliente
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatClasificacionCliente
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID cruda de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: No baja lógica)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: ID del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: agruparenresto
+    descripcion: Indicador de agrupación en resto (1: Agrupar en resto, 0: No agrupar en resto)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: piramideoptima
+    descripcion: Indicador de pirámide óptima (1: Pirámide óptima, 0: No pirámide óptima)
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: toneladasobjetivo
+    descripcion: Toneladas objetivo
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: claclasificacioncliente
+    descripcion: ID de la clasificación del cliente
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: nombreclasificacioncliente
+    descripcion: Nombre de la clasificación del cliente
+    tipo: STRING

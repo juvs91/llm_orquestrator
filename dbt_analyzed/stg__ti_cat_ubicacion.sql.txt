@@ -1,0 +1,99 @@
+vista: stg_ticatubicacion
+descripcion: Vista generada por DBT de la tabla dbo.TiCatUbicacion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax de la ubicación
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave foránea al catálogo de países
+    tipo: INT64
+  - nombre: colonia
+    descripcion: Nombre de la colonia de la ubicación
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de creación del registro
+    tipo: DATETIME
+  - nombre: claestado
+    descripcion: Clave foránea al catálogo de estados
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección completa de la ubicación
+    tipo: STRING
+  - nombre: poblacion
+    descripcion: Nombre de la población de la ubicación
+    tipo: STRING
+  - nombre: telefonos
+    descripcion: Número(s) de teléfono de la ubicación
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave foránea al catálogo de clientes
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave foránea al catálogo de empresas
+    tipo: INT64
+  - nombre: nombrecorto
+    descripcion: Nombre corto de la ubicación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de origen
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave primaria de la tabla TiCatUbicacion
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal de la ubicación
+    tipo: STRING
+  - nombre: claciudadbase
+    descripcion: Clave foránea al catálogo de ciudades base
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para la replicación de datos
+    tipo: INT64
+  - nombre: empresafacturar
+    descripcion: Nombre de la empresa a la que se debe facturar
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja el registro
+    tipo: DATETIME
+  - nombre: nombreubicacion
+    descripcion: Nombre completo de la ubicación en mayúsculas
+    tipo: STRING
+  - nombre: clatipoubicacion
+    descripcion: Clave foránea al catálogo de tipos de ubicación
+    tipo: INT64
+  - nombre: pcttoleranciaemb
+    descripcion: Porcentaje de tolerancia para el embalaje
+    tipo: FLOAT64
+  - nombre: claubicacionventas
+    descripcion: Clave foránea a la tabla de ubicaciones de ventas
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en el origen
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez el registro en el origen
+    tipo: STRING
+  - nombre: aplicafactorcubicaje
+    descripcion: Bandera que indica si se aplica el factor de cubicaje (1) o no (0)
+    tipo: INT64
+  - nombre: clatipoubicacionventas
+    descripcion: Clave foránea al catálogo de tipos de ubicación de ventas
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

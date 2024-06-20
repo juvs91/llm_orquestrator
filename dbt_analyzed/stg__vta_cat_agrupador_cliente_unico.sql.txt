@@ -1,0 +1,57 @@
+vista: stg_vtacatagrupadorclienteunico
+descripcion: Vista generada por DBT para la tabla dbo.VtaCatAgrupadorClienteUnico
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: cucsfid
+    descripcion: Clave foránea a la tabla CatUsuarioClienteSucursal (SFID)
+    tipo: STRING
+  - nombre: clamarca
+    descripcion: Clave foránea a la tabla CatMarca
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de Log de transacciones (CDC)
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla CatUsuario que realizó la última modificación
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: claagrupadorclienteunico
+    descripcion: Clave primaria de la tabla VtaCatAgrupadorClienteUnico
+    tipo: INT64
+  - nombre: nomagrupadorclienteunico
+    descripcion: Nombre del agrupador de clientes único
+    tipo: STRING
+  - nombre: claagrupadorclienteunicosfid
+    descripcion: Clave foránea a la tabla VtaCatAgrupadorClienteUnico (SFID)
+    tipo: STRING

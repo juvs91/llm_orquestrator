@@ -1,0 +1,112 @@
+vista: MOV_CARTERA
+descripcion: Vista que contiene la información de los movimientos de cartera.
+campos:
+  - nombre: CLA_MOV_CARTERA
+    descripcion: Clave del movimiento de cartera.
+    tipo: int
+  - nombre: CLA_GPO_MOV_CARTERA
+    descripcion: Clave del grupo de movimiento de cartera.
+    tipo: int
+  - nombre: NOM_GPO_MOV_CARTERA
+    descripcion: Nombre del grupo de movimiento de cartera.
+    tipo: string
+  - nombre: PAGO_SN
+    descripcion: Indica si el movimiento de cartera se considera un pago.
+    tipo: string
+  - nombre: BONIFICACION_SN
+    descripcion: Indica si el movimiento de cartera se considera una bonificación.
+    tipo: string
+  - nombre: PRONTO_PAGO_SN
+    descripcion: Indica si el movimiento de cartera se considera un pronto pago.
+    tipo: string
+  - nombre: COD_SN
+    descripcion: Indica si el movimiento de cartera se considera un COD.
+    tipo: string
+  - nombre: FLETE_SN
+    descripcion: Indica si el movimiento de cartera se considera un flete.
+    tipo: string
+  - nombre: CARGO_FINANCIERO_SN
+    descripcion: Indica si el movimiento de cartera se considera un cargo financiero.
+    tipo: string
+  - nombre: EXCLUSION_SN
+    descripcion: Indica si el movimiento de cartera se considera una exclusión.
+    tipo: string
+  - nombre: RETIENE_IVA_SN
+    descripcion: Indica si el movimiento de cartera retiene IVA.
+    tipo: string
+  - nombre: CLA_TIPO_MOV
+    descripcion: Clave del tipo de movimiento.
+    tipo: int
+  - nombre: DESCRIPCION
+    descripcion: Descripción del movimiento de cartera.
+    tipo: string
+  - nombre: DESCRIPCION_INGLES
+    descripcion: Descripción del movimiento de cartera en inglés.
+    tipo: string
+  - nombre: DESC_CORTA
+    descripcion: Descripción corta del movimiento de cartera.
+    tipo: string
+  - nombre: DESC_CORTA_INGLES
+    descripcion: Descripción corta del movimiento de cartera en inglés.
+    tipo: string
+  - nombre: LETRERO_REF1
+    descripcion: Primer letrero de referencia del movimiento de cartera.
+    tipo: string
+  - nombre: LETRERO_REF2
+    descripcion: Segundo letrero de referencia del movimiento de cartera.
+    tipo: string
+  - nombre: LETRERO_REF3
+    descripcion: Tercer letrero de referencia del movimiento de cartera.
+    tipo: string
+  - nombre: LETRERO_REF4
+    descripcion: Cuarto letrero de referencia del movimiento de cartera.
+    tipo: string
+  - nombre: LETRERO_REF5
+    descripcion: Quinto letrero de referencia del movimiento de cartera.
+    tipo: string
+  - nombre: ES_APLICA_CARGO_VENTAS
+    descripcion: Indica si el movimiento se aplica como cargo en ventas.
+    tipo: string
+  - nombre: ES_APLICA_CREDITO_VENTAS
+    descripcion: Indica si el movimiento se aplica como crédito en ventas.
+    tipo: string
+  - nombre: ES_APLICA_CARGO_CARTERA
+    descripcion: Indica si el movimiento se aplica como cargo en cartera.
+    tipo: string
+  - nombre: ES_APLICA_CREDITO_CARTERA
+    descripcion: Indica si el movimiento se aplica como crédito en cartera.
+    tipo: string
+  - nombre: ES_APLICA_CARGO_COSTO_INTEGRAL
+    descripcion: Indica si el movimiento se aplica como cargo en costo integral.
+    tipo: string
+  - nombre: ES_APLICA_CREDITO_COSTO_INTEGRAL
+    descripcion: Indica si el movimiento se aplica como crédito en costo integral.
+    tipo: string
+  - nombre: ES_APLICA_CARGO_OTROS_INGRESOS
+    descripcion: Indica si el movimiento se aplica como cargo en otros ingresos.
+    tipo: string
+  - nombre: ES_APLICA_CREDITO_OTROS_INGRESOS
+    descripcion: Indica si el movimiento se aplica como crédito en otros ingresos.
+    tipo: string
+  - nombre: FECHA_ULTIMA_MOD
+    descripcion: Fecha de la última modificación.
+    tipo: timestamp
+  - nombre: NOMBRE_PC_MOD
+    descripcion: Nombre del equipo que realizó la última modificación.
+    tipo: string
+  - nombre: CLA_USUARIO_MOD
+    descripcion: Clave del usuario que realizó la última modificación.
+    tipo: int
+  - nombre: BAJA_LOGICA
+    descripcion: Indica si el registro está dado de baja lógica.
+    tipo: string
+  - nombre: FECHA_BAJA_LOGICA
+    descripcion: Fecha de la baja lógica.
+    tipo: timestamp
+  - nombre: NOM_TIPO_MOV
+    descripcion: Nombre del tipo de movimiento.
+    tipo: string
+  - nombre: ES_FACTURA_EMBARQUE
+    descripcion: Indica si el movimiento está relacionado con una factura de embarque.
+    tipo: int
+

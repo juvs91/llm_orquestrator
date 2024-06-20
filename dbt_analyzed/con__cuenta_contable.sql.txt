@@ -1,0 +1,36 @@
+vista: MST_CUENTA_CONTABLE_VW
+descripcion: Vista materializada que contiene información de la cuenta contable.
+campos:
+  - nombre: ID_CUENTA_CONTABLE
+    descripcion: Identificador único de la cuenta contable.
+    tipo: INT
+  - nombre: IDIOMA
+    descripcion: Identificador del idioma.
+    tipo: INT
+  - nombre: NOM_DIRECCION
+    descripcion: Nombre de la dirección.
+    tipo: VARCHAR
+  - nombre: NOM_CUENTA_MAYOR
+    descripcion: Nombre de la cuenta mayor.
+    tipo: VARCHAR
+  - nombre: NOM_SUBCUENTA
+    descripcion: Nombre de la subcuenta.
+    tipo: VARCHAR
+  - nombre: NOM_DETALLE
+    descripcion: Nombre del detalle.
+    tipo: VARCHAR
+  - nombre: NUM_DIRECCION
+    descripcion: Número de la dirección.
+    tipo: INT
+  - nombre: NUM_CUENTA_MAYOR
+    descripcion: Número de la cuenta mayor.
+    tipo: INT
+  - nombre: NUM_SUBCUENTA
+    descripcion: Número de la subcuenta.
+    tipo: INT
+  - nombre: NUM_DETALLE
+    descripcion: Número del detalle.
+    tipo: INT
+  - nombre: ES_REPORTE_BALANCE
+    descripcion: Indica si la cuenta se reporta en el balance.
+    tipo: BOOLEAN 

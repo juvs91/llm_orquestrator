@@ -1,0 +1,162 @@
+vista: stg_cupcatproveedor
+descripcion: Vista generada por DBT para la tabla dbo_CupCatProveedor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: dpp
+    descripcion: Columna numérica
+    tipo: FLOAT64
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes
+    tipo: STRING
+  - nombre: curp
+    descripcion: Clave Única de Registro de Población
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle
+    tipo: STRING
+  - nombre: noext
+    descripcion: Número exterior
+    tipo: STRING
+  - nombre: noint
+    descripcion: Número interior
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la cuenta
+    tipo: INT64
+  - nombre: claiva
+    descripcion: Clave del Impuesto al Valor Agregado (IVA)
+    tipo: INT64
+  - nombre: nomcup
+    descripcion: Nombre en mayúsculas
+    tipo: STRING
+  - nombre: clavecup
+    descripcion: Clave
+    tipo: INT64
+  - nombre: diaspago
+    descripcion: Días de pago
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono
+    tipo: STRING
+  - nombre: apmaterno
+    descripcion: Apellido materno
+    tipo: STRING
+  - nombre: appaterno
+    descripcion: Apellido paterno
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta
+    tipo: DATETIME
+  - nombre: plazopago
+    descripcion: Plazo de pago
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: esrevisado
+    descripcion: Indicador de revisión (0: no revisado, 1: revisado)
+    tipo: INT64
+  - nombre: nomcontacto
+    descripcion: Nombre del contacto
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos de origen
+    tipo: STRING
+  - nombre: claestadocon
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal
+    tipo: STRING
+  - nombre: esextranjero
+    descripcion: Indicador de extranjero (0: nacional, 1: extranjero)
+    tipo: INT64
+  - nombre: requiere1099
+    descripcion: Indicador de requerimiento de formulario 1099 (0: no requiere, 1: requiere)
+    tipo: INT64
+  - nombre: clacoloniacon
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: emailcontacto
+    descripcion: Correo electrónico del contacto
+    tipo: STRING
+  - nombre: clatiponegocio
+    descripcion: Clave del tipo de negocio
+    tipo: INT64
+  - nombre: clatipopersona
+    descripcion: Clave del tipo de persona
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: idautorizacion
+    descripcion: ID de autorización
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clamunicipiocon
+    descripcion: Clave del municipio
+    tipo: INT64
+  - nombre: clanacionalidad
+    descripcion: Clave de la nacionalidad
+    tipo: INT64
+  - nombre: esautorizadosat
+    descripcion: Indicador de autorización del SAT (0: no autorizado, 1: autorizado)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clatipoproveedor
+    descripcion: Clave del tipo de proveedor
+    tipo: INT64
+  - nombre: esprimeramanousa
+    descripcion: Indicador de primera mano en Estados Unidos (0: no, 1: sí)
+    tipo: INT64
+  - nombre: telefonocontacto
+    descripcion: Número de teléfono del contacto
+    tipo: STRING
+  - nombre: direccioncontacto
+    descripcion: Dirección del contacto
+    tipo: STRING
+  - nombre: responsablefiscal
+    descripcion: Nombre del responsable fiscal
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la base de datos de origen
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la base de datos de origen
+    tipo: STRING
+  - nombre: claestatusproveedor
+    descripcion: Clave del estatus del proveedor
+    tipo: INT64
+  - nombre: fechavalidacionfiscal
+    descripcion: Fecha de validación fiscal
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: esmetodoconexioncombinado
+    descripcion: Indicador de método de conexión combinado (0: no, 1: sí)
+    tipo: INT64
+  - nombre: claregimenincorporacionfiscal
+    descripcion: Clave del régimen de incorporación fiscal
+    tipo: INT64

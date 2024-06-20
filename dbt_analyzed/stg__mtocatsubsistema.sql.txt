@@ -1,0 +1,60 @@
+vista: stg_mtocatsubsistema
+descripcion: Vista generada a partir de la tabla MtoSch_MtoCatSubSistema
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando se extrajo el registro
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clasistema
+    descripcion: Clave foránea al catálogo de sistemas
+    tipo: INT64
+  - nombre: clagenerico
+    descripcion: Clave genérica
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number del cambio
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea al catálogo de ubicaciones
+    tipo: INT64
+  - nombre: clasubsistema
+    descripcion: Clave primaria del subsistema
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al catálogo de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: nomsubsistema
+    descripcion: Nombre del subsistema
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de Airbyte
+    tipo: INT64
+  - nombre: clavesubsistema
+    descripcion: Clave única del subsistema
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio
+    tipo: STRING

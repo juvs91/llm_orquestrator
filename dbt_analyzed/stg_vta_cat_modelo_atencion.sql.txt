@@ -1,0 +1,51 @@
+vista: VtaCatModeloAtencion
+descripcion: Vista de la tabla VtaSch_VtaCatModeloAtencion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: BajaLogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: Descripcion
+    descripcion: Descripción del modelo de atención
+    tipo: STRING
+  - nombre: NombrePcMod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INTEGER
+  - nombre: FechaUltimaMod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: FechaBajaLogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: ClaModeloAtencion
+    descripcion: Clave del modelo de atención
+    tipo: INT64
+  - nombre: NomModeloAtencion
+    descripcion: Nombre del modelo de atención
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING

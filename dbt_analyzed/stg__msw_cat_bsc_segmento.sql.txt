@@ -1,0 +1,52 @@
+vista: stg_mswcatbscsegmento
+descripcion: Vista generada por DBT que contiene información sobre los segmentos de clientes.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el segmento está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: clasegmento
+    descripcion: Clave única para el segmento.
+    tipo: INT64
+  - nombre: nomsegmento
+    descripcion: Nombre del segmento en mayúsculas.
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó por última vez el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del sistema de origen utilizado para el seguimiento de cambios.
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó por última vez el registro.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor utilizado por Airbyte para el seguimiento de cambios.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que el segmento se dio de baja lógica.
+    tipo: DATETIME
+  - nombre: clasegmentopadre
+    descripcion: Clave del segmento padre (si existe).
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado en el sistema de origen.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez el registro en el sistema de origen.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos.
+    tipo: STRING
+

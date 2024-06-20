@@ -1,0 +1,48 @@
+vista: VtaRelGpoEstOfertaValor
+descripcion: Vista que representa la relación entre grupos de estudiantes y ofertas de valor.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte en formato JSON.
+    tipo: JSON
+  - nombre: Nivel
+    descripcion: Nivel educativo del grupo de estudiantes.
+    tipo: INT64
+  - nombre: ClaGpoEst
+    descripcion: Clave del grupo de estudiantes.
+    tipo: INT64
+  - nombre: BajaLogica
+    descripcion: Indicador de baja lógica (1 = dado de baja, 0 = activo).
+    tipo: INT64
+  - nombre: NombrePcMod
+    descripcion: Nombre del equipo que modificó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambio de datos de Airbyte.
+    tipo: STRING
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que modificó el registro por última vez.
+    tipo: INT64
+  - nombre: ClaOfertaValor
+    descripcion: Clave de la oferta de valor.
+    tipo: INT64
+  - nombre: FechaUltimaMod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: INT64
+  - nombre: FechaBajaLogica
+    descripcion: Fecha y hora de la baja lógica.
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de cambio de datos de Airbyte.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de cambio de datos de Airbyte.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: STRING 

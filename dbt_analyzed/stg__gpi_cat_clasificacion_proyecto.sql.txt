@@ -1,0 +1,69 @@
+vista: stg_gpicatclasificacionproyecto
+descripcion: Vista generada por DBT a partir de la tabla GPISch_GPICatClasificacionProyecto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: esfinanciero
+    descripcion: Indica si la clasificación del proyecto es financiera (1) o no (0)
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: ID del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: claclasificacionproyecto
+    descripcion: ID de la clasificación del proyecto
+    tipo: INT64
+  - nombre: nomclasificacionproyecto
+    descripcion: Nombre de la clasificación del proyecto en mayúsculas
+    tipo: STRING
+  - nombre: colorclasificacionproyecto
+    descripcion: Color asociado a la clasificación del proyecto
+    tipo: STRING
+  - nombre: nomclasificacionproyectoingles
+    descripcion: Nombre de la clasificación del proyecto en inglés en mayúsculas
+    tipo: STRING
+  - nombre: descripcionclasificacionproyecto
+    descripcion: Descripción de la clasificación del proyecto
+    tipo: STRING
+  - nombre: descripcionclasificacionproyectoingles
+    descripcion: Descripción de la clasificación del proyecto en inglés
+    tipo: STRING

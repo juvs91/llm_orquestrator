@@ -1,0 +1,90 @@
+vista: stg_mancatarticulodimension
+descripcion: Vista generada por DBT para la tabla dbo_ManCatArticuloDimension
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: multiplo
+    descripcion: Multiplo del artículo
+    tipo: INT64
+  - nombre: altomtsind
+    descripcion: Alto del artículo individual
+    tipo: FLOAT64
+  - nombre: anchomtsind
+    descripcion: Ancho del artículo individual
+    tipo: FLOAT64
+  - nombre: claarticulo
+    descripcion: Clave del artículo
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios sobre el artículo
+    tipo: STRING
+  - nombre: largomtsind
+    descripcion: Largo del artículo individual
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el artículo
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: altomtsagrup
+    descripcion: Alto del artículo agrupado
+    tipo: FLOAT64
+  - nombre: clataraagrup
+    descripcion: Clave de la tara del artículo agrupado
+    tipo: INT64
+  - nombre: empaqueagrup
+    descripcion: Empaque del artículo agrupado
+    tipo: FLOAT64
+  - nombre: anchomtsagrup
+    descripcion: Ancho del artículo agrupado
+    tipo: FLOAT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el artículo
+    tipo: INT64
+  - nombre: largomtsagrup
+    descripcion: Largo del artículo agrupado
+    tipo: FLOAT64
+  - nombre: camanivelagrup
+    descripcion: Cantidad de niveles del artículo agrupado
+    tipo: FLOAT64
+  - nombre: diametromtsind
+    descripcion: Diámetro del artículo individual
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del artículo
+    tipo: DATETIME
+  - nombre: pesotarakgsind
+    descripcion: Peso de la tara del artículo individual en kilogramos
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: cantidadminagrup
+    descripcion: Cantidad mínima del artículo agrupado
+    tipo: INT64
+  - nombre: diametromtsagrup
+    descripcion: Diámetro del artículo agrupado
+    tipo: FLOAT64
+  - nombre: numestibajeagrup
+    descripcion: Número de estibas del artículo agrupado
+    tipo: INT64
+  - nombre: pesotarakgsagrup
+    descripcion: Peso de la tara del artículo agrupado en kilogramos
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

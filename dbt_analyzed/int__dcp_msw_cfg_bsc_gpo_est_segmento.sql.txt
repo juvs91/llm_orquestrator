@@ -1,0 +1,60 @@
+vista: de_duplicacion_mswcfgbscgpoestsegmento
+descripcion: Vista que aplica deduplicación y transformación a la tabla stg__msw_cfg_bsc_gpo_est_segmento.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: clasegmento
+    descripcion: Clave del segmento.
+    tipo: INTEGER
+  - nombre: nomsegmento
+    descripcion: Nombre del segmento.
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC que modificó el registro.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la operación de cambio de datos.
+    tipo: INTEGER
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INTEGER
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación.
+    tipo: DATE
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro.
+    tipo: TIMESTAMP
+  - nombre: nomgrupomismonombre
+    descripcion: Nombre del grupo con el mismo nombre.
+    tipo: TEXT
+  - nombre: clagrupoestadistico1
+    descripcion: Clave del grupo estadístico 1.
+    tipo: INTEGER
+  - nombre: clagrupoestadistico2
+    descripcion: Clave del grupo estadístico 2.
+    tipo: INTEGER
+  - nombre: clagrupoestadistico3
+    descripcion: Clave del grupo estadístico 3.
+    tipo: INTEGER
+  - nombre: clasegmentomanufactura
+    descripcion: Clave del segmento de manufactura.
+    tipo: INTEGER
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: INTEGER
+  - nombre: clamarketsegment
+    descripcion: Clave del segmento de mercado, con valor nulo si clasegmento es 1006.
+    tipo: INTEGER

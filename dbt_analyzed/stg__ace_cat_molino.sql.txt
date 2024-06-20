@@ -1,0 +1,69 @@
+vista: stg_acecatmolino
+descripcion: Vista generada por DBT para la tabla dbo_AceCatMolino
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clamolino
+    descripcion: Clave del molino
+    tipo: INT64
+  - nombre: esdeacero
+    descripcion: Indica si el molino es de acero (1) o no (0)
+    tipo: INT64
+  - nombre: nommolino
+    descripcion: Nombre del molino
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: foliosincro
+    descripcion: Folio de sincronización
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación del molino
+    tipo: INT64
+  - nombre: numcartuchos
+    descripcion: Número de cartuchos del molino
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: clavealfanumerica
+    descripcion: Clave alfanumérica del molino
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando el registro fue eliminado según CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando el registro fue actualizado según CDC
+    tipo: STRING
+  - nombre: claveautomatizacion
+    descripcion: Clave de automatización
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

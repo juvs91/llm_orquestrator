@@ -1,0 +1,10 @@
+vista: mst_trabajador
+descripcion: Vista que presenta la información de los trabajadores, buscando el nombre del trabajador en las tablas de trabajadores y usuarios. En caso de no encontrar el nombre en la tabla de trabajadores, se busca en la tabla de usuarios.
+campos:
+  - nombre: cla_trabajador
+    descripcion: Clave única del trabajador.
+    tipo: INT64
+  - nombre: nom_trabajador
+    descripcion: Nombre completo del trabajador.
+    tipo: STRING
+ 

@@ -1,0 +1,9 @@
+vista: MST_FORMA_PAGO_FISCAL_VW
+descripcion: Vista materializada que presenta la información de las formas de pago fiscales.
+campos:
+  - nombre: CLA_FORMA_PAGO_FISCAL
+    descripcion: Clave de la forma de pago fiscal.
+    tipo: VARCHAR
+  - nombre: NOM_FORMA_PAGO_FISCAL
+    descripcion: Nombre de la forma de pago fiscal, compuesta por la clave y la descripción.
+    tipo: VARCHAR 

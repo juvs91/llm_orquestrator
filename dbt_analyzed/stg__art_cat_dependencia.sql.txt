@@ -1,0 +1,81 @@
+vista: stg_artcatdependencia
+descripcion: Vista generada por DBT a partir de la tabla dbo.ArtCatDependencia
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON generados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si la dependencia está dada de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la transacción de origen
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: cladependencia
+    descripcion: Clave de la dependencia
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: nomdependencia
+    descripcion: Nombre de la dependencia
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario
+    tipo: INT64
+  - nombre: clacaracteristica1
+    descripcion: Clave de la característica 1
+    tipo: INT64
+  - nombre: clacaracteristica2
+    descripcion: Clave de la característica 2
+    tipo: INT64
+  - nombre: clacaracteristica3
+    descripcion: Clave de la característica 3
+    tipo: INT64
+  - nombre: clacaracteristica4
+    descripcion: Clave de la característica 4
+    tipo: INT64
+  - nombre: clacaracteristica5
+    descripcion: Clave de la característica 5
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó por última vez un registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez un registro
+    tipo: STRING
+  - nombre: clacaracteristicadep1
+    descripcion: Clave de la característica de dependencia 1
+    tipo: INT64
+  - nombre: clacaracteristicadep2
+    descripcion: Clave de la característica de dependencia 2
+    tipo: INT64
+  - nombre: clacaracteristicadep3
+    descripcion: Clave de la característica de dependencia 3
+    tipo: INT64
+  - nombre: clacaracteristicadep4
+    descripcion: Clave de la característica de dependencia 4
+    tipo: INT64
+  - nombre: clacaracteristicadep5
+    descripcion: Clave de la característica de dependencia 5
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

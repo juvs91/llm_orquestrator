@@ -1,0 +1,81 @@
+vista: stg_mtocattipoindicador
+descripcion: Vista generada a partir de la tabla MtoSch_MtoCatTipoIndicador
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden de visualización
+    tipo: INT64
+  - nombre: perfil
+    descripcion: Perfil asociado al tipo de indicador
+    tipo: STRING
+  - nombre: proceso
+    descripcion: ID del proceso asociado al tipo de indicador
+    tipo: INT64
+  - nombre: objetivo
+    descripcion: Valor objetivo del indicador
+    tipo: FLOAT64
+  - nombre: unidades
+    descripcion: Unidades de medida del indicador
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez
+    tipo: STRING
+  - nombre: promediarsn
+    descripcion: Indica si se debe promediar el indicador (True: Sí, False: No)
+    tipo: BOOL
+  - nombre: tipoperiodo
+    descripcion: ID del tipo de periodo del indicador
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de origen
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: ID de la ubicación asociada al tipo de indicador
+    tipo: INT64
+  - nombre: recalcularsn
+    descripcion: Indica si se debe recalcular el indicador (True: Sí, False: No)
+    tipo: BOOL
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: clasificacion
+    descripcion: Clasificación del tipo de indicador
+    tipo: INT64
+  - nombre: ordenreportes
+    descripcion: Orden de aparición en reportes
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoindicador
+    descripcion: ID del tipo de indicador
+    tipo: INT64
+  - nombre: nomtipoindicador
+    descripcion: Nombre del tipo de indicador
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando se marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando se actualizó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

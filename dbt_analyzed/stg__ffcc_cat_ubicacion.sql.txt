@@ -1,0 +1,120 @@
+vista: stg_ffcccatubicacion
+descripcion: Vista generada por DBT para la tabla FFCCCatUbicacion.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte.
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax.
+    tipo: STRING
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes.
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico.
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país.
+    tipo: INT64
+  - nombre: colonia
+    descripcion: Colonia.
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de inserción.
+    tipo: DATETIME
+  - nombre: claestado
+    descripcion: Clave del estado.
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección.
+    tipo: STRING
+  - nombre: esexterno
+    descripcion: Indicador si es externo.
+    tipo: INT64
+  - nombre: poblacion
+    descripcion: Población.
+    tipo: STRING
+  - nombre: telefonos
+    descripcion: Teléfonos.
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica.
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente.
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa.
+    tipo: INT64
+  - nombre: nombrecorto
+    descripcion: Nombre corto.
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre de la PC que modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios de Airbyte.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación.
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal.
+    tipo: STRING
+  - nombre: esconsistema
+    descripcion: Indicador si es del sistema.
+    tipo: INT64
+  - nombre: claciudadbase
+    descripcion: Clave de la ciudad base.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de registro de cambios de Airbyte.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica.
+    tipo: DATETIME
+  - nombre: nombreubicacion
+    descripcion: Nombre de la ubicación.
+    tipo: STRING
+  - nombre: clatipoubicacion
+    descripcion: Clave del tipo de ubicación.
+    tipo: INT64
+  - nombre: esdomingodiahabil
+    descripcion: Indicador si el domingo es día hábil.
+    tipo: INT64
+  - nombre: claubicacionventas
+    descripcion: Clave de la ubicación de ventas.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro de cambios de Airbyte.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro de cambios de Airbyte.
+    tipo: STRING
+  - nombre: aplicafactorcubicaje
+    descripcion: Indicador si se aplica el factor de cubicaje.
+    tipo: INT64
+  - nombre: ubicacionkilometrica
+    descripcion: Ubicación kilométrica.
+    tipo: STRING
+  - nombre: criteriocalculodemora
+    descripcion: Criterio de cálculo de demora.
+    tipo: INT64
+  - nombre: margenhorasdemoraspiso
+    descripcion: Margen de horas de demora piso.
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de registro de cambios de Airbyte.
+    tipo: STRING

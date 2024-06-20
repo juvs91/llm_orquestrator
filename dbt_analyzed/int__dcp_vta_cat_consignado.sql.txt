@@ -1,0 +1,148 @@
+vista: de_duplicacion_vtacatconsignado
+descripcion: Vista que elimina duplicados de la tabla stg__vta_cat_consignado
+campos:
+  - nombre: calle
+    descripcion: Calle del consignado
+    tipo: VARCHAR(100)
+  - nombre: taxid
+    descripcion: Tax ID del consignado
+    tipo: VARCHAR(20)
+  - nombre: cucsfid
+    descripcion: ID de la cuenta del cliente en el sistema antiguo
+    tipo: VARCHAR(50)
+  - nombre: eslocal
+    descripcion: Indica si el consignado es local (1) o no (0)
+    tipo: INT
+  - nombre: espuela
+    descripcion: Espuela del consignado
+    tipo: VARCHAR(50)
+  - nombre: contacto
+    descripcion: Nombre del contacto del consignado
+    tipo: VARCHAR(100)
+  - nombre: fechaalta
+    descripcion: Fecha de alta del consignado
+    tipo: DATE
+  - nombre: bajalogica
+    descripcion: Indica si el consignado está dado de baja lógica (1) o no (0)
+    tipo: INT
+  - nombre: cuentacsid
+    descripcion: ID de la cuenta del cliente en el sistema actual
+    tipo: VARCHAR(50)
+  - nombre: cuentasfid
+    descripcion: ID de la cuenta del cliente en el sistema financiero
+    tipo: VARCHAR(50)
+  - nombre: entrecalles
+    descripcion: Entre calles del consignado
+    tipo: VARCHAR(100)
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro por última vez
+    tipo: VARCHAR(100)
+  - nombre: numexterior
+    descripcion: Número exterior del consignado
+    tipo: VARCHAR(10)
+  - nombre: numinterior
+    descripcion: Número interior del consignado
+    tipo: VARCHAR(10)
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Azure
+    tipo: BIGINT
+  - nombre: esautofleteo
+    descripcion: Indica si el consignado utiliza autotransporte (1) o no (0)
+    tipo: INT
+  - nombre: notaembarque
+    descripcion: Nota de embarque del consignado
+    tipo: VARCHAR(50)
+  - nombre: claconsignado
+    descripcion: Clave del consignado
+    tipo: VARCHAR(20)
+  - nombre: clamotivobaja
+    descripcion: Clave del motivo de baja del consignado
+    tipo: VARCHAR(20)
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: VARCHAR(20)
+  - nombre: esnocargariva
+    descripcion: Indica si no se debe cargar IVA al consignado (1) o sí (0)
+    tipo: INT
+  - nombre: claciudadunico
+    descripcion: Clave única de la ciudad del consignado
+    tipo: VARCHAR(20)
+  - nombre: claferroviaria
+    descripcion: Clave de la estación ferroviaria del consignado
+    tipo: VARCHAR(20)
+  - nombre: comentariobaja
+    descripcion: Comentario de la baja del consignado
+    tipo: VARCHAR(255)
+  - nombre: consignadosfid
+    descripcion: ID del consignado en el sistema financiero
+    tipo: VARCHAR(50)
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATE
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Azure
+    tipo: VARCHAR(255)
+  - nombre: claciudadlegacy
+    descripcion: Clave de la ciudad del consignado en el sistema antiguo
+    tipo: VARCHAR(20)
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente del consignado
+    tipo: VARCHAR(20)
+  - nombre: clacodigopostal
+    descripcion: Clave del código postal del consignado
+    tipo: VARCHAR(20)
+  - nombre: clacoloniaunico
+    descripcion: Clave única de la colonia del consignado
+    tipo: VARCHAR(20)
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del consignado
+    tipo: DATE
+  - nombre: ladanotificante
+    descripcion: Lado del notificante
+    tipo: VARCHAR(50)
+  - nombre: clamedioembarque
+    descripcion: Clave del medio de embarque del consignado
+    tipo: VARCHAR(20)
+  - nombre: essiemprevigente
+    descripcion: Indica si el consignado siempre está vigente (1) o no (0)
+    tipo: INT
+  - nombre: nombreconsignado
+    descripcion: Nombre del consignado
+    tipo: VARCHAR(100)
+  - nombre: mc_consignado_id
+    descripcion: ID del consignado en la tabla maestra de clientes
+    tipo: VARCHAR(50)
+  - nombre: correonotificante
+    descripcion: Correo electrónico del notificante
+    tipo: VARCHAR(100)
+  - nombre: nombrenotificante
+    descripcion: Nombre del notificante
+    tipo: VARCHAR(100)
+  - nombre: esdomicilioenlegal
+    descripcion: Indica si el domicilio es el legal (1) o no (0)
+    tipo: INT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha de eliminación del registro en Azure
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha de actualización del registro en Azure
+    tipo: TIMESTAMP
+  - nombre: codigopostalimprime
+    descripcion: Código postal para imprimir
+    tipo: VARCHAR(10)
+  - nombre: telefononotificante
+    descripcion: Número de teléfono del notificante
+    tipo: VARCHAR(20)
+  - nombre: claestatusconsignado
+    descripcion: Clave del estatus del consignado
+    tipo: VARCHAR(20)
+  - nombre: esgeneracargoimpuesto
+    descripcion: Indica si se debe generar cargo de impuesto al consignado (1) o no (0)
+    tipo: INT
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Azure
+    tipo: BIGINT
+  - nombre: claveinternacionalnotificante
+    descripcion: Clave internacional del notificante
+    tipo: VARCHAR(50)
+

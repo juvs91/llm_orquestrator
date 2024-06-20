@@ -1,0 +1,57 @@
+vista: stg_opecattipoentradasalida
+descripcion: Vista generada por DBT para la tabla OpeSch_OPECatTipoEntradaSalida.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de Postgres.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones.
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro.
+    tipo: INT64
+  - nombre: espararegreso
+    descripcion: Indica si el tipo de entrada/salida es para regreso (1) o no (0).
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte CDC.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en la que se dio de baja lógica el registro.
+    tipo: DATETIME
+  - nombre: tipoentradasalida
+    descripcion: Clave primaria de la tabla.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la base de datos de origen.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la base de datos de origen.
+    tipo: STRING
+  - nombre: clatipoentradasalida
+    descripcion: Clave única para el tipo de entrada/salida.
+    tipo: INT64
+  - nombre: nomtipoentradasalida
+    descripcion: Nombre del tipo de entrada/salida.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

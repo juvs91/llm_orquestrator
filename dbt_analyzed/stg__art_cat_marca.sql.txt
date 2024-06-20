@@ -1,0 +1,54 @@
+vista: stg_artcatmarca
+descripcion: Vista generada por DBT a partir de la tabla dbo_ArtCatMarca
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clamarca
+    descripcion: Clave de la marca
+    tipo: INT64
+  - nombre: nommarca
+    descripcion: Nombre de la marca
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: clavemarcaalfanumerica
+    descripcion: Clave alfanumérica de la marca
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

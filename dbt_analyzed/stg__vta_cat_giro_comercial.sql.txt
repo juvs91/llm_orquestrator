@@ -1,0 +1,60 @@
+vista: stg_vtacatgirocomercial
+descripcion: Vista generada por DBT para la tabla dbo_VtaCatGiroComercial
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clariesgo
+    descripcion: Clave de riesgo
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro (LSN) de cambio de datos capturados por Airbyte
+    tipo: STRING
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos capturados por Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: clagirocomercial
+    descripcion: Clave del giro comercial
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro capturada por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro capturada por Airbyte CDC
+    tipo: STRING
+  - nombre: nombregirocomercial
+    descripcion: Nombre del giro comercial en mayúsculas
+    tipo: STRING
+  - nombre: nombregirocomercialing
+    descripcion: Nombre del giro comercial en inglés en mayúsculas
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos capturados por Airbyte
+    tipo: STRING

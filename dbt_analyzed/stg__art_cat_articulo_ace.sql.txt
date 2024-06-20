@@ -1,0 +1,75 @@
+vista: stg_artcatarticuloace
+descripcion: Vista generada por DBT a partir de la tabla dbo_ArtCatArticuloAce en la fuente src_prod_kraken_abt.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: escuna
+    descripcion: Valor numérico de la escuna
+    tipo: INT64
+  - nombre: kgmetro
+    descripcion: Valor numérico de kilogramos por metro
+    tipo: FLOAT64
+  - nombre: clagrado
+    descripcion: Clave foránea al catálogo de grados
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0 o 1)
+    tipo: INT64
+  - nombre: claalmacen
+    descripcion: Clave foránea al catálogo de almacenes
+    tipo: INT64
+  - nombre: clacalibre
+    descripcion: Clave foránea al catálogo de calibres
+    tipo: INT64
+  - nombre: claarticulo
+    descripcion: Clave foránea al catálogo de artículos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: clafamiliauso
+    descripcion: Clave foránea al catálogo de familias de uso
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al catálogo de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: escontrollote
+    descripcion: Indicador de control de lote (0 o 1)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave foránea al catálogo de tipos de inventario
+    tipo: INT64
+  - nombre: clagrupoproduccion
+    descripcion: Clave foránea al catálogo de grupos de producción
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: clafamiliadesperdicio
+    descripcion: Clave foránea al catálogo de familias de desperdicio
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

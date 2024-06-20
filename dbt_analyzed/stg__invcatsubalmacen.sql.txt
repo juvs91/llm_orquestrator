@@ -1,0 +1,63 @@
+vista: stg_invcatsubalmacen
+descripcion: Vista generada por DBT para la tabla dbo_InvCatSubAlmacen
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON proporcionados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el subalmacén está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: claalmacen
+    descripcion: Clave foránea al almacén al que pertenece el subalmacén
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la ubicación del subalmacén
+    tipo: INT64
+  - nombre: clasubalmacen
+    descripcion: Clave primaria del subalmacén
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro
+    tipo: INT64
+  - nombre: nomsubalmacen
+    descripcion: Nombre del subalmacén
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja el subalmacén
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave foránea al tipo de inventario que se maneja en el subalmacén
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro, si corresponde
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro, si corresponde
+    tipo: STRING
+  - nombre: ultimonivelafectable
+    descripcion: Indica si es el último nivel afectable en la jerarquía de almacenes
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING
+  - nombre: permiteexistencianegativa
+    descripcion: Indica si se permite existencia negativa en el subalmacén
+    tipo: INT64

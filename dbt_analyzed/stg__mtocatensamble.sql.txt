@@ -1,0 +1,75 @@
+vista: stg_mtocatensamble
+descripcion: Vista generada por DBT a partir de la tabla MtoSch_MtoCatEnsamble
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: noserie
+    descripcion: Número de serie del equipo
+    tipo: STRING
+  - nombre: claequipo
+    descripcion: Clave del equipo
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (true/false)
+    tipo: BOOL
+  - nombre: esgenerico
+    descripcion: Indica si el registro es genérico (true/false)
+    tipo: BOOL
+  - nombre: claensamble
+    descripcion: Clave del ensamble
+    tipo: INT64
+  - nombre: nomensamble
+    descripcion: Nombre del ensamble
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre de la PC que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos origen
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: claveensamble
+    descripcion: Clave del ensamble
+    tipo: STRING
+  - nombre: fechautimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: claensamblepadre
+    descripcion: Clave del ensamble padre
+    tipo: INT64
+  - nombre: claestatusensamble
+    descripcion: Clave del estatus del ensamble
+    tipo: INT64
+  - nombre: clafamiliaensamble
+    descripcion: Clave de la familia del ensamble
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la base de datos origen
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la base de datos origen
+    tipo: STRING
+  - nombre: clasubfamiliaensamble
+    descripcion: Clave de la subfamilia del ensamble
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

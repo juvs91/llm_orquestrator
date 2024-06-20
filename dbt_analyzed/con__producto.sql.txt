@@ -1,0 +1,132 @@
+vista: MST_PRODUCTO_VW
+descripcion: Vista generada a partir de la unión de catálogos de producto de México y USA
+campos:
+  - nombre: CLA_TIPO_INVENTARIO
+    descripcion: Clave del tipo de inventario. Ej. 1
+    tipo: INT
+  - nombre: CLA_PRODUCTO
+    descripcion: Clave del producto
+    tipo: INT
+  - nombre: CLAVE_ARTICULO
+    descripcion: Clave del artículo
+    tipo: VARCHAR
+  - nombre: NOM_PRODUCTO
+    descripcion: Nombre del producto
+    tipo: VARCHAR
+  - nombre: CLA_SUBFAMILIA
+    descripcion: Clave de la subfamilia
+    tipo: INT
+  - nombre: CLAVE_SUBFAMILIA
+    descripcion: Clave de la subfamilia
+    tipo: VARCHAR
+  - nombre: NOM_SUBFAMILIA
+    descripcion: Nombre de la subfamilia
+    tipo: VARCHAR
+  - nombre: CLA_FAMILIA
+    descripcion: Clave de la familia
+    tipo: INT
+  - nombre: CLAVE_FAMILIA
+    descripcion: Clave de la familia
+    tipo: VARCHAR
+  - nombre: NOM_FAMILIA
+    descripcion: Nombre de la familia
+    tipo: VARCHAR
+  - nombre: CLA_GRUPO_ESTADISTICO1
+    descripcion: Clave del grupo estadístico 1
+    tipo: INT
+  - nombre: NOM_GRUPO_ESTADISTICO1
+    descripcion: Nombre del grupo estadístico 1
+    tipo: VARCHAR
+  - nombre: STATISTICAL_GROUP1
+    descripcion: Nombre en inglés del grupo estadístico 1
+    tipo: VARCHAR
+  - nombre: CLA_GRUPO_ESTADISTICO2
+    descripcion: Clave del grupo estadístico 2
+    tipo: INT
+  - nombre: NOM_GRUPO_ESTADISTICO2
+    descripcion: Nombre del grupo estadístico 2
+    tipo: VARCHAR
+  - nombre: STATISTICAL_GROUP2
+    descripcion: Nombre en inglés del grupo estadístico 2
+    tipo: VARCHAR
+  - nombre: CLA_GRUPO_ESTADISTICO3
+    descripcion: Clave del grupo estadístico 3
+    tipo: INT
+  - nombre: NOM_GRUPO_ESTADISTICO3
+    descripcion: Nombre del grupo estadístico 3
+    tipo: VARCHAR
+  - nombre: STATISTICAL_GROUP3
+    descripcion: Nombre en inglés del grupo estadístico 3
+    tipo: VARCHAR
+  - nombre: CLA_GRUPO_ESTADISTICO4
+    descripcion: Clave del grupo estadístico 4
+    tipo: INT
+  - nombre: NOM_GRUPO_ESTADISTICO4
+    descripcion: Nombre del grupo estadístico 4
+    tipo: VARCHAR
+  - nombre: STATISTICAL_GROUP4
+    descripcion: Nombre en inglés del grupo estadístico 4
+    tipo: VARCHAR
+  - nombre: NOM_UNIDAD
+    descripcion: Nombre de la unidad
+    tipo: VARCHAR
+  - nombre: CLA_CLASIF_GENERAL
+    descripcion: Clave de clasificación general
+    tipo: INT
+  - nombre: NOM_CLASIF_GENERAL
+    descripcion: Nombre de clasificación general
+    tipo: VARCHAR
+  - nombre: CLA_TIPO_ARTICULO
+    descripcion: Clave del tipo de artículo
+    tipo: INT
+  - nombre: NOM_TIPO_ARTICULO
+    descripcion: Nombre del tipo de artículo
+    tipo: VARCHAR
+  - nombre: FECHA_ALTA
+    descripcion: Fecha de alta
+    tipo: DATE
+  - nombre: BAJA_LOGICA
+    descripcion: Bandera de baja lógica
+    tipo: INT
+  - nombre: ID_FAMILIA_ASOCIADA
+    descripcion: ID de la familia asociada
+    tipo: INT
+  - nombre: NOM_FAMILIA_ASOCIADA
+    descripcion: Nombre de la familia asociada
+    tipo: VARCHAR
+  - nombre: CLA_MARKET_SEGMENT
+    descripcion: Clave del segmento de mercado
+    tipo: INT
+  - nombre: NOM_MARKET_SEGMENT
+    descripcion: Nombre del segmento de mercado
+    tipo: VARCHAR
+  - nombre: CLA_FAMILIA_AGRUPADOR
+    descripcion: Clave de la familia agrupadora
+    tipo: INT
+  - nombre: NOM_FAMILIA_AGRUPADOR
+    descripcion: Nombre de la familia agrupadora
+    tipo: VARCHAR
+  - nombre: CLA_FAMILIA_AGRUPADOR_DET
+    descripcion: Clave del detalle de familia agrupadora
+    tipo: INT
+  - nombre: NOM_FAMILIA_AGRUPADOR_DET
+    descripcion: Nombre del detalle de familia agrupadora
+    tipo: VARCHAR
+  - nombre: CLA_MERCADO_INVENTARIO
+    descripcion: Clave del mercado de inventario
+    tipo: INT
+  - nombre: NOM_MERCADO_INVENTARIO
+    descripcion: Nombre del mercado de inventario
+    tipo: VARCHAR
+  - nombre: PESO_TEORICO_KGS
+    descripcion: Peso teórico en kilogramos
+    tipo: NUMERIC
+  - nombre: FECHA_BAJA
+    descripcion: Fecha de baja
+    tipo: DATE
+  - nombre: CLA_OFERTA_VALOR
+    descripcion: Clave de oferta de valor
+    tipo: INT
+  - nombre: NOM_OFERTA_VALOR
+    descripcion: Nombre de oferta de valor
+    tipo: VARCHAR

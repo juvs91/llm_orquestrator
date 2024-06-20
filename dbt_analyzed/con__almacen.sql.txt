@@ -1,0 +1,17 @@
+vista: CAT_ALMACEN
+descripcion: Vista de la tabla CAT_ALMACEN
+campos:
+  - nombre: CLA_ALMACEN
+    descripcion: Clave del almacen
+    tipo: VARCHAR(10)
+  - nombre: CLA_TIPO_INVENTARIO
+    descripcion: Clave del tipo de inventario
+    tipo: VARCHAR(10)
+  - nombre: CLA_UBICACION
+    descripcion: Clave de ubicacion
+    tipo: VARCHAR(10)
+  - nombre: NOM_ALMACEN
+    descripcion: Nombre del almacen
+    tipo: VARCHAR(50)
+ 
+

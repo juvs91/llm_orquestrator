@@ -1,0 +1,57 @@
+vista: de_duplicacion_pldcatfamiliaasociada
+descripcion: Esta vista realiza una deduplicación de la tabla stg__pld_cat_familia_asociada y agrega un nuevo campo calculado llamado idfamiliaasociada.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATE
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INTEGER
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: NUMERIC
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro
+    tipo: INTEGER
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INTEGER
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATE
+  - nombre: clafamiliaasociada
+    descripcion: Clave de la familia asociada
+    tipo: INTEGER
+  - nombre: idfamiliaasociada
+    descripcion: ID calculado de la familia asociada (100000 + clafamiliaasociada)
+    tipo: INTEGER
+  - nombre: nomfamiliaasociada
+    descripcion: Nombre de la familia asociada
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de cuando Airbyte marcó el registro como eliminado
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de cuando Airbyte actualizó el registro por última vez
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: NUMERIC

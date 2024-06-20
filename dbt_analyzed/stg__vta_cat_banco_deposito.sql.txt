@@ -1,0 +1,54 @@
+vista: stg_vtacatbancodeposito
+descripcion: Vista generada por DBT a partir de la tabla VtaSch_VtaCatBancoDeposito
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clamarca
+    descripcion: Clave de la marca
+    tipo: INT64
+  - nombre: clamoneda
+    descripcion: Clave de la moneda
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clabancoansa
+    descripcion: Clave del banco ANSA
+    tipo: INT64
+  - nombre: bancodeposito
+    descripcion: Nombre del banco de depósito
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clabancodeposito
+    descripcion: Clave del banco de depósito
+    tipo: INT64
+  - nombre: digitoverificador
+    descripcion: Dígito verificador de la cuenta bancaria
+    tipo: INT64
+  - nombre: fechaultimocambio
+    descripcion: Fecha y hora del último cambio
+    tipo: DATETIME
+  - nombre: numcuentabancaria
+    descripcion: Número de cuenta bancaria
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

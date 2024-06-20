@@ -1,0 +1,315 @@
+vista: stg_vtacatclientecuenta
+descripcion: Vista generada por DBT para la tabla dbo_VtaCatClienteCuenta
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del cliente
+    tipo: STRING
+  - nombre: lada
+    descripcion: Código de área del número de teléfono
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle de la dirección del cliente
+    tipo: STRING
+  - nombre: movil
+    descripcion: Número de teléfono móvil del cliente
+    tipo: STRING
+  - nombre: claiva
+    descripcion: Clave del tipo de IVA del cliente
+    tipo: INT64
+  - nombre: cucsfid
+    descripcion: ID único del cliente en Salesforce
+    tipo: STRING
+  - nombre: clazona
+    descripcion: Clave de la zona geográfica del cliente
+    tipo: INT64
+  - nombre: eslegal
+    descripcion: Indica si el cliente es una entidad legal (1) o no (0)
+    tipo: INT64
+  - nombre: ladafax
+    descripcion: Código de área del número de fax
+    tipo: STRING
+  - nombre: clamarca
+    descripcion: Clave de la marca asociada al cliente
+    tipo: INT64
+  - nombre: telefono
+    descripcion: Número de teléfono del cliente
+    tipo: STRING
+  - nombre: claagente
+    descripcion: Clave del agente de ventas asociado al cliente
+    tipo: INT64
+  - nombre: clamoneda
+    descripcion: Clave de la moneda utilizada por el cliente
+    tipo: INT64
+  - nombre: fechaalta
+    descripcion: Fecha en la que se dio de alta al cliente
+    tipo: DATETIME
+  - nombre: idusuario
+    descripcion: ID del usuario que dio de alta al cliente
+    tipo: INT64
+  - nombre: ladamovil
+    descripcion: Código de área del número de teléfono móvil
+    tipo: STRING
+  - nombre: tradename
+    descripcion: Nombre comercial del cliente
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el cliente está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: accountsfid
+    descripcion: ID único de la cuenta del cliente en Salesforce
+    tipo: STRING
+  - nombre: comentarios
+    descripcion: Comentarios adicionales sobre el cliente
+    tipo: STRING
+  - nombre: entrecalles
+    descripcion: Información sobre las calles que cruzan con la calle del cliente
+    tipo: STRING
+  - nombre: indicevalor
+    descripcion: Índice de valor del cliente
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó por última vez el registro
+    tipo: STRING
+  - nombre: numexterior
+    descripcion: Número exterior de la dirección del cliente
+    tipo: STRING
+  - nombre: numinterior
+    descripcion: Número interior de la dirección del cliente
+    tipo: STRING
+  - nombre: refbancaria
+    descripcion: Referencia bancaria del cliente
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la operación de cambio de datos capturados
+    tipo: STRING
+  - nombre: claformapago
+    descripcion: Clave de la forma de pago preferida por el cliente
+    tipo: INT64
+  - nombre: clausocfdinc
+    descripcion: Clave de la cláusula del CFDI (factura electrónica)
+    tipo: INT64
+  - nombre: esfranquicia
+    descripcion: Indica si el cliente es una franquicia (true) o no (false)
+    tipo: BOOL
+  - nombre: clamotivobaja
+    descripcion: Clave del motivo de la baja del cliente
+    tipo: INT64
+  - nombre: clanivelcanal
+    descripcion: Clave del nivel del canal de distribución del cliente
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó por última vez el registro
+    tipo: INT64
+  - nombre: cuentapredial
+    descripcion: Número de cuenta predial del cliente
+    tipo: STRING
+  - nombre: claciudadunico
+    descripcion: Clave única de la ciudad del cliente
+    tipo: INT64
+  - nombre: clatipocliente
+    descripcion: Clave del tipo de cliente
+    tipo: INT64
+  - nombre: esusarlogoansa
+    descripcion: Indica si se debe usar el logotipo de ANSA para el cliente (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor del cursor utilizado para la captura de datos cambiados
+    tipo: INT64
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente
+    tipo: INT64
+  - nombre: clacodigopostal
+    descripcion: Clave del código postal del cliente
+    tipo: INT64
+  - nombre: clacoloniaunico
+    descripcion: Clave única de la colonia del cliente
+    tipo: INT64
+  - nombre: claestatuslegal
+    descripcion: Clave del estatus legal del cliente
+    tipo: INT64
+  - nombre: correoreloaders
+    descripcion: Dirección de correo electrónico para reloaders
+    tipo: STRING
+  - nombre: esprocesodiario
+    descripcion: Indica si el cliente requiere procesamiento diario (1) o no (0)
+    tipo: INT64
+  - nombre: faxenviofactura
+    descripcion: Número de fax para el envío de facturas
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha en la que se dio de baja lógica al cliente
+    tipo: DATETIME
+  - nombre: claclientecuenta
+    descripcion: Clave de la cuenta del cliente
+    tipo: INT64
+  - nombre: claempresafilial
+    descripcion: Clave de la empresa filial a la que pertenece el cliente
+    tipo: INT64
+  - nombre: clagirocomercial
+    descripcion: Clave del giro comercial del cliente
+    tipo: INT64
+  - nombre: clagiroindustria
+    descripcion: Clave del giro industrial del cliente
+    tipo: INT64
+  - nombre: clamedioembarque
+    descripcion: Clave del medio de embarque preferido por el cliente
+    tipo: INT64
+  - nombre: clasubgirooferta
+    descripcion: Clave del subgiro de la oferta del cliente
+    tipo: INT64
+  - nombre: esgeneracomision
+    descripcion: Indica si el cliente genera comisiones (1) o no (0)
+    tipo: INT64
+  - nombre: esmanejaproyecto
+    descripcion: Indica si el cliente maneja proyectos (1) o no (0)
+    tipo: INT64
+  - nombre: faxenvioembarque
+    descripcion: Número de fax para el envío de información de embarque
+    tipo: STRING
+  - nombre: nomclientecuenta
+    descripcion: Nombre de la cuenta del cliente
+    tipo: STRING
+  - nombre: claestatuscliente
+    descripcion: Clave del estatus del cliente
+    tipo: INT64
+  - nombre: claofertaservicio
+    descripcion: Clave de la oferta de servicio del cliente
+    tipo: INT64
+  - nombre: correocertcalidad
+    descripcion: Dirección de correo electrónico para certificados de calidad
+    tipo: STRING
+  - nombre: correoorderacknow
+    descripcion: Dirección de correo electrónico para confirmaciones de pedido
+    tipo: STRING
+  - nombre: mc_estatuscredito
+    descripcion: Estatus de crédito del cliente en Microsoft Dynamics
+    tipo: INT64
+  - nombre: clametodopagosatnc
+    descripcion: Clave del método de pago SAT NC
+    tipo: INT64
+  - nombre: claperfilcomercial
+    descripcion: Clave del perfil comercial del cliente
+    tipo: INT64
+  - nombre: clatopelistaprecio
+    descripcion: Clave de la lista de precios del cliente
+    tipo: INT64
+  - nombre: claveinternacional
+    descripcion: Clave telefónica internacional del cliente
+    tipo: STRING
+  - nombre: correoenviofactura
+    descripcion: Dirección de correo electrónico para el envío de facturas
+    tipo: STRING
+  - nombre: escancfabembarcada
+    descripcion: Indica si se debe cancelar la factura al embarcar (1) o no (0)
+    tipo: INT64
+  - nombre: esenviodocembarque
+    descripcion: Indica si se deben enviar documentos de embarque (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez
+    tipo: STRING
+  - nombre: clacategoriacliente
+    descripcion: Clave de la categoría del cliente
+    tipo: INT64
+  - nombre: codigopostalimprime
+    descripcion: Código postal para impresión
+    tipo: STRING
+  - nombre: correoenvioembarque
+    descripcion: Dirección de correo electrónico para el envío de información de embarque
+    tipo: STRING
+  - nombre: esnotapormovimiento
+    descripcion: Indica si se debe generar una nota por movimiento (1) o no (0)
+    tipo: INT64
+  - nombre: mc_clientecuenta_id
+    descripcion: ID único de la cuenta del cliente en Microsoft Dynamics
+    tipo: STRING
+  - nombre: coberturacertificado
+    descripcion: Cobertura del certificado
+    tipo: FLOAT64
+  - nombre: correoenviointadeudo
+    descripcion: Dirección de correo electrónico para el envío de información de deuda
+    tipo: STRING
+  - nombre: essurtirsinexcederse
+    descripcion: Indica si se debe surtir sin excederse (1) o no (0)
+    tipo: INT64
+  - nombre: inactivodashboardusa
+    descripcion: Indica si el cliente está inactivo en el dashboard de USA (true) o no (false)
+    tipo: BOOL
+  - nombre: claveinternacionalfax
+    descripcion: Clave telefónica internacional para fax
+    tipo: STRING
+  - nombre: fechavencecertificado
+    descripcion: Fecha de vencimiento del certificado
+    tipo: DATETIME
+  - nombre: porcparcialidadpedido
+    descripcion: Porcentaje de parcialidad del pedido
+    tipo: FLOAT64
+  - nombre: clametodopagoppdpuesat
+    descripcion: Clave del método de pago PPD PUESAT
+    tipo: INT64
+  - nombre: esimpresionordencompra
+    descripcion: Indica si se debe imprimir la orden de compra (1) o no (0)
+    tipo: INT64
+  - nombre: porcparcialidadpartida
+    descripcion: Porcentaje de parcialidad de la partida
+    tipo: FLOAT64
+  - nombre: claveinternacionalmovil
+    descripcion: Clave telefónica internacional para móvil
+    tipo: STRING
+  - nombre: esenviointadeudosemanal
+    descripcion: Indica si se debe enviar información de deuda semanalmente (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos capturados
+    tipo: STRING
+  - nombre: clametodopagoppdpuesatnc
+    descripcion: Clave del método de pago PPD PUESAT NC
+    tipo: INT64
+  - nombre: enviarcorreoautorizacion
+    descripcion: Indica si se debe enviar un correo electrónico de autorización (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimanegociacionim
+    descripcion: Fecha de la última negociación IM
+    tipo: DATETIME
+  - nombre: programacomercioexterior
+    descripcion: Programa de comercio exterior del cliente
+    tipo: STRING
+  - nombre: escuentarequiereautorizar
+    descripcion: Indica si la cuenta requiere autorización (1) o no (0)
+    tipo: INT64
+  - nombre: esimpresionremisionplanta
+    descripcion: Indica si se debe imprimir la remisión de planta (1) o no (0)
+    tipo: INT64
+  - nombre: porctoleranciaembarquemax
+    descripcion: Porcentaje máximo de tolerancia de embarque
+    tipo: FLOAT64
+  - nombre: porctoleranciaembarquemin
+    descripcion: Porcentaje mínimo de tolerancia de embarque
+    tipo: FLOAT64
+  - nombre: esimpresionfacturaagrupado
+    descripcion: Indica si se debe imprimir la factura agrupada (1) o no (0)
+    tipo: INT64
+  - nombre: porcfondoretenciongarantia
+    descripcion: Porcentaje del fondo de retención de garantía
+    tipo: FLOAT64
+  - nombre: esconsultadocumentosinternet
+    descripcion: Indica si se pueden consultar los documentos por internet (1) o no (0)
+    tipo: INT64
+  - nombre: registroproveedorexportacion
+    descripcion: Registro del proveedor de exportación
+    tipo: STRING

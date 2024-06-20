@@ -1,0 +1,10 @@
+vista: MST_REL_AGRUPADOR_EMPRESA_VW
+descripcion: Vista materializada que presenta la relación entre agrupadores de empresas y empresas. 
+campos:
+  - nombre: CLA_AGRUPADOR_EMPRESA
+    descripcion: Clave del agrupador de empresas.
+    tipo: INT
+  - nombre: CLA_EMPRESA
+    descripcion: Clave de la empresa.
+    tipo: INT
+ 

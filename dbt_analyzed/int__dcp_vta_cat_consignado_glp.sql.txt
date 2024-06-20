@@ -1,0 +1,48 @@
+vista: de_duplicacion_vtacatconsignadoglp
+descripcion: Vista que elimina duplicados de la tabla stg__vta_cat_consignado_glp
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: radio
+    descripcion: Radio de acción del consignado
+    tipo: TEXT
+  - nombre: latitud
+    descripcion: Coordenada de latitud del consignado
+    tipo: TEXT
+  - nombre: longitud
+    descripcion: Coordenada de longitud del consignado
+    tipo: TEXT
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: NUMERIC
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambios de Airbyte
+    tipo: TEXT
+  - nombre: claconsignado
+    descripcion: Clave única del consignado
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de Airbyte
+    tipo: TEXT
+  - nombre: claclienteunico
+    descripcion: Clave única del cliente
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de cuando Airbyte marcó el registro como eliminado
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de cuando Airbyte actualizó el registro por última vez
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de Airbyte
+    tipo: NUMERIC

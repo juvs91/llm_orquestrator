@@ -1,0 +1,12 @@
+vista: mst_tipo_persona_vw
+descripcion: Vista materializada que contiene los tipos de persona.
+campos:
+  - nombre: CLA_TIPO_PERSONA
+    descripcion: Clave del tipo de persona.
+    tipo: INT
+  - nombre: NOM_TIPO_PERSONA
+    descripcion: Nombre del tipo de persona.
+    tipo: VARCHAR
+  - nombre: NOM_TIPO_PERSONA_EN
+    descripcion: Nombre del tipo de persona en inglés.
+    tipo: VARCHAR

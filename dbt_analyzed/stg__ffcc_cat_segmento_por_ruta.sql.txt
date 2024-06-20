@@ -1,0 +1,81 @@
+vista: stg_ffcccatsegmentoporruta
+descripcion: Vista generada por DBT para la tabla FFCCCatSegmentoPorRuta
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: kms
+    descripcion: Kilómetros del segmento de ruta
+    tipo: FLOAT64
+  - nombre: orden
+    descripcion: Orden del segmento en la ruta
+    tipo: INT64
+  - nombre: claruta
+    descripcion: Clave foránea a la tabla de rutas
+    tipo: INT64
+  - nombre: pagable
+    descripcion: Indicador si el segmento es pagable (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador si el segmento está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clasegmento
+    descripcion: Clave foránea a la tabla de segmentos
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: clapaisorigen
+    descripcion: Clave foránea al país de origen
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro
+    tipo: INT64
+  - nombre: claferroviaria
+    descripcion: Clave foránea a la tabla de empresas ferroviarias
+    tipo: INT64
+  - nombre: clapaisdestino
+    descripcion: Clave foránea al país de destino
+    tipo: INT64
+  - nombre: clasegmentorel
+    descripcion: Clave foránea a la tabla de segmentos relacionados
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claciudadorigen
+    descripcion: Clave foránea a la ciudad de origen
+    tipo: INT64
+  - nombre: claestadoorigen
+    descripcion: Clave foránea al estado de origen
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: claciudaddestino
+    descripcion: Clave foránea a la ciudad de destino
+    tipo: INT64
+  - nombre: claestadodestino
+    descripcion: Clave foránea al estado de destino
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

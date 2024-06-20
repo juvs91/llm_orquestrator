@@ -1,0 +1,129 @@
+vista: stg_vtacatcliente
+descripcion: Vista generada por DBT a partir de la tabla dbo.VtaCatCliente
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del cliente
+    tipo: STRING
+  - nombre: colonia
+    descripcion: Colonia del cliente
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: telefono
+    descripcion: Teléfono del cliente
+    tipo: STRING
+  - nombre: claciudad
+    descripcion: Clave de la ciudad del cliente
+    tipo: INT64
+  - nombre: clamoneda
+    descripcion: Clave de la moneda del cliente
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección del cliente
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: Activo)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa del cliente
+    tipo: INT64
+  - nombre: zonapostal
+    descripcion: Código postal del cliente
+    tipo: STRING
+  - nombre: tipocliente
+    descripcion: Tipo de cliente
+    tipo: INT64
+  - nombre: tipopersona
+    descripcion: Tipo de persona (física o moral)
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la última transacción capturada por CDC
+    tipo: STRING
+  - nombre: estatuslegal
+    descripcion: Estatus legal del cliente
+    tipo: INT64
+  - nombre: fechaaltareal
+    descripcion: Fecha real de alta del cliente
+    tipo: DATETIME
+  - nombre: nombrecliente
+    descripcion: Nombre del cliente
+    tipo: STRING
+  - nombre: porcentajeiva
+    descripcion: Porcentaje de IVA aplicado al cliente
+    tipo: FLOAT64
+  - nombre: clatipocliente
+    descripcion: Clave del tipo de cliente
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor CDC de Airbyte
+    tipo: INT64
+  - nombre: claorganizacion
+    descripcion: Clave de la organización del cliente
+    tipo: INT64
+  - nombre: fechaaltalogica
+    descripcion: Fecha de alta lógica del cliente
+    tipo: DATETIME
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica del cliente
+    tipo: DATETIME
+  - nombre: claclasifcliente
+    descripcion: Clave de clasificación del cliente
+    tipo: INT64
+  - nombre: clagirocomercial
+    descripcion: Clave del giro comercial del cliente
+    tipo: INT64
+  - nombre: clagiroindustria
+    descripcion: Clave del giro industrial del cliente
+    tipo: INT64
+  - nombre: claclasifclientev
+    descripcion: Clave de clasificación del cliente (ventas)
+    tipo: INT64
+  - nombre: clacargofinanciero
+    descripcion: Clave del cargo financiero del cliente
+    tipo: FLOAT64
+  - nombre: numerocedulafiscal
+    descripcion: Número de cédula fiscal del cliente
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según CDC
+    tipo: STRING
+  - nombre: claclienteagrupador
+    descripcion: Clave del cliente agrupador
+    tipo: INT64
+  - nombre: plazomallasalambres
+    descripcion: Plazo de crédito para mallas y alambres
+    tipo: INT64
+  - nombre: plazovarillaalambron
+    descripcion: Plazo de crédito para varilla y alambrón
+    tipo: INT64
+  - nombre: fechaultimanegociacion
+    descripcion: Fecha de la última negociación con el cliente
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: fechalimitecreditoactual
+    descripcion: Fecha límite del crédito actual
+    tipo: DATETIME
+  - nombre: importelimitecreditoactual
+    descripcion: Importe límite del crédito actual
+    tipo: FLOAT64

@@ -1,0 +1,15 @@
+vista: rel_elem_costo_tipo_gasto
+descripcion: Vista que relaciona los elementos de costo con su respectivo tipo de gasto.
+campos:
+  - nombre: cla_unidad_negocio
+    descripcion: Clave de la unidad de negocio.
+    tipo: INT
+  - nombre: cla_elemento_costo
+    descripcion: Clave del elemento de costo.
+    tipo: INT
+  - nombre: nom_elemento_costo
+    descripcion: Nombre del elemento de costo.
+    tipo: VARCHAR
+  - nombre: cla_tipo_gasto
+    descripcion: Clave del tipo de gasto.
+    tipo: INT

@@ -1,0 +1,192 @@
+vista: stg_tescatcuentabancaria
+descripcion: Vista generada por DBT a partir de la tabla dbo_TesCatCuentaBancaria
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: cuenta
+    descripcion: Número de cuenta
+    tipo: STRING
+  - nombre: ordenfe
+    descripcion: Orden de la factura electrónica
+    tipo: INT64
+  - nombre: clabanco
+    descripcion: Clave del banco
+    tipo: INT64
+  - nombre: claplaza
+    descripcion: Clave de la plaza
+    tipo: INT64
+  - nombre: sucursal
+    descripcion: Nombre de la sucursal
+    tipo: STRING
+  - nombre: clacuenta
+    descripcion: Clave de la cuenta
+    tipo: STRING
+  - nombre: clamoneda
+    descripcion: Clave de la moneda
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Baja lógica, 0: Activo)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: claestatus
+    descripcion: Clave del estatus
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: escuentafe
+    descripcion: Indicador de cuenta para factura electrónica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clacontacto
+    descripcion: Clave del contacto
+    tipo: INT64
+  - nombre: clasucursal
+    descripcion: Clave de la sucursal
+    tipo: INT64
+  - nombre: cuentaalias
+    descripcion: Alias de la cuenta
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: referencia1
+    descripcion: Referencia 1
+    tipo: STRING
+  - nombre: referencia2
+    descripcion: Referencia 2
+    tipo: STRING
+  - nombre: saldominimo
+    descripcion: Saldo mínimo
+    tipo: FLOAT64
+  - nombre: stockminimo
+    descripcion: Stock mínimo
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: cierrebanco
+    descripcion: Cierre del banco
+    tipo: INT64
+  - nombre: clacuentacup
+    descripcion: Clave de la cuenta CUP
+    tipo: INT64
+  - nombre: tasaimpuesto
+    descripcion: Tasa de impuesto
+    tipo: FLOAT64
+  - nombre: clatipocuenta
+    descripcion: Clave del tipo de cuenta
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaapertura
+    descripcion: Fecha de apertura
+    tipo: DATETIME
+  - nombre: leyendacheque
+    descripcion: Leyenda del cheque
+    tipo: STRING
+  - nombre: observaciones
+    descripcion: Observaciones
+    tipo: STRING
+  - nombre: aniomesactual
+    descripcion: Año y mes actual
+    tipo: INT64
+  - nombre: clabancoventas
+    descripcion: Clave del banco de ventas
+    tipo: INT64
+  - nombre: clacuentaconta
+    descripcion: Clave de la cuenta contable
+    tipo: INT64
+  - nombre: cuentabancaria
+    descripcion: Número de cuenta bancaria
+    tipo: STRING
+  - nombre: diasgraciabaja
+    descripcion: Días de gracia por baja
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: idautorizacion
+    descripcion: ID de autorización
+    tipo: INT64
+  - nombre: lineasobregiro
+    descripcion: Líneas de sobregiro
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clacupdatospago
+    descripcion: Clave de CUP para datos de pago
+    tipo: INT64
+  - nombre: escuentadefault
+    descripcion: Indicador de cuenta predeterminada (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: diasplazocheques
+    descripcion: Días de plazo para cheques
+    tipo: INT64
+  - nombre: extarchivofirmas
+    descripcion: Extensión del archivo de firmas
+    tipo: STRING
+  - nombre: fechacancelacion
+    descripcion: Fecha de cancelación
+    tipo: DATETIME
+  - nombre: idcuentacontable
+    descripcion: ID de la cuenta contable
+    tipo: INT64
+  - nombre: clacuentabancaria
+    descripcion: Clave de la cuenta bancaria
+    tipo: INT64
+  - nombre: cuentaaliascartera
+    descripcion: Alias de la cuenta cartera
+    tipo: STRING
+  - nombre: extarchivocontrato
+    descripcion: Extensión del archivo del contrato
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte
+    tipo: STRING
+  - nombre: concilia_mesactual
+    descripcion: Conciliación del mes actual
+    tipo: INT64
+  - nombre: clacuentabancaria_l
+    descripcion: Clave de la cuenta bancaria (L)
+    tipo: INT64
+  - nombre: diascalculoimpuesto
+    descripcion: Días para el cálculo del impuesto
+    tipo: INT64
+  - nombre: claroutingcodecheque
+    descripcion: Clave del código de routing del cheque
+    tipo: STRING
+  - nombre: clatipoconcentradora
+    descripcion: Clave del tipo de concentradora
+    tipo: INT64
+  - nombre: fechaultimamodfirmas
+    descripcion: Fecha de la última modificación de las firmas
+    tipo: DATETIME
+  - nombre: extarchivocancelacion
+    descripcion: Extensión del archivo de cancelación
+    tipo: STRING
+  - nombre: esvisibleleyendacheque
+    descripcion: Indicador de visibilidad de la leyenda del cheque (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechaultimamodcontrato
+    descripcion: Fecha de la última modificación del contrato
+    tipo: DATETIME
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

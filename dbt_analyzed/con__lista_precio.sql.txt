@@ -1,0 +1,10 @@
+vista: MST_LISTA_PRECIO_VW
+descripcion: Vista materializada que presenta la lista de precios con su respectivo identificador y nombre.
+campos:
+  - nombre: CLA_LISTA_PRECIO
+    descripcion: Clave única que identifica la lista de precios.
+    tipo: INT
+  - nombre: NOM_LISTA_PRECIO
+    descripcion: Nombre descriptivo de la lista de precios.
+    tipo: VARCHAR
+ 

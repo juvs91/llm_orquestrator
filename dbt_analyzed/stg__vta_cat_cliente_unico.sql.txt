@@ -1,0 +1,265 @@
+vista: stg_vtacatclienteunico
+descripcion: Vista generada a partir de la tabla dbo.VtaCatClienteUnico
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax
+    tipo: STRING
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes (RFC)
+    tipo: STRING
+  - nombre: curp
+    descripcion: Clave Única de Registro de Población (CURP)
+    tipo: STRING
+  - nombre: lada
+    descripcion: Clave de Larga Distancia (LADA)
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle
+    tipo: STRING
+  - nombre: movil
+    descripcion: Número de teléfono móvil
+    tipo: STRING
+  - nombre: radio
+    descripcion: Número de radio
+    tipo: STRING
+  - nombre: correo
+    descripcion: Dirección de correo electrónico
+    tipo: STRING
+  - nombre: cucsfid
+    descripcion: ID de CUCSF
+    tipo: STRING
+  - nombre: ladafax
+    descripcion: LADA para el número de fax
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta
+    tipo: DATETIME
+  - nombre: idusuario
+    descripcion: ID de usuario
+    tipo: INT64
+  - nombre: ladamovil
+    descripcion: LADA para el número de teléfono móvil
+    tipo: STRING
+  - nombre: paginaweb
+    descripcion: Dirección de la página web
+    tipo: STRING
+  - nombre: tradename
+    descripcion: Nombre comercial
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: listaavisos
+    descripcion: Lista de avisos
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: numexterior
+    descripcion: Número exterior
+    tipo: STRING
+  - nombre: numinterior
+    descripcion: Número interior
+    tipo: STRING
+  - nombre: requiererep
+    descripcion: Indicador de si requiere representante (true/false)
+    tipo: BOOL
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausocfdinc
+    descripcion: Cláusula CFD Inc.
+    tipo: INT64
+  - nombre: notaembarque
+    descripcion: Nota de embarque
+    tipo: STRING
+  - nombre: clagiromaster
+    descripcion: Clave de giro master
+    tipo: INT64
+  - nombre: clamotivobaja
+    descripcion: Clave de motivo de baja
+    tipo: INT64
+  - nombre: clanivelcanal
+    descripcion: Clave de nivel de canal
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó el registro
+    tipo: INT64
+  - nombre: observaciones
+    descripcion: Observaciones
+    tipo: STRING
+  - nombre: claciudadunico
+    descripcion: Clave de ciudad única
+    tipo: INT64
+  - nombre: clatipopersona
+    descripcion: Clave de tipo de persona
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: regimencapital
+    descripcion: Régimen de capital
+    tipo: STRING
+  - nombre: rentaubicacion
+    descripcion: Indicador de si la ubicación es rentada (true/false)
+    tipo: BOOL
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno
+    tipo: STRING
+  - nombre: claclienteunico
+    descripcion: Clave de cliente único
+    tipo: INT64
+  - nombre: clacodigopostal
+    descripcion: Clave de código postal
+    tipo: INT64
+  - nombre: clacoloniaunico
+    descripcion: Clave de colonia única
+    tipo: INT64
+  - nombre: claestatuslegal
+    descripcion: Clave de estatus legal
+    tipo: INT64
+  - nombre: clapriorizacion
+    descripcion: Clave de priorización
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento
+    tipo: DATETIME
+  - nombre: rfcsolicitadosn
+    descripcion: Indicador de si se solicitó el RFC (0: no, 1: sí)
+    tipo: INT64
+  - nombre: clatipooperacion
+    descripcion: Clave de tipo de operación
+    tipo: INT64
+  - nombre: clatipoproveedor
+    descripcion: Clave de tipo de proveedor
+    tipo: INT64
+  - nombre: clatipoportafolio
+    descripcion: Clave de tipo de portafolio
+    tipo: INT64
+  - nombre: docfiscallistasn
+    descripcion: Indicador de si los documentos fiscales están en listas negras (0: no, 1: sí)
+    tipo: INT64
+  - nombre: faxenvioembarque
+    descripcion: Número de fax para el envío de embarque
+    tipo: STRING
+  - nombre: cantidadempleados
+    descripcion: Cantidad de empleados
+    tipo: INT64
+  - nombre: claestatuscliente
+    descripcion: Clave de estatus del cliente
+    tipo: INT64
+  - nombre: correoorderacknow
+    descripcion: Correo electrónico para la confirmación de pedido
+    tipo: STRING
+  - nombre: correoshippacknow
+    descripcion: Correo electrónico para la confirmación de envío
+    tipo: STRING
+  - nombre: fechasolicitudrfc
+    descripcion: Fecha de solicitud del RFC
+    tipo: DATETIME
+  - nombre: nombrerazonsocial
+    descripcion: Nombre o razón social
+    tipo: STRING
+  - nombre: autorizaventalegal
+    descripcion: Indicador de si está autorizado para la venta legal (0: no, 1: sí)
+    tipo: INT64
+  - nombre: clametodopagosatnc
+    descripcion: Clave de método de pago SAT NC
+    tipo: STRING
+  - nombre: claveinternacional
+    descripcion: Clave internacional
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro en la fuente
+    tipo: STRING
+  - nombre: mc_clienteunico_id
+    descripcion: ID de cliente único de MC
+    tipo: STRING
+  - nombre: clanivelofertanueva
+    descripcion: Clave de nivel de oferta nueva
+    tipo: INT64
+  - nombre: claregimenfiscalsat
+    descripcion: Clave de régimen fiscal SAT
+    tipo: INT64
+  - nombre: codigopostalimprime
+    descripcion: Código postal para imprimir
+    tipo: STRING
+  - nombre: correoenvioembarque
+    descripcion: Correo electrónico para el envío de embarque
+    tipo: STRING
+  - nombre: correoenviofacturas
+    descripcion: Correo electrónico para el envío de facturas
+    tipo: STRING
+  - nombre: clametodopagosatfact
+    descripcion: Clave de método de pago SAT Fact
+    tipo: STRING
+  - nombre: correoenviointadeudo
+    descripcion: Correo electrónico para el envío de información de adeudo
+    tipo: STRING
+  - nombre: enviarfacturascorreo
+    descripcion: Indicador de si se deben enviar las facturas por correo electrónico (0: no, 1: sí)
+    tipo: INT64
+  - nombre: escobraseguromensual
+    descripcion: Indicador de si se cobra el seguro mensual (0: no, 1: sí)
+    tipo: INT64
+  - nombre: esdiscrepanciafiscal
+    descripcion: Indicador de si hay discrepancia fiscal (0: no, 1: sí)
+    tipo: INT64
+  - nombre: fechainiciooperacion
+    descripcion: Fecha de inicio de operación
+    tipo: DATETIME
+  - nombre: claveinternacionalfax
+    descripcion: Clave internacional para el número de fax
+    tipo: STRING
+  - nombre: enviarintadeudoporcuc
+    descripcion: Indicador de si se debe enviar la información de adeudo por CUCS (0: no, 1: sí)
+    tipo: INT64
+  - nombre: clametodopagoppdpuesat
+    descripcion: Clave de método de pago PPD Pue SAT
+    tipo: INT64
+  - nombre: claveinternacionalmovil
+    descripcion: Clave internacional para el número de teléfono móvil
+    tipo: STRING
+  - nombre: coberturapolizasegtrans
+    descripcion: Cobertura de la póliza de seguro de transporte
+    tipo: FLOAT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claagrupadorclienteunico
+    descripcion: Clave de agrupador de cliente único
+    tipo: INT64
+  - nombre: clametodopagoppdpuesatnc
+    descripcion: Clave de método de pago PPD Pue SAT NC
+    tipo: INT64
+  - nombre: enviarnotifcapturapedido
+    descripcion: Indicador de si se debe enviar la notificación de captura de pedido (0: no, 1: sí)
+    tipo: INT64
+  - nombre: fechavencepolizasegtrans
+    descripcion: Fecha de vencimiento de la póliza de seguro de transporte
+    tipo: DATETIME
+

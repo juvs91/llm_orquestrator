@@ -1,0 +1,11 @@
+```yaml
+vista: MST_MOTIVO_VW
+descripcion: Vista materializada que presenta la información de los motivos.
+campos:
+  - nombre: CLA_MOTIVO
+    descripcion: Clave del motivo.
+    tipo: INT
+  - nombre: NOM_MOTIVO
+    descripcion: Nombre del motivo.
+    tipo: VARCHAR
+```

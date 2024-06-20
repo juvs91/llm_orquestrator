@@ -1,0 +1,12 @@
+vista: MST_REL_AGRUPADOR_EMPRESA_VW
+descripcion: Vista materializada que presenta la relación entre agrupadores de empresas y empresas con información del año y mes.
+campos:
+  - nombre: CLA_ANIO_MES
+    descripcion: Clave compuesta por año y mes
+    tipo: VARCHAR
+  - nombre: CLA_AGRUPADOR_EMPRESA
+    descripcion: Clave del agrupador de empresa
+    tipo: VARCHAR
+  - nombre: CLA_EMPRESA
+    descripcion: Clave de la empresa
+    tipo: VARCHAR

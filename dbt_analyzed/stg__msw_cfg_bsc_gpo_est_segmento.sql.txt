@@ -1,0 +1,57 @@
+vista: stg_mswcfgbscgpoestsegmento
+descripcion: Vista generada por DBT a partir de la tabla MSWSch_MSWCfgBSCGpoEstSegmento
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clasegmento
+    descripcion: Clave de la clase de segmento
+    tipo: INT64
+  - nombre: nomsegmento
+    descripcion: Nombre del segmento
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: nomgrupomismonombre
+    descripcion: Nombre del grupo con el mismo nombre
+    tipo: STRING
+  - nombre: clagrupoestadistico1
+    descripcion: Clave del grupo estadístico 1
+    tipo: INT64
+  - nombre: clagrupoestadistico2
+    descripcion: Clave del grupo estadístico 2
+    tipo: INT64
+  - nombre: clagrupoestadistico3
+    descripcion: Clave del grupo estadístico 3
+    tipo: INT64
+  - nombre: clasegmentomanufactura
+    descripcion: Clave del segmento de manufactura
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

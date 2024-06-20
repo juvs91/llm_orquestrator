@@ -1,0 +1,171 @@
+vista: sel_nom_cat_trabajador
+descripcion: Vista limpia y sin duplicados de la tabla stg__nom_cat_trabajador, con selección de campos relevantes y adición del campo calculado "nomtrabajador".
+campos:
+  - nombre: pk_nomcattrabajador
+    descripcion: Clave primaria de la tabla de catálogo de trabajadores.
+    tipo: INT
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte para la sincronización de datos.
+    tipo: VARCHAR
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de datos por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: cup
+    descripcion: Clave Única de Población.
+    tipo: VARCHAR
+  - nombre: nss
+    descripcion: Número de Seguridad Social.
+    tipo: VARCHAR
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes.
+    tipo: VARCHAR
+  - nombre: sexo
+    descripcion: Sexo del trabajador (M/F).
+    tipo: VARCHAR
+  - nombre: cp_sat
+    descripcion: Código Postal según el SAT.
+    tipo: VARCHAR
+  - nombre: clacrc
+    descripcion: Clave de la Comisión Representativa de los Trabajadores.
+    tipo: INT
+  - nombre: claarea
+    descripcion: Clave del área al que pertenece el trabajador.
+    tipo: INT
+  - nombre: clajefe
+    descripcion: Clave del jefe directo del trabajador.
+    tipo: INT
+  - nombre: clapais
+    descripcion: Clave del país de origen del trabajador.
+    tipo: INT
+  - nombre: clabanco
+    descripcion: Clave del banco donde el trabajador recibe su nómina.
+    tipo: INT
+  - nombre: esactivo
+    descripcion: Indica si el trabajador está activo (1) o inactivo (0).
+    tipo: INT
+  - nombre: fechains
+    descripcion: Fecha de ingreso del trabajador a la empresa.
+    tipo: DATE
+  - nombre: telefono
+    descripcion: Número de teléfono del trabajador.
+    tipo: VARCHAR
+  - nombre: claestado
+    descripcion: Clave del estado donde reside el trabajador.
+    tipo: INT
+  - nombre: clanomina
+    descripcion: Clave de la nómina a la que pertenece el trabajador.
+    tipo: INT
+  - nombre: clapuesto
+    descripcion: Clave del puesto del trabajador.
+    tipo: INT
+  - nombre: codpostal
+    descripcion: Código Postal del domicilio del trabajador.
+    tipo: VARCHAR
+  - nombre: direccion
+    descripcion: Dirección del domicilio del trabajador.
+    tipo: VARCHAR
+  - nombre: estadoisn
+    descripcion: Estado del trabajador ante el ISN (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado).
+    tipo: VARCHAR
+  - nombre: bajalogica
+    descripcion: Indica si el trabajador ha sido dado de baja lógica (1) o no (0).
+    tipo: INT
+  - nombre: clacolonia
+    descripcion: Clave de la colonia donde reside el trabajador.
+    tipo: INT
+  - nombre: claempresa
+    descripcion: Clave de la empresa a la que pertenece el trabajador.
+    tipo: INT
+  - nombre: claentidad
+    descripcion: Clave de la entidad federativa donde reside el trabajador.
+    tipo: INT
+  - nombre: clajefeeun
+    descripcion: Clave del jefe directo del trabajador en la estructura organizacional.
+    tipo: INT
+  - nombre: claliqimss
+    descripcion: Clave del tipo de liquidación del IMSS del trabajador.
+    tipo: INT
+  - nombre: clacriterio
+    descripcion: Clave del criterio de selección del trabajador.
+    tipo: INT
+  - nombre: gruposeguro
+    descripcion: Grupo de seguro al que pertenece el trabajador.
+    tipo: VARCHAR
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro por última vez.
+    tipo: VARCHAR
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambios de Airbyte CDC.
+    tipo: INT
+  - nombre: clamunicipio
+    descripcion: Clave del municipio donde reside el trabajador.
+    tipo: INT
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación del trabajador dentro de la empresa.
+    tipo: INT
+  - nombre: fechaingreso
+    descripcion: Fecha de ingreso del trabajador a la empresa.
+    tipo: DATE
+  - nombre: numerocuenta
+    descripcion: Número de cuenta bancaria del trabajador.
+    tipo: VARCHAR
+  - nombre: clatrabajador
+    descripcion: Clave única del trabajador.
+    tipo: INT
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que creó el registro.
+    tipo: INT
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez.
+    tipo: INT
+  - nombre: salariodiario
+    descripcion: Salario diario del trabajador.
+    tipo: FLOAT
+  - nombre: claestadocivil
+    descripcion: Clave del estado civil del trabajador.
+    tipo: INT
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de Airbyte CDC.
+    tipo: VARCHAR
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del trabajador.
+    tipo: VARCHAR
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del trabajador.
+    tipo: VARCHAR
+  - nombre: cladepartamento
+    descripcion: Clave del departamento al que pertenece el trabajador.
+    tipo: INT
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica del trabajador.
+    tipo: DATE
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del trabajador.
+    tipo: DATE
+  - nombre: clatrabajadoreun
+    descripcion: Clave única del trabajador en la estructura organizacional.
+    tipo: INT
+  - nombre: nombretrabajador
+    descripcion: Nombre del trabajador.
+    tipo: VARCHAR
+  - nombre: clagrupoasignacion
+    descripcion: Clave del grupo de asignación del trabajador.
+    tipo: INT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte CDC.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte CDC.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC.
+    tipo: INT
+  - nombre: nomtrabajador
+    descripcion: Nombre completo del trabajador, concatenando nombre, apellido paterno y apellido materno.
+    tipo: VARCHAR

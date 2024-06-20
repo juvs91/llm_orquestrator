@@ -1,0 +1,51 @@
+vista: sel_vtacattipooperacion
+descripcion: Vista limpia y sin duplicados de la tabla vta_cat_tipo_operacion. Se selecciona el registro más reciente por clatipooperacion.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: string
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: timestamp
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: string
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: int
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez
+    tipo: string
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen
+    tipo: string
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: string
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: timestamp
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: string
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja lógica el registro
+    tipo: timestamp
+  - nombre: clatipooperacion
+    descripcion: Clave única del tipo de operación
+    tipo: string
+  - nombre: nomtipooperacion
+    descripcion: Nombre del tipo de operación
+    tipo: string
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en que Airbyte marcó el registro como eliminado
+    tipo: timestamp
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora en que Airbyte actualizó el registro por última vez
+    tipo: timestamp
+  - nombre: nomtipooperacioning
+    descripcion: Nombre del tipo de operación en inglés
+    tipo: string
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: string

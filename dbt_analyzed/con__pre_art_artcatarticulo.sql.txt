@@ -1,0 +1,187 @@
+vista: pre_art_artcatarticulo
+descripcion: Vista predefinida para la tabla art_cat_articulo.
+campos:
+  - nombre: pk_catarticulo
+    descripcion: Clave primaria de la tabla de catálogo de artículos.
+    tipo: INT
+  - nombre: claarticulo
+    descripcion: Clave del artículo.
+    tipo: VARCHAR
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario.
+    tipo: VARCHAR
+  - nombre: clavearticulo
+    descripcion: Clave del artículo.
+    tipo: VARCHAR
+  - nombre: claagrupador
+    descripcion: Clave del agrupador.
+    tipo: VARCHAR
+  - nombre: codigoarticulo
+    descripcion: Código del artículo.
+    tipo: VARCHAR
+  - nombre: nomarticulo
+    descripcion: Nombre del artículo.
+    tipo: VARCHAR
+  - nombre: nomarticuloingles
+    descripcion: Nombre del artículo en inglés.
+    tipo: VARCHAR
+  - nombre: nomarticulootroidioma
+    descripcion: Nombre del artículo en otro idioma.
+    tipo: VARCHAR
+  - nombre: claclasifgeneral
+    descripcion: Clave de la clasificación general.
+    tipo: VARCHAR
+  - nombre: clafamilia
+    descripcion: Clave de la familia.
+    tipo: VARCHAR
+  - nombre: clasubfamilia
+    descripcion: Clave de la subfamilia.
+    tipo: VARCHAR
+  - nombre: claplantilla
+    descripcion: Clave de la plantilla.
+    tipo: VARCHAR
+  - nombre: clamarca
+    descripcion: Clave de la marca.
+    tipo: VARCHAR
+  - nombre: clatipoarticulo
+    descripcion: Clave del tipo de artículo.
+    tipo: VARCHAR
+  - nombre: clagpoprocesoprod
+    descripcion: Clave del grupo de proceso de producción.
+    tipo: VARCHAR
+  - nombre: clagpocosteo
+    descripcion: Clave del grupo de costeo.
+    tipo: VARCHAR
+  - nombre: clagpoestadistico
+    descripcion: Clave del grupo estadístico.
+    tipo: VARCHAR
+  - nombre: claunspc1
+    descripcion: Clave de la unidad de medida UNSPC 1.
+    tipo: VARCHAR
+  - nombre: claunspc2
+    descripcion: Clave de la unidad de medida UNSPC 2.
+    tipo: VARCHAR
+  - nombre: claunspc3
+    descripcion: Clave de la unidad de medida UNSPC 3.
+    tipo: VARCHAR
+  - nombre: claunspc4
+    descripcion: Clave de la unidad de medida UNSPC 4.
+    tipo: VARCHAR
+  - nombre: claunidadbase
+    descripcion: Clave de la unidad base.
+    tipo: VARCHAR
+  - nombre: claunidadprod
+    descripcion: Clave de la unidad de producción.
+    tipo: VARCHAR
+  - nombre: factorconversion
+    descripcion: Factor de conversión.
+    tipo: NUMERIC
+  - nombre: factorcubicaje
+    descripcion: Factor de cubicaje.
+    tipo: NUMERIC
+  - nombre: pesoteoricokgs
+    descripcion: Peso teórico en kilogramos.
+    tipo: NUMERIC
+  - nombre: comentarios
+    descripcion: Comentarios.
+    tipo: VARCHAR
+  - nombre: fechains
+    descripcion: Fecha de inserción.
+    tipo: TIMESTAMP
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro.
+    tipo: VARCHAR
+  - nombre: claestatusvobo
+    descripcion: Clave del estatus de Visto Bueno.
+    tipo: VARCHAR
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja lógica.
+    tipo: BOOLEAN
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica.
+    tipo: TIMESTAMP
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación.
+    tipo: TIMESTAMP
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que realizó la última modificación.
+    tipo: VARCHAR
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación.
+    tipo: VARCHAR
+  - nombre: claprefijoclave
+    descripcion: Clave del prefijo de la clave.
+    tipo: VARCHAR
+  - nombre: claclavecruda
+    descripcion: Clave cruda.
+    tipo: VARCHAR
+  - nombre: claclienteart
+    descripcion: Clave del cliente del artículo.
+    tipo: VARCHAR
+  - nombre: claarticuloinsumo
+    descripcion: Clave del artículo insumo.
+    tipo: VARCHAR
+  - nombre: referencia
+    descripcion: Referencia.
+    tipo: VARCHAR
+  - nombre: claempaqueind
+    descripcion: Clave del empaque individual.
+    tipo: VARCHAR
+  - nombre: claempaqueagrup
+    descripcion: Clave del empaque agrupado.
+    tipo: VARCHAR
+  - nombre: claubicacionins
+    descripcion: Clave de la ubicación del insumo.
+    tipo: VARCHAR
+  - nombre: clagpoempaque
+    descripcion: Clave del grupo de empaque.
+    tipo: VARCHAR
+  - nombre: esobsoleto
+    descripcion: Bandera que indica si el artículo es obsoleto.
+    tipo: BOOLEAN
+  - nombre: esexcentoiva
+    descripcion: Bandera que indica si el artículo está excento de IVA.
+    tipo: BOOLEAN
+  - nombre: volumenalto
+    descripcion: Volumen alto.
+    tipo: NUMERIC
+  - nombre: volumenancho
+    descripcion: Volumen ancho.
+    tipo: NUMERIC
+  - nombre: volumenlargo
+    descripcion: Volumen largo.
+    tipo: NUMERIC
+  - nombre: claunidadvolumen
+    descripcion: Clave de la unidad de volumen.
+    tipo: VARCHAR
+  - nombre: clacomplejidad
+    descripcion: Clave de la complejidad.
+    tipo: VARCHAR
+  - nombre: eshomologado
+    descripcion: Bandera que indica si el artículo está homologado.
+    tipo: BOOLEAN
+  - nombre: pesoteoricokgsmin
+    descripcion: Peso teórico mínimo en kilogramos.
+    tipo: NUMERIC
+  - nombre: pesoteoricokgsmax
+    descripcion: Peso teórico máximo en kilogramos.
+    tipo: NUMERIC
+  - nombre: claempresacodigobar
+    descripcion: Clave de la empresa del código de barras.
+    tipo: VARCHAR
+  - nombre: claproteccionempaque
+    descripcion: Clave de la protección del empaque.
+    tipo: VARCHAR
+  - nombre: esdisponiblecopia
+    descripcion: Bandera que indica si el artículo está disponible para copia.
+    tipo: BOOLEAN
+  - nombre: esdisponibleuso
+    descripcion: Bandera que indica si el artículo está disponible para uso.
+    tipo: BOOLEAN
+  - nombre: clagpoestadistico4man
+    descripcion: Clave del grupo estadístico 4MAN.
+    tipo: VARCHAR
+  - nombre: escambiohistorial
+    descripcion: Bandera que indica si se ha realizado un cambio en el historial.
+    tipo: BOOLEAN
+

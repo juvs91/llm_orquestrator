@@ -1,0 +1,93 @@
+vista: stg_vtacatclienteagrupador
+descripcion: Vista generada por DBT para la tabla dbo.VtaCatClienteAgrupador
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando se extrajo el registro
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del cliente
+    tipo: STRING
+  - nombre: colonia
+    descripcion: Colonia del cliente
+    tipo: STRING
+  - nombre: contacto
+    descripcion: Nombre del contacto principal del cliente
+    tipo: STRING
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: telefono
+    descripcion: Número de teléfono del cliente
+    tipo: STRING
+  - nombre: claciudad
+    descripcion: Clave foránea a la tabla CatCiudad
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección completa del cliente
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta del cliente
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si el cliente está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: zonapostal
+    descripcion: Código postal del cliente
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambios de Azure
+    tipo: STRING
+  - nombre: fechaaltareal
+    descripcion: Fecha real de alta del cliente
+    tipo: DATETIME
+  - nombre: nombrecliente
+    descripcion: Nombre completo del cliente
+    tipo: STRING
+  - nombre: clatipocliente
+    descripcion: Clave foránea a la tabla CatTipoCliente
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de instantánea de cambio de datos de Azure
+    tipo: INT64
+  - nombre: claorganizacion
+    descripcion: Clave foránea a la tabla CatOrganizacion
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del cliente
+    tipo: DATETIME
+  - nombre: claclasifcliente
+    descripcion: Clave foránea a la tabla CatClasifCliente
+    tipo: INT64
+  - nombre: clagirocomercial
+    descripcion: Clave foránea a la tabla CatGiroComercial
+    tipo: INT64
+  - nombre: clamedioembarque
+    descripcion: Clave foránea a la tabla CatMedioEmbarque
+    tipo: INT64
+  - nombre: claclasifclientev
+    descripcion: Clave foránea a la tabla CatClasifClienteV
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando el registro fue marcado como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando el registro fue actualizado por última vez
+    tipo: STRING
+  - nombre: claclienteagrupador
+    descripcion: Clave primaria de la tabla VtaCatClienteAgrupador
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Azure
+    tipo: STRING

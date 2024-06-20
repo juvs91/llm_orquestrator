@@ -1,0 +1,72 @@
+vista: stg_mswcatconfiguracionbodega4
+descripcion: Vista generada por DBT para la tabla MSWCatConfiguracionBodega4
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: dvalor1
+    descripcion: Valor de fecha 1
+    tipo: DATETIME
+  - nombre: dvalor2
+    descripcion: Valor de fecha 2
+    tipo: DATETIME
+  - nombre: nvalor1
+    descripcion: Valor numérico 1
+    tipo: FLOAT64
+  - nombre: nvalor2
+    descripcion: Valor numérico 2
+    tipo: FLOAT64
+  - nombre: svalor1
+    descripcion: Valor de cadena 1
+    tipo: STRING
+  - nombre: svalor2
+    descripcion: Valor de cadena 2
+    tipo: STRING
+  - nombre: svalor3
+    descripcion: Valor de cadena 3
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clalocalidad
+    descripcion: Clave foránea a la tabla de localidades
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: claconfiguracion
+    descripcion: Clave primaria de la configuración
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: nombreconfiguracion
+    descripcion: Nombre de la configuración
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

@@ -1,0 +1,69 @@
+vista: stg_mtocatrcmfuncionfalla
+descripcion: Vista generada por DBT para la tabla MtoSch_MtoCatRcmFuncionFalla
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: claequipo
+    descripcion: Clave foránea a la tabla de Catálogo de Equipo
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number del cambio capturado por Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de Catálogo de Ubicación
+    tipo: INT64
+  - nombre: clarcmfuncion
+    descripcion: Clave foránea a la tabla de Catálogo de RCM Función
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de Catálogo de Usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: escopiagenerico
+    descripcion: Bandera que indica si la falla es de copia genérica (1) o no (0)
+    tipo: INT64
+  - nombre: esgenericopadre
+    descripcion: Bandera que indica si la falla es genérica padre (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: clarcmfuncionfalla
+    descripcion: Clave primaria de la tabla de Catálogo de RCM Función Falla
+    tipo: INT64
+  - nombre: nomrcmfuncionfalla
+    descripcion: Nombre de la falla de la función RCM
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro, capturado por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro, capturado por Airbyte
+    tipo: STRING
+  - nombre: clarcmfuncionfpadre
+    descripcion: Clave foránea a la tabla de Catálogo de RCM Función Falla Padre
+    tipo: INT64
+  - nombre: clavercmfuncionfalla
+    descripcion: Clave única de la falla de la función RCM
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio capturado por Airbyte
+    tipo: STRING

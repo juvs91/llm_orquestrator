@@ -1,0 +1,90 @@
+vista: stg_cat
+descripcion: Vista generada a partir de la tabla dbo_Pro_Evento_Cat
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: activo
+    descripcion: Indica si el evento está activo (1) o no (0)
+    tipo: INT64
+  - nombre: desglose
+    descripcion: Valor de desglose asociado al evento
+    tipo: INT64
+  - nombre: fecha_ins
+    descripcion: Fecha y hora de inserción del registro
+    tipo: DATETIME
+  - nombre: nombre_pc
+    descripcion: Nombre del equipo donde se insertó el registro
+    tipo: STRING
+  - nombre: cla_evento
+    descripcion: Clave foránea a la tabla de eventos
+    tipo: INT64
+  - nombre: cla_planta
+    descripcion: Clave foránea a la tabla de plantas
+    tipo: INT64
+  - nombre: min_maximo
+    descripcion: Valor mínimo máximo permitido
+    tipo: FLOAT64
+  - nombre: min_minimo
+    descripcion: Valor mínimo mínimo permitido
+    tipo: FLOAT64
+  - nombre: foliosincro
+    descripcion: Número de folio de sincronización
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del sistema de origen utilizado para CDC
+    tipo: STRING
+  - nombre: desc_evento
+    descripcion: Descripción del evento
+    tipo: STRING
+  - nombre: sum_vac_vac
+    descripcion: Indica si se suma el vacío al vacío (verdadero/falso)
+    tipo: BOOL
+  - nombre: cla_sub_area
+    descripcion: Clave foránea a la tabla de subáreas
+    tipo: INT64
+  - nombre: min_objetivo
+    descripcion: Valor mínimo objetivo
+    tipo: FLOAT64
+  - nombre: fecha_ult_mod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: cla_tipo_demora
+    descripcion: Clave foránea a la tabla de tipos de demora
+    tipo: INT64
+  - nombre: cla_tipo_tiempo
+    descripcion: Clave foránea a la tabla de tipos de tiempo
+    tipo: INT64
+  - nombre: cla_usuario_ins
+    descripcion: Clave foránea a la tabla de usuarios que insertaron el registro
+    tipo: INT64
+  - nombre: cla_usuario_mod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: cla_grupo_demora
+    descripcion: Clave foránea a la tabla de grupos de demora
+    tipo: INT64
+  - nombre: cla_origen_demora
+    descripcion: Clave foránea a la tabla de orígenes de demora
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en el sistema de origen (CDC)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en el sistema de origen (CDC)
+    tipo: STRING
+  - nombre: clave_automatizacion
+    descripcion: Clave de automatización
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

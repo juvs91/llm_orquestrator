@@ -1,0 +1,10 @@
+vista: MST_CAT_DEPARTAMENTO
+descripcion: Vista generada a partir de la unión entre stg__con_cat_gpo_poliza, stg__con_cat_direccion y stg__con_rel_direccion_empresa, con el objetivo de obtener un catálogo de departamentos.
+campos:
+  - nombre: CLA_DEPARTAMENTO
+    descripcion: Clave única del departamento.
+    tipo: INT
+  - nombre: NOM_DEPARTAMENTO
+    descripcion: Nombre completo del departamento.
+    tipo: VARCHAR(255)
+

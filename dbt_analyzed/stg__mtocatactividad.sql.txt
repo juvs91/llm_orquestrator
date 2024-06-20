@@ -1,0 +1,189 @@
+vista: stg_mtocatactividad
+descripcion: Vista generada por DBT a partir de la tabla MtoSch_MtoCatActividad
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: valpf
+    descripcion: Valor PF
+    tipo: FLOAT64
+  - nombre: nvalor
+    descripcion: Valor numérico
+    tipo: INT64
+  - nombre: claturno
+    descripcion: Clave de turno
+    tipo: INT64
+  - nombre: penrepsn
+    descripcion: Pendiente de reposición
+    tipo: INT64
+  - nombre: claequipo
+    descripcion: Clave de equipo
+    tipo: INT64
+  - nombre: prioridad
+    descripcion: Prioridad
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Baja lógica
+    tipo: INT64
+  - nombre: esderiesgo
+    descripcion: Indicador de riesgo
+    tipo: INT64
+  - nombre: noreplicar
+    descripcion: No replicar
+    tipo: INT64
+  - nombre: clagravedad
+    descripcion: Clave de gravedad
+    tipo: INT64
+  - nombre: clatipoplan
+    descripcion: Clave de tipo de plan
+    tipo: INT64
+  - nombre: esmigracion
+    descripcion: Indicador de migración
+    tipo: INT64
+  - nombre: esseguridad
+    descripcion: Indicador de seguridad
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre de la PC de modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: claactividad
+    descripcion: Clave de actividad
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: fechadescgen
+    descripcion: Fecha de descripción generada
+    tipo: DATETIME
+  - nombre: nomactividad
+    descripcion: Nombre de la actividad
+    tipo: STRING
+  - nombre: cladisciplina
+    descripcion: Clave de disciplina
+    tipo: INT64
+  - nombre: clafrecuencia
+    descripcion: Clave de frecuencia
+    tipo: INT64
+  - nombre: clarcmfuncion
+    descripcion: Clave de función RCM
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave de usuario de modificación
+    tipo: INT64
+  - nombre: esdocumentada
+    descripcion: Indicador de documentación
+    tipo: INT64
+  - nombre: fechaultimaot
+    descripcion: Fecha de la última orden de trabajo
+    tipo: DATETIME
+  - nombre: nombrearchivo
+    descripcion: Nombre del archivo
+    tipo: STRING
+  - nombre: reqcertificar
+    descripcion: Requiere certificación
+    tipo: INT64
+  - nombre: disponibleguia
+    descripcion: Disponible en la guía
+    tipo: INT64
+  - nombre: esagrupadormod
+    descripcion: Es un agrupador modificado
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: tiempoestimado
+    descripcion: Tiempo estimado
+    tipo: FLOAT64
+  - nombre: valoracumulado
+    descripcion: Valor acumulado
+    tipo: INT64
+  - nombre: valoroperacion
+    descripcion: Valor de operación
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: actividadactual
+    descripcion: Actividad actual
+    tipo: INT64
+  - nombre: claactividadgen
+    descripcion: Clave de actividad generada
+    tipo: INT64
+  - nombre: claprobabilidad
+    descripcion: Clave de probabilidad
+    tipo: INT64
+  - nombre: clarcmmodofalla
+    descripcion: Clave de modo de falla RCM
+    tipo: INT64
+  - nombre: escopiagenerico
+    descripcion: Es un alcance genérico
+    tipo: INT64
+  - nombre: esgenericopadre
+    descripcion: Es un padre genérico
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clafrecuenciaexp
+    descripcion: Clave de frecuencia de exposición
+    tipo: INT64
+  - nombre: clafuncionpuesto
+    descripcion: Clave de función de puesto
+    tipo: INT64
+  - nombre: claprioridadraud
+    descripcion: Clave de prioridad de fraude
+    tipo: INT64
+  - nombre: extensionarchivo
+    descripcion: Extensión del archivo
+    tipo: STRING
+  - nombre: claactividadpadre
+    descripcion: Clave de actividad padre
+    tipo: INT64
+  - nombre: clarcmfuncionfalla
+    descripcion: Clave de función de falla RCM
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: claestatusactividad
+    descripcion: Clave de estado de la actividad
+    tipo: INT64
+  - nombre: narefaccionmaterial
+    descripcion: Número de refacción/material
+    tipo: INT64
+  - nombre: requiereparomaquina
+    descripcion: Requiere paro de máquina
+    tipo: INT64
+  - nombre: clanominaresponsable
+    descripcion: Clave de nómina del responsable
+    tipo: INT64
+  - nombre: clatipomantenimiento
+    descripcion: Clave de tipo de mantenimiento
+    tipo: INT64
+  - nombre: clafrecuenciaoriginal
+    descripcion: Clave de frecuencia original
+    tipo: INT64
+  - nombre: esmigracionmodificado
+    descripcion: Indicador de migración modificada
+    tipo: INT64
+  - nombre: esactividadseleccionada
+    descripcion: Indicador de actividad seleccionada
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING
+  - nombre: clatrabajadorresponsable
+    descripcion: Clave del trabajador responsable
+    tipo: INT64

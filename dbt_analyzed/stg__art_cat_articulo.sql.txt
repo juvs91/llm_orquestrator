@@ -1,0 +1,213 @@
+vista: stg_artcatarticulo
+descripcion: Vista generada por DBT a partir de la tabla dbo_ArtCatArticulo
+campos:
+  - nombre: pk_catArticulo
+    descripcion: Surrogate key generada para la tabla ArtCatArticulo
+    tipo: STRING
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin transformar de la fuente de datos
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando se extrajo el registro de la fuente
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: prueba
+    descripcion: Campo 'prueba' de la tabla original
+    tipo: INT64
+  - nombre: clamarca
+    descripcion: Clave foránea a la tabla de Marcas
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de creación del registro
+    tipo: DATETIME
+  - nombre: claunspc1
+    descripcion: Clave foránea a la tabla de UNSPC nivel 1
+    tipo: INT64
+  - nombre: claunspc2
+    descripcion: Clave foránea a la tabla de UNSPC nivel 2
+    tipo: INT64
+  - nombre: claunspc3
+    descripcion: Clave foránea a la tabla de UNSPC nivel 3
+    tipo: INT64
+  - nombre: claunspc4
+    descripcion: Clave foránea a la tabla de UNSPC nivel 4
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el artículo está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de Familias de artículos
+    tipo: INT64
+  - nombre: esobsoleto
+    descripcion: Indica si el artículo es obsoleto (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: referencia
+    descripcion: Referencia del artículo
+    tipo: STRING
+  - nombre: claarticulo
+    descripcion: Clave primaria de la tabla ArtCatArticulo
+    tipo: INT64
+  - nombre: comentarios
+    descripcion: Comentarios adicionales sobre el artículo
+    tipo: STRING
+  - nombre: nomarticulo
+    descripcion: Nombre del artículo en mayúsculas
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del artículo para PC Mod
+    tipo: STRING
+  - nombre: volumenalto
+    descripcion: Altura del volumen del artículo
+    tipo: FLOAT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de la fuente de datos
+    tipo: STRING
+  - nombre: claagrupador
+    descripcion: Clave foránea a la tabla de Agrupadores de artículos
+    tipo: INT64
+  - nombre: clagpocosteo
+    descripcion: Clave foránea a la tabla de Grupos de Costeo
+    tipo: INT64
+  - nombre: claplantilla
+    descripcion: Clave foránea a la tabla de Plantillas
+    tipo: INT64
+  - nombre: esexcentoiva
+    descripcion: Indica si el artículo está excento de IVA (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: eshomologado
+    descripcion: Indica si el artículo está homologado (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: volumenancho
+    descripcion: Ancho del volumen del artículo
+    tipo: FLOAT64
+  - nombre: volumenlargo
+    descripcion: Largo del volumen del artículo
+    tipo: FLOAT64
+  - nombre: claclavecruda
+    descripcion: Clave foránea a la tabla de Claves Crudas
+    tipo: INT64
+  - nombre: claclienteart
+    descripcion: Clave foránea a la tabla de Clientes de Artículos
+    tipo: INT64
+  - nombre: claempaqueind
+    descripcion: Clave foránea a la tabla de Empaques Individuales
+    tipo: INT64
+  - nombre: clagpoempaque
+    descripcion: Clave foránea a la tabla de Grupos de Empaque
+    tipo: INT64
+  - nombre: clasubfamilia
+    descripcion: Clave foránea a la tabla de Subfamilias de artículos
+    tipo: INT64
+  - nombre: claunidadbase
+    descripcion: Clave foránea a la tabla de Unidades Base
+    tipo: INT64
+  - nombre: claunidadprod
+    descripcion: Clave foránea a la tabla de Unidades de Producción
+    tipo: INT64
+  - nombre: clausuarioins
+    descripcion: Clave foránea a la tabla de Usuarios que crearon el registro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de Usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: clavearticulo
+    descripcion: Clave del artículo
+    tipo: STRING
+  - nombre: clacomplejidad
+    descripcion: Clave foránea a la tabla de Complejidades
+    tipo: INT64
+  - nombre: claestatusvobo
+    descripcion: Clave foránea a la tabla de Estatus de Visto Bueno
+    tipo: INT64
+  - nombre: codigoarticulo
+    descripcion: Código del artículo
+    tipo: STRING
+  - nombre: factorcubicaje
+    descripcion: Factor de cubicaje del artículo
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: pesoteoricokgs
+    descripcion: Peso teórico del artículo en kilogramos
+    tipo: FLOAT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: claempaqueagrup
+    descripcion: Clave foránea a la tabla de Empaques de Agrupación
+    tipo: INT64
+  - nombre: claprefijoclave
+    descripcion: Clave foránea a la tabla de Prefijos de Clave
+    tipo: INT64
+  - nombre: clatipoarticulo
+    descripcion: Clave foránea a la tabla de Tipos de Artículo
+    tipo: INT64
+  - nombre: claubicacionins
+    descripcion: Clave foránea a la tabla de Ubicaciones de Inserción
+    tipo: INT64
+  - nombre: esdisponibleuso
+    descripcion: Indica si el artículo está disponible para uso (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del artículo
+    tipo: DATETIME
+  - nombre: claclasifgeneral
+    descripcion: Clave foránea a la tabla de Clasificaciones Generales
+    tipo: INT64
+  - nombre: claunidadvolumen
+    descripcion: Clave foránea a la tabla de Unidades de Volumen
+    tipo: INT64
+  - nombre: factorconversion
+    descripcion: Factor de conversión del artículo
+    tipo: FLOAT64
+  - nombre: claarticuloinsumo
+    descripcion: Clave foránea a la tabla de Artículos Insumos
+    tipo: INT64
+  - nombre: clagpoestadistico
+    descripcion: Clave foránea a la tabla de Grupos Estadísticos
+    tipo: INT64
+  - nombre: clagpoprocesoprod
+    descripcion: Clave foránea a la tabla de Grupos de Proceso de Producción
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de Tipos de Inventario
+    tipo: INT64
+  - nombre: escambiohistorial
+    descripcion: Indica si el artículo tiene cambios en el historial (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esdisponiblecopia
+    descripcion: Indica si el artículo está disponible para copia (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nomarticuloingles
+    descripcion: Nombre del artículo en inglés en mayúsculas
+    tipo: STRING
+  - nombre: pesoteoricokgsmax
+    descripcion: Peso teórico máximo del artículo en kilogramos
+    tipo: FLOAT64
+  - nombre: pesoteoricokgsmin
+    descripcion: Peso teórico mínimo del artículo en kilogramos
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando se actualizó el registro en la fuente
+    tipo: STRING
+  - nombre: claempresacodigobar
+    descripcion: Clave foránea a la tabla de Empresas de Código de Barras
+    tipo: INT64
+  - nombre: claproteccionempaque
+    descripcion: Clave foránea a la tabla de Protecciones de Empaque
+    tipo: INT64
+  - nombre: clagpoestadistico4man
+    descripcion: Clave foránea a la tabla de Grupos Estadísticos 4MAN
+    tipo: INT64
+  - nombre: nomarticulootroidioma
+    descripcion: Nombre del artículo en otro idioma en mayúsculas
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

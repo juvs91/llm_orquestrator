@@ -1,0 +1,54 @@
+vista: de_duplicacion_mswcatbscsegmento
+descripcion: Vista que aplica deduplicación y limpieza a la tabla stg__msw_cat_bsc_segmento.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte para cada registro.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo el registro.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0).
+    tipo: INTEGER
+  - nombre: clase_segmento
+    descripcion: Clave foránea a la tabla clase segmento.
+    tipo: TEXT
+  - nombre: nomsegmento
+    descripcion: Nombre del segmento.
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro por última vez.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica del cambio de datos capturado.
+    tipo: TEXT
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro.
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para rastrear los cambios de datos.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha en la que se dio de baja el registro.
+    tipo: DATE
+  - nombre: clase_segmento_padre
+    descripcion: Clave foránea a la tabla clase segmento padre.
+    tipo: TEXT
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en la que se eliminó el registro, según lo capturado por Airbyte CDC.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora en la que se actualizó el registro, según lo capturado por Airbyte CDC.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: INTEGER
+  - nombre: nommarketsegment
+    descripcion: Nombre del segmento de mercado, con valores nulos para 'OTHER'.
+    tipo: TEXT

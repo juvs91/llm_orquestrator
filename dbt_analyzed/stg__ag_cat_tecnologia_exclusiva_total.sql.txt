@@ -1,0 +1,57 @@
+vista: stg_agcattecnologiaexclusivatotal
+descripcion: Vista generada por DBT a partir de la tabla dbo_AgCatTecnologiaExclusivaTotal
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte en formato JSON
+    tipo: JSON
+  - nombre: multiplo
+    descripcion: Valor numérico que representa un múltiplo
+    tipo: INT64
+  - nombre: prioridad
+    descripcion: Nivel de prioridad
+    tipo: INT64
+  - nombre: clafamilia
+    descripcion: Clave foránea a la tabla de familias
+    tipo: INT64
+  - nombre: claproducto
+    descripcion: Clave foránea a la tabla de productos
+    tipo: INT64
+  - nombre: minimopedir
+    descripcion: Cantidad mínima que se puede pedir
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro (LSN) de la última transacción confirmada
+    tipo: STRING
+  - nombre: diastransito
+    descripcion: Número de días de tránsito
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clasubfamilia
+    descripcion: Clave foránea a la tabla de subfamilias
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor del cursor utilizado por el CDC (Change Data Capture)
+    tipo: INT64
+  - nombre: clagpotransporte
+    descripcion: Clave foránea a la tabla de grupos de transporte
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro, si corresponde
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro
+    tipo: STRING
+  - nombre: claubicacionelabora
+    descripcion: Clave foránea a la tabla de ubicaciones de elaboración
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

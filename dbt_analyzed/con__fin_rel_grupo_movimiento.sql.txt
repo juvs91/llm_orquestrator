@@ -1,0 +1,10 @@
+vista: fin_rel_grupo_movimiento
+descripcion: Vista que presenta la relación entre el grupo de movimiento y el movimiento de cartera.
+campos:
+  - nombre: cla_grupo_movimiento
+    descripcion: Clave del grupo de movimiento.
+    tipo: INT
+  - nombre: cla_mov_cartera
+    descripcion: Clave del movimiento de cartera.
+    tipo: INT
+

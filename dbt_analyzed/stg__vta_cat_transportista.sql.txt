@@ -1,0 +1,54 @@
+vista: stg_vtacattransportista
+descripcion: Vista generada por DBT a partir de la tabla VtaSch_VtaCatTransportista
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: contacto
+    descripcion: Contacto del transportista
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Teléfono del transportista
+    tipo: STRING
+  - nombre: direccion
+    descripcion: Dirección del transportista
+    tipo: STRING
+  - nombre: poblacion
+    descripcion: Población del transportista
+    tipo: STRING
+  - nombre: idubicacion
+    descripcion: ID de la ubicación del transportista
+    tipo: INT64
+  - nombre: razonsocial
+    descripcion: Razón social del transportista
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clatransportista
+    descripcion: Clave del transportista
+    tipo: INT64
+  - nombre: nomtransportista
+    descripcion: Nombre del transportista
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

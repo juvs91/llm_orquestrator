@@ -1,0 +1,78 @@
+vista: stg_concatcategoria
+descripcion: Vista generada a partir de la tabla ConSch_ConCatCategoria
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esafectable
+    descripcion: Indica si el registro es afectable (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clacategoria
+    descripcion: Clave principal de la categoría
+    tipo: INT64
+  - nombre: clacategoria1
+    descripcion: Clave foránea a la categoría de nivel 1
+    tipo: INT64
+  - nombre: clacategoria2
+    descripcion: Clave foránea a la categoría de nivel 2
+    tipo: INT64
+  - nombre: clacategoria3
+    descripcion: Clave foránea a la categoría de nivel 3
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que modificó el registro
+    tipo: INT64
+  - nombre: clanivelactual
+    descripcion: Nivel actual de la categoría
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: nomcategoriaidioma1
+    descripcion: Nombre de la categoría en el idioma 1 (en mayúsculas)
+    tipo: STRING
+  - nombre: nomcategoriaidioma2
+    descripcion: Nombre de la categoría en el idioma 2 (en mayúsculas)
+    tipo: STRING
+  - nombre: nomcategoriaidioma3
+    descripcion: Nombre de la categoría en el idioma 3 (en mayúsculas)
+    tipo: STRING
+  - nombre: nomcategoriaidioma4
+    descripcion: Nombre de la categoría en el idioma 4 (en mayúsculas)
+    tipo: STRING
+  - nombre: nomcategoriaidioma5
+    descripcion: Nombre de la categoría en el idioma 5 (en mayúsculas)
+    tipo: STRING
+  - nombre: claagrupadorfinanciero
+    descripcion: Clave foránea al agrupador financiero
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

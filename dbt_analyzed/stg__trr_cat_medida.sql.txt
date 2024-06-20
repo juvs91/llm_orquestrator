@@ -1,0 +1,129 @@
+vista: stg_trrcatmedida
+descripcion: Vista generada por DBT a partir de la tabla dbo_TrrCatMedida
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: radio
+    descripcion: Valor del radio
+    tipo: FLOAT64
+  - nombre: medida
+    descripcion: Valor de la medida
+    tipo: FLOAT64
+  - nombre: redondez
+    descripcion: Valor de la redondez
+    tipo: FLOAT64
+  - nombre: clamedida
+    descripcion: Clave de la medida
+    tipo: INT64
+  - nombre: desclarga
+    descripcion: Descripción de la carga
+    tipo: STRING
+  - nombre: esentrada
+    descripcion: Indicador de entrada (1 si es entrada, 0 si no)
+    tipo: INT64
+  - nombre: pinajuste
+    descripcion: Valor del pin de ajuste
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1 si está dado de baja, 0 si no)
+    tipo: INT64
+  - nombre: clacliente
+    descripcion: Clave del cliente
+    tipo: INT64
+  - nombre: descmedida
+    descripcion: Descripción de la medida
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: pinposprevio
+    descripcion: Valor del pin posterior previo
+    tipo: FLOAT64
+  - nombre: clamedidapaso
+    descripcion: Clave de la medida del paso
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: diametropicos
+    descripcion: Valor del diámetro de los picos
+    tipo: FLOAT64
+  - nombre: clatiporodillo
+    descripcion: Clave del tipo de rodillo
+    tipo: INT64
+  - nombre: diametroranura
+    descripcion: Valor del diámetro de la ranura
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clatipoalambron
+    descripcion: Clave del tipo de alambre
+    tipo: INT64
+  - nombre: distanciapicosa
+    descripcion: Valor de la distancia entre picos
+    tipo: FLOAT64
+  - nombre: excentpinajuste
+    descripcion: Valor de la excentricidad del pin de ajuste
+    tipo: FLOAT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: pincomprobacion
+    descripcion: Valor del pin de comprobación
+    tipo: FLOAT64
+  - nombre: radiotolerancia
+    descripcion: Valor de la tolerancia del radio
+    tipo: FLOAT64
+  - nombre: clacantidadpasos
+    descripcion: Clave de la cantidad de pasos
+    tipo: INT64
+  - nombre: holgurapinajuste
+    descripcion: Valor de la holgura del pin de ajuste
+    tipo: FLOAT64
+  - nombre: clatipotecnologia
+    descripcion: Clave del tipo de tecnología
+    tipo: INT64
+  - nombre: excentpinposprevio
+    descripcion: Valor de la excentricidad del pin posterior previo
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: clavelocidadmaquina
+    descripcion: Clave de la velocidad de la máquina
+    tipo: INT64
+  - nombre: holgurapinposprevio
+    descripcion: Valor de la holgura del pin posterior previo
+    tipo: FLOAT64
+  - nombre: excentpincomprobacion
+    descripcion: Valor de la excentricidad del pin de comprobación
+    tipo: FLOAT64
+  - nombre: holgurapincomprobacion
+    descripcion: Valor de la holgura del pin de comprobación
+    tipo: FLOAT64
+  - nombre: diametropicostolerancia
+    descripcion: Valor de la tolerancia del diámetro de los picos
+    tipo: FLOAT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING
+  - nombre: diametroranuratolerancia
+    descripcion: Valor de la tolerancia del diámetro de la ranura
+    tipo: FLOAT64

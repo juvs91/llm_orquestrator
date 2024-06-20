@@ -1,0 +1,195 @@
+vista: stg_flecattransportistacen
+descripcion: Vista generada por DBT a partir de la tabla FleSch_FLECatTransportistaCen
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del transportista
+    tipo: STRING
+  - nombre: web
+    descripcion: Sitio web del transportista
+    tipo: STRING
+  - nombre: scac
+    descripcion: Código SCAC del transportista
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle de la dirección del transportista
+    tipo: STRING
+  - nombre: grupo
+    descripcion: Grupo al que pertenece el transportista
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la cuenta CUP del transportista
+    tipo: INT64
+  - nombre: correo
+    descripcion: Correo electrónico del transportista
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país del transportista
+    tipo: INT64
+  - nombre: colonia
+    descripcion: Nombre de la colonia de la dirección del transportista
+    tipo: STRING
+  - nombre: porciva
+    descripcion: Porcentaje de IVA aplicado por el transportista
+    tipo: FLOAT64
+  - nombre: porcdppp
+    descripcion: Porcentaje de descuento por pronto pago ofrecido por el transportista
+    tipo: FLOAT64
+  - nombre: claciudad
+    descripcion: Clave de la ciudad del transportista
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave del estado del transportista
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección completa del transportista
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta del transportista en el sistema
+    tipo: DATETIME
+  - nombre: prioridad
+    descripcion: Nivel de prioridad del transportista
+    tipo: INT64
+  - nombre: telefono1
+    descripcion: Número de teléfono principal del transportista
+    tipo: STRING
+  - nombre: telefono2
+    descripcion: Número de teléfono secundario del transportista
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica del transportista (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: esdedicado
+    descripcion: Indicador de si el transportista es dedicado (1: sí, 0: no)
+    tipo: INT64
+  - nombre: esnacional
+    descripcion: Indicador de si el transportista es nacional (1: sí, 0: no)
+    tipo: INT64
+  - nombre: abreviacion
+    descripcion: Abreviatura del nombre del transportista
+    tipo: STRING
+  - nombre: correopagos
+    descripcion: Correo electrónico para pagos al transportista
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clacuentacup
+    descripcion: Clave de la cuenta CUP del transportista (repetido)
+    tipo: INT64
+  - nombre: correoduenio
+    descripcion: Correo electrónico del dueño del transportista
+    tipo: STRING
+  - nombre: clacuentacup2
+    descripcion: Clave de la segunda cuenta CUP del transportista
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: contactopagos
+    descripcion: Nombre del contacto para pagos al transportista
+    tipo: STRING
+  - nombre: correotrafico
+    descripcion: Correo electrónico del departamento de tráfico del transportista
+    tipo: STRING
+  - nombre: esconcontrato
+    descripcion: Indicador de si el transportista tiene contrato (1: sí, 0: no)
+    tipo: INT64
+  - nombre: fecharevision
+    descripcion: Fecha de la última revisión del transportista
+    tipo: DATETIME
+  - nombre: plazoparapago
+    descripcion: Plazo de pago otorgado al transportista (en días)
+    tipo: INT64
+  - nombre: porcretencion
+    descripcion: Porcentaje de retención aplicado al transportista
+    tipo: FLOAT64
+  - nombre: telefonopagos
+    descripcion: Número de teléfono para pagos al transportista
+    tipo: STRING
+  - nombre: contactoduenio
+    descripcion: Nombre del contacto del dueño del transportista
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: telefonoduenio
+    descripcion: Número de teléfono del dueño del transportista
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: aceptadocentral
+    descripcion: Indicador de si el transportista está aceptado centralmente (1: sí, 0: no)
+    tipo: INT64
+  - nombre: clabeneficiario
+    descripcion: Clave del beneficiario del transportista
+    tipo: INT64
+  - nombre: contactotrafico
+    descripcion: Nombre del contacto del departamento de tráfico del transportista
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del transportista
+    tipo: DATETIME
+  - nombre: telefonotrafico
+    descripcion: Número de teléfono del departamento de tráfico del transportista
+    tipo: STRING
+  - nombre: clausuarioplanta
+    descripcion: Clave del usuario de la planta del transportista
+    tipo: INT64
+  - nombre: evaluacionglobal
+    descripcion: Evaluación global del transportista
+    tipo: FLOAT64
+  - nombre: esdescuentoglobal
+    descripcion: Indicador de si el transportista tiene descuento global (1: sí, 0: no)
+    tipo: INT64
+  - nombre: clagrupotransporte
+    descripcion: Clave del grupo de transporte al que pertenece el transportista
+    tipo: INT64
+  - nombre: claubicacionorigen
+    descripcion: Clave de la ubicación de origen del transportista
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro por Airbyte
+    tipo: STRING
+  - nombre: clatransportistacen
+    descripcion: Clave del transportista
+    tipo: INT64
+  - nombre: descuentoprontopago
+    descripcion: Descuento por pronto pago ofrecido por el transportista
+    tipo: FLOAT64
+  - nombre: nomtransportistacen
+    descripcion: Nombre del transportista
+    tipo: STRING
+  - nombre: numtransportistacen
+    descripcion: Número de identificación del transportista
+    tipo: INT64
+  - nombre: claestatustransportista
+    descripcion: Clave del estatus del transportista
+    tipo: INT64
+  - nombre: escobroprimacombustible
+    descripcion: Indicador de si se cobra prima de combustible al transportista (1: sí, 0: no)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: evaluacionglobalponderada
+    descripcion: Evaluación global ponderada del transportista
+    tipo: FLOAT64
+  - nombre: porccobroprimacombustible
+    descripcion: Porcentaje de cobro de la prima de combustible al transportista
+    tipo: FLOAT64

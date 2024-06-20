@@ -1,0 +1,60 @@
+vista: stg_vtacatregimenfiscalsat
+descripcion: Vista con información de los regímenes fiscales del SAT.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0).
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de la transacción de origen.
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Posición del cursor en el flujo de cambios.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja el registro.
+    tipo: DATETIME
+  - nombre: fechafinvigencia
+    descripcion: Fecha de fin de vigencia del régimen fiscal.
+    tipo: DATETIME
+  - nombre: aplicapersonamoral
+    descripcion: Indica si el régimen fiscal aplica a personas morales (1) o no (0).
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en que se marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro.
+    tipo: STRING
+  - nombre: aplicapersonafisica
+    descripcion: Indica si el régimen fiscal aplica a personas físicas (1) o no (0).
+    tipo: INT64
+  - nombre: claregimenfiscalsat
+    descripcion: Clave del régimen fiscal.
+    tipo: INT64
+  - nombre: fechainiciovigencia
+    descripcion: Fecha de inicio de vigencia del régimen fiscal.
+    tipo: DATETIME
+  - nombre: nomregimenfiscalsat
+    descripcion: Nombre del régimen fiscal.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio.
+    tipo: STRING

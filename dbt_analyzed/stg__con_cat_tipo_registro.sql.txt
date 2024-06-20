@@ -1,0 +1,75 @@
+vista: stg_concattiporegistro
+descripcion: Vista generada por DBT a partir de la tabla dbo_ConCatTipoRegistro
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON proporcionados por Airbyte
+    tipo: JSON
+  - nombre: esiva
+    descripcion: Valor entero que indica si el registro está sujeto a IVA
+    tipo: INT64
+  - nombre: claflujo
+    descripcion: Clave numérica del flujo asociado al tipo de registro
+    tipo: INT64
+  - nombre: escontrol
+    descripcion: Valor booleano que indica si el registro está marcado como controlado
+    tipo: BOOL
+  - nombre: bajalogica
+    descripcion: Valor entero que indica el estado de baja lógica del registro
+    tipo: INT64
+  - nombre: esproveedor
+    descripcion: Valor booleano que indica si el registro está asociado a un proveedor
+    tipo: BOOL
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo o usuario que modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave numérica del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clatiporegistro
+    descripcion: Clave numérica que identifica el tipo de registro
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se marcó el registro como dado de baja lógica
+    tipo: DATETIME
+  - nombre: nomtiporegistro
+    descripcion: Nombre principal del tipo de registro
+    tipo: STRING
+  - nombre: nomtiporegistro2
+    descripcion: Segundo nombre del tipo de registro
+    tipo: STRING
+  - nombre: nomtiporegistro3
+    descripcion: Tercer nombre del tipo de registro
+    tipo: STRING
+  - nombre: nomtiporegistro4
+    descripcion: Cuarto nombre del tipo de registro
+    tipo: STRING
+  - nombre: nomtiporegistro5
+    descripcion: Quinto nombre del tipo de registro
+    tipo: STRING
+  - nombre: esenlineaencierre
+    descripcion: Valor booleano que indica si el registro está en línea al cierre
+    tipo: BOOL
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de Airbyte CDC para cuando se eliminó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de Airbyte CDC para cuando se actualizó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento Airbyte CDC
+    tipo: STRING

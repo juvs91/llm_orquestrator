@@ -1,0 +1,10 @@
+vista: MST_TIPO_GASTO_FAMILIA_VW
+descripcion: Vista materializada que presenta la información de tipos de gasto de una familia
+campos:
+  - nombre: CLA_TIPO_GASTO_FAMILIA
+    descripcion: Clave del tipo de gasto familiar
+    tipo: string
+  - nombre: NOM_TIPO_GASTO_FAMILIA
+    descripcion: Nombre del tipo de gasto familiar
+    tipo: string
+

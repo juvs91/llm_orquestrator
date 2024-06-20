@@ -1,0 +1,96 @@
+vista: stg_calcattipofiltro
+descripcion: Vista con datos de la tabla CalSch_CalCatTipoFiltro
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte
+    tipo: JSON
+  - nombre: esrango
+    descripcion: Indica si el filtro es de tipo rango (1) o no (0)
+    tipo: INT64
+  - nombre: etiqueta
+    descripcion: Etiqueta descriptiva del filtro
+    tipo: STRING
+  - nombre: rangomax
+    descripcion: Valor máximo del rango del filtro
+    tipo: FLOAT64
+  - nombre: rangomin
+    descripcion: Valor mínimo del rango del filtro
+    tipo: FLOAT64
+  - nombre: whereadic
+    descripcion: Cláusula WHERE adicional para el filtro
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: campoclave
+    descripcion: Nombre del campo clave al que se aplica el filtro
+    tipo: STRING
+  - nombre: incremento
+    descripcion: Valor de incremento para el filtro
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: vistaorigen
+    descripcion: Nombre de la vista de origen de los datos
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de confirmación lógica de la base de datos de origen
+    tipo: STRING
+  - nombre: campoclavealt
+    descripcion: Nombre alternativo del campo clave al que se aplica el filtro
+    tipo: STRING
+  - nombre: clatipofiltro
+    descripcion: Clave única del tipo de filtro
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: nomtipofiltro
+    descripcion: Nombre del tipo de filtro
+    tipo: STRING
+  - nombre: campoclavedesc
+    descripcion: Descripción del campo clave al que se aplica el filtro
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: esfiltrousuario
+    descripcion: Indica si el filtro es de usuario (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: operacionlogica
+    descripcion: Operador lógico utilizado en el filtro
+    tipo: STRING
+  - nombre: campodescripcion
+    descripcion: Descripción del campo al que se aplica el filtro
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: esfiltroreclamacion
+    descripcion: Indica si el filtro es de reclamación (1) o no (0)
+    tipo: INT64
+  - nombre: clatipofiltrodepende
+    descripcion: Clave del tipo de filtro del que depende este filtro
+    tipo: INT64
+  - nombre: esfiltrofuncionalidades
+    descripcion: Indica si el filtro es de funcionalidades (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

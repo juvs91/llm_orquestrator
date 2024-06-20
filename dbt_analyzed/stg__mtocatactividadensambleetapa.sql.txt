@@ -1,0 +1,66 @@
+vista: stg_mtocatactividadensambleetapa
+descripcion: Vista generada por DBT a partir de la tabla MtoSch_MtoCatActividadEnsambleEtapa
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden de la actividad en el ensamble
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si la actividad está dada de baja lógica (true/false)
+    tipo: BOOL
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de Postgres para CDC
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: esdocumentada
+    descripcion: Indica si la actividad está documentada (1/0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte para CDC
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez el registro en la fuente
+    tipo: STRING
+  - nombre: esdefinicionalcance
+    descripcion: Indica si la actividad define el alcance (true/false)
+    tipo: BOOL
+  - nombre: claactividadensamble
+    descripcion: Clave foránea a la tabla de actividades de ensamble
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING
+  - nombre: claactividadensambleetapa
+    descripcion: Clave primaria de la tabla de actividades de ensamble etapa
+    tipo: INT64
+  - nombre: nomactividadensambleetapa
+    descripcion: Nombre de la actividad de ensamble etapa
+    tipo: STRING
+  - nombre: claveactividadensambleetapa
+    descripcion: Clave única de la actividad de ensamble etapa
+    tipo: STRING

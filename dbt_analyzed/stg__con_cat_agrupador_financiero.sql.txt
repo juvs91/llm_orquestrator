@@ -1,0 +1,114 @@
+vista: stg_concatagrupadorfinanciero
+descripcion: Vista generada por DBT para la tabla ConSch_ConCatAgrupadorFinanciero
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden del agrupador financiero
+    tipo: INT64
+  - nombre: escapital
+    descripcion: Indica si el agrupador financiero es de capital (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el agrupador financiero está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: esactivototal
+    descripcion: Indica si el agrupador financiero es de activo total (1) o no (0)
+    tipo: INT64
+  - nombre: esotrosgastos
+    descripcion: Indica si el agrupador financiero es de otros gastos (1) o no (0)
+    tipo: INT64
+  - nombre: espasivototal
+    descripcion: Indica si el agrupador financiero es de pasivo total (1) o no (0)
+    tipo: INT64
+  - nombre: esutilidadneta
+    descripcion: Indica si el agrupador financiero es de utilidad neta (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: formulaimporte
+    descripcion: Fórmula para calcular el importe del agrupador financiero
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: esutilidadbruta
+    descripcion: Indica si el agrupador financiero es de utilidad bruta (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: esactivocirculante
+    descripcion: Indica si el agrupador financiero es de activo circulante (1) o no (0)
+    tipo: INT64
+  - nombre: espasivocortoplazo
+    descripcion: Indica si el agrupador financiero es de pasivo a corto plazo (1) o no (0)
+    tipo: INT64
+  - nombre: espasivolargoplazo
+    descripcion: Indica si el agrupador financiero es de pasivo a largo plazo (1) o no (0)
+    tipo: INT64
+  - nombre: espasivomascapital
+    descripcion: Indica si el agrupador financiero es de pasivo más capital (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: esresultadointegral
+    descripcion: Indica si el agrupador financiero es de resultado integral (1) o no (0)
+    tipo: INT64
+  - nombre: esutilidadoperacion
+    descripcion: Indica si el agrupador financiero es de utilidad de operación (1) o no (0)
+    tipo: INT64
+  - nombre: esactivonocirculante
+    descripcion: Indica si el agrupador financiero es de activo no circulante (1) o no (0)
+    tipo: INT64
+  - nombre: estotalgastooperacion
+    descripcion: Indica si el agrupador financiero es de total de gastos de operación (1) o no (0)
+    tipo: INT64
+  - nombre: claagrupadorfinanciero
+    descripcion: Clave del agrupador financiero
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: esutilidadantesimpuestos
+    descripcion: Indica si el agrupador financiero es de utilidad antes de impuestos (1) o no (0)
+    tipo: INT64
+  - nombre: esresultadofinanciamiento
+    descripcion: Indica si el agrupador financiero es de resultado financiero (1) o no (0)
+    tipo: INT64
+  - nombre: nomagrupadorfinancieroidioma1
+    descripcion: Nombre del agrupador financiero en idioma 1
+    tipo: STRING
+  - nombre: nomagrupadorfinancieroidioma2
+    descripcion: Nombre del agrupador financiero en idioma 2
+    tipo: STRING
+  - nombre: nomagrupadorfinancieroidioma3
+    descripcion: Nombre del agrupador financiero en idioma 3
+    tipo: STRING
+  - nombre: nomagrupadorfinancieroidioma4
+    descripcion: Nombre del agrupador financiero en idioma 4
+    tipo: STRING
+  - nombre: nomagrupadorfinancieroidioma5
+    descripcion: Nombre del agrupador financiero en idioma 5
+    tipo: STRING

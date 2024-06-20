@@ -1,0 +1,72 @@
+vista: stg_ticatconfiguracion
+descripcion: Vista generada por DBT a partir de la tabla dbo_TiCatConfiguracion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: dvalor1
+    descripcion: Valor de fecha 1
+    tipo: DATETIME
+  - nombre: dvalor2
+    descripcion: Valor de fecha 2
+    tipo: DATETIME
+  - nombre: nvalor1
+    descripcion: Valor numérico 1
+    tipo: FLOAT64
+  - nombre: nvalor2
+    descripcion: Valor numérico 2
+    tipo: FLOAT64
+  - nombre: svalor1
+    descripcion: Valor de texto 1
+    tipo: STRING
+  - nombre: svalor2
+    descripcion: Valor de texto 2
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: clasistema
+    descripcion: Clave foránea al sistema
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico (LSN) de la última transacción capturada por el CDC de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por el CDC de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: claconfiguracion
+    descripcion: Clave primaria de la configuración
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó por última vez un registro como eliminado por el CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó por última vez un registro según lo capturado por el CDC de Airbyte
+    tipo: STRING
+  - nombre: nombreconfiguracion
+    descripcion: Nombre de la configuración
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

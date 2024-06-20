@@ -1,0 +1,72 @@
+vista: stg_fiscatimpuesto
+descripcion: Vista generada a partir de la tabla FISSch_FisCatImpuesto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave del país relacionado con el impuesto
+    tipo: INT64
+  - nombre: claimpuesto
+    descripcion: Clave única del impuesto
+    tipo: INT64
+  - nombre: nomimpuesto
+    descripcion: Nombre completo del impuesto
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el cual se modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para el seguimiento de cambios de datos
+    tipo: STRING
+  - nombre: esaplicanexu
+    descripcion: Indica si se aplican exenciones a este impuesto (1) o no (0)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: esparasfanual
+    descripcion: Indica si el impuesto se aplica a estados financieros anuales (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios de datos
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en que se dio de baja el registro
+    tipo: DATETIME
+  - nombre: idreporterubros
+    descripcion: ID del reporte de rubros asociado al impuesto
+    tipo: INT64
+  - nombre: fechafinvigencia
+    descripcion: Fecha en que finaliza la vigencia del impuesto
+    tipo: DATETIME
+  - nombre: nomimpuestocorto
+    descripcion: Nombre corto o abreviado del impuesto
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: fechainiciovigencia
+    descripcion: Fecha en que inicia la vigencia del impuesto
+    tipo: DATETIME
+  - nombre: espararesultadofiscal
+    descripcion: Indica si el impuesto se aplica al resultado fiscal (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC generado por Airbyte
+    tipo: STRING 

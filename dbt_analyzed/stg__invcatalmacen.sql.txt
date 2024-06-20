@@ -1,0 +1,60 @@
+vista: stg_invcatalmacen
+descripcion: Vista generada por DBT para la tabla dbo_InvCatAlmacen
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el almacén está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: claalmacen
+    descripcion: Clave única del almacén
+    tipo: INT64
+  - nombre: nomalmacen
+    descripcion: Nombre del almacén
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea a la tabla de ubicaciones
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para rastrear los cambios
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja el almacén
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave foránea a la tabla de tipos de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo cuando el registro fue marcado como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo cuando el registro fue actualizado por última vez
+    tipo: STRING
+  - nombre: ultimonivelafectable
+    descripcion: Indica si es el último nivel afectable en la jerarquía de almacenes
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING
+  - nombre: permiteexistencianegativa
+    descripcion: Indica si el almacén permite existencia negativa (1) o no (0)
+    tipo: INT64

@@ -1,0 +1,87 @@
+vista: stg_artcatvalor
+descripcion: Vista generada por DBT a partir de la tabla dbo_ArtCatValor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clavalor
+    descripcion: Clave de valor
+    tipo: INT64
+  - nombre: nomvalor
+    descripcion: Nombre del valor
+    tipo: STRING
+  - nombre: numvalor
+    descripcion: Valor numérico
+    tipo: FLOAT64
+  - nombre: claunidad
+    descripcion: Clave de unidad
+    tipo: INT64
+  - nombre: numvalor2
+    descripcion: Segundo valor numérico
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: rutaimagen
+    descripcion: Ruta de la imagen
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: carcodigoart
+    descripcion: Código de artículo
+    tipo: STRING
+  - nombre: etiquetadesc
+    descripcion: Etiqueta de descripción
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó el registro
+    tipo: INT64
+  - nombre: ordenconsulta
+    descripcion: Orden de consulta
+    tipo: INT64
+  - nombre: etiquetacertif
+    descripcion: Etiqueta de certificación
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: clacaracteristica
+    descripcion: Clave de característica
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave de tipo de inventario
+    tipo: INT64
+  - nombre: etiquetacertifing
+    descripcion: Etiqueta de certificación en inglés
+    tipo: STRING
+  - nombre: etiquetadescingles
+    descripcion: Etiqueta de descripción en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: etiquetadescotroidioma
+    descripcion: Etiqueta de descripción en otro idioma
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

@@ -1,0 +1,12 @@
+vista: MST_CUP_VW
+descripcion: Vista materializada que presenta la información de los proveedores con un formato específico para el nombre.
+campos:
+  - nombre: CLA_CUP
+    descripcion: Clave única del proveedor.
+    tipo: INT
+  - nombre: NOM_CUP
+    descripcion: Nombre completo del proveedor, concatenando nombre, apellido paterno y apellido materno.
+    tipo: VARCHAR
+  - nombre: RFC
+    descripcion: Registro Federal de Contribuyentes del proveedor.
+    tipo: VARCHAR

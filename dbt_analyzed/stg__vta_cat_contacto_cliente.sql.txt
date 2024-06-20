@@ -1,0 +1,84 @@
+vista: stg_vtacatcontactocliente
+descripcion: Vista generada por DBT a partir de la tabla dbo_VtaCatContactoCliente
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del contacto
+    tipo: STRING
+  - nombre: lada
+    descripcion: Código de área telefónica
+    tipo: STRING
+  - nombre: radio
+    descripcion: Número de radio
+    tipo: STRING
+  - nombre: correo
+    descripcion: Correo electrónico del contacto
+    tipo: STRING
+  - nombre: cucsfid
+    descripcion: ID de Salesforce
+    tipo: STRING
+  - nombre: ladafax
+    descripcion: Código de área para el número de fax
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono del contacto
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de Log Sequence Number (LSN) de la última transacción aplicada a la fila de origen
+    tipo: STRING
+  - nombre: contactosfid
+    descripcion: ID de Salesforce para el contacto
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Valor utilizado internamente por Airbyte para el seguimiento de los cambios
+    tipo: INT64
+  - nombre: claclienteunico
+    descripcion: ID único del cliente
+    tipo: INT64
+  - nombre: clatipocontacto
+    descripcion: ID del tipo de contacto
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clacontactocliente
+    descripcion: ID del contacto del cliente
+    tipo: INT64
+  - nombre: claveinternacional
+    descripcion: Código de país para el número de teléfono
+    tipo: STRING
+  - nombre: nomcontactocliente
+    descripcion: Nombre del contacto del cliente
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en que Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización realizada por Airbyte
+    tipo: STRING
+  - nombre: claveinternacionalfax
+    descripcion: Código de país para el número de fax
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento generado por Airbyte CDC
+    tipo: STRING

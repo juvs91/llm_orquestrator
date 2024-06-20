@@ -1,0 +1,72 @@
+vista: stg_pplpalcatturno
+descripcion: Vista de la tabla PplSch_PPLPalCatTurno con tipos de datos seguros.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden del turno
+    tipo: INT64
+  - nombre: horafin
+    descripcion: Hora de finalización del turno
+    tipo: DATETIME
+  - nombre: claturno
+    descripcion: Clave del turno
+    tipo: INT64
+  - nombre: duracion
+    descripcion: Duración del turno
+    tipo: FLOAT64
+  - nombre: nomturno
+    descripcion: Nombre del turno
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: claveturno
+    descripcion: Clave única del turno
+    tipo: STRING
+  - nombre: horainicio
+    descripcion: Hora de inicio del turno
+    tipo: DATETIME
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: clagrupoturno
+    descripcion: Clave del grupo de turnos
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: duracioncomida
+    descripcion: Duración de la comida
+    tipo: FLOAT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

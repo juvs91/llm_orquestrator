@@ -1,0 +1,168 @@
+vista: stg_mswcatproveedor5
+descripcion: Esta vista contiene información sobre los proveedores de FESCH_MSWCatProveedor5.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID sin procesar de Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del proveedor
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico del proveedor
+    tipo: STRING
+  - nombre: taxid
+    descripcion: ID fiscal del proveedor
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la unidad de compra
+    tipo: INT64
+  - nombre: texto1
+    descripcion: Texto adicional 1
+    tipo: STRING
+  - nombre: texto2
+    descripcion: Texto adicional 2
+    tipo: STRING
+  - nombre: texto3
+    descripcion: Texto adicional 3
+    tipo: STRING
+  - nombre: texto4
+    descripcion: Texto adicional 4
+    tipo: STRING
+  - nombre: texto5
+    descripcion: Texto adicional 5
+    tipo: STRING
+  - nombre: texto6
+    descripcion: Texto adicional 6
+    tipo: STRING
+  - nombre: clapais
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: attnline
+    descripcion: Línea de atención
+    tipo: STRING
+  - nombre: memoline
+    descripcion: Línea de memorando
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono del proveedor
+    tipo: STRING
+  - nombre: claciudad
+    descripcion: Clave de la ciudad
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección del proveedor
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: direccion2
+    descripcion: Dirección adicional del proveedor
+    tipo: STRING
+  - nombre: strcdstzip
+    descripcion: Código postal del proveedor
+    tipo: STRING
+  - nombre: claformairs
+    descripcion: Clave de la forma de IRS
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claformapago
+    descripcion: Clave de la forma de pago
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: Clave del proveedor
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal del proveedor
+    tipo: STRING
+  - nombre: estoolrepair
+    descripcion: Indicador de proveedor de reparación de herramientas (1: sí, 0: no)
+    tipo: INT64
+  - nombre: nomproveedor
+    descripcion: Nombre del proveedor
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: contactoadmin
+    descripcion: Nombre del contacto administrativo
+    tipo: STRING
+  - nombre: esprovcompras
+    descripcion: Indicador de proveedor de compras (1: sí, 0: no)
+    tipo: INT64
+  - nombre: clatipopersona
+    descripcion: Clave del tipo de persona (física o moral)
+    tipo: INT64
+  - nombre: claveproveedor
+    descripcion: Clave única del proveedor
+    tipo: STRING
+  - nombre: contactocompra
+    descripcion: Nombre del contacto de compras
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del contacto
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del contacto
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clacondicionpago
+    descripcion: Clave de la condición de pago
+    tipo: INT64
+  - nombre: telcontactoadmin
+    descripcion: Número de teléfono del contacto administrativo
+    tipo: STRING
+  - nombre: clacuentaanticipo
+    descripcion: Clave de la cuenta de anticipo
+    tipo: INT64
+  - nombre: claproveedorpadre
+    descripcion: Clave del proveedor padre (si aplica)
+    tipo: INT64
+  - nombre: telcontactocompra
+    descripcion: Número de teléfono del contacto de compras
+    tipo: STRING
+  - nombre: emailcontactoadmin
+    descripcion: Correo electrónico del contacto administrativo
+    tipo: STRING
+  - nombre: permiteparcialidad
+    descripcion: Indicador de si se permite la parcialidad en los pagos (1: sí, 0: no)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de CDC de Airbyte
+    tipo: STRING
+  - nombre: emailcontactocompra
+    descripcion: Correo electrónico del contacto de compras
+    tipo: STRING
+  - nombre: descripciondefvoucher
+    descripcion: Descripción del comprobante predeterminado
+    tipo: STRING
+  - nombre: descripcionparacheque
+    descripcion: Descripción para cheques
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

@@ -1,0 +1,144 @@
+vista: stg_enecatmedidor
+descripcion: Vista generada por DBT a partir de la tabla EneSch_EneCatMedidor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo del momento en que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: orden
+    descripcion: Orden del medidor
+    tipo: INT64
+  - nombre: factor
+    descripcion: Factor de multiplicación del medidor
+    tipo: FLOAT64
+  - nombre: formula
+    descripcion: Fórmula asociada al medidor
+    tipo: STRING
+  - nombre: clatarifa
+    descripcion: ID de la tarifa asociada al medidor
+    tipo: INT64
+  - nombre: esvirtual
+    descripcion: Indicador si el medidor es virtual (1) o no (0)
+    tipo: INT64
+  - nombre: sefactura
+    descripcion: Indicador si el medidor se factura (1) o no (0)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador si el medidor tiene baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: clamedidor
+    descripcion: ID del medidor
+    tipo: INT64
+  - nombre: enpolizasn
+    descripcion: Indicador si el medidor está en pólizas (1) o no (0)
+    tipo: INT64
+  - nombre: nommedidor
+    descripcion: Nombre del medidor
+    tipo: STRING
+  - nombre: setarifica
+    descripcion: Indicador si el medidor se tarifa (1) o no (0)
+    tipo: INT64
+  - nombre: clasubgrupo
+    descripcion: ID del subgrupo al que pertenece el medidor
+    tipo: INT64
+  - nombre: descformula
+    descripcion: Descripción de la fórmula asociada al medidor
+    tipo: STRING
+  - nombre: descmedidor
+    descripcion: Descripción del medidor
+    tipo: STRING
+  - nombre: esservicios
+    descripcion: Indicador si el medidor es de servicios (1) o no (0)
+    tipo: INT64
+  - nombre: idequipoplc
+    descripcion: ID del equipo PLC asociado al medidor
+    tipo: INT64
+  - nombre: limitevalor
+    descripcion: Límite de valor del medidor
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del PC que modificó el medidor
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen
+    tipo: STRING
+  - nombre: cladireccion
+    descripcion: ID de la dirección asociada al medidor
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: ID del proveedor asociado al medidor
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: ID de la ubicación del medidor
+    tipo: INT64
+  - nombre: estolerancia
+    descripcion: Indicador si el medidor tiene tolerancia (1) o no (0)
+    tipo: INT64
+  - nombre: claenergetico
+    descripcion: ID del energético asociado al medidor
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el medidor
+    tipo: INT64
+  - nombre: esaplicalimite
+    descripcion: Indicador si se aplica límite al medidor (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del medidor
+    tipo: DATETIME
+  - nombre: objetivoindice
+    descripcion: Objetivo del índice del medidor
+    tipo: FLOAT64
+  - nombre: porctolerancia
+    descripcion: Porcentaje de tolerancia del medidor
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para rastrear los cambios incrementales
+    tipo: INT64
+  - nombre: clamedidorpadre
+    descripcion: ID del medidor padre (si aplica)
+    tipo: INT64
+  - nombre: escalculaindice
+    descripcion: Indicador si se calcula el índice del medidor (1) o no (0)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del medidor
+    tipo: DATETIME
+  - nombre: claautomatizacion
+    descripcion: ID de la automatización asociada al medidor
+    tipo: INT64
+  - nombre: clavealfanumerica
+    descripcion: Clave alfanumérica del medidor
+    tipo: STRING
+  - nombre: cladepartamentoluz
+    descripcion: ID del departamento de luz asociado al medidor
+    tipo: INT64
+  - nombre: clatipodispositivo
+    descripcion: ID del tipo de dispositivo del medidor
+    tipo: INT64
+  - nombre: nommedidorterceros
+    descripcion: Nombre del medidor de terceros
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo del momento en que se eliminó el registro (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo del momento en que se actualizó el registro
+    tipo: STRING
+  - nombre: aplicademandamaxima
+    descripcion: Indicador si se aplica demanda máxima al medidor (1) o no (0)
+    tipo: INT64
+  - nombre: claunidadrecoleccion
+    descripcion: ID de la unidad de recolección asociada al medidor
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING
+  - nombre: porcperdidatransformacion
+    descripcion: Porcentaje de pérdida de transformación del medidor
+    tipo: INT64

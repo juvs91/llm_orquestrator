@@ -1,0 +1,63 @@
+vista: stg_expcatincoterm
+descripcion: Vista generada por DBT para la tabla dbo_ExpCatIncoterm
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Bandera que indica si el registro está dado de baja lógica
+    tipo: INT64
+  - nombre: claincoterm
+    descripcion: Clave única del incoterm
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del CDC de Airbyte
+    tipo: STRING
+  - nombre: descincoterm
+    descripcion: Descripción del incoterm
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: contienepedido
+    descripcion: Bandera que indica si el incoterm contiene pedidos
+    tipo: INT64
+  - nombre: enviaragrupado
+    descripcion: Bandera que indica si el incoterm se envía agrupado
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: nombreincoterm
+    descripcion: Nombre del incoterm
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor del CDC de Airbyte
+    tipo: INT64
+  - nombre: contienetrafico
+    descripcion: Bandera que indica si el incoterm contiene tráfico
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: contieneembarque
+    descripcion: Bandera que indica si el incoterm contiene embarques
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento del CDC de Airbyte
+    tipo: STRING

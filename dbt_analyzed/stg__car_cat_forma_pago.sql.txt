@@ -1,0 +1,102 @@
+vista: stg_carcatformapago
+descripcion: Vista generada por DBT a partir de la tabla CARSch_CarCatFormaPago
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: boncwtcod
+    descripcion: Valor numérico
+    tipo: FLOAT64
+  - nombre: escontado
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: utilizacod
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del módulo
+    tipo: STRING
+  - nombre: pctdesctopp
+    descripcion: Porcentaje de descuento
+    tipo: FLOAT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: bontonvyacod
+    descripcion: Valor numérico
+    tipo: FLOAT64
+  - nombre: claformapago
+    descripcion: Clave de forma de pago
+    tipo: INT64
+  - nombre: escontadosat
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: nomformapago
+    descripcion: Nombre de la forma de pago
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó
+    tipo: INT64
+  - nombre: diasgraciacod
+    descripcion: Días de gracia
+    tipo: INT64
+  - nombre: diaslimitecod
+    descripcion: Días límite
+    tipo: INT64
+  - nombre: descextrasncod
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: escartacredito
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: esincluirfacpp
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: esutilizafecha
+    descripcion: Valor entero
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: diasplazonormal
+    descripcion: Días de plazo normal
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: pctbontonvyacod
+    descripcion: Porcentaje
+    tipo: FLOAT64
+  - nombre: pctdesctopppcod
+    descripcion: Porcentaje de descuento
+    tipo: FLOAT64
+  - nombre: claformapagosat
+    descripcion: Clave de forma de pago SAT
+    tipo: INT64
+  - nombre: clamovcarteracod
+    descripcion: Clave de movimiento de cartera
+    tipo: INT64
+  - nombre: clatipoestadistica
+    descripcion: Clave de tipo de estadística
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte CDC
+    tipo: STRING 

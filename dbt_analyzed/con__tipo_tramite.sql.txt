@@ -1,0 +1,9 @@
+vista: mst_tipo_tramite_vw
+descripcion: Vista materializada que presenta los diferentes tipos de tramite.
+campos:
+  - nombre: CLA_TIPO_TRAMITE
+    descripcion: Clave única que identifica el tipo de trámite.
+    tipo: INT
+  - nombre: NOM_TIPO_TRAMITE
+    descripcion: Nombre descriptivo del tipo de trámite.
+    tipo: VARCHAR

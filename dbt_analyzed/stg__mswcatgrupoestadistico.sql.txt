@@ -1,0 +1,90 @@
+vista: stg_mswcatgrupoestadistico
+descripcion: Vista que contiene la información de los grupos estadísticos.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: nivel01
+    descripcion: Nivel 1 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nivel02
+    descripcion: Nivel 2 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nivel03
+    descripcion: Nivel 3 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nivel04
+    descripcion: Nivel 4 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nivel05
+    descripcion: Nivel 5 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nivel06
+    descripcion: Nivel 6 de la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indica si el grupo estadístico está dado de baja (1) o no (0).
+    tipo: INT64
+  - nombre: nivelactual
+    descripcion: Nivel actual en la jerarquía de grupos estadísticos.
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó por última vez el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen.
+    tipo: STRING
+  - nombre: fechacaptura
+    descripcion: Fecha y hora en la que se capturó el registro.
+    tipo: DATETIME
+  - nombre: ordenalterno
+    descripcion: Orden alternativo para mostrar los grupos estadísticos.
+    tipo: INT64
+  - nombre: clamargenventa
+    descripcion: Clave foránea a la tabla de márgenes de venta.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios.
+    tipo: INT64
+  - nombre: clatipoproducto
+    descripcion: Clave foránea a la tabla de tipos de producto.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora en la que se dio de baja el grupo estadístico.
+    tipo: DATETIME
+  - nombre: clamargencomision
+    descripcion: Clave foránea a la tabla de márgenes de comisión.
+    tipo: INT64
+  - nombre: clatipoestadistico
+    descripcion: Clave foránea a la tabla de tipos de estadísticos.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en la que Airbyte marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora en la que Airbyte actualizó por última vez el registro.
+    tipo: STRING
+  - nombre: clagrupoestadistico
+    descripcion: Clave primaria del grupo estadístico.
+    tipo: INT64
+  - nombre: nombregrupoestadistico
+    descripcion: Nombre completo del grupo estadístico.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC generado por la base de datos de origen.
+    tipo: STRING
+  - nombre: nombregrupoestadisticocorto
+    descripcion: Nombre corto del grupo estadístico.
+    tipo: STRING
+  - nombre: nombregrupoestadisticoingles
+    descripcion: Nombre del grupo estadístico en inglés.
+    tipo: STRING

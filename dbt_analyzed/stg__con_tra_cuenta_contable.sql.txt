@@ -1,0 +1,180 @@
+vista: stg__con_tra_cuenta_contable
+descripcion: Vista generada a partir de la tabla ConSch_ConTraCuentaContable
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora en la que Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte
+    tipo: JSON
+  - nombre: claniv1
+    descripcion: Clave del primer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv2
+    descripcion: Clave del segundo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv3
+    descripcion: Clave del tercer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv4
+    descripcion: Clave del cuarto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv5
+    descripcion: Clave del quinto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv6
+    descripcion: Clave del sexto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv7
+    descripcion: Clave del séptimo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: claniv8
+    descripcion: Clave del octavo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel1
+    descripcion: ID del primer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel2
+    descripcion: ID del segundo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel3
+    descripcion: ID del tercer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel4
+    descripcion: ID del cuarto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel5
+    descripcion: ID del quinto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel6
+    descripcion: ID del sexto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel7
+    descripcion: ID del séptimo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clanivel8
+    descripcion: ID del octavo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: numcuenta
+    descripcion: Número de cuenta contable
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la cuenta contable está dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: esacredora
+    descripcion: Indica si la cuenta es acreedora (1) o no (0)
+    tipo: INT64
+  - nombre: esafectable
+    descripcion: Indica si la cuenta es afectable (1) o no (0)
+    tipo: INT64
+  - nombre: nivelcuenta
+    descripcion: Nivel de la cuenta contable
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó la cuenta contable
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico (LSN) utilizado por Airbyte para el seguimiento de cambios
+    tipo: STRING
+  - nombre: clacategoria
+    descripcion: Clave de la categoría de la cuenta contable
+    tipo: INT64
+  - nombre: esrevaluable
+    descripcion: Indica si la cuenta es revaluable (1) o no (0)
+    tipo: INT64
+  - nombre: origenlegacy
+    descripcion: Indica el origen de la cuenta contable (legacy o no)
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la cuenta contable
+    tipo: INT64
+  - nombre: fechacreacion
+    descripcion: Fecha y hora de creación de la cuenta contable
+    tipo: DATETIME
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación de la cuenta contable
+    tipo: DATETIME
+  - nombre: numcuentanivel
+    descripcion: Número de cuenta contable con el nivel
+    tipo: STRING
+  - nombre: tieneproblemas
+    descripcion: Indica si la cuenta contable tiene problemas (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado por Airbyte para el seguimiento de cambios
+    tipo: INT64
+  - nombre: clamonedacuenta
+    descripcion: Clave de la moneda de la cuenta contable
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica de la cuenta contable
+    tipo: DATETIME
+  - nombre: esreportebalance
+    descripcion: Indica si la cuenta se incluye en el reporte de balance (1) o no (0)
+    tipo: INT64
+  - nombre: idcuentacontable
+    descripcion: ID único de la cuenta contable
+    tipo: INT64
+  - nombre: nomcuentaidioma1
+    descripcion: Nombre de la cuenta contable en el idioma 1
+    tipo: STRING
+  - nombre: nomcuentaidioma2
+    descripcion: Nombre de la cuenta contable en el idioma 2
+    tipo: STRING
+  - nombre: nomcuentaidioma3
+    descripcion: Nombre de la cuenta contable en el idioma 3
+    tipo: STRING
+  - nombre: nomcuentaidioma4
+    descripcion: Nombre de la cuenta contable en el idioma 4
+    tipo: STRING
+  - nombre: nomcuentaidioma5
+    descripcion: Nombre de la cuenta contable en el idioma 5
+    tipo: STRING
+  - nombre: clatipodatonivel1
+    descripcion: Clave del tipo de dato del primer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel2
+    descripcion: Clave del tipo de dato del segundo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel3
+    descripcion: Clave del tipo de dato del tercer nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel4
+    descripcion: Clave del tipo de dato del cuarto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel5
+    descripcion: Clave del tipo de dato del quinto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel6
+    descripcion: Clave del tipo de dato del sexto nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel7
+    descripcion: Clave del tipo de dato del séptimo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: clatipodatonivel8
+    descripcion: Clave del tipo de dato del octavo nivel de la cuenta contable
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora en la que Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora en la que Airbyte detectó la última actualización del registro
+    tipo: STRING
+  - nombre: escandidatousofiscal
+    descripcion: Indica si la cuenta es candidata a uso fiscal (1) o no (0)
+    tipo: INT64
+  - nombre: clatipocuentacontable
+    descripcion: Clave del tipo de cuenta contable
+    tipo: INT64
+  - nombre: esnivelesporautorizar
+    descripcion: Indica si el nivel de la cuenta requiere autorización (1) o no (0)
+    tipo: INT64
+  - nombre: idcuentacontablepadre
+    descripcion: ID de la cuenta contable padre
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC utilizado por Airbyte para el seguimiento de cambios
+    tipo: STRING

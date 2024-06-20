@@ -1,0 +1,75 @@
+vista: stg_artcatunidad
+descripcion: Vista generada por DBT para la tabla dbo_ArtCatUnidad
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: claunidad
+    descripcion: Clave de la unidad
+    tipo: INT64
+  - nombre: esunibase
+    descripcion: Indica si es una unidad base (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esuniprod
+    descripcion: Indica si es una unidad de producción (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nomunidad
+    descripcion: Nombre de la unidad
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la unidad está dada de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: esunicaract
+    descripcion: Indica si es una unidad característica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de los CDC de Airbyte
+    tipo: STRING
+  - nombre: clagpounidad
+    descripcion: Clave del grupo al que pertenece la unidad
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: nomcortounidad
+    descripcion: Nombre corto de la unidad
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de los CDC de Airbyte
+    tipo: INT64
+  - nombre: esuniconversion
+    descripcion: Indica si es una unidad de conversión (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: clatipoinventario
+    descripcion: Clave del tipo de inventario al que pertenece la unidad
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación de los CDC de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización de los CDC de Airbyte
+    tipo: STRING
+  - nombre: nomcortounidadingles
+    descripcion: Nombre corto de la unidad en inglés
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de los CDC de Airbyte
+    tipo: STRING
+  - nombre: nomcortounidadotroidioma
+    descripcion: Nombre corto de la unidad en otro idioma
+    tipo: STRING

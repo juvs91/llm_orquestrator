@@ -1,0 +1,66 @@
+vista: stg_mtocatfrecuencia
+descripcion: Vista de tabla intermediate de MtoCatFrecuencia
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: factordg
+    descripcion: Factor de días de gracia
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0 o 1)
+    tipo: INT64
+  - nombre: diasgracia
+    descripcion: Número de días de gracia
+    tipo: INT64
+  - nombre: mesdefault
+    descripcion: Mes de incumplimiento
+    tipo: INT64
+  - nombre: diasdefault
+    descripcion: Días de incumplimiento
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación
+    tipo: INT64
+  - nombre: equivaledias
+    descripcion: Número de días equivalentes
+    tipo: INT64
+  - nombre: clafrecuencia
+    descripcion: Clave de frecuencia
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave de usuario que modificó el registro
+    tipo: INT64
+  - nombre: nomfrecuencia
+    descripcion: Nombre de la frecuencia
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó por última vez el registro
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

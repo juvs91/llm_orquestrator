@@ -1,0 +1,78 @@
+vista: stg_cmpcatproveedorcontacto
+descripcion: Vista generada por DBT para la tabla dbo_CmpCatProveedorContacto
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fax
+    descripcion: Número de fax del contacto
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico del contacto
+    tipo: STRING
+  - nombre: radio
+    descripcion: Número de radio del contacto
+    tipo: STRING
+  - nombre: clacup
+    descripcion: Clave de la ubicación del contacto
+    tipo: INT64
+  - nombre: puesto
+    descripcion: Puesto del contacto
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono del contacto
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica del contacto (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: idcontacto
+    descripcion: ID del contacto
+    tipo: INT64
+  - nombre: nomcontacto
+    descripcion: Nombre del contacto
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claproveedor
+    descripcion: Clave del proveedor al que pertenece el contacto
+    tipo: INT64
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación del contacto
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: telefonomovil
+    descripcion: Número de teléfono móvil del contacto
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del contacto
+    tipo: DATETIME
+  - nombre: clatipoproveedor
+    descripcion: Clave del tipo de proveedor al que pertenece el contacto
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

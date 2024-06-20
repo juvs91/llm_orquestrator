@@ -1,0 +1,112 @@
+vista: pre_ti_titrausuario
+descripcion: Vista que contiene información sobre los usuarios del sistema.
+campos:
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del usuario.
+    tipo: string
+  - nombre: email
+    descripcion: Correo electrónico del usuario.
+    tipo: string
+  - nombre: clacrc
+    descripcion: Clave del Centro de Responsabilidad y Costo (CRC) al que pertenece el usuario.
+    tipo: string
+  - nombre: perfil
+    descripcion: Perfil de usuario.
+    tipo: string
+  - nombre: puesto
+    descripcion: Puesto del usuario.
+    tipo: string
+  - nombre: dominio
+    descripcion: Dominio de la cuenta del usuario.
+    tipo: string
+  - nombre: fechains
+    descripcion: Fecha de creación del usuario en el sistema.
+    tipo: timestamp
+  - nombre: bloqueado
+    descripcion: Indica si el usuario está bloqueado (1) o no (0).
+    tipo: int
+  - nombre: clapuesto
+    descripcion: Clave del puesto del usuario.
+    tipo: string
+  - nombre: idusuario
+    descripcion: ID único del usuario.
+    tipo: int
+  - nombre: bajalogica
+    descripcion: Indica si el usuario tiene baja lógica (1) o no (0).
+    tipo: int
+  - nombre: bajanomina
+    descripcion: Indica si el usuario tiene baja en nómina (1) o no (0).
+    tipo: int
+  - nombre: claempleado
+    descripcion: Clave del empleado asociado al usuario.
+    tipo: string
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó por última vez el usuario.
+    tipo: string
+  - nombre: emailalterno
+    descripcion: Correo electrónico alternativo del usuario.
+    tipo: string
+  - nombre: nombreperfil
+    descripcion: Nombre completo del perfil del usuario.
+    tipo: string
+  - nombre: telefonocasa
+    descripcion: Teléfono de casa del usuario.
+    tipo: string
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que creó el registro del usuario.
+    tipo: string
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó por última vez el registro del usuario.
+    tipo: string
+  - nombre: loginusername
+    descripcion: Nombre de usuario para iniciar sesión.
+    tipo: string
+  - nombre: nombreusuario
+    descripcion: Nombre completo del usuario.
+    tipo: string
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del usuario.
+    tipo: timestamp
+  - nombre: idempleadojefe
+    descripcion: ID del empleado que es jefe del usuario.
+    tipo: int
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del usuario.
+    tipo: string
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del usuario.
+    tipo: string
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del usuario.
+    tipo: timestamp
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del usuario.
+    tipo: timestamp
+  - nombre: telefonocelular
+    descripcion: Número de teléfono celular del usuario.
+    tipo: string
+  - nombre: telefonooficina
+    descripcion: Número de teléfono de la oficina del usuario.
+    tipo: string
+  - nombre: claidiomadefault
+    descripcion: Clave del idioma predeterminado del usuario.
+    tipo: string
+  - nombre: dispositivomovil
+    descripcion: Dispositivo móvil del usuario.
+    tipo: string
+  - nombre: nombremodificable
+    descripcion: Indica si el nombre de usuario se puede modificar (1) o no (0).
+    tipo: int
+  - nombre: claubicaciondefault
+    descripcion: Clave de la ubicación predeterminada del usuario.
+    tipo: string
+  - nombre: autenticacionactived
+    descripcion: Indica si la autenticación está activa para el usuario (1) o no (0).
+    tipo: int
+  - nombre: fechaultintentoprincipal
+    descripcion: Fecha del último intento de inicio de sesión principal.
+    tipo: timestamp
+  - nombre: intentosfallidosprincipal
+    descripcion: Número de intentos fallidos de inicio de sesión principal.
+    tipo: int
+ 

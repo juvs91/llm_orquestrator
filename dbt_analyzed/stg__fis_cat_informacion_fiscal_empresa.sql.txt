@@ -1,0 +1,108 @@
+vista: stg_fiscatinformacionfiscalempresa
+descripcion: Vista generada a partir de la tabla dbo_FisCatInformacionFiscalEmpresa
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes
+    tipo: STRING
+  - nombre: telefono
+    descripcion: Número de teléfono
+    tipo: STRING
+  - nombre: fechaalta
+    descripcion: Fecha de alta
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo)
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave de la empresa
+    tipo: INT64
+  - nombre: clapaiscon
+    descripcion: Clave del país
+    tipo: INT64
+  - nombre: esnacional
+    descripcion: Indicador de empresa nacional (1: sí, 0: no)
+    tipo: INT64
+  - nombre: entrecalles
+    descripcion: Calles entre las que se encuentra la empresa
+    tipo: STRING
+  - nombre: nombrecalle
+    descripcion: Nombre de la calle
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del usuario que modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Log Sequence Number de la base de datos de origen
+    tipo: STRING
+  - nombre: claestadocon
+    descripcion: Clave del estado
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal
+    tipo: STRING
+  - nombre: tipovialidad
+    descripcion: Tipo de vialidad
+    tipo: STRING
+  - nombre: clacoloniacon
+    descripcion: Clave de la colonia
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: numeroexterior
+    descripcion: Número exterior
+    tipo: STRING
+  - nombre: numerointerior
+    descripcion: Número interior
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clamunicipiocon
+    descripcion: Clave del municipio
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica
+    tipo: DATETIME
+  - nombre: bancobeneficiario
+    descripcion: Clave del banco beneficiario
+    tipo: INT64
+  - nombre: correoelectronico
+    descripcion: Correo electrónico
+    tipo: STRING
+  - nombre: nombrerazonsocial
+    descripcion: Nombre o razón social
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro (si aplica)
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de la última actualización del registro
+    tipo: STRING
+  - nombre: referenciaadicional
+    descripcion: Referencia adicional
+    tipo: STRING
+  - nombre: claveactividadfiscal
+    descripcion: Clave de la actividad fiscal
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clainformacionfiscalempresa
+    descripcion: Clave de la información fiscal de la empresa
+    tipo: INT64
+  - nombre: caracteristicadomiciliofiscal
+    descripcion: Característica del domicilio fiscal
+    tipo: STRING

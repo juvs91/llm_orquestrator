@@ -1,0 +1,10 @@
+vista: mst_tipo_poliza_vw
+descripcion: Vista materializada que presenta los diferentes tipos de pólizas.
+campos:
+  - nombre: CLA_TIPO_POLIZA
+    descripcion: Clave del tipo de póliza
+    tipo: TEXT
+  - nombre: NOM_TIPO_POLIZA
+    descripcion: Nombre descriptivo del tipo de póliza
+    tipo: TEXT
+

@@ -1,0 +1,111 @@
+vista: stg_mswcatlocalidad
+descripcion: Vista generada a partir de la tabla MSWSch_MSWCatLocalidad
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando se extrajo el registro
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: tipoi5
+    descripcion: Tipo de localidad en el sistema I5
+    tipo: INT64
+  - nombre: clapais
+    descripcion: Clave foránea a la tabla de países
+    tipo: INT64
+  - nombre: telefono
+    descripcion: Número de teléfono principal de la localidad
+    tipo: INT64
+  - nombre: claciudad
+    descripcion: Clave foránea a la tabla de ciudades
+    tipo: INT64
+  - nombre: claestado
+    descripcion: Clave foránea a la tabla de estados
+    tipo: INT64
+  - nombre: direccion
+    descripcion: Dirección completa de la localidad
+    tipo: STRING
+  - nombre: telefono2
+    descripcion: Número de teléfono secundario de la localidad
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indica si la localidad está dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nomtercero
+    descripcion: Nombre del tercero asociado a la localidad
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó la localidad por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: clalocalidad
+    descripcion: Clave primaria de la tabla de localidades
+    tipo: INT64
+  - nombre: codigopostal
+    descripcion: Código postal de la localidad
+    tipo: INT64
+  - nombre: nomlocalidad
+    descripcion: Nombre completo de la localidad
+    tipo: STRING
+  - nombre: telefonoloc2
+    descripcion: Segundo número de teléfono de la localidad
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificó la localidad por última vez
+    tipo: INT64
+  - nombre: tipolocalidad
+    descripcion: Tipo de localidad (ejemplo: Almacén, Oficina, etc.)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación de la localidad
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: clagpolocalidad
+    descripcion: Clave foránea a la tabla de grupos de localidades
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja lógica la localidad
+    tipo: DATETIME
+  - nombre: cladeptocontable
+    descripcion: Clave foránea a la tabla de departamentos contables
+    tipo: INT64
+  - nombre: essumaexistencia
+    descripcion: Indica si la localidad se incluye en la suma de existencias (1) o no (0)
+    tipo: INT64
+  - nombre: claalmacendefault
+    descripcion: Clave foránea al almacén por defecto de la localidad
+    tipo: INT64
+  - nombre: espermiteembarque
+    descripcion: Indica si la localidad permite embarques (1) o no (0)
+    tipo: INT64
+  - nombre: nomlocalidadcorto
+    descripcion: Nombre corto de la localidad
+    tipo: STRING
+  - nombre: clalocalidadmaster
+    descripcion: Clave foránea a la localidad master
+    tipo: INT64
+  - nombre: claregionlocalidad
+    descripcion: Clave foránea a la tabla de regiones de localidades
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: eslocalidadtransfer
+    descripcion: Indica si la localidad es de transferencia (1) o no (0)
+    tipo: INT64
+  - nombre: espermitedevolucion
+    descripcion: Indica si la localidad permite devoluciones (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

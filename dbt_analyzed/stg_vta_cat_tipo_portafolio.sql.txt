@@ -1,0 +1,51 @@
+vista: VtaCatTipoPortafolio
+descripcion: Vista de la tabla VtaSch_VtaCatTipoPortafolio
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: BajaLogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: Descripcion
+    descripcion: Descripción del tipo de portafolio
+    tipo: STRING
+  - nombre: NombrePcMod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de la base de datos de origen
+    tipo: STRING
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: FechaUltimaMod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Posición del cursor de cambio de datos
+    tipo: INT64
+  - nombre: FechaBajaLogica
+    descripcion: Fecha y hora de la baja lógica
+    tipo: DATETIME
+  - nombre: ClaTipoPortafolio
+    descripcion: Clave única del tipo de portafolio
+    tipo: INT64
+  - nombre: NomTipoPortafolio
+    descripcion: Nombre del tipo de portafolio
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez en la fuente
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos
+    tipo: STRING 

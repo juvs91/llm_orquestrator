@@ -1,0 +1,12 @@
+vista: MST_CRC_VW
+descripcion: Vista materializada que presenta la clasificación, nombre y número de un CRC.
+campos:
+  - nombre: CLA_CRC
+    descripcion: Clasificación del CRC.
+    tipo: TEXT
+  - nombre: NOM_CRC
+    descripcion: Nombre del CRC, compuesto por el número y nombre en idioma 1.
+    tipo: TEXT
+  - nombre: NUM_CRC
+    descripcion: Número del CRC.
+    tipo: TEXT 

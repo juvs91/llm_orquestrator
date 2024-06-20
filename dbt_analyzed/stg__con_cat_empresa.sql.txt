@@ -1,0 +1,87 @@
+vista: stg_concatempresa
+descripcion: Vista generada por DBT a partir de la tabla dbo.ConCatEmpresa
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: esjv
+    descripcion: Valor entero que indica si es una empresa conjunta (JV)
+    tipo: INT64
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro
+    tipo: DATETIME
+  - nombre: clamoneda
+    descripcion: Clave foránea a la tabla de monedas
+    tipo: INT64
+  - nombre: esvigente
+    descripcion: Valor entero que indica si el registro está vigente
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Valor entero que indica si el registro ha sido dado de baja lógica
+    tipo: INT64
+  - nombre: claempresa
+    descripcion: Clave primaria de la tabla ConCatEmpresa
+    tipo: INT64
+  - nombre: nomempresa
+    descripcion: Nombre completo de la empresa
+    tipo: STRING
+  - nombre: basedatosgp
+    descripcion: Nombre de la base de datos del sistema de gestión de proyectos (GP)
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: nombasedatos
+    descripcion: Nombre de la base de datos
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: claempresavtas
+    descripcion: Clave foránea a la tabla de empresas de ventas
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: nomcortoempresa
+    descripcion: Nombre corto de la empresa en mayúsculas
+    tipo: STRING
+  - nombre: esimportarsaldos
+    descripcion: Valor entero que indica si se deben importar los saldos
+    tipo: INT64
+  - nombre: fechafinoperacion
+    descripcion: Fecha de fin de operación de la empresa
+    tipo: DATETIME
+  - nombre: ptjeparticipacion
+    descripcion: Porcentaje de participación en la empresa conjunta
+    tipo: FLOAT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: fechainiciooperacion
+    descripcion: Fecha de inicio de operación de la empresa
+    tipo: DATETIME
+  - nombre: clatipocuentacontable
+    descripcion: Clave foránea a la tabla de tipos de cuentas contables
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

@@ -1,0 +1,9 @@
+vista: MST_GRUPO_ACTIVO_VW
+descripcion: Vista materializada que presenta los grupos activos.
+campos:
+  - nombre: CLA_GRUPO_ACTIVO
+    descripcion: Clave del grupo activo
+    tipo: INT
+  - nombre: NOM_GRUPO_ACTIVO
+    descripcion: Nombre del grupo activo
+    tipo: VARCHAR

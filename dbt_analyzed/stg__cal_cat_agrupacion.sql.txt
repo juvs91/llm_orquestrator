@@ -1,0 +1,66 @@
+vista: stg_calcatagrupacion
+descripcion: Vista generada por DBT a partir de la tabla CalSch_CalCatAgrupacion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de Postgres
+    tipo: STRING
+  - nombre: claagrupacion
+    descripcion: Clave única de la agrupación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: esreportepeso
+    descripcion: Indica si la agrupación se utiliza para reportes de peso (1) o no (0)
+    tipo: INT64
+  - nombre: nomagrupacion
+    descripcion: Nombre de la agrupación
+    tipo: STRING
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno utilizado por Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro por última vez
+    tipo: STRING
+  - nombre: clatipoagrupacionnivel1
+    descripcion: Clave del tipo de agrupación de nivel 1
+    tipo: INT64
+  - nombre: clatipoagrupacionnivel2
+    descripcion: Clave del tipo de agrupación de nivel 2
+    tipo: INT64
+  - nombre: clatipoagrupacionnivel3
+    descripcion: Clave del tipo de agrupación de nivel 3
+    tipo: INT64
+  - nombre: clatipoagrupacionnivel4
+    descripcion: Clave del tipo de agrupación de nivel 4
+    tipo: INT64
+  - nombre: clatipoagrupacionnivel5
+    descripcion: Clave del tipo de agrupación de nivel 5
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC
+    tipo: STRING

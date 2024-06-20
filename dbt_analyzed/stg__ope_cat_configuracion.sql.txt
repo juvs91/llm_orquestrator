@@ -1,0 +1,75 @@
+vista: stg_opecatconfiguracion
+descripcion: Vista generada por DBT a partir de la tabla OpeSch_OpeCatConfiguracion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: dvalor1
+    descripcion: Valor de fecha 1
+    tipo: DATETIME
+  - nombre: dvalor2
+    descripcion: Valor de fecha 2
+    tipo: DATETIME
+  - nombre: nvalor1
+    descripcion: Valor numérico 1
+    tipo: FLOAT64
+  - nombre: nvalor2
+    descripcion: Valor numérico 2
+    tipo: FLOAT64
+  - nombre: svalor1
+    descripcion: Valor de texto 1
+    tipo: STRING
+  - nombre: svalor2
+    descripcion: Valor de texto 2
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (0: activo, 1: inactivo)
+    tipo: INT64
+  - nombre: clasistema
+    descripcion: Clave foránea al catálogo de sistemas
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la última modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave foránea al catálogo de ubicaciones
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea al catálogo de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: claconfiguracion
+    descripcion: Clave primaria de la configuración
+    tipo: INT64
+  - nombre: clatipoinventario
+    descripcion: Clave foránea al catálogo de tipos de inventario
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: nombreconfiguracion
+    descripcion: Nombre de la configuración
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

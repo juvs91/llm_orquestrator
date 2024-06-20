@@ -1,0 +1,66 @@
+vista: stg_afcattipoactivo
+descripcion: Vista generada a partir de la tabla AFSch_AfCatTipoActivo
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos adicionales de Airbyte
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el tipo de activo está dado de baja (1) o no (0)
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde donde se modificó el registro
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clatipogasto
+    descripcion: Clave foránea a la tabla de tipos de gasto
+    tipo: INT64
+  - nombre: porcvalorres
+    descripcion: Porcentaje del valor residual del activo
+    tipo: INT64
+  - nombre: clatipoactivo
+    descripcion: Clave primaria de la tabla de tipos de activo
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave foránea a la tabla de usuarios que modificaron el registro
+    tipo: INT64
+  - nombre: nomtipoactivo
+    descripcion: Nombre del tipo de activo
+    tipo: STRING
+  - nombre: numtipoactivo
+    descripcion: Número o código del tipo de activo
+    tipo: STRING
+  - nombre: usaetiquetasn
+    descripcion: Indica si se usan etiquetas para este tipo de activo (1) o no (0)
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor interno de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha en que se dio de baja el tipo de activo
+    tipo: DATETIME
+  - nombre: clagrupoasignacion
+    descripcion: Clave foránea a la tabla de grupos de asignación
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte detectó la eliminación del registro
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte detectó la actualización del registro
+    tipo: STRING
+  - nombre: aniosvidautilfiscal
+    descripcion: Años de vida útil del activo para fines fiscales
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING 

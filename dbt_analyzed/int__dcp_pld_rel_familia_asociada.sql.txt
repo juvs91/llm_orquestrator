@@ -1,0 +1,61 @@
+vista: de_duplicacion_pldrelfamiliaasociada
+descripcion: Vista que realiza la deduplicación y agrega un ID único a la tabla de relación de familias asociadas.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: fechains
+    descripcion: Fecha de inserción del registro.
+    tipo: DATE
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: dado de baja, 0: activo).
+    tipo: INTEGER
+  - nombre: clafamilia
+    descripcion: Clave de la familia principal.
+    tipo: INTEGER
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que realizó la última modificación.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambios de la base de datos de origen.
+    tipo: INTEGER
+  - nombre: clasubfamilia
+    descripcion: Clave de la subfamilia.
+    tipo: INTEGER
+  - nombre: clausuarioins
+    descripcion: Clave del usuario que insertó el registro.
+    tipo: INTEGER
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez.
+    tipo: INTEGER
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro.
+    tipo: DATE
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio incremental de Airbyte.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica del registro.
+    tipo: DATE
+  - nombre: clafamiliaasociada
+    descripcion: Clave de la familia asociada.
+    tipo: INTEGER
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en la base de datos de origen, según lo capturado por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en la base de datos de origen, según lo capturado por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de Airbyte.
+    tipo: INTEGER
+  - nombre: idfamiliaasociada
+    descripcion: ID único generado para la relación de familia asociada.
+    tipo: INTEGER
+ 

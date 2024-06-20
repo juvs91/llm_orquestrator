@@ -1,0 +1,49 @@
+vista: VtaRelModeloAtencionNivelCanal
+descripcion: Vista de la relación entre el modelo de atención y el nivel de canal.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte en formato JSON.
+    tipo: JSON
+  - nombre: BajaLogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: NombrePcMod
+    descripcion: Nombre del equipo que modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del cambio de datos capturado de Airbyte.
+    tipo: STRING
+  - nombre: ClaNivelCanal
+    descripcion: Clave del nivel de canal.
+    tipo: INT64
+  - nombre: ClaUsuarioMod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: FechaUltimaMod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos capturado de Airbyte.
+    tipo: INT64
+  - nombre: FechaBajaLogica
+    descripcion: Fecha y hora de la baja lógica.
+    tipo: DATETIME
+  - nombre: ClaModeloAtencion
+    descripcion: Clave del modelo de atención.
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó el registro por última vez.
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos capturado de Airbyte.
+    tipo: STRING
+ 

@@ -1,0 +1,175 @@
+vista: stg_ffcccatferroviaria
+descripcion: Vista generada por DBT para la tabla dbo.FfccCatFerroviaria
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo de cuando Airbyte extrajo los datos
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales de Airbyte
+    tipo: JSON
+  - nombre: abrev
+    descripcion: Abreviatura de la compañía ferroviaria
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico de la compañía ferroviaria
+    tipo: STRING
+  - nombre: esactivo
+    descripcion: Indica si la compañía ferroviaria está activa (1) o no (0)
+    tipo: INT64
+  - nombre: escredito
+    descripcion: Indica si la compañía ferroviaria opera con crédito (1) o no (0)
+    tipo: INT64
+  - nombre: fechaalta
+    descripcion: Fecha de alta de la compañía ferroviaria
+    tipo: DATETIME
+  - nombre: bajalogica
+    descripcion: Indica si la compañía ferroviaria ha sido dada de baja lógica (1) o no (0)
+    tipo: INT64
+  - nombre: usuarioftp
+    descripcion: Nombre de usuario FTP de la compañía ferroviaria
+    tipo: STRING
+  - nombre: costodemora
+    descripcion: Costo de demora de la compañía ferroviaria
+    tipo: FLOAT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez
+    tipo: STRING
+  - nombre: passwordftp
+    descripcion: Contraseña FTP de la compañía ferroviaria
+    tipo: STRING
+  - nombre: tienecarros
+    descripcion: Indica si la compañía ferroviaria tiene carros (1) o no (0)
+    tipo: INT64
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro del Centro de datos de Airbyte
+    tipo: STRING
+  - nombre: direccionftp
+    descripcion: Dirección FTP de la compañía ferroviaria
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: ID del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: numerocliente
+    descripcion: Número de cliente de la compañía ferroviaria
+    tipo: STRING
+  - nombre: claferroviaria
+    descripcion: ID único de la compañía ferroviaria
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación del registro
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de baja lógica de la compañía ferroviaria
+    tipo: DATETIME
+  - nombre: contactoanteffcc
+    descripcion: Nombre del contacto de la compañía ferroviaria ante la FFCC
+    tipo: STRING
+  - nombre: costoderechopiso
+    descripcion: Costo de derecho de piso de la compañía ferroviaria
+    tipo: FLOAT64
+  - nombre: claavisoproblemas
+    descripcion: ID del tipo de aviso de problemas
+    tipo: INT64
+  - nombre: estraficonacional
+    descripcion: Indica si la compañía ferroviaria opera tráfico nacional (1) o no (0)
+    tipo: INT64
+  - nombre: horaslimitedemora
+    descripcion: Límite de horas de demora
+    tipo: INT64
+  - nombre: portalferroviaria
+    descripcion: URL del portal de la compañía ferroviaria
+    tipo: STRING
+  - nombre: claavisoliberacion
+    descripcion: ID del tipo de aviso de liberación
+    tipo: INT64
+  - nombre: diasantessolicitud
+    descripcion: Días de anticipación para la solicitud
+    tipo: INT64
+  - nombre: horacortedemorafin
+    descripcion: Hora de corte de demora final
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo de cuando Airbyte marcó el registro como eliminado
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo de cuando Airbyte actualizó el registro por última vez
+    tipo: STRING
+  - nombre: aplicareutilizacion
+    descripcion: Indica si se aplica reutilización (1) o no (0)
+    tipo: INT64
+  - nombre: porcentajedescuento
+    descripcion: Porcentaje de descuento
+    tipo: FLOAT64
+  - nombre: clamedioconfirmacion
+    descripcion: ID del medio de confirmación
+    tipo: INT64
+  - nombre: escomunicacioncorreo
+    descripcion: Indica si la comunicación es por correo electrónico (1) o no (0)
+    tipo: INT64
+  - nombre: horaslimitereutiliza
+    descripcion: Límite de horas para reutilización
+    tipo: INT64
+  - nombre: claavisodocumentacion
+    descripcion: ID del tipo de aviso de documentación
+    tipo: INT64
+  - nombre: claavisoreutilizacion
+    descripcion: ID del tipo de aviso de reutilización
+    tipo: INT64
+  - nombre: horacortedemorainicio
+    descripcion: Hora de corte de demora inicial
+    tipo: INT64
+  - nombre: claavisoconfirmalibera
+    descripcion: ID del tipo de aviso de confirmación de liberación
+    tipo: INT64
+  - nombre: claavisootrosservicios
+    descripcion: ID del tipo de aviso de otros servicios
+    tipo: INT64
+  - nombre: claavisorechazofactura
+    descripcion: ID del tipo de aviso de rechazo de factura
+    tipo: INT64
+  - nombre: nombrecortoferroviaria
+    descripcion: Nombre corto de la compañía ferroviaria
+    tipo: STRING
+  - nombre: claavisoserviciocliente
+    descripcion: ID del tipo de aviso de servicio al cliente
+    tipo: INT64
+  - nombre: claavisoserviciodiverso
+    descripcion: ID del tipo de aviso de servicio diverso
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claavisoasignacioncarros
+    descripcion: ID del tipo de aviso de asignación de carros
+    tipo: INT64
+  - nombre: claavisoasignacionpedido
+    descripcion: ID del tipo de aviso de asignación de pedido
+    tipo: INT64
+  - nombre: claavisoconfirmadocumenta
+    descripcion: ID del tipo de aviso de confirmación de documentación
+    tipo: INT64
+  - nombre: claavisoconfirmareutiliza
+    descripcion: ID del tipo de aviso de confirmación de reutilización
+    tipo: INT64
+  - nombre: claavisosolicitudasignacion
+    descripcion: ID del tipo de aviso de solicitud de asignación
+    tipo: INT64
+  - nombre: esoperacionserviciosporsistema
+    descripcion: Indica si la operación de servicios es por sistema (1) o no (0)
+    tipo: INT64
+  - nombre: claavisoconfirmaserviciodiverso
+    descripcion: ID del tipo de aviso de confirmación de servicio diverso
+    tipo: INT64
+  - nombre: claavisoconfirmaprefacturafletes
+    descripcion: ID del tipo de aviso de confirmación de prefactura de fletes
+    tipo: INT64
+  - nombre: claavisoconfirmaprefacturademoras
+    descripcion: ID del tipo de aviso de confirmación de prefactura de demoras
+    tipo: INT64
+

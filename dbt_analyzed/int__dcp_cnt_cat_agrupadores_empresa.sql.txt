@@ -1,0 +1,54 @@
+vista: de_duplicacion_cntcatagrupadoresempresa
+descripcion: Vista que muestra información sobre la agrupación de empresas, incluyendo detalles de eliminación lógica, nombres de usuario y fechas de modificación.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único sin procesar de Airbyte.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si la agrupación de empresas está dada de baja lógica (1) o no (0).
+    tipo: INTEGER
+  - nombre: claaniomes
+    descripcion: Clave del año y mes.
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo desde el que se modificó la agrupación de empresas.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia lógica de cambio de datos de Airbyte.
+    tipo: INTEGER
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó la agrupación de empresas.
+    tipo: TEXT
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación de la agrupación de empresas.
+    tipo: DATE
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha en que la agrupación de empresas se dio de baja lógica.
+    tipo: DATE
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte marcó el registro como eliminado.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte actualizó el registro por última vez.
+    tipo: TIMESTAMP
+  - nombre: claagrupadorempresa
+    descripcion: Clave única de la agrupación de empresas.
+    tipo: TEXT
+  - nombre: nomagrupadorempresa
+    descripcion: Nombre de la agrupación de empresas.
+    tipo: TEXT
+  - nombre: claempresaeliminadora
+    descripcion: Clave de la empresa que eliminó la agrupación de empresas.
+    tipo: TEXT
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte.
+    tipo: INTEGER

@@ -1,0 +1,111 @@
+vista: de_duplicacion_vtacatagentewt
+descripcion: Vista que realiza una deduplicación y concatenación de campos de la tabla stg__vta_cat_agente_wt.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: TEXT
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de extracción de datos por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON de Airbyte.
+    tipo: JSON
+  - nombre: nss
+    descripcion: Número de Seguro Social del agente.
+    tipo: TEXT
+  - nombre: email
+    descripcion: Correo electrónico del agente.
+    tipo: TEXT
+  - nombre: orden
+    descripcion: Número de orden.
+    tipo: NUMBER
+  - nombre: clacup
+    descripcion: Clave única de la ubicación.
+    tipo: TEXT
+  - nombre: clazona
+    descripcion: Clave de la zona.
+    tipo: TEXT
+  - nombre: fechains
+    descripcion: Fecha de ingreso.
+    tipo: DATE
+  - nombre: claagente
+    descripcion: Clave del agente.
+    tipo: TEXT
+  - nombre: idusuario
+    descripcion: ID del usuario.
+    tipo: NUMBER
+  - nombre: nomagente
+    descripcion: Nombre del agente.
+    tipo: TEXT
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: activo, 0: inactivo).
+    tipo: BOOLEAN
+  - nombre: motivobaja
+    descripcion: Motivo de la baja.
+    tipo: TEXT
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que realizó la última modificación.
+    tipo: TEXT
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambios de Airbyte.
+    tipo: NUMBER
+  - nombre: clacuentacup
+    descripcion: Clave de la cuenta CUP.
+    tipo: TEXT
+  - nombre: salesforceid
+    descripcion: ID de Salesforce.
+    tipo: TEXT
+  - nombre: telefonocasa
+    descripcion: Número de teléfono de casa.
+    tipo: TEXT
+  - nombre: clatipoagente
+    descripcion: Clave del tipo de agente.
+    tipo: TEXT
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación.
+    tipo: TEXT
+  - nombre: escomisionista
+    descripcion: Indicador de comisionista (1: sí, 0: no).
+    tipo: BOOLEAN
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación.
+    tipo: DATE
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de Airbyte para el seguimiento de cambios.
+    tipo: TEXT
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del agente.
+    tipo: TEXT
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del agente.
+    tipo: TEXT
+  - nombre: claagentelegacy
+    descripcion: Clave del agente en el sistema legacy.
+    tipo: TEXT
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica.
+    tipo: DATE
+  - nombre: idusuarioportal
+    descripcion: ID del usuario en el portal.
+    tipo: NUMBER
+  - nombre: telefonocelular
+    descripcion: Número de teléfono celular.
+    tipo: TEXT
+  - nombre: clatipoagentecuota
+    descripcion: Clave del tipo de agente de cuota.
+    tipo: TEXT
+  - nombre: espagoporproveedor
+    descripcion: Indicador de pago por proveedor (1: sí, 0: no).
+    tipo: BOOLEAN
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte.
+    tipo: TIMESTAMP
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de Airbyte.
+    tipo: NUMBER
+  - nombre: nomagentecompleto
+    descripcion: Nombre completo del agente, concatenando nombre, apellido paterno y apellido materno.
+    tipo: TEXT

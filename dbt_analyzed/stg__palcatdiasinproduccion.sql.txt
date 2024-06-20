@@ -1,0 +1,66 @@
+vista: stg_palcatdiasinproduccion
+descripcion: Vista generada por DBT para la tabla PALSch_PALCatDiaSinProduccion
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: fecha
+    descripcion: Fecha de registro
+    tipo: DATETIME
+  - nombre: claarea
+    descripcion: Clave del área
+    tipo: INT64
+  - nombre: eshabil
+    descripcion: Indicador de habilitado (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica (1: Sí, 0: No)
+    tipo: INT64
+  - nombre: listaturnos
+    descripcion: Lista de turnos
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo donde se realizó la modificación
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico de cambio de Airbyte
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de la ubicación
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha de la última modificación
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de Airbyte
+    tipo: INT64
+  - nombre: cladepartamento
+    descripcion: Clave del departamento
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha de la baja lógica
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro según Airbyte CDC
+    tipo: STRING
+  - nombre: cladiasinproduccion
+    descripcion: Clave del día sin producción
+    tipo: INT64
+  - nombre: nomdiasinproduccion
+    descripcion: Nombre del día sin producción
+    tipo: STRING
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC de Airbyte
+    tipo: STRING

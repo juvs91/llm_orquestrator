@@ -1,0 +1,156 @@
+vista: stg_flecatchofer
+descripcion: Vista generada por DBT a partir de la tabla FleSch_FLECatChofer
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: rfc
+    descripcion: Registro Federal de Contribuyentes del chofer
+    tipo: STRING
+  - nombre: curp
+    descripcion: Clave Única de Registro de Población del chofer
+    tipo: STRING
+  - nombre: calle
+    descripcion: Nombre de la calle donde reside el chofer
+    tipo: STRING
+  - nombre: email
+    descripcion: Correo electrónico del chofer
+    tipo: STRING
+  - nombre: nombre
+    descripcion: Nombre del chofer
+    tipo: STRING
+  - nombre: colonia
+    descripcion: Colonia donde reside el chofer
+    tipo: STRING
+  - nombre: folioine
+    descripcion: Folio del INE del chofer
+    tipo: STRING
+  - nombre: claestado
+    descripcion: Clave del estado donde reside el chofer
+    tipo: INT64
+  - nombre: municipio
+    descripcion: Municipio donde reside el chofer
+    tipo: STRING
+  - nombre: numeroext
+    descripcion: Número exterior de la vivienda del chofer
+    tipo: STRING
+  - nombre: numeroint
+    descripcion: Número interior de la vivienda del chofer
+    tipo: STRING
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica del chofer (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: numeroimss
+    descripcion: Número de afiliación al IMSS del chofer
+    tipo: STRING
+  - nombre: reqregimss
+    descripcion: Requerimiento de régimen del IMSS del chofer
+    tipo: INT64
+  - nombre: idchofercen
+    descripcion: ID del chofer en el sistema central
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que realizó la última modificación
+    tipo: STRING
+  - nombre: numerolocal
+    descripcion: Número local de la vivienda del chofer
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: eslistanegra
+    descripcion: Indicador de si el chofer está en la lista negra (1: sí, 0: no)
+    tipo: INT64
+  - nombre: idchoferalta
+    descripcion: ID del registro de alta del chofer
+    tipo: INT64
+  - nombre: claantiguedad
+    descripcion: Clave de la antigüedad del chofer
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que realizó la última modificación
+    tipo: INT64
+  - nombre: escertificado
+    descripcion: Indicador de si el chofer está certificado (1: sí, 0: no)
+    tipo: INT64
+  - nombre: numerocelular
+    descripcion: Número de teléfono celular del chofer
+    tipo: STRING
+  - nombre: claestadocivil
+    descripcion: Clave del estado civil del chofer
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación
+    tipo: DATETIME
+  - nombre: numerolicencia
+    descripcion: Número de licencia de conducir del chofer
+    tipo: STRING
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: apellidomaterno
+    descripcion: Apellido materno del chofer
+    tipo: STRING
+  - nombre: apellidopaterno
+    descripcion: Apellido paterno del chofer
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del chofer
+    tipo: DATETIME
+  - nombre: fechanacimiento
+    descripcion: Fecha de nacimiento del chofer
+    tipo: DATETIME
+  - nombre: lugarnacimiento
+    descripcion: Lugar de nacimiento del chofer
+    tipo: STRING
+  - nombre: claubicacionalta
+    descripcion: Clave de la ubicación donde se dio de alta al chofer
+    tipo: INT64
+  - nombre: vigencialicencia
+    descripcion: Fecha de vigencia de la licencia de conducir del chofer
+    tipo: DATETIME
+  - nombre: numerocertificado
+    descripcion: Número de certificado del chofer
+    tipo: STRING
+  - nombre: clacausalistanegra
+    descripcion: Clave de la causa por la que el chofer está en la lista negra
+    tipo: INT64
+  - nombre: fotografiawfileext
+    descripcion: Extensión del archivo de la fotografía del chofer
+    tipo: STRING
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro por Airbyte
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro por Airbyte
+    tipo: STRING
+  - nombre: clatransportistacen
+    descripcion: Clave del transportista en el sistema central
+    tipo: INT64
+  - nombre: fotografiawfilename
+    descripcion: Nombre del archivo de la fotografía del chofer
+    tipo: STRING
+  - nombre: fotografiawfilepath
+    descripcion: Ruta del archivo de la fotografía del chofer
+    tipo: STRING
+  - nombre: vigenciacertificado
+    descripcion: Fecha de vigencia del certificado del chofer
+    tipo: DATETIME
+  - nombre: claantiguedadanterior
+    descripcion: Clave de la antigüedad anterior del chofer
+    tipo: INT64
+  - nombre: claempresacertificadora
+    descripcion: Clave de la empresa certificadora del chofer
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: clatransportistacenanterior
+    descripcion: Clave del transportista anterior en el sistema central
+    tipo: INT64

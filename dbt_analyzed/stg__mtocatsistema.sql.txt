@@ -1,0 +1,63 @@
+vista: stg_mtocatsistema
+descripcion: Vista generada por DBT para la tabla MtoCatSistema.
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID único generado por Airbyte.
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Marca de tiempo que indica cuándo Airbyte extrajo los datos.
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos JSON adicionales proporcionados por Airbyte.
+    tipo: JSON
+  - nombre: bajalogica
+    descripcion: Indica si el registro está dado de baja lógica (1) o no (0).
+    tipo: INT64
+  - nombre: clasistema
+    descripcion: Clave del sistema.
+    tipo: INT64
+  - nombre: nomsistema
+    descripcion: Nombre del sistema.
+    tipo: STRING
+  - nombre: clagenerico
+    descripcion: Clave genérica.
+    tipo: INT64
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro.
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de registro lógico utilizado para el seguimiento de cambios de datos.
+    tipo: STRING
+  - nombre: claubicacion
+    descripcion: Clave de ubicación.
+    tipo: INT64
+  - nombre: clavesistema
+    descripcion: Clave del sistema.
+    tipo: STRING
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro.
+    tipo: INT64
+  - nombre: clagrupoequipo
+    descripcion: Clave del grupo de equipo.
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación.
+    tipo: DATETIME
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor utilizado para el seguimiento de cambios de datos.
+    tipo: INT64
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica.
+    tipo: DATETIME
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Marca de tiempo que indica cuándo se eliminó el registro en la fuente.
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Marca de tiempo que indica cuándo se actualizó el registro en la fuente.
+    tipo: STRING
+  - nombre: clatipomantenimiento
+    descripcion: Clave del tipo de mantenimiento.
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento CDC.
+    tipo: STRING

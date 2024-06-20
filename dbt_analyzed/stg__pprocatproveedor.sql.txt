@@ -1,0 +1,126 @@
+vista: stg_pprocatproveedor
+descripcion: Vista generada por DBT a partir de la tabla PproSch_PproCatProveedor
+campos:
+  - nombre: _airbyte_raw_id
+    descripcion: ID generado por Airbyte
+    tipo: STRING
+  - nombre: _airbyte_extracted_at
+    descripcion: Fecha y hora de la extracción de datos por Airbyte
+    tipo: TIMESTAMP
+  - nombre: _airbyte_meta
+    descripcion: Metadatos de Airbyte
+    tipo: JSON
+  - nombre: clacup
+    descripcion: Clave única de la unidad de compra
+    tipo: INT64
+  - nombre: sitioweb
+    descripcion: Sitio web del proveedor
+    tipo: STRING
+  - nombre: clamoneda
+    descripcion: Clave de la moneda utilizada por el proveedor
+    tipo: INT64
+  - nombre: plazopago
+    descripcion: Plazo de pago del proveedor en días
+    tipo: INT64
+  - nombre: antiguedad
+    descripcion: Antigüedad del proveedor en años
+    tipo: FLOAT64
+  - nombre: bajalogica
+    descripcion: Indicador de baja lógica del proveedor (1: dado de baja, 0: activo)
+    tipo: INT64
+  - nombre: referencia
+    descripcion: Referencia del proveedor
+    tipo: STRING
+  - nombre: nombrepcmod
+    descripcion: Nombre del equipo que modificó el registro por última vez
+    tipo: STRING
+  - nombre: _ab_cdc_lsn
+    descripcion: Número de secuencia de cambio de datos de Airbyte
+    tipo: STRING
+  - nombre: claagrupador
+    descripcion: Clave del agrupador al que pertenece el proveedor
+    tipo: INT64
+  - nombre: claproveedor
+    descripcion: Clave única del proveedor
+    tipo: INT64
+  - nombre: idusuarioaut
+    descripcion: ID del usuario que autorizó el registro
+    tipo: INT64
+  - nombre: capitalengiro
+    descripcion: Capital en giro del proveedor
+    tipo: FLOAT64
+  - nombre: capitalsocial
+    descripcion: Capital social del proveedor
+    tipo: FLOAT64
+  - nombre: claclasifprov
+    descripcion: Clave de la clasificación del proveedor
+    tipo: INT64
+  - nombre: clausuariomod
+    descripcion: Clave del usuario que modificó el registro por última vez
+    tipo: INT64
+  - nombre: fechaautoriza
+    descripcion: Fecha y hora de autorización del registro
+    tipo: DATETIME
+  - nombre: motivorechazo
+    descripcion: Motivo del rechazo del proveedor
+    tipo: STRING
+  - nombre: ventasanuales
+    descripcion: Ventas anuales del proveedor
+    tipo: FLOAT64
+  - nombre: clacalidadprov
+    descripcion: Clave de la calidad del proveedor
+    tipo: INT64
+  - nombre: fechaultimamod
+    descripcion: Fecha y hora de la última modificación del registro
+    tipo: DATETIME
+  - nombre: numeropersonal
+    descripcion: Número de personal del proveedor
+    tipo: INT64
+  - nombre: _ab_cdc_cursor
+    descripcion: Cursor de cambio de datos de Airbyte
+    tipo: INT64
+  - nombre: contactodeacero
+    descripcion: Contacto del proveedor relacionado con el acero
+    tipo: STRING
+  - nombre: fechabajalogica
+    descripcion: Fecha y hora de la baja lógica del proveedor
+    tipo: DATETIME
+  - nombre: claclasificacion
+    descripcion: Clave de la clasificación del proveedor
+    tipo: INT64
+  - nombre: clagiroproveedor
+    descripcion: Clave del giro del proveedor
+    tipo: INT64
+  - nombre: clatipoactividad
+    descripcion: Clave del tipo de actividad del proveedor
+    tipo: INT64
+  - nombre: esautoinventario
+    descripcion: Indicador de si el proveedor realiza autoinventario (1: sí, 0: no)
+    tipo: INT64
+  - nombre: antiguedaddeacero
+    descripcion: Antigüedad del proveedor en el sector del acero
+    tipo: FLOAT64
+  - nombre: esproveedordeacero
+    descripcion: Indicador de si el proveedor es del sector del acero (1: sí, 0: no)
+    tipo: INT64
+  - nombre: _ab_cdc_deleted_at
+    descripcion: Fecha y hora de eliminación del registro en el origen, capturado por Airbyte CDC
+    tipo: STRING
+  - nombre: _ab_cdc_updated_at
+    descripcion: Fecha y hora de actualización del registro en el origen, capturado por Airbyte CDC
+    tipo: STRING
+  - nombre: claestatusproveedor
+    descripcion: Clave del estatus del proveedor
+    tipo: INT64
+  - nombre: clientesprincipales
+    descripcion: Clientes principales del proveedor
+    tipo: STRING
+  - nombre: comentariosespeciales
+    descripcion: Comentarios especiales sobre el proveedor
+    tipo: STRING
+  - nombre: claespecializacionprov
+    descripcion: Clave de la especialización del proveedor
+    tipo: INT64
+  - nombre: _ab_cdc_event_serial_no
+    descripcion: Número de serie del evento de cambio de datos de Airbyte
+    tipo: STRING

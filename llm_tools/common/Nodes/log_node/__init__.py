@@ -21,7 +21,7 @@ class LogNode(NodeAbstract):
         print_context_var = self.log_node_config.print_context_var
         if print_context_var is not None:
             value = self.graph.get_context(print_context_var)
-            print(f"{print_context_var}: {value}")
+            print(f"{print_context_var}: \n {value}")
 
         if self.log_node_config.print_context:
             print("CONTEXT", "-"*30, sep="\n")
