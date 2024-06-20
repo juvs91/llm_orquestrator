@@ -10,13 +10,17 @@ from llm_tools.common.Nodes.read_file_node import ReadFileNode
 from llm_tools.common.Nodes.save_file_node import SaveFileNode
 from llm_tools.common.Nodes.parse_yaml import ParseYamlNode
 from llm_tools.common.Nodes.set_context_node import SetContextNode
+from llm_tools.common.Nodes.log_node import LogNode
+from llm_tools.common.Nodes.concatenate_files import ConcatenateFilesNode
 
 AVAILABLE_NODES: Dict[str, Type[NodeAbstract]] = {
     "LLM_NODE": LLMNode,
     "READ_FILE_NODE": ReadFileNode,
     "SAVE_FILE_NODE": SaveFileNode,
     "PARSE_YAML_NODE": ParseYamlNode,
-    "SET_CONTEXT_NODE": SetContextNode
+    "SET_CONTEXT_NODE": SetContextNode,
+    "CONCATENATE_FILES_NODE": ConcatenateFilesNode,
+    "LOG_NODE": LogNode
 }
 
 
