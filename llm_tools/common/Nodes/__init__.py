@@ -46,11 +46,14 @@ class Graph:
             raise Exception(f"Node {node.config.name} already exists")
         self.nodes[node.config.name] = node
 
-    def set_context(self,context_key: str, context_value: Any) -> None:
+    def set_context(self, context_key: str, context_value: Any) -> None:
         self._context[context_key] = context_value
 
     def get_context(self, context_key: str) -> Any:
         return self._context[context_key]
+
+    def print_context(self) -> None:
+        print(f"{self._context}")
 
     def _get_node(self, node_name) -> NodeAbstract:
         if node_name not in self.nodes:
