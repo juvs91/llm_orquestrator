@@ -1,0 +1,30 @@
+- clasificacion: Error en Boleta
+  descripcion: Tickets que reportan errores relacionados con la generación, procesamiento, visualización o modificación de boletas en el sistema SAMP. Esto incluye errores al guardar, marcar como no pagables, procesar boletas de diferentes tipos de materiales, errores en costos, diferencias entre sistemas, boletas sin pasivo, etc.
+- clasificacion: Error en Sistema SAMP
+  descripcion: Tickets que reportan errores generales en el sistema SAMP, como lentitud, errores al generar reportes, problemas de acceso, errores en la replicación de información, etc.
+- clasificacion: Error en Bascula
+  descripcion: Tickets que reportan errores relacionados con el sistema de báscula, como errores al registrar la entrada o salida de unidades, problemas con los pesajes, errores en el sistema de blindaje, etc.
+- clasificacion: Error en Precios
+  descripcion: Tickets que reportan errores relacionados con los precios de compra o venta, como precios incorrectos, diferencias entre sistemas, problemas al modificar precios, etc.
+- clasificacion: Error en Clasificacion
+  descripcion: Tickets que reportan errores relacionados con el sistema de clasificación de materiales, como problemas para clasificar, lentitud en el sistema, errores en la aplicación de clasificación, etc.
+- clasificacion: Error en Reporte
+  descripcion: Tickets que reportan errores relacionados con la generación o visualización de reportes, como información incorrecta, falta de información, errores al descargar reportes, etc.
+- clasificacion: Error en Expedicion
+  descripcion: Tickets que reportan errores relacionados con el sistema de expedición, como problemas al generar envíos, falta de información, errores al generar embarques, etc.
+- clasificacion: Error en Carta Porte
+  descripcion: Tickets que reportan errores relacionados con la generación o recepción de cartas porte, como errores en el sistema, problemas para generar el flujo de autorización, etc.
+- clasificacion: Error en Facturacion
+  descripcion: Tickets que reportan errores relacionados con la facturación, como errores al generar facturas, problemas para visualizar facturas, errores en la información de las facturas, etc.
+- clasificacion: Solicitud de Permisos
+  descripcion: Tickets que solicitan permisos para acceder a diferentes módulos o funciones del sistema SAMP, como acceso a pantallas, permisos de administrador, permisos para autorizar descuentos, etc.
+- clasificacion: Solicitud de Informacion
+  descripcion: Tickets que solicitan información específica del sistema SAMP, como listados de facturas, boletas de entrada o salida, reportes de compra activa, etc.
+- clasificacion: Cierre de Mes
+  descripcion: Tickets relacionados con el cierre de mes, como boletas sin valuar, diferencias en la compra activa, problemas con la replicación de información, etc.
+- clasificacion: Transitos
+  descripcion: Tickets relacionados con el seguimiento de tránsitos, como viajes pendientes por aclarar, problemas con la replicación de viajes, errores en la información de tránsitos, etc.
+- clasificacion: Proyecto FDII-Maverick
+  descripcion: Tickets relacionados con el proyecto FDII-Maverick, que reportan errores específicos de este proyecto, como problemas con la integración de información, errores en la captura de datos, etc.
+- clasificacion: Otros
+  descripcion: Tickets que no se pueden clasificar en ninguna de las categorías anteriores, ya sea porque la descripción es muy general o porque el problema no está claramente definido. 

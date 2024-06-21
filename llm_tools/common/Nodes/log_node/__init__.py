@@ -1,9 +1,7 @@
-import os.path
-from typing import Any, Dict
-from pydantic import BaseModel, field_validator
-
+from pydantic import BaseModel
 from llm_tools.common.Nodes import NodeAbstract, NodeConfig, NodeOutput, Graph
-from llm_tools.common import save_to_file
+import json
+from llm_tools.common import print_object
 
 
 class LogNodeConfig(BaseModel):
@@ -21,14 +19,13 @@ class LogNode(NodeAbstract):
         print_context_var = self.log_node_config.print_context_var
         if print_context_var is not None:
             value = self.graph.get_context(print_context_var)
-            print(f"{print_context_var}: \n {value}")
+            print(f"{print_context_var}")
+            print_object(value)
 
         if self.log_node_config.print_context:
-            print("CONTEXT", "-"*30, sep="\n")
+            print("CONTEXT", "-" * 30, sep="\n")
             self.graph.print_context()
-            print("-"*30)
+            print("-" * 30)
         return NodeOutput(
             next_node=self.log_node_config.next_node
         )
-
-

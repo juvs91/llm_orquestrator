@@ -1,4 +1,7 @@
+import json
 import os
+from typing import Any
+
 
 def save_to_file(content, path):
     with open(path, "w", encoding='utf-8') as f:
@@ -23,3 +26,14 @@ def concatenate_files(
                 with open(ruta_archivo, "r", encoding='utf-8') as f:
                     slq_content += f.read() + separator
     return slq_content
+
+
+def print_object(obj: Any):
+    try:
+        # Attempt to serialize the object to JSON
+        json_string = json.dumps(obj, indent=2)
+        print("JSON-serializable object:")
+        print(json_string)
+    except (TypeError, ValueError):
+        print("NON-JSON-serializable object:")
+        print(f"{obj}")
