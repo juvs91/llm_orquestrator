@@ -2,3 +2,4 @@
 /.idea
 data/
 credentials/
+__pycache__/
