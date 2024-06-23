@@ -4,3 +4,4 @@ data/
 credentials/
 __pycache__/
 *.pyc
+.env
