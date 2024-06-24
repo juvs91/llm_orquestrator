@@ -1,0 +1,34 @@
+with de_duplicacion_pldrelfamagrupador as (
+	select
+
+ *,
+
+ row_number() over(
+
+ partition by pks...
+ order by fechaultimamod desc
+ ) as rownum
+ from {{ref('stg__vta_cat_PLDSch_PldRelFamAgrupador')}}
+),sel_pldrelfamagrupador as ( 
+select _airbyte_raw_id,
+		_airbyte_extracted_at,
+		_airbyte_meta,
+		bajalogica,
+		clafamilia,
+		claarticulo,
+		nombrepcmod,
+		_ab_cdc_lsn,
+		clasubfamilia,
+		clausuariomod,
+		fechaultimamod,
+		_ab_cdc_cursor,
+		clafamagrupador,
+		fechabajalogica,
+		clafamagrupadordet,
+		_ab_cdc_deleted_at,
+		_ab_cdc_updated_at,
+		_ab_cdc_event_serial_nofrom de_duplicacion_pldrelfamagrupador where rownum=1
+ )
+ select * from 
+
+ sel_pldrelfamagrupador

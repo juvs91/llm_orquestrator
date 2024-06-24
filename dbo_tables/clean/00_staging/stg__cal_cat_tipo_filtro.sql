@@ -1,0 +1,37 @@
+with stg_calcattipofiltro as (
+	select
+		--{{ dbt_utils.generate_surrogate_key(['col_pk1', 'col_pk2']) }} as pk_calcattipofiltro,
+		safe_cast(`_airbyte_raw_id` as STRING) as _airbyte_raw_id,
+		safe_cast(`_airbyte_extracted_at` as TIMESTAMP) as _airbyte_extracted_at,
+		safe_cast(`_airbyte_meta` as JSON) as _airbyte_meta,
+		safe_cast(`esrango` as INT64) as esrango,
+		safe_cast(`etiqueta` as STRING) as etiqueta,
+		safe_cast(`rangomax` as FLOAT64) as rangomax,
+		safe_cast(`rangomin` as FLOAT64) as rangomin,
+		safe_cast(`whereadic` as STRING) as whereadic,
+		safe_cast(`bajalogica` as INT64) as bajalogica,
+		safe_cast(`campoclave` as STRING) as campoclave,
+		safe_cast(`incremento` as FLOAT64) as incremento,
+		safe_cast(`nombrepcmod` as STRING) as nombrepcmod,
+		safe_cast(`vistaorigen` as STRING) as vistaorigen,
+		safe_cast(`_ab_cdc_lsn` as STRING) as _ab_cdc_lsn,
+		safe_cast(`campoclavealt` as STRING) as campoclavealt,
+		safe_cast(`clatipofiltro` as INT64) as clatipofiltro,
+		safe_cast(`clausuariomod` as INT64) as clausuariomod,
+		safe_cast(`nomtipofiltro` as STRING) as nomtipofiltro,
+		safe_cast(`campoclavedesc` as STRING) as campoclavedesc,
+		safe_cast(`fechaultimamod` as DATETIME) as fechaultimamod,
+		safe_cast(`_ab_cdc_cursor` as INT64) as _ab_cdc_cursor,
+		safe_cast(`esfiltrousuario` as INT64) as esfiltrousuario,
+		safe_cast(`fechabajalogica` as DATETIME) as fechabajalogica,
+		safe_cast(`operacionlogica` as STRING) as operacionlogica,
+		safe_cast(`campodescripcion` as STRING) as campodescripcion,
+		safe_cast(`_ab_cdc_deleted_at` as STRING) as _ab_cdc_deleted_at,
+		safe_cast(`_ab_cdc_updated_at` as STRING) as _ab_cdc_updated_at,
+		safe_cast(`esfiltroreclamacion` as INT64) as esfiltroreclamacion,
+		safe_cast(`clatipofiltrodepende` as INT64) as clatipofiltrodepende,
+		safe_cast(`esfiltrofuncionalidades` as INT64) as esfiltrofuncionalidades,
+		safe_cast(`_ab_cdc_event_serial_no` as STRING) as _ab_cdc_event_serial_no
+	from {{source('src_prod_kraken_abt','CalSch_CalCatTipoFiltro')}}
+)
+select * from stg_calcattipofiltro

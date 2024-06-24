@@ -1,0 +1,37 @@
+with stg_tescatbanco as (
+	select
+		--{{ dbt_utils.generate_surrogate_key(['col_pk1', 'col_pk2']) }} as pk_tescatbanco,
+		safe_cast(`_airbyte_raw_id` as STRING) as _airbyte_raw_id,
+		safe_cast(`_airbyte_extracted_at` as TIMESTAMP) as _airbyte_extracted_at,
+		safe_cast(`_airbyte_meta` as JSON) as _airbyte_meta,
+		safe_cast(`clacup` as INT64) as clacup,
+		safe_cast(`clabanco` as INT64) as clabanco,
+		safe_cast(`nombanco` as STRING) as nombanco,
+		safe_cast(`esusospei` as INT64) as esusospei,
+		safe_cast(`bajalogica` as INT64) as bajalogica,
+		safe_cast(`clabanco_l` as INT64) as clabanco_l,
+		safe_cast(`claestatus` as INT64) as claestatus,
+		safe_cast(`clapaiscon` as INT64) as clapaiscon,
+		safe_cast(`clavebanco` as STRING) as clavebanco,
+		safe_cast(`clacontacto` as INT64) as clacontacto,
+		safe_cast(`nombrepcmod` as STRING) as nombrepcmod,
+		safe_cast(`razonsocial` as STRING) as razonsocial,
+		safe_cast(`_ab_cdc_lsn` as STRING) as _ab_cdc_lsn,
+		safe_cast(`bajalogicasol` as INT64) as bajalogicasol,
+		safe_cast(`clausuariomod` as INT64) as clausuariomod,
+		safe_cast(`fechaultimamod` as DATETIME) as fechaultimamod,
+		safe_cast(`_ab_cdc_cursor` as INT64) as _ab_cdc_cursor,
+		safe_cast(`fechabajalogica` as DATETIME) as fechabajalogica,
+		safe_cast(`idsolicitudbanco` as INT64) as idsolicitudbanco,
+		safe_cast(`esrealizapagoscup` as INT64) as esrealizapagoscup,
+		safe_cast(`esrelacionnegocio` as INT64) as esrelacionnegocio,
+		safe_cast(`claestatusautoriza` as INT64) as claestatusautoriza,
+		safe_cast(`clagrupofinanciero` as INT64) as clagrupofinanciero,
+		safe_cast(`_ab_cdc_deleted_at` as STRING) as _ab_cdc_deleted_at,
+		safe_cast(`_ab_cdc_updated_at` as STRING) as _ab_cdc_updated_at,
+		safe_cast(`clagrupofinancierosol` as INT64) as clagrupofinancierosol,
+		safe_cast(`esrealizapagostesoreria` as INT64) as esrealizapagostesoreria,
+		safe_cast(`_ab_cdc_event_serial_no` as STRING) as _ab_cdc_event_serial_no
+	from {{source('src_prod_kraken_abt','dbo_TesCatBanco')}}
+)
+select * from stg_tescatbanco

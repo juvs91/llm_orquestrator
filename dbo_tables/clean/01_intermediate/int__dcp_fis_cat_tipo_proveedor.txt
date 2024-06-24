@@ -1,0 +1,38 @@
+with de_duplicacion_fiscattipoproveedor as (
+	select
+		*,
+		row_number() over(
+			partition by clatipoproveedor
+			order by
+				fechaultimamod desc
+		) as rownum
+	from
+		{{ ref('stg__fis_cat_tipo_proveedor') }}
+),
+sel_fiscattipoproveedor as (
+	select
+		_airbyte_raw_id,
+		_airbyte_extracted_at,
+		_airbyte_meta,
+		bajalogica,
+		_ab_cdc_lsn,
+		nombrepcmod,
+		clausuariomod,
+		_ab_cdc_cursor,
+		fechaultimamod,
+		fechabajalogica,
+		requierecurp_sn,
+		clatipoproveedor,
+		nomtipoproveedor,
+		nomtipoproveedoren,
+		_ab_cdc_deleted_at,
+		_ab_cdc_updated_at,
+		_ab_cdc_event_serial_no
+		from de_duplicacion_fiscattipoproveedor
+	where
+		rownum = 1
+)
+select
+	*
+from
+	sel_fiscattipoproveedor
