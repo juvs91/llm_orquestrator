@@ -8,13 +8,14 @@ from llm_tools.common.Nodes.graph_builder import build_graph_from_config
 from llm_tools.common.origin_mapping import get_origin
 from llm_tools.common.origin_mapping.bigquery_tables import get_bigquery_tables
 from llm_tools.commands.get_lineage import get_lineage
+from google.oauth2 import service_account  # type: ignore[import-untyped]
+
 
 def create_app(
 ) -> Flask:
     dotenv.load_dotenv()
     lineage_graph_config_path = "configurations/get_origin_from_user_input_api.json"
     dbt_table_path = "dbo_tables"
-
     _app = Flask(__name__)
 
     @_app.route("/tools/lineage", methods=["GET"])

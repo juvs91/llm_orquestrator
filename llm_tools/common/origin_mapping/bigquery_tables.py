@@ -5,7 +5,7 @@ project = "dfor-prj-prod"
 dataset = "deadwh_timonitor_abt"
 bq_table = "TiTraMovimientoDatosVw"
 bq_table_envs = "TiCatServidorAmbiente"
-client = bigquery.Client(project=project)
+
 
 
 def _is_decimal(value):
@@ -74,6 +74,7 @@ AND NOT EXISTS (
 def get_bigquery_tables(table: str):
     sql = generate_bq_sql(table)
     print("Query", sql)
+    client = bigquery.Client(project=project)
     query_job = client.query(sql)
     rows = query_job.result()
     results = []
