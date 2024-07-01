@@ -1,17 +1,21 @@
 from typing import Dict, List
 
+from llm_tools.common.prompts.group_ticket_to_category import GROUP_TICKETS_TO_CATEGORIES
 from llm_tools.common.prompts.si_generate_categories import SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE
 from llm_tools.common.prompts.generate_categories import GENERATE_CATEGORIES_PROMPT_TEMPLATE
 from pydantic import BaseModel, field_validator
 from langchain.prompts import PromptTemplate
 from llm_tools.common.prompts.si_get_possible_origin_fields_from_dbt import SI_GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT
 from llm_tools.common.prompts.get_possible_origin_fields_from_dbt import GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT
+from llm_tools.common.prompts.si_group_tickets_to_categories import SI_GROUP_TICKETS_TO_CATEGORIES
 
 AVAILABLE_PROMPT_TEMPLATES: Dict[str, PromptTemplate] = {
     "SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE": SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE,
     "GENERATE_CATEGORIES_PROMPT_TEMPLATE": GENERATE_CATEGORIES_PROMPT_TEMPLATE,
     "SI_GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT": SI_GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT,
-    "GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT": GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT
+    "GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT": GET_POSSIBLE_ORIGIN_FIELDS_FROM_DBT,
+    "SI_GROUP_TICKETS_TO_CATEGORIES": SI_GROUP_TICKETS_TO_CATEGORIES,
+    "GROUP_TICKETS_TO_CATEGORIES": GROUP_TICKETS_TO_CATEGORIES
 }
 
 
