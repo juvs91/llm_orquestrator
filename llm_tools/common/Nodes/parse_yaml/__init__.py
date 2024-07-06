@@ -21,6 +21,7 @@ class ParseYamlNode(NodeAbstract):
         print(f"Validating yaml in context key {self.parse_yaml_config.context_var_to_validate} in node"
               , f"{self.config.name}")
         yaml_content = self.graph.get_context(self.parse_yaml_config.context_var_to_validate)
+        print(f"yaml_content : {yaml_content}")
         try:
             yaml_as_object = yaml.load(yaml_content, Loader=yaml.FullLoader)
             print("YAML is valid")
