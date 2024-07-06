@@ -4,7 +4,7 @@ _template = """ tu tarea es validar la siguiente estructura
 
 categories con tickets a validar {categories_to_validate_tickets}
 
-donde la estructura sigue el siguiente formato
+donde la estructura sigue el siguiente formato YAML
 
 - clasificacion: nombre de la clasificacion que viene de la categoria dada
   descripcion: descripcion que viene de la categoria dada
@@ -16,7 +16,6 @@ DEAC-number
 en caso de que todos los tickets sigan el formato regresa unicamente la estructura validada como se proporciono
 
 en caso de que no siga el formato regresar un yml incorrecto
-
 """
 
 VALIDATE_JIRA_FORMAT_IN_TICKETS = PromptTemplate(

@@ -27,25 +27,26 @@ class ContinueLLMNode(NodeAbstract):
         ask_prompt_input = self._get_prompt_input(self.ask_llm_config)
         print(f"node {self.config.name} generating the ask llm response with this prompts:",
               *self.ask_llm_config.context_vars_prompt)
-        response = self.ask_llm_config.generate_response(prompt_input=ask_prompt_input)
-        print(f"in the continue llm ------------- response : {response}")
+        response = self.ask_llm_model.generate_response(prompt_input=ask_prompt_input)
+        print(f"in the asking llm ------------- response : {response}")
         self.graph.set_context(self.ask_llm_config.output_context, response)
         stop_prompt_input = self._get_prompt_input(self.stop_llm_config)
         can_generate_more_response = self.stop_llm_model.generate_response(prompt_input=stop_prompt_input)
-        print(f"in the continue llm ------------- response : {stop_prompt_input}")
+        print(f" before the loop ------------- response : {can_generate_more_response}")
         self.graph.set_context(self.stop_llm_config.output_context, can_generate_more_response)
         while self.stop_criteria in can_generate_more_response.lower():
             continue_prompt_input = self._get_prompt_input(self.continue_llm_config)
             added_response = self.continue_llm_model.generate_response(prompt_input=continue_prompt_input)
-            print(f"in the continue llm ------------- response : {continue_prompt_input}")
+            print(f"agregating more thickets ------------- response : {added_response}")
             response = f"{response}{added_response}"
-            self.graph.set_context(self.ask_llm_config.output_context, response)
+            print(f"tickets agregated more tickets ------------- response : {response}")
+            self.graph.set_context(self.continue_llm_config.output_context, response)
             can_generate_more_response = self.stop_llm_model.generate_response(prompt_input=stop_prompt_input)
-            print(f"in the continue llm ------------- response : {can_generate_more_response}")
+            print(f"in the continue and can generate more responses llm ------------- response : {can_generate_more_response}")
             self.graph.set_context(self.stop_llm_config.output_context, can_generate_more_response)
         print(f"node {self.config.name} finished response and saved to context key {self.ask_llm_config.output_context}")
         return NodeOutput(
-            next_node=self.config.next_node
+            next_node=self.ask_llm_config.next_node
         )
 
 

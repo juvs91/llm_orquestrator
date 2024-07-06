@@ -34,6 +34,7 @@ class LLMNode(NodeAbstract):
         print(f"node {self.config.name} generating llm response using following context keys to generate prompt:",
               *self.llm_node_config.context_vars_prompt)
         response = self.llm_model.generate_response(prompt_input=prompt_input)
+        print(f"response from the single llm call, response is {response}")
         self.graph.set_context(self.llm_node_config.output_context, response)
         print(f"node {self.config.name} finished response and saved to context key {self.llm_node_config.output_context}")
         return NodeOutput(
