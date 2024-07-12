@@ -10,7 +10,7 @@ from llm_tools.common.LLMModels.llm_model_builder import build_llm_model
 
 class LLMNodeConfig(BaseModel):
     llm_node_type: str
-    next_node: str
+    next_node: str | None
     output_context: str
     context_vars_prompt: List[str]
     options: LLMModelConfig

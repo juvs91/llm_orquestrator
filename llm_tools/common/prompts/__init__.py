@@ -13,6 +13,8 @@ from llm_tools.common.prompts.si_stop_ticket_grouping import SI_STOP_GROUPING_TI
 from llm_tools.common.prompts.si_validator import SI_VALIDATOR
 from llm_tools.common.prompts.tickets_categories_grouping import GROUPING_CATEGORIES_TICKETS
 from llm_tools.common.prompts.validate_jira_tickets_in_yml import VALIDATE_JIRA_FORMAT_IN_TICKETS
+from llm_tools.common.prompts.category_assigner import CATEGORY_ASSIGNER
+from llm_tools.common.prompts.si_category_assigner import SI_CATEGORY_ASSIGNER
 
 AVAILABLE_PROMPT_TEMPLATES: Dict[str, PromptTemplate] = {
     "SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE": SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE,
@@ -25,7 +27,9 @@ AVAILABLE_PROMPT_TEMPLATES: Dict[str, PromptTemplate] = {
     "SI_VALIDATOR": SI_VALIDATOR,
     "SI_STOP_GROUPING_TICKETS": SI_STOP_GROUPING_TICKETS,
     "GROUPING_CATEGORIES_TICKETS": GROUPING_CATEGORIES_TICKETS,
-    "SI_CONTINUE_CATEGORIES_TICKET_GROUPING": SI_CONTINUE_CATEGORIES_TICKET_GROUPING
+    "SI_CONTINUE_CATEGORIES_TICKET_GROUPING": SI_CONTINUE_CATEGORIES_TICKET_GROUPING,
+    "CATEGORY_ASSIGNER": CATEGORY_ASSIGNER,
+    "SI_CATEGORY_ASSIGNER": SI_CATEGORY_ASSIGNER
 }
 
 

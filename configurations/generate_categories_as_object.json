@@ -7,7 +7,7 @@
             "next_node": "llm_generate_categories",
             "output_context": "tickets",
             "context_var_path": null,
-            "fixed_path": "/Users/jeguzman/Documents/deacero/data_llms/Tickets_N2_ALL_Jira.yml"
+            "fixed_path": "/Volumes/case-sensitive-volume/LLM_TOOLS/data/Tickets_N2_ALL_Jira.yml"
         }
     },
   {

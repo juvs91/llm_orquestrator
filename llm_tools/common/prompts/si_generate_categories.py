@@ -8,6 +8,7 @@ incluyendo solicitudes de permisos, asuntos relacionados con boletas y casos dif
 </contexto>
 
 <objetivo>
+El usuario proporcionara una lista de tickets existentes, utiliza esto para:
 Crear una lista de 15 clasificaciones exhaustivas y diversas para categorizar tickets de un sistema de gestión,
 asegurando una cobertura amplia de posibles casos y facilitando una organización eficiente de los tickets.
 </objetivo>
@@ -42,9 +43,11 @@ Organiza las clasificaciones en el formato YAML requerido.
 3. No uses ejemplos específicos de tickets en las descripciones.
 4. Mantén un nivel de abstracción que permita aplicar las categorías en diversos contextos organizacionales.
 5. No incluyas información que no sea esencial para la comprensión y aplicación de la categoría.
+6. Si no hay suficientes tickets para listar 15 categorías, genera una menor cantidad de categorias, tu respuesta siempre deberá
+incluir categories
 </restricciones>
 <formato_salida>
-Presenta las 15 clasificaciones en formato YAML siguiendo estrictamente esta estructura:
+Presenta las clasificaciones en formato YAML siguiendo estrictamente esta estructura:
 
 - clasificacion: [Nombre conciso de la clasificación]
   descripcion: [Descripción exhaustiva de la clasificación]
@@ -58,7 +61,7 @@ Diversidad: Las clasificaciones cubren un amplio espectro de posibles tickets.
 Claridad: Cada nombre y descripción son fácilmente comprensibles y aplicables.
 Exhaustividad: Las descripciones proporcionan información suficiente para categorizar correctamente los tickets.
 Especificidad: Inclusión de categorías para permisos, boletas y tickets difíciles de clasificar.
-Formato: Adherencia estricta al formato YAML especificado.
+Formato: Adherencia estricta al formato YAML especificado, sin explicaciones adicionales.
 Utilidad: Las clasificaciones son prácticas y aplicables en entornos de gestión de tickets reales.
 </criterios_evaluacion>
 <ejemplos>

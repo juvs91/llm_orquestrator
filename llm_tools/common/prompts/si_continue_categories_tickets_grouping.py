@@ -60,9 +60,9 @@ tickets: [DEAC-9769, DEAC-9770, DEAC-9771]
 """
 
 SI_CONTINUE_CATEGORIES_TICKET_GROUPING = PromptTemplate(
-	template=_template,
-	input_variables=[]
+    template=_template,
+    input_variables=[]
 )
 
 if __name__ == "__main__":
-	print(SI_CONTINUE_CATEGORIES_TICKET_GROUPING.invoke(input={}).text)
+    print(SI_CONTINUE_CATEGORIES_TICKET_GROUPING.invoke(input={}).text)
