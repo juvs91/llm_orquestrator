@@ -7,7 +7,7 @@ from llm_tools.common import save_to_file, concatenate_files
 
 
 class ConcatenateFilesConfig(BaseModel):
-    next_node: str
+    next_node: str | None
     directory: str
     file_extension: str
     separator: str

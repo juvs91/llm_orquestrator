@@ -1,6 +1,6 @@
 import json
 import os
-from typing import Any
+from typing import Any, List, Generator
 
 
 def save_to_file(content, path):
@@ -37,3 +37,8 @@ def print_object(obj: Any):
     except (TypeError, ValueError):
         print("NON-JSON-serializable object:")
         print(f"{obj}")
+
+
+def chunk_array(arr: List[Any], chunk_size: int) -> Generator[list, Any, None]:
+    for i in range(0, len(arr), chunk_size):
+        yield arr[i:i + chunk_size]

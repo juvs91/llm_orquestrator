@@ -7,7 +7,7 @@
             "next_node": "llm_generate_categories",
             "output_context": "tickets",
             "context_var_path": null,
-            "fixed_path": "/Volumes/case-sensitive-volume/LLM_TOOLS/llm_tools/jira_tickets/data/output_yamls.txt"
+            "fixed_path": "/Volumes/case-sensitive-volume/LLM_TOOLS/data/Tickets_N2_ALL_Jira.yml"
         }
     },
   {
@@ -16,7 +16,7 @@
         "type": "LLM_NODE",
         "options": {
             "llm_node_type": "GEMINI",
-            "next_node": "validate_yaml_node",
+            "next_node": "validate_categories_yaml_node",
             "output_context": "categories_raw",
             "context_vars_prompt": ["tickets"],
             "options": {
@@ -34,13 +34,116 @@
     },
   {
         "max_iterations": 3,
-        "name": "validate_yaml_node",
+        "name": "validate_categories_yaml_node",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "llm_group_ticket_in_category",
+          "next_node_on_invalid": "llm_generate_categories",
+          "context_var_to_validate": "categories_raw",
+          "context_var_save_as_object": null
+        }
+  },
+    {
+        "max_iterations": 10,
+        "name": "llm_group_ticket_in_category",
+        "type": "CONTINUE_LLM_NODE",
+        "options": {
+          "ask_llm_options": {
+            "next_node": "validate_grouped_categories_yaml_node",
+            "llm_node_type": "GEMINI",
+            "output_context": "grouped_categories_tickets",
+            "context_vars_prompt": ["tickets", "categories_raw"],
+            "options": {
+              "system_prompt_template_name": "SI_GROUP_TICKETS_TO_CATEGORIES",
+              "system_prompt_input_values": {},
+              "prompt_template_name": "GROUP_TICKETS_TO_CATEGORIES",
+              "temperature": 0.0,
+              "options": {
+                  "project_id": "dea-analytics-prj-gemini",
+                  "region": "us-central1",
+                  "gcp_model_name": "gemini-1.5-pro-preview-0514"
+              }
+            }
+          },
+          "continue_llm_options":{
+            "next_node": "validate_grouped_categories_yaml_node",
+            "llm_node_type": "GEMINI",
+            "output_context": "grouped_categories_tickets",
+            "context_vars_prompt": ["tickets", "categories_raw", "grouped_categories_tickets"],
+            "options": {
+               "system_prompt_template_name": "SI_CONTINUE_CATEGORIES_TICKET_GROUPING",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "GROUPING_CATEGORIES_TICKETS",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                }
+             }
+          },
+          "stop_llm_options": {
+              "next_node": "validate_grouped_categories_yaml_node",
+              "llm_node_type": "GEMINI",
+              "output_context": "validate_criteria",
+              "context_vars_prompt": ["tickets", "categories_raw", "grouped_categories_tickets"],
+              "stop_criteria": "true",
+              "options": {
+                  "system_prompt_template_name": "SI_STOP_GROUPING_TICKETS",
+                  "system_prompt_input_values": {},
+                  "prompt_template_name": "GROUP_TICKETS_TO_CATEGORIES",
+                  "temperature": 0.0,
+                  "options": {
+                      "project_id": "dea-analytics-prj-gemini",
+                      "region": "us-central1",
+                      "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                  }
+              }
+           }
+        }
+    },
+    {
+        "max_iterations": 3,
+        "name": "validate_grouped_categories_yaml_node",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "llm_validate_all_tickets_in_yml_are_correct",
+          "next_node_on_invalid": "llm_group_ticket_in_category",
+          "context_var_to_validate": "grouped_categories_tickets",
+          "context_var_save_as_object": "categories_to_validate_tickets"
+        }
+  },
+      {
+        "max_iterations": 3,
+        "name": "llm_validate_all_tickets_in_yml_are_correct",
+         "type": "LLM_NODE",
+         "options": {
+            "llm_node_type": "GEMINI",
+            "next_node": "validate_all_jira_tickets_in_yml_node",
+            "output_context": "validated_yml",
+            "context_vars_prompt": ["grouped_categories_tickets"],
+            "options": {
+                "system_prompt_template_name": "SI_VALIDATOR",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "VALIDATE_JIRA_FORMAT_IN_TICKETS",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                }
+            }
+          }
+  },
+      {
+        "max_iterations": 3,
+        "name": "validate_all_jira_tickets_in_yml_node",
         "type": "PARSE_YAML_NODE",
         "options": {
           "next_node_on_valid": "END",
-          "next_node_on_invalid": "llm_generate_categories",
-          "context_var_to_validate": "categories_raw",
-          "context_var_save_as_object": "categories_object"
+          "next_node_on_invalid": "llm_group_ticket_in_category",
+          "context_var_to_validate": "validated_yml",
+          "context_var_save_as_object": "validated_categories_object"
         }
   },
   {
@@ -49,9 +152,9 @@
         "type": "SAVE_FILE_NODE",
         "options": {
           "next_node": "NO NODE",
-          "context_var_content_to_save": "categories_object",
+          "context_var_content_to_save": "validated_categories_object",
           "context_var_path_to_save": null,
-          "fixed_path_to_save": "categories_raw_obj.json"
+          "fixed_path_to_save": "/Users/jeguzman/Documents/deacero/data_llms/validated_categories.json"
         }
     }
 ]

@@ -1,10 +1,9 @@
-import os
-from typing import Dict, Type, Any, List
+from typing import Dict, Type, Any
 
 from pydantic import BaseModel, field_validator
 
-from llm_tools.common import read_file
 from llm_tools.common.Nodes import NodeAbstract, NodeConfig, Graph
+from llm_tools.common.Nodes.continue_llm_node.continue_llm_node import ContinueLLMNode
 from llm_tools.common.Nodes.llm_node import LLMNode
 from llm_tools.common.Nodes.read_file_node import ReadFileNode
 from llm_tools.common.Nodes.save_file_node import SaveFileNode
@@ -12,15 +11,24 @@ from llm_tools.common.Nodes.parse_yaml import ParseYamlNode
 from llm_tools.common.Nodes.set_context_node import SetContextNode
 from llm_tools.common.Nodes.log_node import LogNode
 from llm_tools.common.Nodes.concatenate_files import ConcatenateFilesNode
+from llm_tools.common.Nodes.append_to_array import AppendToArrayNode
+from llm_tools.common.Nodes.batch_node import BatchNode
+from llm_tools.common.Nodes.object_to_yaml import ObjectToYamlNode
+from llm_tools.common.Nodes.save_file_as_json_node import SaveFileAsJsonNode
 
 AVAILABLE_NODES: Dict[str, Type[NodeAbstract]] = {
     "LLM_NODE": LLMNode,
+    "CONTINUE_LLM_NODE": ContinueLLMNode,
     "READ_FILE_NODE": ReadFileNode,
     "SAVE_FILE_NODE": SaveFileNode,
+    "SAVE_FILE_AS_JSON_NODE": SaveFileAsJsonNode,
     "PARSE_YAML_NODE": ParseYamlNode,
     "SET_CONTEXT_NODE": SetContextNode,
     "CONCATENATE_FILES_NODE": ConcatenateFilesNode,
-    "LOG_NODE": LogNode
+    "LOG_NODE": LogNode,
+    "APPEND_TO_ARRAY_NODE": AppendToArrayNode,
+    "BATCH_NODE": BatchNode,
+    "OBJECT_TO_YAML_NODE": ObjectToYamlNode
 }
 
 
