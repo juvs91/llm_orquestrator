@@ -28,6 +28,20 @@ def concatenate_files(
     return slq_content
 
 
+def concatenate_files_as_object(
+        directory,
+        file_extension,
+) -> List[str]:
+    arr = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith(file_extension):
+                ruta_archivo = os.path.join(root, file)
+                with open(ruta_archivo, "r", encoding='utf-8') as f:
+                    arr.append(f.read())
+    return arr
+
+
 def print_object(obj: Any):
     try:
         # Attempt to serialize the object to JSON
