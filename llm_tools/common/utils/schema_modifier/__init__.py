@@ -86,4 +86,4 @@ if __name__ == "__main__":
         schemas=_schemas,
         foreign_keys=_foreign_keys
     )
-    print(*_sqls, sep="\n\n")
+    print(*_sqls[0:10], sep="\n\n")

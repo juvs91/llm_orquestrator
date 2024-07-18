@@ -1,0 +1,119 @@
+[
+  {
+        "max_iterations": 1,
+        "name": "START",
+        "type": "CONCATENATE_FILES_IN_ARRAY_NODE",
+        "options": {
+          "next_node": "read fks",
+          "directory": "data/data_generation/Operacion/AMPSch/tables",
+          "file_extension": ".sql",
+          "separator": "\n",
+          "context_var_to_save": "table_schemas"
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "read fks",
+        "type": "CONCATENATE_FILES_IN_ARRAY_NODE",
+        "options": {
+          "next_node": "add fks",
+          "directory": "data/data_generation/Operacion/AMPSch/fk",
+          "file_extension": ".sql",
+          "separator": "\n",
+          "context_var_to_save": "foreign_keys"
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "add fks",
+        "type": "CUSTOM_PROCESS_NODE",
+        "options": {
+          "next_node": "batch",
+          "process_name": "ADD_FOREIGN_KEYS_TO_SCHEMAS",
+          "context_vars_input_context": {
+            "schemas": "table_schemas",
+            "foreign_key_statements": "foreign_keys"
+          },
+          "context_save_vars_output_context": {
+            "updated_schemas": "updated_schemas_array"
+          }
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "batch",
+        "type": "BATCH_NODE",
+        "options": {
+          "next_node": "END",
+          "chunk_size": 5,
+          "process_node": "stringify_tables",
+          "context_key_current_chunk": "tables_chunk",
+          "context_key_array_to_process": "updated_schemas_array"
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "stringify_tables",
+        "type": "ARRAY_TO_STRING_NODE",
+        "options": {
+          "next_node": "generate_inserts",
+          "context_var_array": "tables_chunk",
+          "context_var_to_save": "prompt_schemas",
+          "separator": "\n\n"
+        }
+  },
+  {
+        "max_iterations": 999,
+        "name": "generate_inserts",
+        "type": "LLM_NODE",
+        "options": {
+            "llm_node_type": "GEMINI",
+            "next_node": "validate_yaml_node",
+            "output_context": "insert_statements_raw",
+            "context_vars_prompt": ["prompt_schemas"],
+            "options": {
+                "system_prompt_template_name": "SI_GENERATE_SAMPLE_SQL_DATA",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "GENERATE_SAMPLE_SQL_DATA",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-flash-001"
+                }
+            }
+        }
+  },
+  {
+    "max_iterations": 999,
+        "name": "validate_yaml_node",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "append_inserts",
+          "next_node_on_invalid": "generate_inserts",
+          "context_var_to_validate": "insert_statements_raw",
+          "context_var_save_as_object": "inserts_object"
+        }
+  },
+  {
+    "max_iterations": 999,
+        "name": "append_inserts",
+        "type": "APPEND_TO_ARRAY_NODE",
+        "options": {
+          "next_node": null,
+          "context_key_var_to_append": "inserts_object",
+          "context_key_array_append_to": "inserts_array"
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "END",
+        "type": "SAVE_FILE_AS_JSON_NODE",
+        "options": {
+          "next_node": null,
+          "context_var_content_to_save": "inserts_array",
+          "context_var_path_to_save": null,
+          "fixed_path_to_save": "data/inserts.json"
+        }
+  }
+]

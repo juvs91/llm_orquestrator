@@ -78,7 +78,7 @@ class Graph:
         while True:
             print(f"--------------- Processing node {current_node.config.name} --------------------")
             current_node_results = current_node.process_input()
-            if current_node.config.name == "END":
+            if current_node.config.name == "END" or current_node_results.next_node is None:
                 break
             current_node = self._get_node(current_node_results.next_node)
         return self._context

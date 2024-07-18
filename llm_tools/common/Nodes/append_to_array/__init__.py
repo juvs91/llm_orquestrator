@@ -35,7 +35,7 @@ class AppendToArrayNode(NodeAbstract):
 
         context_key_var_to_append = self.append_to_array_node_config.context_key_var_to_append
         context_key_array_append_to = self.append_to_array_node_config.context_key_array_append_to
-        print(f"Appending f{context_key_var_to_append} into {context_key_array_append_to}")
+        print(f"Appending {context_key_var_to_append} into {context_key_array_append_to}")
 
         arr = self._get_or_create_array()
         obj = self.graph.get_context(context_key_var_to_append)

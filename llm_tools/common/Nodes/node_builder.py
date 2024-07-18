@@ -15,6 +15,9 @@ from llm_tools.common.Nodes.append_to_array import AppendToArrayNode
 from llm_tools.common.Nodes.batch_node import BatchNode
 from llm_tools.common.Nodes.object_to_yaml import ObjectToYamlNode
 from llm_tools.common.Nodes.save_file_as_json_node import SaveFileAsJsonNode
+from llm_tools.common.Nodes.concatenate_files_in_array import ConcatenateFilesInArrayNode
+from llm_tools.common.Nodes.array_to_string import ArrayToStringNode
+from llm_tools.common.Nodes.custom_process_node import CustomProcessNode
 
 AVAILABLE_NODES: Dict[str, Type[NodeAbstract]] = {
     "LLM_NODE": LLMNode,
@@ -28,7 +31,10 @@ AVAILABLE_NODES: Dict[str, Type[NodeAbstract]] = {
     "LOG_NODE": LogNode,
     "APPEND_TO_ARRAY_NODE": AppendToArrayNode,
     "BATCH_NODE": BatchNode,
-    "OBJECT_TO_YAML_NODE": ObjectToYamlNode
+    "OBJECT_TO_YAML_NODE": ObjectToYamlNode,
+    "CONCATENATE_FILES_IN_ARRAY_NODE": ConcatenateFilesInArrayNode,
+    "ARRAY_TO_STRING_NODE": ArrayToStringNode,
+    "CUSTOM_PROCESS_NODE": CustomProcessNode
 }
 
 
