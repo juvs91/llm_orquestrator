@@ -1,0 +1,154 @@
+[
+  {
+        "max_iterations": 1,
+        "name": "START",
+        "type": "READ_FILE_NODE",
+        "options": {
+            "next_node": "llm_generate_categories",
+            "output_context": "tickets",
+            "context_var_path": "tickets_location",
+            "fixed_path": null
+        }
+    },
+  {
+        "max_iterations": 3,
+        "name": "llm_generate_categories",
+        "type": "LLM_NODE",
+        "options": {
+            "llm_node_type": "GEMINI",
+            "next_node": "validate_yaml_node",
+            "output_context": "categories_raw",
+            "context_vars_prompt": ["tickets"],
+            "options": {
+                "system_prompt_template_name": "SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "GENERATE_CATEGORIES_PROMPT_TEMPLATE",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                }
+            }
+        }
+    },
+  {
+        "max_iterations": 3,
+        "name": "validate_yaml_node",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "save_categories",
+          "next_node_on_invalid": "llm_generate_categories",
+          "context_var_to_validate": "categories_raw",
+          "context_var_save_as_object": null
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "save_categories",
+        "type": "SAVE_FILE_NODE",
+        "options": {
+          "next_node": "parse_tickets",
+          "context_var_content_to_save": "categories_raw",
+          "context_var_path_to_save": "categories_save_file_location",
+          "fixed_path_to_save": null
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "parse_tickets",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+            "next_node_on_valid": "batch_tickets",
+            "next_node_on_invalid": null,
+            "context_var_to_validate": "tickets",
+            "context_var_save_as_object": "tickets_object_array"
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "batch_tickets",
+        "type": "BATCH_NODE",
+        "options": {
+          "next_node": "END",
+          "chunk_size": 50,
+          "process_node": "ticket_chunk_to_yaml",
+          "context_key_current_chunk": "tickets_chunk_object",
+          "context_key_array_to_process": "tickets_object_array"
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "ticket_chunk_to_yaml",
+        "type": "OBJECT_TO_YAML_NODE",
+        "options": {
+          "next_node": "log_tickets_chunk",
+          "context_key_object_to_convert": "tickets_chunk_object",
+          "context_key_yaml_to_save": "tickets_chunk"
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "log_tickets_chunk",
+        "type": "LOG_NODE",
+        "options": {
+          "next_node": "llm_assign_categories_to_tickets",
+          "print_context_var": "tickets_chunk",
+          "print_context": false
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "llm_assign_categories_to_tickets",
+        "type": "LLM_NODE",
+        "options": {
+            "llm_node_type": "GEMINI",
+            "next_node": "parse_tickets_chunk",
+            "output_context": "assigned_tickets_chunk",
+            "context_vars_prompt": ["tickets_chunk","categories_raw"],
+            "options": {
+                "system_prompt_template_name": "SI_CATEGORY_ASSIGNER",
+                "system_prompt_input_values": {},
+                "prompt_template_name": "CATEGORY_ASSIGNER",
+                "temperature": 0.0,
+                "options": {
+                    "project_id": "dea-analytics-prj-gemini",
+                    "region": "us-central1",
+                    "gcp_model_name": "gemini-1.5-pro-preview-0514"
+                }
+            }
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "parse_tickets_chunk",
+        "type": "PARSE_YAML_NODE",
+        "options": {
+          "next_node_on_valid": "append_tickets_chunk",
+          "next_node_on_invalid": "llm_assign_categories_to_tickets",
+          "context_var_to_validate": "assigned_tickets_chunk",
+          "context_var_save_as_object": "assigned_tickets_chunk_object"
+        }
+  },
+  {
+        "max_iterations": 9999,
+        "name": "append_tickets_chunk",
+        "type": "APPEND_TO_ARRAY_NODE",
+        "options": {
+          "next_node": null,
+          "context_key_var_to_append": "assigned_tickets_chunk_object",
+          "context_key_array_append_to": "total_assigned_tickets"
+        }
+  },
+  {
+        "max_iterations": 1,
+        "name": "END",
+        "type": "SAVE_FILE_AS_JSON_NODE",
+        "options": {
+          "next_node": null,
+          "context_var_content_to_save": "total_assigned_tickets",
+          "context_var_path_to_save": "assigned_tickets_location",
+          "fixed_path_to_save": null
+        }
+  }
+]
