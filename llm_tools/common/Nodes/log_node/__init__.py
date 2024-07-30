@@ -5,7 +5,7 @@ from llm_tools.common import print_object
 
 
 class LogNodeConfig(BaseModel):
-    next_node: str
+    next_node: str | None
     print_context_var: str | None
     print_context: bool
 

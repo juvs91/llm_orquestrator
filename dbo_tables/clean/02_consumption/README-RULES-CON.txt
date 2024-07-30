@@ -1,1 +1,0 @@
-todo lo que se encuentre en esta tabla debe de ser materializado
