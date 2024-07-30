@@ -1,0 +1,47 @@
+with de_duplicacion_vtacatorganizacionwt as (
+	select
+ *,
+ row_number() over(
+
+ partition by claorganizacion,clasubdireccion,clagerencia,idorden
+ order by fechaultimamod desc
+ ) as rownum
+ from {{ref('stg__vta_cat_organizacion_wt')}}
+),sel_vtacatorganizacionwt as ( 
+select _airbyte_raw_id,
+		_airbyte_extracted_at,
+		_airbyte_meta,
+		email,
+		nivel,
+		clazona,
+		idorden,
+		clagrupo,
+		fechains,
+		bajalogica,
+		clagerencia,
+		clatipozona,
+		nombrepcmod,
+		_ab_cdc_lsn,
+		cladireccion,
+		clausuariomod,
+		nombretitular,
+		claflujocuenta,
+		fechaultimamod,
+		_ab_cdc_cursor,
+		claorganizacion,
+		clasubdireccion,
+		fechabajalogica,
+		nomorganizacion,
+		telefonocelular,
+		clausuariotitular,
+		_ab_cdc_deleted_at,
+		_ab_cdc_updated_at,
+		clagerenciaregional,
+		claniveltopelistaprecio,
+		_ab_cdc_event_serial_no,
+		claniveltopelistadescuento,
+		escuentaautorizacionrequerida
+		from de_duplicacion_vtacatorganizacionwt where rownum=1
+ )
+ select * from 
+sel_vtacatorganizacionwt

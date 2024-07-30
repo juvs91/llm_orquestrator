@@ -1,7 +1,5 @@
 from typing import Dict, List
 
-from llm_tools.common.prompts.group_ticket_to_category import GROUP_TICKETS_TO_CATEGORIES
-from llm_tools.common.prompts.si_continue_categories_tickets_grouping import SI_CONTINUE_CATEGORIES_TICKET_GROUPING
 from llm_tools.common.prompts.si_generate_categories import SI_GENERATE_CATEGORIES_PROMPT_TEMPLATE
 from llm_tools.common.prompts.generate_categories import GENERATE_CATEGORIES_PROMPT_TEMPLATE
 from pydantic import BaseModel, field_validator

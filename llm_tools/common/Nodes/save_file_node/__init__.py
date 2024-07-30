@@ -7,7 +7,7 @@ from llm_tools.common import save_to_file
 
 
 class SaveFileNodeConfig(BaseModel):
-    next_node: str | None
+    next_node: str
     context_var_content_to_save: str
     context_var_path_to_save: str | None
     fixed_path_to_save: str | None

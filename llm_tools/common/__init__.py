@@ -1,6 +1,6 @@
 import json
 import os
-from typing import Any, List, Generator
+from typing import Any, Generator
 
 
 def save_to_file(content, path):
@@ -53,6 +53,26 @@ def print_object(obj: Any):
         print(f"{obj}")
 
 
-def chunk_array(arr: List[Any], chunk_size: int) -> Generator[list, Any, None]:
-    for i in range(0, len(arr), chunk_size):
-        yield arr[i:i + chunk_size]
+def iterate_files(
+        directory: str,
+        file_extension: str
+) -> Generator[tuple[str, str], Any, None]:
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith(file_extension):
+                file_path = os.path.join(root, file)
+                with open(file_path, "r", encoding='utf-8') as f:
+                    yield f.read(), file_path
+
+
+def find_file_in_directory_return_content(
+        directory: str,
+        file_name: str
+) -> str:
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file == file_name:
+                file_path = os.path.join(root, file)
+                with open(file_path, "r", encoding='utf-8') as f:
+                    return f.read()
+    raise FileNotFoundError(f"File {file_name} not found in {directory}")

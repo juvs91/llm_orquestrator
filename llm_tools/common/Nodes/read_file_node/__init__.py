@@ -7,7 +7,7 @@ from llm_tools.common import read_file
 
 
 class ReadFileNodeConfig(BaseModel):
-    next_node: str | None
+    next_node: str
     output_context: str
     context_var_path: str | None
     fixed_path: str | None

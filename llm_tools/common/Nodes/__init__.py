@@ -17,7 +17,7 @@ class NodeConfig(BaseModel):
 
 
 class NodeOutput(BaseModel):
-    next_node: str | None
+    next_node: str
 
 
 class NodeAbstract(ABC):
@@ -52,12 +52,6 @@ class Graph:
     def get_context(self, context_key: str) -> Any:
         return self._context[context_key]
 
-    def check_if_context_exists(self, context_key: str) -> bool:
-        if context_key in self._context:
-            return True
-        else:
-            return False
-
     def print_context(self) -> None:
         print(f"{self._context}")
 
@@ -79,19 +73,6 @@ class Graph:
             print(f"--------------- Processing node {current_node.config.name} --------------------")
             current_node_results = current_node.process_input()
             if current_node.config.name == "END" or current_node_results.next_node is None:
-                break
-            current_node = self._get_node(current_node_results.next_node)
-        return self._context
-
-    def process_input_from_node(self, node_name: str) -> Dict[str, Any]:
-        current_node = self._get_node(node_name)
-
-        while True:
-            print(f"--------------- Processing node {current_node.config.name} --------------------")
-            current_node_results = current_node.process_input()
-            if current_node.config.name == "END":
-                break
-            if current_node_results.next_node is None:
                 break
             current_node = self._get_node(current_node_results.next_node)
         return self._context

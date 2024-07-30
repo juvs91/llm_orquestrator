@@ -1,9 +1,10 @@
-from typing import Dict, Type, Any
+import os
+from typing import Dict, Type, Any, List
 
 from pydantic import BaseModel, field_validator
 
+from llm_tools.common import read_file
 from llm_tools.common.Nodes import NodeAbstract, NodeConfig, Graph
-from llm_tools.common.Nodes.continue_llm_node.continue_llm_node import ContinueLLMNode
 from llm_tools.common.Nodes.llm_node import LLMNode
 from llm_tools.common.Nodes.read_file_node import ReadFileNode
 from llm_tools.common.Nodes.save_file_node import SaveFileNode
@@ -21,10 +22,8 @@ from llm_tools.common.Nodes.custom_process_node import CustomProcessNode
 
 AVAILABLE_NODES: Dict[str, Type[NodeAbstract]] = {
     "LLM_NODE": LLMNode,
-    "CONTINUE_LLM_NODE": ContinueLLMNode,
     "READ_FILE_NODE": ReadFileNode,
     "SAVE_FILE_NODE": SaveFileNode,
-    "SAVE_FILE_AS_JSON_NODE": SaveFileAsJsonNode,
     "PARSE_YAML_NODE": ParseYamlNode,
     "SET_CONTEXT_NODE": SetContextNode,
     "CONCATENATE_FILES_NODE": ConcatenateFilesNode,

@@ -7,7 +7,7 @@ from llm_tools.common import save_to_file
 
 
 class SetContextNodeConfig(BaseModel):
-    next_node: str | None
+    next_node: str
     context_to_save: Dict[str, Any]
 
 
