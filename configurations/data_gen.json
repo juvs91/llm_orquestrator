@@ -77,7 +77,7 @@
                 "prompt_template_name": "GENERATE_SAMPLE_SQL_DATA",
                 "temperature": 0.0,
                 "options": {
-                    "project_id": "dea-analytics-prj-gemini",
+                    "project_id": "gcp-project-id",
                     "region": "us-central1",
                     "gcp_model_name": "gemini-1.5-flash-001"
                 }
